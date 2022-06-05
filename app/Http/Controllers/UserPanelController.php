@@ -17,4 +17,8 @@ class UserPanelController extends Controller
     public function services(){
         return view('user.services');
     }
+
+    public function currentproject(){
+        return view('user.currentproject');
+    }
 }

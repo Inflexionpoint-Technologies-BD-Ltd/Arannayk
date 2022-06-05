@@ -156,7 +156,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-1.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-1.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Co-Management Project</h3>
@@ -194,7 +194,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-3.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-3.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Conservation of swamp forests</h3>
@@ -212,7 +212,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-4.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-4.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Supporting nurseries</h3>
@@ -229,7 +229,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-5.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-5.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Biodiversity monitoring</h3>
@@ -247,7 +247,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-6.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-6.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Alternative Livelihood of forest dependent people</h3>
@@ -267,7 +267,7 @@
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="upload/icon-2-2.png" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-2.png') }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">Climate Change Risk Management</h3>
