@@ -13,4 +13,8 @@ class UserPanelController extends Controller
     public function publication(){
         return view('user.publication');
     }
+
+    public function services(){
+        return view('user.services');
+    }
 }

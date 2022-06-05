@@ -36,7 +36,7 @@
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="#">What We Do</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="">Our Services</a></li>
+                    <li class="menu-item"><a href="/services">Our Services</a></li>
                     <li class="menu-item"><a href="">Current Projects</a></li>
                     <li class="menu-item"><a href="">Project Archives</a></li>
                 </ul>

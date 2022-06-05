@@ -13,6 +13,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', "UserPanelController@index");
 Route::get('/publication', "UserPanelController@publication");
+Route::get('/services', "UserPanelController@services");
+
 
 
 

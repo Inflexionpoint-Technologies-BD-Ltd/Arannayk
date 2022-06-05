@@ -55,7 +55,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="portfolio-grid-1-column.html">Our Services</a>
+                                    <a href="/services">Our Services</a>
                                 </li>
                             </ul>
                         </li>

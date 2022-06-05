@@ -344,7 +344,7 @@
                             <div class="six columns service-style">
                                 <div class="greennature-item greennature-action-ads-item"
                                      style="background: url({{ asset('upload/donation-bg-1.jpg') }})">
-                                    <a href="#" class="services-title-style">
+                                    <a href="/services" class="services-title-style">
                                         <h3 class="action-ads-title" style="color: #facc2e">
                                             Co-management project
                                         </h3>
@@ -370,7 +370,7 @@
                             <div class="six columns">
                                 <div class="greennature-item greennature-action-ads-item"
                                      style="background: url({{ asset('upload/donation-bg-2.jpg') }})">
-                                    <a href="#" class="services-title-style">
+                                    <a href="/services" class="services-title-style">
                                         <h3 class="action-ads-title" style="color: #5dc269">
                                             Biodiversity monitoring
                                         </h3>
@@ -400,7 +400,7 @@
 
                         <div style="text-align: center; margin-top: 2rem">
                             <!-- <a><button>Explore More Services</button></a> -->
-                            <a class="action-ads-button large more-services" href="#">
+                            <a class="action-ads-button large more-services" href="/services">
                                 <span>More Services</span>
                             </a>
                         </div>
