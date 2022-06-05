@@ -115,7 +115,8 @@
             <div class="container">
                 <div class="six columns">
                     <div class="greennature-video-item greennature-item">
-                        <iframe src="http://player.vimeo.com/video/101707505?title=0&amp;byline=0&amp;portrait=0" width="620" height="348"></iframe>
+                        <iframe src="http://player.vimeo.com/video/101707505?title=0&amp;byline=0&amp;portrait=0"
+                                width="620" height="348"></iframe>
                     </div>
                 </div>
                 <div class="six columns">
@@ -131,7 +132,9 @@
                                     including NGOs,
                                     government agencies and academic institutions for conservation and restoration of
                                     forests of Bangladesh. The major areas of interventions include...</p>
-                            </div><a class="about-us-read-more greennature-button" href="#content-section-2">Learn More</a></div>
+                            </div>
+                            <a class="about-us-read-more greennature-button" href="#content-section-2">Learn More</a>
+                        </div>
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -145,10 +148,10 @@
         <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey"
              style="background-color: #f0f0f0; padding-bottom: 15px; ">
             <div class="container">
-{{--                <p class="services-page-subheading">AF has so far provided 150 grants to different organizations--}}
-{{--                    including NGOs,--}}
-{{--                    government agencies and academic institutions for conservation and restoration of--}}
-{{--                    forests of Bangladesh. The major areas of interventions include:</p>--}}
+                {{--                <p class="services-page-subheading">AF has so far provided 150 grants to different organizations--}}
+                {{--                    including NGOs,--}}
+                {{--                    government agencies and academic institutions for conservation and restoration of--}}
+                {{--                    forests of Bangladesh. The major areas of interventions include:</p>--}}
                 <div class="four columns">
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
@@ -283,14 +286,18 @@
     </section>
 
     <section id="content-section-5">
-        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; padding-top: 85px; padding-bottom: 62px; ">
+        <div class="greennature-color-wrapper  gdlr-show-all no-skin"
+             style="background-color: #f3f3f3; padding-top: 85px; padding-bottom: 62px; ">
             <div class="container">
                 <div class="greennature-stunning-item-ux greennature-ux">
                     <div class="greennature-item greennature-stunning-item greennature-stunning-center">
                         <h2 class="stunning-item-title">The only way to make this happened is to take action!</h2>
                         <div class="stunning-item-caption greennature-skin-content">
                             <p></p>
-                        </div><a class="stunning-item-button greennature-button large greennature-lb-payment" href="#" style="background-color: #fec428; color: #ffffff;">Donate Now!</a><a class="stunning-item-button greennature-button large" href="#">Get Involved</a></div>
+                        </div>
+                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="#"
+                           style="background-color: #fec428; color: #ffffff;">Donate Now!</a><a
+                            class="stunning-item-button greennature-button large" href="#">Get Involved</a></div>
                 </div>
                 <div class="clear"></div>
                 <div class="clear"></div>
@@ -298,7 +305,6 @@
         </div>
         <div class="clear"></div>
     </section>
-
 
     <!-------------------------------------------------------------------------
       ------------------------------------------------------------------------
