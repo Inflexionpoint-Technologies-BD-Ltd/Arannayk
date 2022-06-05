@@ -170,7 +170,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="./publications.html">Publications</a>
+                                    <a href="./publication">Publications</a>
                                 </li>
                             </ul>
                         </li>

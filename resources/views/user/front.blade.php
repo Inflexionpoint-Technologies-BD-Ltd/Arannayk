@@ -117,6 +117,7 @@
                             <div id="P_slider_1" class="master-slider-parent ms-parent-id-1">
                                 <!-- MasterSlider Main -->
                                 <div id="slider_1" class="master-slider ms-skin-default">
+
                                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                         <img
                                             src="{{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }}"
@@ -155,6 +156,8 @@
                                             Arannayk Foundation
                                         </div>
                                     </div>
+
+
                                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                         <img
                                             src="{{ asset('./images/slider_images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg') }}"
@@ -690,7 +693,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Publications
                                         </h3>
-                                        <a class="greennature-item-title-link" href="./publications.html">More
+                                        <a class="greennature-item-title-link" href="./publication">More
                                             Publications</a>
                                         <div class="clear"></div>
                                     </div>

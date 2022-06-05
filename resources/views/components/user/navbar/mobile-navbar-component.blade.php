@@ -2,7 +2,7 @@
 
     <!-------------------- Navbar logo ---------------------------------------->
     <div class="greennature-logo-inner">
-        <a href="index.html">
+        <a href="/">
             <img src="{{ asset('images/logo.png') }}" style="height: 40px" alt="" />
         </a>
     </div>
@@ -75,7 +75,7 @@
                 <a href="#">Knowledge</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="./publications.html">Publications</a>
+                        <a href="./publication">Publications</a>
                     </li>
                     <li class="menu-item"><a href="">Tools & Data</a></li>
                 </ul>

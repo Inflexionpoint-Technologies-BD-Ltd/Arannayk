@@ -9,4 +9,8 @@ class UserPanelController extends Controller
     public function index(){
         return view('user.front');
     }
+
+    public function publication(){
+        return view('user.publication');
+    }
 }
