@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Publications</title>
+    <title>Arannayk - Our Team</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -99,83 +99,49 @@
             </div>
         </div>
     </header>
-
     <!------------------------------------------ Navbar ends here--- -->
-    <!-------------------------------Publications Heading ------------------------------------------------->
+
 
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Publications</h1>
-            <!-- <span class="greennature-page-caption">Caption placed here</span> -->
+            <h1 class="section-heading-title">Who We Are</h1>
+            <span class="greennature-page-caption">Our Team</span>
         </div>
     </div>
-    <!--------------------------------------------------------------Publications Heading ------->
 
-    <!------------------------------Publication Books Section-------------------------------->
+    <section id="content-section-1">
+        <div class="section-container container">
+            <div class="greennature-personnel-item-wrapper" style="margin-bottom: 30px;">
+                <div class="clear"></div>
 
-    <div class="content-wrapper">
-        <div class="greennature-content">
-
-            <div class="with-sidebar-wrapper">
-                <section id="content-section-1">
-                    <div class="section-container container">
-                        <div class="portfolio-item-wrapper type-classic-portfolio" style="margin-bottom: 20px;">
-                            <div class="portfolio-item-holder  greennature-portfolio-column-3">
-                                <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
-                                    <div class="clear"></div>
-
-                                    @foreach($publications as $publication)
-                                    <div class="three columns">
-                                        <div
-                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                            <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                <div class="portfolio-thumbnail greennature-image"><img
-                                                        src="{{ asset('storage/'.$publication->image)}}" alt="" class="books-image-style"
-                                                    /><span
-                                                        class="portfolio-overlay">&nbsp;</span><a
-                                                        class="portfolio-overlay-icon"
-                                                        href="{{ asset('storage/'.$publication->image) }}"
-                                                        data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                class="fa fa-search"></i></span></a></div>
-                                                <div class="portfolio-classic-content">
-                                                    <div style="text-align:center">
-                                                        <a class="stunning-item-button large download-button-style"
-                                                           href="{{ asset('storage/'.$publication->file_content) }}" download>Download</a>
-                                                    </div>
-
-                                                    <div class="portfolio-excerpt">
-                                                        <div class="clear"></div><a
-                                                            href=""
-                                                            class="excerpt-read-more">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endforeach
-
+                <div class="four columns">
+                    <div class="greennature-item greennature-personnel-item plain-style">
+                        <div class="greennature-ux greennature-personnel-ux">
+                            <div class="personnel-item">
+                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('./upload/personnel-3.jpg') }}" class="team-image" alt="" /></div>
+                                <div class="personnel-info">
+                                    <div class="personnel-author greennature-skin-title">David Smith</div>
+                                    <div class="personnel-position greennature-skin-info">Founder</div>
                                 </div>
-                                <div class="clear"></div>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
-                </section>
-            </div>
-            <!-- Below Sidebar Section-->
+                </div>
 
+
+
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <!-- greennature-content -->
-        <div class="clear"></div>
-    </div>
-    <!-- content wrapper -->
-    <!---------------------------------------------------------Publication Books Section-------->
+    </section>
 
     <!-------------------------------------------------------------------------
-       ------------------------------------------------------------------------
-       Footer------------------------------------------------------------------
-     ---------------------------------------------------------------------- -->
+  ------------------------------------------------------------------------
+  Footer------------------------------------------------------------------
+---------------------------------------------------------------------- -->
 
     <x-user.footer.footer-component></x-user.footer.footer-component>
 

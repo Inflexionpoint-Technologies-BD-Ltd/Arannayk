@@ -152,134 +152,132 @@
                 {{--                    including NGOs,--}}
                 {{--                    government agencies and academic institutions for conservation and restoration of--}}
                 {{--                    forests of Bangladesh. The major areas of interventions include:</p>--}}
+               @foreach($services as $service)
                 <div class="four columns">
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
                              style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-1.png') }}" alt="" width="40"
+                            <div class="column-service-image"><img src="{{ asset('storage/'.$service->icon) }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Co-Management Project</h3>
+                                <h3 class="column-service-title">{{ $service->title }}</h3>
                                 <div class="column-service-content greennature-skin-content">
-                                    <p>Supported to establish sustainable forest
-                                        conservation management system in the Protected Areas (PA) by
-                                        involving local people through Bangladesh Forest Department, NGOs
-                                        and Co-Management Committee (CMC).</p>
+                                    <p>{!! $service->content !!} </p>
                                 </div>
                                 <a class="column-service-read-more" href="#">Read More</a></div>
                         </div>
                     </div>
                 </div>
+                @endforeach
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-2.png') }}" alt=""--}}
+{{--                                                                   width="40" height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Community based forest management project</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Involving ethnic--}}
+{{--                                        communities of Chittagong Hill Tracts (CHT), improved conservation--}}
+{{--                                        and restoration of village common forests (VCF) and restored denuded--}}
+{{--                                        hills.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-2.png') }}" alt=""
-                                                                   width="40" height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Community based forest management project</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Involving ethnic
-                                        communities of Chittagong Hill Tracts (CHT), improved conservation
-                                        and restoration of village common forests (VCF) and restored denuded
-                                        hills.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-3.png') }}" alt="" width="40"
-                                                                   height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Conservation of swamp forests</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Involving local communities improved conservation of swamp forests in
-                                        the Haor region.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-3.png') }}" alt="" width="40"--}}
+{{--                                                                   height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Conservation of swamp forests</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Involving local communities improved conservation of swamp forests in--}}
+{{--                                        the Haor region.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="clear"></div>
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-4.png') }}" alt="" width="40"
-                                                                   height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Supporting nurseries</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Through supporting nurseries all over the country, promoted production
-                                        and marketing of endangered native tree species.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-4.png') }}" alt="" width="40"--}}
+{{--                                                                   height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Supporting nurseries</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Through supporting nurseries all over the country, promoted production--}}
+{{--                                        and marketing of endangered native tree species.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-5.png') }}" alt="" width="40"
-                                                                   height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Biodiversity monitoring</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Biodiversity monitoring (flora and fauna) in
-                                        different protected areas and reserve forests for supporting
-                                        management strategies.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-5.png') }}" alt="" width="40"--}}
+{{--                                                                   height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Biodiversity monitoring</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Biodiversity monitoring (flora and fauna) in--}}
+{{--                                        different protected areas and reserve forests for supporting--}}
+{{--                                        management strategies.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-6.png') }}" alt="" width="40"
-                                                                   height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Alternative Livelihood of forest dependent people</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Organizing the forest
-                                        dependent people living in and around the forest area for local forest
-                                        conservation through skill development for alternative livelihood,
-                                        establishing revolving loan fund and institutionalizing their groups.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-6.png') }}" alt="" width="40"--}}
+{{--                                                                   height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Alternative Livelihood of forest dependent people</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Organizing the forest--}}
+{{--                                        dependent people living in and around the forest area for local forest--}}
+{{--                                        conservation through skill development for alternative livelihood,--}}
+{{--                                        establishing revolving loan fund and institutionalizing their groups.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="clear"></div>
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
-                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-2.png') }}" alt="" width="40"
-                                                                   height="40"/></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Climate Change Risk Management</h3>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Creating public awareness on
-                                        climate change risk and adaptation strategies in the CHT and the
-                                        coastal areas, reducing carbon emission etc.</p>
-                                </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-ux column-service-ux">--}}
+{{--                        <div class="greennature-item greennature-column-service-item greennature-type-1"--}}
+{{--                             style="margin-bottom: 45px;">--}}
+{{--                            <div class="column-service-image"><img src="{{ asset('./upload/icon-2-2.png') }}" alt="" width="40"--}}
+{{--                                                                   height="40"/></div>--}}
+{{--                            <div class="column-service-content-wrapper">--}}
+{{--                                <h3 class="column-service-title">Climate Change Risk Management</h3>--}}
+{{--                                <div class="column-service-content greennature-skin-content">--}}
+{{--                                    <p>Creating public awareness on--}}
+{{--                                        climate change risk and adaptation strategies in the CHT and the--}}
+{{--                                        coastal areas, reducing carbon emission etc.</p>--}}
+{{--                                </div>--}}
+{{--                                <a class="column-service-read-more" href="#">Read More</a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
         <div class="clear"></div>

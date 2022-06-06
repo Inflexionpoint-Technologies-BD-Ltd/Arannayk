@@ -23,8 +23,8 @@
                     <li class="menu-item">
                         <a href="">Mission, Vision & Values</a>
                     </li>
-                    <li class="menu-item"><a href="">Board Members</a></li>
-                    <li class="menu-item"><a href="">Our Team</a></li>
+                    <li class="menu-item"><a href="/board-members">Board Members</a></li>
+                    <li class="menu-item"><a href="/our-team">Our Team</a></li>
                     <li class="menu-item"><a href="">Our Achievements</a></li>
                     <li class="menu-item"><a href="">Timeline</a></li>
                     <li class="menu-item">
