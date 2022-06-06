@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Services</title>
+    <title>Arannayk - Current Projects</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -128,6 +128,47 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
+                                                    <div class="twelve columns">
+                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                            <div class="greennature-ux greennature-blog-grid-ux">
+                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                    <div class="greennature-standard-style">
+                                                                        <div class="greennature-blog-thumbnail">
+                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
+                                                                        </div>
+
+                                                                        <div class="greennature-blog-grid-content">
+                                                                            <header class="post-header">
+                                                                                <h3 class="greennature-blog-title"><a>USAID Ecosystems/ Protibesh Activity</a></h3>
+
+                                                                                <div class="greennature-blog-info">
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2021-2026</a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - USAID </a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Sylhet, Khulna, Chittagong, Cox's Bazar </a></div>
+
+                                                                                    <div class="clear"></div>
+                                                                                </div>
+                                                                                <div class="clear"></div>
+                                                                            </header>
+                                                                            <!-- entry-header -->
+
+                                                                            <div class="greennature-blog-content">Major Achievements:
+                                                                                <ul>
+
+                                                                                    <li>Establishment of a national collaborative management organization (CMO) network</li>
+                                                                                    <li>Capacity building of regional and national CMO network partners</li>
+                                                                                    <li>Database Development for National Co-management network</li>
+                                                                                </ul>
+                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                                <!-- #post -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clear"></div>
 
                                                     <div class="twelve columns">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
@@ -135,24 +176,119 @@
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                                                                     <div class="greennature-standard-style">
                                                                         <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/12/11/donec-luctus-imperdiet/index.html"> <img src="upload/shutterstock_170752253-1024x680.jpg" alt="" width="960" height="638" /></a>
+                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt="" /></a>
                                                                         </div>
 
                                                                         <div class="greennature-blog-grid-content">
                                                                             <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/12/11/donec-luctus-imperdiet/index.html">Donec luctus imperdiet</a></h3>
+                                                                                <h3 class="greennature-blog-title"><a>Landscape Modeling and Planning in Selected Landscapes in the Chittagong Hill Tracts</a></h3>
 
                                                                                 <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/11/index.html">11 Dec 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/12/11/donec-luctus-imperdiet/index.html#respond">2 <span class="greennature-tail" >Comments</span></a></div>
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2021-2022</a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded by - World Bank </a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>CHT </a></div>
+
                                                                                     <div class="clear"></div>
                                                                                 </div>
                                                                                 <div class="clear"></div>
                                                                             </header>
                                                                             <!-- entry-header -->
 
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/12/11/donec-luctus-imperdiet/index.html" class="excerpt-read-more">Read More</a></div>
+                                                                            <div class="greennature-blog-content">Major Achievements:
+                                                                                <ul>
+
+                                                                                    <li>Analyze institutional and policy framework governing land use and drivers of forest and landscape degradation in CHT</li>
+                                                                                    <li>Analyze current land use land cover situation in CHT</li>
+                                                                                    <li>Identify and select restoration options for degraded areas based on comparative long term economic benefits and ecosystem services</li>
+                                                                                    <li>Develop a land use management plan for Reinkhyong Reserved Forest and its surrounding landscape for restoration of ecosystem services</li>
+                                                                                </ul>
+                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                                <!-- #post -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clear"></div>
+
+                                                    <div class="twelve columns">
+                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                            <div class="greennature-ux greennature-blog-grid-ux">
+                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                    <div class="greennature-standard-style">
+                                                                        <div class="greennature-blog-thumbnail">
+                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" class="image-projects" /></a>
+                                                                        </div>
+
+                                                                        <div class="greennature-blog-grid-content">
+                                                                            <header class="post-header">
+                                                                                <h3 class="greennature-blog-title"><a>Compass CHT forest landscape restoration (FLR) project</a></h3>
+
+                                                                                <div class="greennature-blog-info">
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2021-2022</a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By USFS </a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Bandarban </a></div>
+
+                                                                                    <div class="clear"></div>
+                                                                                </div>
+                                                                                <div class="clear"></div>
+                                                                            </header>
+                                                                            <!-- entry-header -->
+
+                                                                            <div class="greennature-blog-content">Major Achievements:
+                                                                                <ul>
+
+                                                                                    <li>Assessment of present land use and land cover conditions</li>
+                                                                                    <li>Identification of potential land use options for degraded areas</li>
+                                                                                    <li>Valuation of ecosystem services provided by the identified land use options</li>
+                                                                                    <li>Validation and finalization of the landscape restoration plan involving stakeholders </li>
+                                                                                    <li>Implementation of the formulated restoration plan</li>
+                                                                                </ul>
+                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                                <!-- #post -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clear"></div>
+
+                                                    <div class="twelve columns">
+                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                            <div class="greennature-ux greennature-blog-grid-ux">
+                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                    <div class="greennature-standard-style">
+                                                                        <div class="greennature-blog-thumbnail">
+                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
+                                                                        </div>
+
+                                                                        <div class="greennature-blog-grid-content">
+                                                                            <header class="post-header">
+                                                                                <h3 class="greennature-blog-title"><a>Greening Environment through Livelihood Improvement and Forest Enrichment (GREEN LIFE) Activity</a></h3>
+
+                                                                                <div class="greennature-blog-info">
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2020-2023</a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By USAID </a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Ukhiya, Teknaf</a></div>
+
+                                                                                    <div class="clear"></div>
+                                                                                </div>
+                                                                                <div class="clear"></div>
+                                                                            </header>
+                                                                            <!-- entry-header -->
+
+                                                                            <div class="greennature-blog-content">Major Achievements:
+                                                                                <ul>
+
+                                                                                    <li>Strengthening co-management system in Sheikh Jamal Inani National Park (SJINP)</li>
+                                                                                    <li>Livelihood development of forest dependent communities through skill development training and pro-poor promotion of livestock and horticultural value chains</li>
+                                                                                    <li>Promotion of conservation friendly alternatives to fuel wood</li>
+                                                                                </ul>
+                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
                                                                         </div>
                                                                     </div>
                                                                 </article>
@@ -164,171 +300,15 @@
                                                     <div class="clear"></div>
 
 
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/12/09/magna-pars-studiorum/index.html"> <img src="upload/shutterstock_49617541-1024x680.jpg" alt="" width="960" height="638" /></a>
-                                                                        </div>
 
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/12/09/magna-pars-studiorum/index.html">Magna pars studiorum</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/09/index.html">09 Dec 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/12/09/magna-pars-studiorum/index.html#respond">2 <span class="greennature-tail" >Comments</span></a></div>
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <div class="clear"></div>
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-859" class="post-859 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-life-stlyle">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/12/04/sedial-eiusmod-tempor/index.html"> <img src="upload/shutterstock_70658833-1024x682.jpg" alt="" width="960" height="639" /></a>
-                                                                        </div>
 
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/12/04/sedial-eiusmod-tempor/index.html">Sedial eiusmod tempor</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/04/index.html">04 Dec 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/12/04/sedial-eiusmod-tempor/index.html#respond">0 <span class="greennature-tail" >Comment</span></a></div>
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/12/04/sedial-eiusmod-tempor/index.html" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-858" class="post-858 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row category-life-style tag-animal tag-safari">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/12/03/eiusmod-tempor-incidunt/index.html"> <img src="upload/shutterstock_133689230-1024x682.jpg" alt="" width="960" height="639" /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/12/03/eiusmod-tempor-incidunt/index.html">Eiusmod tempor incidunt</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/03/index.html">03 Dec 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/12/03/eiusmod-tempor-incidunt/index.html#respond">3 <span class="greennature-tail" >Comments</span></a></div>
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/12/03/eiusmod-tempor-incidunt/index.html" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-43" class="post-43 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row category-life-style tag-blog tag-life-style tag-news">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/11/10/standard-post-format-title/index.html"> <img src="upload/shutterstock_178430033-1024x682.jpg" alt="" width="960" height="639" /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/11/10/standard-post-format-title/index.html">Standard Post Format Title</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/11/10/index.html">10 Nov 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/11/10/standard-post-format-title/index.html#respond">1 <span class="greennature-tail" >Comment</span></a></div>
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/11/10/standard-post-format-title/index.html" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-876" class="post-876 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-business tag-identity-2 tag-life-style">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href="../2013/10/03/diem-certam-indicere-2/index.html"> <img src="upload/shutterstock_278672942-1024x682.jpg" alt="" width="960" height="639" /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a href="../2013/10/03/diem-certam-indicere-2/index.html">Diem certam indicere</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/10/03/index.html">03 Oct 2013</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-comment-o"></i><a href="../2013/10/03/diem-certam-indicere-2/index.html#respond">0 <span class="greennature-tail" >Comment</span></a></div>
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa qui officia. Vivamus sagittis lacus vel augue laoreet...
-                                                                                <div class="clear"></div><a href="../2013/10/03/diem-certam-indicere-2/index.html" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            <div class="greennature-pagination"><span aria-current='page' class='page-numbers current'>1</span>
-                                                <a class='page-numbers' href='page/2/index.html'>2</a>
-                                                <a class="next page-numbers" href="page/2/index.html">Next &rsaquo;</a></div>
+{{--                                            <div class="greennature-pagination"><span aria-current='page' class='page-numbers current'>1</span>--}}
+{{--                                                <a class='page-numbers' href='page/2/index.html'>2</a>--}}
+{{--                                                <a class="next page-numbers" href="page/2/index.html">Next &rsaquo;</a></div>--}}
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -351,49 +331,52 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Text Widget</h3>
-                                    <div class="clear"></div>
-                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-                                </div>
+{{--                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">--}}
+{{--                                    <h3 class="greennature-widget-title">Text Widget</h3>--}}
+{{--                                    <div class="clear"></div>--}}
+{{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
+{{--                                </div>--}}
                                 <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Works</h3>
+                                    <h3 class="greennature-widget-title">Recent Projects</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
+
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href="../portfolio/wind-energy/index.html"><img src="upload/shutterstock_161515241-150x150.jpg" alt="" width="150" height="150" /></a>
+                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="../portfolio/wind-energy/index.html">Wind Energy</a></div>
+                                                <div class="recent-post-widget-title"><a>USAID Ecosystems/ Protibesh Activity</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/04/index.html">04 Dec 2013</a></div>
+                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2021-2026</a></div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
+
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href="../portfolio/elephant-sanctuary/index.html"><img src="upload/shutterstock_133689230-150x150.jpg" alt="" width="150" height="150" /></a>
+                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="../portfolio/elephant-sanctuary/index.html">Elephant Sanctuary</a></div>
+                                                <div class="recent-post-widget-title"><a>Landscape Modeling and Planning in Selected Landscapes in the Chittagong Hill Tracts</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/04/index.html">04 Dec 2013</a></div>
+                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a >2021-2022</a></div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
+
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href="../portfolio/conservation-volunteering/index.html"><img src="upload/shutterstock_53600221-150x150.jpg" alt="" width="150" height="150" /></a>
+                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="../portfolio/conservation-volunteering/index.html">Conservation Volunteer</a></div>
+                                                <div class="recent-post-widget-title"><a>Compass CHT forest landscape restoration (FLR) project</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="../2013/12/04/index.html">04 Dec 2013</a></div>
+                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a href="">2021-2022</a></div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -402,37 +385,8 @@
                                         <div class="clear"></div>
                                     </div>
                                 </div>
-                                <div id="recent-comments-3" class="widget widget_recent_comments greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Comments</h3>
-                                    <div class="clear"></div>
-                                    <ul id="recentcomments">
-                                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="../product/classy-men-shoes/index.html#comment-39">Classy Men Shoes</a></li>
-                                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="../product/blue-casual-suit/index.html#comment-37">Blue Casual Suit</a></li>
-                                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="../product/dark-skirt/index.html#comment-36">Dark Skirt</a></li>
-                                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="../product/dark-skirt/index.html#comment-35">Dark Skirt</a></li>
-                                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="../product/handsome-style/index.html#comment-31">Handsome Style</a></li>
-                                    </ul>
-                                </div>
-                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Tag Cloud</h3>
-                                    <div class="clear"></div>
-                                    <div class="tagcloud">
-                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">Animal</a>
-                                        <a href="#" class="tag-cloud-link tag-link-12 tag-link-position-2" style="font-size: 8pt;" aria-label="Aside (1 item)">Aside</a>
-                                        <a href="#" class="tag-cloud-link tag-link-13 tag-link-position-3" style="font-size: 11.230769230769pt;" aria-label="Audio (2 items)">Audio</a>
-                                        <a href="#" class="tag-cloud-link tag-link-14 tag-link-position-4" style="font-size: 20.564102564103pt;" aria-label="Blog (9 items)">Blog</a>
-                                        <a href="#" class="tag-cloud-link tag-link-15 tag-link-position-5" style="font-size: 15.179487179487pt;" aria-label="Business (4 items)">Business</a>
-                                        <a href="#" class="tag-cloud-link tag-link-17 tag-link-position-6" style="font-size: 13.384615384615pt;" aria-label="identity (3 items)">identity</a>
-                                        <a href="#" class="tag-cloud-link tag-link-74 tag-link-position-7" style="font-size: 8pt;" aria-label="Life Stlyle (1 item)">Life Stlyle</a>
-                                        <a href="#" class="tag-cloud-link tag-link-18 tag-link-position-8" style="font-size: 22pt;" aria-label="Life Style (11 items)">Life Style</a>
-                                        <a href="#" class="tag-cloud-link tag-link-19 tag-link-position-9" style="font-size: 11.230769230769pt;" aria-label="Link (2 items)">Link</a>
-                                        <a href="#" class="tag-cloud-link tag-link-20 tag-link-position-10" style="font-size: 15.179487179487pt;" aria-label="News (4 items)">News</a>
-                                        <a href="#" class="tag-cloud-link tag-link-21 tag-link-position-11" style="font-size: 15.179487179487pt;" aria-label="Post format (4 items)">Post format</a>
-                                        <a href="#" class="tag-cloud-link tag-link-22 tag-link-position-12" style="font-size: 8pt;" aria-label="Quote (1 item)">Quote</a>
-                                        <a href="#" class="tag-cloud-link tag-link-23 tag-link-position-13" style="font-size: 8pt;" aria-label="Safari (1 item)">Safari</a>
-                                        <a href="#" class="tag-cloud-link tag-link-24 tag-link-position-14" style="font-size: 8pt;" aria-label="Travel (1 item)">Travel</a>
-                                        <a href="#" class="tag-cloud-link tag-link-25 tag-link-position-15" style="font-size: 8pt;" aria-label="Video (1 item)">Video</a></div>
-                                </div>
+
+
                             </div>
                         </div>
                         <div class="clear"></div>

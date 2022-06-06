@@ -423,7 +423,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" href="#">More Projects</a>
+                                        <a class="greennature-item-title-link" href="/current-projects">More Projects</a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -451,7 +451,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">USAID Ecosystems/ Protibesh Activity</a>
+                                                            <a href="/current-projects">USAID Ecosystems/ Protibesh Activity</a>
                                                         </h3>
                                                         <div class="greennature-portfolio-info">
                                                             <div class="portfolio-info portfolio-tag">
@@ -468,7 +468,7 @@
                                                             management organization (CMO) network....
 
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -495,7 +495,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">
+                                                            <a href="/current-projects">
                                                                 Landscape Modeling and Planning in Selected
                                                                 Landscapes in the Chittagong Hill Tracts
                                                             </a>
@@ -513,7 +513,7 @@
                                                             governing land use and drivers of forest and
                                                             landscape degradation in CHT....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -540,7 +540,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">Compass CHT forest landscape restoration
+                                                            <a href="/current-projects">Compass CHT forest landscape restoration
                                                                 (FLR) project</a>
                                                         </h3>
                                                         <div class="greennature-portfolio-info">
@@ -555,7 +555,7 @@
                                                             Assessment of present land use and land cover
                                                             conditions ....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -583,7 +583,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">Greening Environment through Livelihood
+                                                            <a href="/current-projects">Greening Environment through Livelihood
                                                                 Improvement and Forest Enrichment (GREEN
                                                                 LIFE) Activity</a>
                                                         </h3>
@@ -599,7 +599,7 @@
                                                             Strengthening co-management system in Sheikh
                                                             Jamal Inani National Park (SJINP)....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>

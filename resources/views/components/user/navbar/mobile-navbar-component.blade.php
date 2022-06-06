@@ -37,7 +37,7 @@
                 <a href="#">What We Do</a>
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="/services">Our Services</a></li>
-                    <li class="menu-item"><a href="">Current Projects</a></li>
+                    <li class="menu-item"><a href="/current-projects">Current Projects</a></li>
                     <li class="menu-item"><a href="">Project Archives</a></li>
                 </ul>
             </li>

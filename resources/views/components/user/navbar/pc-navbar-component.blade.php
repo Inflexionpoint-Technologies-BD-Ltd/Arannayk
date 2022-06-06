@@ -63,7 +63,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="portfolio-grid-1-columns-with-filter.html">Current
+                                    <a href="/current-projects">Current
                                         Projects</a>
                                 </li>
                             </ul>

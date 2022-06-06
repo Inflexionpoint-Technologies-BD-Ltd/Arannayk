@@ -6263,3 +6263,9 @@ input[type="text"].greennature-payment-price-fill {
     margin-bottom: 4rem;
     text-align: center;
 }
+
+.image-projects{
+    width:960px;
+    height: 400px;
+    object-fit: cover;
+}
