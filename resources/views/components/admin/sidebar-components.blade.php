@@ -112,4 +112,104 @@
 
 {{-- -------------------------------------------------- Publication ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Team ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTeam"
+       aria-expanded="true" aria-controls="collapseTeam">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Team Members</span>
+    </a>
+    <div id="collapseTeam" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('team.create') }}">Add Team members</a>
+            <a class="collapse-item" href="{{ route('team.index') }}">View All Members</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Team ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Board ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBoard"
+       aria-expanded="true" aria-controls="collapseBoard">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Board Members</span>
+    </a>
+    <div id="collapseBoard" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('board.create') }}">Add Board members</a>
+            <a class="collapse-item" href="{{ route('board.index') }}">View All Members</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Board ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- About ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseArannayk"
+       aria-expanded="true" aria-controls="collapseArannayk">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>About Arannayk</span>
+    </a>
+    <div id="collapseArannayk" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('about.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('about.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- About ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Project Archive ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseArchives"
+       aria-expanded="true" aria-controls="collapseArchives">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Archived Projects</span>
+    </a>
+    <div id="collapseArchives" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('archive.create') }}">Add Project Archive</a>
+            <a class="collapse-item" href="{{ route('archive.index') }}">View All Archives</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Project Archive ------------------------------------------------------- --}}
+
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}
