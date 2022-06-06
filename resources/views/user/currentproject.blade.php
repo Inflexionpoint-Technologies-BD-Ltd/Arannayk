@@ -129,7 +129,7 @@
                                                     <div class="clear"></div>
 
                                                     @foreach($projects as $project)
-                                                    <div class="twelve columns">
+                                                    <div class="twelve columns" id="{{ $project->title }}">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
@@ -222,6 +222,16 @@
 
                                         <div class="clear"></div>
                                     </div>
+                                </div>
+
+                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                                    <h3 class="greennature-widget-title">Tags</h3>
+                                    <div class="clear"></div>
+                                    <div class="tagcloud">
+                                        @foreach($projects as $project)
+                                        <a href="#{{ $project->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $project->tag }}</a>
+                                        @endforeach
+                                       </div>
                                 </div>
 
 
