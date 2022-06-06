@@ -21,4 +21,12 @@ class UserPanelController extends Controller
     public function currentproject(){
         return view('user.currentproject');
     }
+
+    public function projectarchives(){
+        return view('user.project-archives');
+    }
+
+    public function aboutus(){
+        return view('user.about-arannayk');
+    }
 }

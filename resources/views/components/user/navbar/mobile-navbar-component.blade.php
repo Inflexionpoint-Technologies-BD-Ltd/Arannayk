@@ -18,7 +18,7 @@
                 <a href="#">Who We Are</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="">About Arannayk Foundation</a>
+                        <a href="/about-arannayk">About Arannayk Foundation</a>
                     </li>
                     <li class="menu-item">
                         <a href="">Mission, Vision & Values</a>
@@ -38,7 +38,7 @@
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="/services">Our Services</a></li>
                     <li class="menu-item"><a href="/current-projects">Current Projects</a></li>
-                    <li class="menu-item"><a href="">Project Archives</a></li>
+                    <li class="menu-item"><a href="/project-archives">Project Archives</a></li>
                 </ul>
             </li>
 

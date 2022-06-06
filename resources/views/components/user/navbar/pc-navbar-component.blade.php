@@ -11,7 +11,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="">About Arannayk Foundation </a>
+                                    <a href="/about-arannayk">About Arannayk Foundation </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="">Mission, Vision & Values</a>
@@ -73,7 +73,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="portfolio-grid-1-columns-with-filter.html">Project
+                                    <a href="/project-archives">Project
                                         Archives</a>
                                 </li>
                             </ul>
