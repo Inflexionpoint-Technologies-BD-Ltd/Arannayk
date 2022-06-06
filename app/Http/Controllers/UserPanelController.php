@@ -39,4 +39,8 @@ class UserPanelController extends Controller
     public function ourTeam(){
         return view('user.our-team');
     }
+
+    public function boardMembers(){
+        return view('user.board-members');
+    }
 }

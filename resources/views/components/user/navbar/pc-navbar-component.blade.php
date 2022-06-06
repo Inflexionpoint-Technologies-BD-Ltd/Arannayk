@@ -17,7 +17,7 @@
                                     <a href="">Mission, Vision & Values</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="">Board Members</a>
+                                    <a href="/board-members">Board Members</a>
                                 </li>
                             </ul>
                         </li>

@@ -18,6 +18,8 @@ Route::get('/current-projects', "UserPanelController@currentProject");
 Route::get('/project-archives', "UserPanelController@projectArchives");
 Route::get('/about-arannayk', "UserPanelController@aboutUs");
 Route::get('/our-team', "UserPanelController@ourTeam");
+Route::get('/board-members', "UserPanelController@boardMembers");
+
 
 
 
