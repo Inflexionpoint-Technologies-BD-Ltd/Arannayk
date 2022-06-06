@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Service;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
 {
     public function index(){
+        $services = Service::all();
         return view('user.front');
     }
 
