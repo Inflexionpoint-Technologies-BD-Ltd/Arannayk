@@ -14,9 +14,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', "UserPanelController@index");
 Route::get('/publication', "UserPanelController@publication");
 Route::get('/services', "UserPanelController@services");
-Route::get('/current-projects', "UserPanelController@currentproject");
-Route::get('/project-archives', "UserPanelController@projectarchives");
-Route::get('/about-arannayk', "UserPanelController@aboutus");
+Route::get('/current-projects', "UserPanelController@currentProject");
+Route::get('/project-archives', "UserPanelController@projectArchives");
+Route::get('/about-arannayk', "UserPanelController@aboutUs");
+Route::get('/our-team', "UserPanelController@ourTeam");
 
 
 

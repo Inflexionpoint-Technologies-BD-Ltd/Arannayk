@@ -24,7 +24,7 @@
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Our Team</a></li>
+                                <li class="menu-item"><a href="/our-team">Our Team</a></li>
                                 <li class="menu-item">
                                     <a href="">Our Achievements</a>
                                 </li>

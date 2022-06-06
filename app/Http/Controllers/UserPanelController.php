@@ -23,16 +23,20 @@ class UserPanelController extends Controller
         return view('user.services',compact('services'));
     }
 
-    public function currentproject(){
+    public function currentProject(){
         $projects = Project::all();
         return view('user.currentproject',compact('projects'));
     }
 
-    public function projectarchives(){
+    public function projectArchives(){
         return view('user.project-archives');
     }
 
-    public function aboutus(){
+    public function aboutUs(){
         return view('user.about-arannayk');
+    }
+
+    public function ourTeam(){
+        return view('user.our-team');
     }
 }
