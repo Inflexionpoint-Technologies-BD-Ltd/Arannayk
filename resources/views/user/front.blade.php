@@ -480,136 +480,9 @@
                                         </div>
                                         <!--------------------------------------Project 1 Description---->
                                         @endforeach
-                                        <!--------------------------Project 2 Description------------------------>
 
-{{--                                        <div class="three columns">--}}
-{{--                                            <div--}}
-{{--                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
-{{--                                                <div class="greennature-ux greennature-classic-portfolio-ux">--}}
-{{--                                                    <div class="portfolio-thumbnail greennature-image">--}}
-{{--                                                        <img src="{{ asset('upload/shutterstock_147266159.jpg') }}"--}}
-{{--                                                             style="width: 250px; height: 150px"--}}
-{{--                                                             alt=""/><span class="portfolio-overlay">&nbsp;</span><a--}}
-{{--                                                            class="portfolio-overlay-icon"--}}
-{{--                                                            href="{{ asset('upload/shutterstock_147266159.jpg') }}"--}}
-{{--                                                            data-rel="fancybox"><span--}}
-{{--                                                                class="portfolio-icon"><i--}}
-{{--                                                                    class="fa fa-search"></i></span></a>--}}
-{{--                                                    </div>--}}
-{{--                                                    <div class="portfolio-classic-content">--}}
-{{--                                                        <h3 class="portfolio-title">--}}
-{{--                                                            <a href="/current-projects">--}}
-{{--                                                                Landscape Modeling and Planning in Selected--}}
-{{--                                                                Landscapes in the Chittagong Hill Tracts--}}
-{{--                                                            </a>--}}
-{{--                                                        </h3>--}}
-{{--                                                        <div class="greennature-portfolio-info">--}}
-{{--                                                            <div class="portfolio-info portfolio-tag">--}}
-{{--                                  <span class="info-head greennature-title">--}}
-{{--                                  </span>--}}
-{{--                                                                <p>CHT</p>--}}
-{{--                                                            </div>--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                        </div>--}}
-{{--                                                        <div class="portfolio-excerpt">--}}
-{{--                                                            Analyze institutional and policy framework--}}
-{{--                                                            governing land use and drivers of forest and--}}
-{{--                                                            landscape degradation in CHT....--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>--}}
-{{--                                                        </div>--}}
-{{--                                                        <a class="portfolio-classic-learn-more" href="#">Learn More</a>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-                                        <!-----------------------------------------------Project 2 Description----->
 
-                                        <!--------------------------Project 3 Description------------------------>
 
-{{--                                        <div class="three columns">--}}
-{{--                                            <div--}}
-{{--                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
-{{--                                                <div class="greennature-ux greennature-classic-portfolio-ux">--}}
-{{--                                                    <div class="portfolio-thumbnail greennature-image">--}}
-{{--                                                        <img src="{{ asset('upload/shutterstock_133689230.jpg') }}"--}}
-{{--                                                             style="width: 250px; height: 150px"--}}
-{{--                                                             alt=""/><span class="portfolio-overlay">&nbsp;</span><a--}}
-{{--                                                            class="portfolio-overlay-icon"--}}
-{{--                                                            href="{{ asset('upload/shutterstock_133689230.jpg') }}"--}}
-{{--                                                            data-rel="fancybox"><span--}}
-{{--                                                                class="portfolio-icon"><i--}}
-{{--                                                                    class="fa fa-search"></i></span></a>--}}
-{{--                                                    </div>--}}
-{{--                                                    <div class="portfolio-classic-content">--}}
-{{--                                                        <h3 class="portfolio-title">--}}
-{{--                                                            <a href="/current-projects">Compass CHT forest landscape restoration--}}
-{{--                                                                (FLR) project</a>--}}
-{{--                                                        </h3>--}}
-{{--                                                        <div class="greennature-portfolio-info">--}}
-{{--                                                            <div class="portfolio-info portfolio-tag">--}}
-{{--                                  <span class="info-head greennature-title">--}}
-{{--                                  </span>--}}
-{{--                                                                <p>Bandarban</p>--}}
-{{--                                                            </div>--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                        </div>--}}
-{{--                                                        <div class="portfolio-excerpt">--}}
-{{--                                                            Assessment of present land use and land cover--}}
-{{--                                                            conditions ....--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>--}}
-{{--                                                        </div>--}}
-{{--                                                        <a class="portfolio-classic-learn-more" href="#">Learn More</a>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-
-                                        <!-------------------------------------------------Project 3 Description---->
-                                        <!--------------------------Project 4 Description------------------------>
-
-{{--                                        <div class="three columns">--}}
-{{--                                            <div--}}
-{{--                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
-{{--                                                <div class="greennature-ux greennature-classic-portfolio-ux">--}}
-{{--                                                    <div class="portfolio-thumbnail greennature-image">--}}
-{{--                                                        <img--}}
-{{--                                                            src="{{ asset('upload/shutterstock_110700254-400x300.jpg') }}"--}}
-{{--                                                            style="width: 250px; height: 150px"--}}
-{{--                                                            alt=""/><span class="portfolio-overlay">&nbsp;</span><a--}}
-{{--                                                            class="portfolio-overlay-icon"--}}
-{{--                                                            href="{{ asset('upload/shutterstock_110700254-400x300.jpg') }}"--}}
-{{--                                                            data-rel="fancybox"><span--}}
-{{--                                                                class="portfolio-icon"><i--}}
-{{--                                                                    class="fa fa-search"></i></span></a>--}}
-{{--                                                    </div>--}}
-{{--                                                    <div class="portfolio-classic-content">--}}
-{{--                                                        <h3 class="portfolio-title">--}}
-{{--                                                            <a href="/current-projects">Greening Environment through Livelihood--}}
-{{--                                                                Improvement and Forest Enrichment (GREEN--}}
-{{--                                                                LIFE) Activity</a>--}}
-{{--                                                        </h3>--}}
-{{--                                                        <div class="greennature-portfolio-info">--}}
-{{--                                                            <div class="portfolio-info portfolio-tag">--}}
-{{--                                  <span class="info-head greennature-title">--}}
-{{--                                  </span>--}}
-{{--                                                                <p>Ukhiya, Teknaf</p>--}}
-{{--                                                            </div>--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                        </div>--}}
-{{--                                                        <div class="portfolio-excerpt">--}}
-{{--                                                            Strengthening co-management system in Sheikh--}}
-{{--                                                            Jamal Inani National Park (SJINP)....--}}
-{{--                                                            <div class="clear"></div>--}}
-{{--                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>--}}
-{{--                                                        </div>--}}
-{{--                                                        <a class="portfolio-classic-learn-more" href="#">Learn More</a>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-                                        <!--------------------------Project 4 Description----->
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -707,23 +580,24 @@
                                     <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
                                         <div class="clear"></div>
 
+                                        @foreach($publications as $publication)
                                         <div class="three columns">
                                             <div
                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                 <div class="greennature-ux greennature-classic-portfolio-ux">
                                                     <div class="portfolio-thumbnail greennature-image">
-                                                        <img src="{{ asset('./images/arannayk_books/banspata.png') }}"
+                                                        <img src="{{asset('storage/'.$publication->image) }}"
                                                              style="width: 300px; height: 280px"/><span
                                                             class="portfolio-overlay">&nbsp;</span><a
                                                             class="portfolio-overlay-icon"
-                                                            href="{{ asset('./images/arannayk_books/banspata.png') }}"
+                                                            href="{{ asset('storage/'.$publication->image) }}"
                                                             data-rel="fancybox"><span class="portfolio-icon"><i
                                                                     class="fa fa-search"></i></span></a>
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <div style="text-align: center">
                                                             <a class="stunning-item-button large download-button-style"
-                                                               href="https://drive.google.com/file/d/1NbJ_n8EI5Bd5XZBuNFQtKgsj3JXchPSO/view?usp=sharing"
+                                                               href="{{ asset('storage/'.$publication->file_content) }}"
                                                                download>Download</a>
                                                         </div>
                                                         <div class="greennature-portfolio-info">
@@ -737,105 +611,9 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
 
-                                        <div class="three columns">
-                                            <div
-                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                    <div class="portfolio-thumbnail greennature-image">
-                                                        <img
-                                                            src="{{ asset("./images/arannayk_books/Cox'sBazar_tree.PNG") }}"
-                                                            style="width: 300px; height: 280px"
-                                                            alt=""/><span class="portfolio-overlay">&nbsp;</span><a
-                                                            class="portfolio-overlay-icon"
-                                                            href="{{asset("./images/arannayk_books/Cox'sBazar_tree.PNG")}}"
-                                                            data-rel="fancybox"><span
-                                                                class="portfolio-icon"><i
-                                                                    class="fa fa-search"></i></span></a>
-                                                    </div>
-                                                    <div class="portfolio-classic-content">
-                                                        <div style="text-align: center">
-                                                            <a class="stunning-item-button large download-button-style"
-                                                               href="https://drive.google.com/file/d/1M2Xhhs7_4qMG7hOkCDm5lX3SJpRp9kVn/view?usp=sharing"
-                                                               download>Download</a>
-                                                        </div>
-                                                        <div class="greennature-portfolio-info">
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="portfolio-excerpt">
-                                                            <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="three columns">
-                                            <div
-                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                    <div class="portfolio-thumbnail greennature-image">
-                                                        <img
-                                                            src="{{ asset('./images/arannayk_books/basger_chara.PNG') }}"
-                                                            style="width: 300px; height: 280px"
-                                                            alt=""/><span class="portfolio-overlay">&nbsp;</span><a
-                                                            class="portfolio-overlay-icon"
-                                                            href="{{ asset('./images/arannayk_books/basger_chara.PNG') }}"
-                                                            data-rel="fancybox"><span
-                                                                class="portfolio-icon"><i
-                                                                    class="fa fa-search"></i></span></a>
-                                                    </div>
-                                                    <div class="portfolio-classic-content">
-                                                        <div style="text-align: center">
-                                                            <a class="stunning-item-button large download-button-style"
-                                                               href="https://drive.google.com/file/d/17mEMj5MscO1kOTrvcmcBD6BZtPdMWcgM/view?usp=sharing"
-                                                               download>Download</a>
-                                                        </div>
-                                                        <div class="greennature-portfolio-info">
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="portfolio-excerpt">
-                                                            <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="three columns">
-                                            <div
-                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                    <div class="portfolio-thumbnail greennature-image">
-                                                        <img
-                                                            src="{{ asset('./images/arannayk_books/Biponnopraye.png') }}"
-                                                            style="width: 300px; height: 280px"
-                                                            alt=""/><span class="portfolio-overlay">&nbsp;</span><a
-                                                            class="portfolio-overlay-icon"
-                                                            href="{{ asset('./images/arannayk_books/Biponnopraye.png') }}"
-                                                            data-rel="fancybox"><span
-                                                                class="portfolio-icon"><i
-                                                                    class="fa fa-search"></i></span></a>
-                                                    </div>
-                                                    <div class="portfolio-classic-content">
-                                                        <div style="text-align: center">
-                                                            <a class="stunning-item-button large download-button-style"
-                                                               href="https://drive.google.com/file/d/1s7HQRb6ixRFniVnEpI4qDKhJLVUZm4z7/view?usp=sharing"
-                                                               download>Download</a>
-                                                        </div>
-                                                        <div class="greennature-portfolio-info">
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="portfolio-excerpt">
-                                                            <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
