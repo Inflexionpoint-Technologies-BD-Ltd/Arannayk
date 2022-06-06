@@ -43,7 +43,7 @@
                 <td>{{ $slider->updated_at->format('d-m-y') }}</td>
                 <td><a href="{{ route('slider.edit',$slider->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('slider.destroy',$slider->id) }}" methotd="post">
+                    <form action="{{ route('slider.destroy',$slider->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">
