@@ -117,6 +117,7 @@
                             <div id="P_slider_1" class="master-slider-parent ms-parent-id-1">
                                 <!-- MasterSlider Main -->
                                 <div id="slider_1" class="master-slider ms-skin-default">
+
                                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                         <img
                                             src="{{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }}"
@@ -155,6 +156,8 @@
                                             Arannayk Foundation
                                         </div>
                                     </div>
+
+
                                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                         <img
                                             src="{{ asset('./images/slider_images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg') }}"
@@ -341,7 +344,7 @@
                             <div class="six columns service-style">
                                 <div class="greennature-item greennature-action-ads-item"
                                      style="background: url({{ asset('upload/donation-bg-1.jpg') }})">
-                                    <a href="#" class="services-title-style">
+                                    <a href="/services" class="services-title-style">
                                         <h3 class="action-ads-title" style="color: #facc2e">
                                             Co-management project
                                         </h3>
@@ -367,7 +370,7 @@
                             <div class="six columns">
                                 <div class="greennature-item greennature-action-ads-item"
                                      style="background: url({{ asset('upload/donation-bg-2.jpg') }})">
-                                    <a href="#" class="services-title-style">
+                                    <a href="/services" class="services-title-style">
                                         <h3 class="action-ads-title" style="color: #5dc269">
                                             Biodiversity monitoring
                                         </h3>
@@ -397,7 +400,7 @@
 
                         <div style="text-align: center; margin-top: 2rem">
                             <!-- <a><button>Explore More Services</button></a> -->
-                            <a class="action-ads-button large more-services" href="#">
+                            <a class="action-ads-button large more-services" href="/services">
                                 <span>More Services</span>
                             </a>
                         </div>
@@ -420,7 +423,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" href="#">More Projects</a>
+                                        <a class="greennature-item-title-link" href="/current-projects">More Projects</a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -448,7 +451,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">USAID Ecosystems/ Protibesh Activity</a>
+                                                            <a href="/current-projects">USAID Ecosystems/ Protibesh Activity</a>
                                                         </h3>
                                                         <div class="greennature-portfolio-info">
                                                             <div class="portfolio-info portfolio-tag">
@@ -465,7 +468,7 @@
                                                             management organization (CMO) network....
 
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -492,7 +495,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">
+                                                            <a href="/current-projects">
                                                                 Landscape Modeling and Planning in Selected
                                                                 Landscapes in the Chittagong Hill Tracts
                                                             </a>
@@ -510,7 +513,7 @@
                                                             governing land use and drivers of forest and
                                                             landscape degradation in CHT....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -537,7 +540,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">Compass CHT forest landscape restoration
+                                                            <a href="/current-projects">Compass CHT forest landscape restoration
                                                                 (FLR) project</a>
                                                         </h3>
                                                         <div class="greennature-portfolio-info">
@@ -552,7 +555,7 @@
                                                             Assessment of present land use and land cover
                                                             conditions ....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -580,7 +583,7 @@
                                                     </div>
                                                     <div class="portfolio-classic-content">
                                                         <h3 class="portfolio-title">
-                                                            <a href="#">Greening Environment through Livelihood
+                                                            <a href="/current-projects">Greening Environment through Livelihood
                                                                 Improvement and Forest Enrichment (GREEN
                                                                 LIFE) Activity</a>
                                                         </h3>
@@ -596,7 +599,7 @@
                                                             Strengthening co-management system in Sheikh
                                                             Jamal Inani National Park (SJINP)....
                                                             <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
                                                         </div>
                                                         <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
@@ -690,7 +693,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Publications
                                         </h3>
-                                        <a class="greennature-item-title-link" href="./publications.html">More
+                                        <a class="greennature-item-title-link" href="./publication">More
                                             Publications</a>
                                         <div class="clear"></div>
                                     </div>

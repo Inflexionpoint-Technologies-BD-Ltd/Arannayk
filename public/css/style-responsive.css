@@ -8,8 +8,13 @@ html body {
 
 /*--- tablet ---*/
 @media only screen and (max-width: 1100px) {
+    .image-projects{
+        width:960px;
+        height: 360px;
+    }
 
-	.greennature-button-overlay,
+
+    .greennature-button-overlay,
 	.greennature-woo-button-overlay {
 		display: none;
 	}
@@ -434,7 +439,11 @@ html body {
 
 /*--- mobile portrait style ---*/
 @media only screen and (max-width: 419px) {
-	
+    .image-projects{
+        width:960px;
+        height: 250px;
+    }
+
 	body .container {
 		max-width: 300px;
 	}

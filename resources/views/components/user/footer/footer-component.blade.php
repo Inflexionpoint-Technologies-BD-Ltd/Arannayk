@@ -62,11 +62,11 @@
                     </div>
 
                     <div style="margin-bottom: 0.5rem">
-                        <a href="#" style="color: #0c0c0c">Current Projects</a>
+                        <a href="/current-projects" style="color: #0c0c0c">Current Projects</a>
                     </div>
 
                     <div style="margin-bottom: 0.5rem">
-                        <a href="./publications.html" style="color: #0c0c0c">Publications</a>
+                        <a href="./publication" style="color: #0c0c0c">Publications</a>
                     </div>
 
                     <div style="margin-bottom: 0.5rem">

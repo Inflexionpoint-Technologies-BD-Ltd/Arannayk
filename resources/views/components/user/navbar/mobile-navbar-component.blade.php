@@ -2,7 +2,7 @@
 
     <!-------------------- Navbar logo ---------------------------------------->
     <div class="greennature-logo-inner">
-        <a href="index.html">
+        <a href="/">
             <img src="{{ asset('images/logo.png') }}" style="height: 40px" alt="" />
         </a>
     </div>
@@ -18,7 +18,7 @@
                 <a href="#">Who We Are</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="">About Arannayk Foundation</a>
+                        <a href="/about-arannayk">About Arannayk Foundation</a>
                     </li>
                     <li class="menu-item">
                         <a href="">Mission, Vision & Values</a>
@@ -36,9 +36,9 @@
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="#">What We Do</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="">Our Services</a></li>
-                    <li class="menu-item"><a href="">Current Projects</a></li>
-                    <li class="menu-item"><a href="">Project Archives</a></li>
+                    <li class="menu-item"><a href="/services">Our Services</a></li>
+                    <li class="menu-item"><a href="/current-projects">Current Projects</a></li>
+                    <li class="menu-item"><a href="/project-archives">Project Archives</a></li>
                 </ul>
             </li>
 
@@ -75,7 +75,7 @@
                 <a href="#">Knowledge</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="./publications.html">Publications</a>
+                        <a href="./publication">Publications</a>
                     </li>
                     <li class="menu-item"><a href="">Tools & Data</a></li>
                 </ul>

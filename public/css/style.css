@@ -11,7 +11,7 @@
 3.) Content Item
 4.) Widget
 5.) Default Plugin
-6.) 10335 Soccer Plugin 
+6.) 10335 Soccer Plugin
 -------------------------------------------------------------------*/
 
 /*--- reset ---*/
@@ -2654,8 +2654,8 @@ i.greennature-icon {
     text-underline-offset: 15px;
     text-decoration-thickness: 1px;
     text-decoration-color: #fff;
-	text-align: center; 
-	margin-bottom: 5rem; 
+	text-align: center;
+	margin-bottom: 5rem;
 	font-weight: 800;
 }
 
@@ -6254,4 +6254,18 @@ input[type="text"].greennature-payment-price-fill {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #fff;
+}
+.services-page-subheading{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4d9955;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.image-projects{
+    width:960px;
+    height: 400px;
+    object-fit: cover;
 }
