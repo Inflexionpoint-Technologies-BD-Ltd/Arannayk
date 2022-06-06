@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
 
+    <script src="https://cdn.tiny.cloud/1/3jyy1zmqqq1lgcadurv15vtpzdvttvplxnvgtpjqjicmj1h5/tinymce/6/tinymce.min.js"
+            referrerpolicy="origin"></script>
+
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
@@ -415,6 +418,14 @@
     });
 </script>
 
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+        toolbar_mode: 'floating',
+        toolbar: 'numlist bullist'
+    });
+</script>
 
 </body>
 

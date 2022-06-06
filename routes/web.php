@@ -36,6 +36,13 @@ Route::middleware('auth')->group(function () {
 // -------------------------------- Service --------------------------------
 
 
+    // -------------------------------- Project --------------------------------
+
+    Route::resource('admin/project',"ProjectController");
+
+// -------------------------------- Project --------------------------------
+
+
 // --------------------------------- Log out ---------------------------------
 
     Route::get('logout', "AdminController@logout")->name('logout');
