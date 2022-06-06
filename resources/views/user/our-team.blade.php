@@ -121,7 +121,7 @@
                             <div class="personnel-item">
                                 <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('./upload/personnel-3.jpg') }}" class="team-image" alt="" /></div>
                                 <div class="personnel-info">
-                                    <div class="personnel-author greennature-skin-title">Sarah Smith</div>
+                                    <div class="personnel-author greennature-skin-title">David Smith</div>
                                     <div class="personnel-position greennature-skin-info">Founder</div>
                                 </div>
                             </div>
