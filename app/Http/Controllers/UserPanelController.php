@@ -9,6 +9,9 @@ use App\Archive;
 use App\Publication;
 use App\Team;
 use App\Board;
+use App\Partner;
+use App\Achievement;
+use App\Career;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -57,10 +60,17 @@ class UserPanelController extends Controller
     }
 
     public function achievements(){
-        return view('user.our-achievement');
+        $achievements=Achievement::all();
+        return view('user.our-achievement', compact('achievements'));
     }
 
     public function partnersDonors(){
-        return view('user.partners-donors');
+        $partners=Partner::all();
+        return view('user.partners-donors',compact('partners'));
     }
+
+    public function career(){
+        $careers= Career::all();
+        return view('user.career',compact('careers'));
+}
 }

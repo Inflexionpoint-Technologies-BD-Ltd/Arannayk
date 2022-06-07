@@ -128,40 +128,40 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
-{{--                                                    @foreach($achievements as $achievement)--}}
-{{--                                                        <div class="twelve columns" id="{{ $achievement->title }}">--}}
-{{--                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">--}}
-{{--                                                                <div class="greennature-ux greennature-blog-grid-ux">--}}
-{{--                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">--}}
-{{--                                                                        <div class="greennature-standard-style">--}}
-{{--                                                                            <div class="greennature-blog-thumbnail">--}}
-{{--                                                                                <a href=""> <img src="{{ asset('storage/'.$achievement->image) }}" class="image-projects" alt=""  /></a>--}}
-{{--                                                                            </div>--}}
+                                                    @foreach($achievements as $achievement)
+                                                        <div class="twelve columns" id="{{ $achievement->title }}">
+                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                                <div class="greennature-ux greennature-blog-grid-ux">
+                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                        <div class="greennature-standard-style">
+                                                                            <div class="greennature-blog-thumbnail">
+                                                                                <a href=""> <img src="{{ asset('storage/'.$achievement->image) }}" class="image-projects" alt=""  /></a>
+                                                                            </div>
 
-{{--                                                                            <div class="greennature-blog-grid-content">--}}
-{{--                                                                                <header class="post-header">--}}
-{{--                                                                                    <h3 class="greennature-blog-title"><a>{{$achievement->title }}</a></h3>--}}
+                                                                            <div class="greennature-blog-grid-content">
+                                                                                <header class="post-header">
+                                                                                    <h3 class="greennature-blog-title"><a>{{$achievement->title }}</a></h3>
 
-{{--                                                                                    <div class="greennature-blog-info">--}}
-{{--                                                                                        <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
+                                                                                    <div class="greennature-blog-info">
+                                                                                        <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $achievement->date }}</a></div>
 
-{{--                                                                                        <div class="clear"></div>--}}
-{{--                                                                                    </div>--}}
-{{--                                                                                    <div class="clear"></div>--}}
-{{--                                                                                </header>--}}
-{{--                                                                                <!-- entry-header -->--}}
+                                                                                        <div class="clear"></div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                </header>
+                                                                                <!-- entry-header -->
 
-{{--                                                                                <div class="greennature-blog-content">Major Achievements:--}}
-{{--                                                                                    <p>{!! $achievement->achievement !!}</p>--}}
+                                                                                <div class="greennature-blog-content" style="text-align: justify">
+                                                                                    <p >{!! $achievement->content !!}</p>
 {{--                                                                                    <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
-{{--                                                                            </div>--}}
-{{--                                                                        </div>--}}
-{{--                                                                    </article>--}}
-{{--                                                                    <!-- #post -->--}}
-{{--                                                                </div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    @endforeach--}}
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                                                    <!-- #post -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
 
                                                     <div class="clear"></div>
                                                 </div>
@@ -179,30 +179,30 @@
                             <div class="clear"></div>
                         </div>
 
-                        <div class="greennature-sidebar greennature-right-sidebar four columns">
-                            <div class="greennature-item-start-content sidebar-right-item">
-                                <div id="search-3" class="widget widget_search greennature-item greennature-widget">
-                                    <div class="gdl-search-form">
-                                        <form method="get" id="searchform" action="https://demo.goodlayers.com/greennature//">
-                                            <div class="search-text" id="search-text">
-                                                <input type="text" name="s" id="s" autocomplete="off" data-default="Type keywords..." />
-                                            </div>
-                                            <input type="submit" id="searchsubmit" value="" />
-                                            <div class="clear"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                                {{--                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">--}}
-                                {{--                                    <h3 class="greennature-widget-title">Text Widget</h3>--}}
-                                {{--                                    <div class="clear"></div>--}}
-                                {{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
-                                {{--                                </div>--}}
+{{--                        <div class="greennature-sidebar greennature-right-sidebar four columns">--}}
+{{--                            <div class="greennature-item-start-content sidebar-right-item">--}}
+{{--                                <div id="search-3" class="widget widget_search greennature-item greennature-widget">--}}
+{{--                                    <div class="gdl-search-form">--}}
+{{--                                        <form method="get" id="searchform" action="https://demo.goodlayers.com/greennature//">--}}
+{{--                                            <div class="search-text" id="search-text">--}}
+{{--                                                <input type="text" name="s" id="s" autocomplete="off" data-default="Type keywords..." />--}}
+{{--                                            </div>--}}
+{{--                                            <input type="submit" id="searchsubmit" value="" />--}}
+{{--                                            <div class="clear"></div>--}}
+{{--                                        </form>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                --}}{{--                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">--}}
+{{--                                --}}{{--                                    <h3 class="greennature-widget-title">Text Widget</h3>--}}
+{{--                                --}}{{--                                    <div class="clear"></div>--}}
+{{--                                --}}{{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
+{{--                                --}}{{--                                </div>--}}
 
 
 
 
-                            </div>
-                        </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="clear"></div>
                     </div>
                 </div>

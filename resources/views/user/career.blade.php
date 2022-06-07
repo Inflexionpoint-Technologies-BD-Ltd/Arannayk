@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Career</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,8 +105,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Get Involved</h1>
+            <span class="greennature-page-caption">Career</span>
         </div>
     </div>
 
@@ -115,30 +115,67 @@
             <div class="greennature-content">
 
                 <!-- Above Sidebar Section-->
-
-                <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
+                <div class="above-sidebar-wrapper">
                     <section id="content-section-1">
                         <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
 
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
+                            @foreach($careers as $career)
+                            <div class="eight columns">
+                                <div class="greennature-item greennature-accordion-item style-1" style="margin-bottom: 60px;">
+                                    <div class="accordion-tab active pre-active">
+                                        <h4 class="accordion-title"><i class="icon-minus" ></i><span>{{ $career->title }}</span></h4>
+                                        <div class="accordion-content">
+                                            <p>{!! $career->description !!} </p>
+                                            <p>Deadline: {{ $career->deadline }}</p>
+                                            <a class="greennature-button small" href="mailto: abc@example.com" target="_self" style="color:#ffffff; background-color:#f38142; ">Apply</a>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                @endforeach
+                            </div>
+                            @endforeach
 
-                                <div class="clear"></div>
+                            <div class="four columns">
+                                <div class="greennature-item-title-wrapper greennature-item  greennature-left greennature-small ">
+                                    <div class="greennature-item-title-container container">
+                                        <div class="greennature-item-title-head">
+                                            <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">Let's stay in touch.</h3>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="greennature-item greennature-content-item">
+                                    <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
 
+                                            <p>Your Name (required)
+                                                <br />
+                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+                                            <p>Your Email (required)
+                                                <br />
+                                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+                                            <p>Subject
+                                                <br />
+                                                <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
+                                            <p>Your Message
+                                                <br />
+                                                <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+                                            <p>
+                                                <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" />
+                                            </p>
+                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                     </section>
                 </div>
+
+                <!-- Sidebar With Content Section-->
+
                 <!-- Below Sidebar Section-->
 
             </div>

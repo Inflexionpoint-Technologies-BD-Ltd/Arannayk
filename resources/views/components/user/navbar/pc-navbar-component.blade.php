@@ -87,13 +87,13 @@
             <!-- ----------------------------- Get Involved ----------------------------- -->
 
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> Get Involved</a>
+                <a href="/get-involved/career" class="sf-with-ul-pre"> Get Involved</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Career </a></li>
+                                <li class="menu-item"><a href="/get-involved/career">Career </a></li>
                                 <li class="menu-item"><a href="">Internship</a></li>
                             </ul>
                         </li>

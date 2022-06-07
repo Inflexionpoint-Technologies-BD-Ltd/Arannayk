@@ -21,7 +21,7 @@ Route::get('/our-team', "UserPanelController@ourTeam");
 Route::get('/board-members', "UserPanelController@boardMembers");
 Route::get('/achievements', "UserPanelController@achievements");
 Route::get('/our-partners', "UserPanelController@partnersDonors");
-
+Route::get('/get-involved/career', "UserPanelController@career");
 
 
 
