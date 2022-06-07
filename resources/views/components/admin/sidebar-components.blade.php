@@ -288,5 +288,55 @@
 
 {{-- -------------------------------------------------- Career ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Consultancy ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConsultancy"
+       aria-expanded="true" aria-controls="collapseConsultancy">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Consultancy</span>
+    </a>
+    <div id="collapseConsultancy" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('consultancy.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('consultancy.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Consultancy ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Procurement ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProcurement"
+       aria-expanded="true" aria-controls="collapseProcurement">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Procurement</span>
+    </a>
+    <div id="collapseProcurement" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('procurement.create') }}">Add procurement</a>
+            <a class="collapse-item" href="{{ route('procurement.index') }}">View All procurements</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Procurement ------------------------------------------------------- --}}
+
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}
