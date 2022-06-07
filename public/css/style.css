@@ -841,6 +841,7 @@ html .woocommerce .greennature-widget-title {
 .greennature-header-container {
 	position: relative;
 	z-index: 97;
+    max-height: 90px;
 }
 
 .greennature-logo {
@@ -6283,4 +6284,8 @@ input[type="text"].greennature-payment-price-fill {
     width: 400px;
     height:300px;
     object-fit: contain;
+}
+
+.slider-button-custom{
+   color: #fff;
 }

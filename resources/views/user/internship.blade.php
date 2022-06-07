@@ -120,6 +120,7 @@
                         <div class="section-container container">
 
                             @foreach($careers as $career)
+                                @if($career->tag == 'internship')
                                 <div class="eight columns">
                                     <div class="greennature-item greennature-accordion-item style-1" style="margin-bottom: 60px;">
                                         <div class="accordion-tab active pre-active">
@@ -133,6 +134,7 @@
 
                                     </div>
                                 </div>
+                                @endif
                             @endforeach
 
                             <div class="four columns">

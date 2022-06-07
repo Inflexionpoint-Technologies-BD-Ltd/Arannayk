@@ -3,7 +3,7 @@
     <!-------------------- Navbar logo ---------------------------------------->
     <div class="greennature-logo-inner">
         <a href="/">
-            <img src="{{ asset('images/logo.png') }}" style="height: 40px" alt="" />
+            <img src="{{ asset('images/logo.png') }}" style="height: 60px" alt="" />
         </a>
     </div>
     <!-------------------------------------------------------------  Navbar Logo --------->
@@ -50,7 +50,7 @@
                 <a href="#">Get Involved</a>
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="/get-involved/career">Career</a></li>
-                    <li class="menu-item"><a href="">Internship</a></li>
+                    <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
                     <li class="menu-item"><a href="">Consultancy</a></li>
                     <li class="menu-item"><a href="">Procurement</a></li>
                 </ul>

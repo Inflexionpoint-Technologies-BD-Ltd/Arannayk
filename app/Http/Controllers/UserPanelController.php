@@ -72,5 +72,10 @@ class UserPanelController extends Controller
     public function career(){
         $careers= Career::all();
         return view('user.career',compact('careers'));
-}
+    }
+
+    public function internship(){
+        $careers= Career::all();
+        return view('user.internship',compact('careers'));
+    }
 }

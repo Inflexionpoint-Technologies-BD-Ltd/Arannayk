@@ -94,7 +94,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="/get-involved/career">Career </a></li>
-                                <li class="menu-item"><a href="">Internship</a></li>
+                                <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children" data-column="four columns"

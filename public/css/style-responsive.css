@@ -471,9 +471,10 @@ html body {
 
 
 @media only screen and (min-width:250px)and (max-width: 959px) {
+
 	.msp-preset-btn-159 {
 		margin-left: 2rem;
-
+        opacity: 0;
 	}
 
 	.ms-layer {
@@ -496,4 +497,11 @@ html body {
 		left: 50%;
 		margin-left: -512px;
 	}
+}
+@media only screen and (min-width:760px)and (max-width: 1050px) {
+    .greennature-logo-container,
+    .greennature-header-container {
+        max-height: 100%;
+    }
+
 }
