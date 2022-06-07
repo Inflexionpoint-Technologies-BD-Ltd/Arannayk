@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\About;
-use App\Board;
+use App\Partner;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class PartnerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,9 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = About::all();
-        return view('admin.admin-content.about.index', compact('abouts'));
+        $partners = Partner::all();
+        return view('admin.admin-content.partner.index', compact('partners'));
+
     }
 
     /**
@@ -26,7 +26,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.about.create');
+        return view('admin.admin-content.partner.create');
     }
 
     /**
@@ -38,16 +38,15 @@ class AboutController extends Controller
     public function store(Request $request)
     {
         $inputs = \request()->validate([
-            'title' => 'required',
-            'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif',
+            'name' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        About::create($inputs);
+        Partner::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +54,10 @@ class AboutController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Partner  $partner
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Partner $partner)
     {
         //
     }
@@ -66,51 +65,50 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Partner  $partner
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit(Partner $partner)
     {
-        return view('admin.admin-content.about.edit',compact('about'));
+        return view('admin.admin-content.partner.edit',compact('partner'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\About  $about
+     * @param  \App\Partner  $partner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, Partner $partner)
     {
         $inputs = \request()->validate([
-            'title' => 'required',
-            'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,gif',
+            'name' => 'required',
+            'image' => 'mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
-        }else{
-            $inputs['image'] = $about->image;
         }
 
-        $about->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('about.index');
+        $partner->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route("partner.index");
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\About  $about
+     * @param  \App\Partner  $partner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy(Partner $partner)
     {
-        $about->delete();
+        $partner->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("about.index");
+        return redirect()->route("partner.index");
     }
 }

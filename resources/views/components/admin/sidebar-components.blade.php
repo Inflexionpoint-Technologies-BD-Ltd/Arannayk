@@ -212,4 +212,81 @@
 
 {{-- -------------------------------------------------- Project Archive ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Our Achievements ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseachievement"
+       aria-expanded="true" aria-controls="collapseachievement">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Our Achievements</span>
+    </a>
+    <div id="collapseachievement" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('achievement.create') }}">Add Achievements</a>
+            <a class="collapse-item" href="{{ route('achievement.index') }}">View All Achievements</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Our Achievements ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Partners and donors ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePartner"
+       aria-expanded="true" aria-controls="collapsePartner">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Partners & Donors</span>
+    </a>
+    <div id="collapsePartner" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('partner.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('partner.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Partners and donors ------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------- Career ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCareer"
+       aria-expanded="true" aria-controls="collapseCareer">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Career & Internship</span>
+    </a>
+    <div id="collapseCareer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('career.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('career.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Career ------------------------------------------------------- --}}
+
+
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}

@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\About;
-use App\Board;
+use App\Achievement;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class AchievementController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = About::all();
-        return view('admin.admin-content.about.index', compact('abouts'));
+        $achievements = Achievement::all();
+        return view('admin.admin-content.achievement.index', compact('achievements'));
     }
 
     /**
@@ -26,7 +25,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.about.create');
+        return view('admin.admin-content.achievement.create');
     }
 
     /**
@@ -40,14 +39,15 @@ class AboutController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif',
+            'image' => 'required|mimes:jpeg,jpg,png',
+            'date' => 'required',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        About::create($inputs);
+        Achievement::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +55,10 @@ class AboutController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Achievement  $achievement
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Achievement $achievement)
     {
         //
     }
@@ -66,51 +66,50 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Achievement  $achievement
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit(Achievement $achievement)
     {
-        return view('admin.admin-content.about.edit',compact('about'));
+        return view('admin.admin-content.achievement.edit',compact('achievement'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\About  $about
+     * @param  \App\Achievement  $achievement
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, Achievement $achievement)
     {
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,gif',
+            'image' => 'mimes:jpeg,jpg,png',
+            'date' => 'required',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
-        }else{
-            $inputs['image'] = $about->image;
         }
 
-        $about->update($inputs);
+        $achievement->update($inputs);
         session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('about.index');
+        return redirect()->route('achievement.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\About  $about
+     * @param  \App\Achievement  $achievement
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy(Achievement $achievement)
     {
-        $about->delete();
+        $achievement->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("about.index");
+        return redirect()->route("achievement.index");
     }
 }
