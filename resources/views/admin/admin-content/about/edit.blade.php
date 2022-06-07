@@ -15,6 +15,14 @@
             {{ csrf_field() }}
             @method('put')
             <form>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter title</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="" name="title"
+                           class="form-control @error('title') is-invalid @enderror" value="{{ $about->title }}">
+                </div>
+
                 <div class="form-group">
                     <label for="exampleInputEmail1">Enter Content</label>
                     {{--                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"--}}

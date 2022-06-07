@@ -1,25 +1,17 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-
-    @if(session('update') != null)
-        <p>{{ session('update') }}</p>
-
-    @elseif(session('delete') != null)
-        <p>{{ session('delete') }}</p>
-    @endif
-
-
-    <h4>About</h4>
+    <h4>View Carrer Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
         <thead>
         <tr>
             <th>Serial</th>
-            <th>content</th>
             <th>title</th>
-            <th>image</th>
+            <th>description</th>
+            <th>deadline</th>
+            <th>tag</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -27,15 +19,17 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($abouts as $about)
+        @foreach($careers as $career)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $about->content !!}</td>
-                <td>{{ $about->title }}</td>
-                <td><img src="{{ asset('storage/'.$about->image) }}" alt="" style="width: 100px"></td>
-                <td><a href="{{ route('about.edit',$about->id) }}" class="btn btn-info">Update</a></td>
+                <td>{{ $career->title }}</td>
+                <td>{!! $career->description !!}</td>
+                <td>{{ $career->deadline }}</td>
+                <td>{{ $career->tag }}</td>
+
+                <td><a href="{{ route('career.edit',$career->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('about.destroy',$about->id) }}" method="post">
+                    <form action="{{ route('career.destroy',$career->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

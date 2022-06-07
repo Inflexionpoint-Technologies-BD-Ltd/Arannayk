@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\About;
-use App\Board;
+use App\Career;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class CareerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = About::all();
-        return view('admin.admin-content.about.index', compact('abouts'));
+        $careers = Career::all();
+        return view('admin.admin-content.career.index', compact('careers'));
     }
 
     /**
@@ -26,7 +25,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.about.create');
+        return view('admin.admin-content.career.create');
     }
 
     /**
@@ -39,15 +38,12 @@ class AboutController extends Controller
     {
         $inputs = \request()->validate([
             'title' => 'required',
-            'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif',
+            'description' => 'required',
+            'deadline' => 'required',
+            'tag' => 'required',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
-        }
-
-        About::create($inputs);
+        Career::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +51,10 @@ class AboutController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Career  $career
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Career $career)
     {
         //
     }
@@ -66,51 +62,47 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\About  $about
+     * @param  \App\Career  $career
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit(Career $career)
     {
-        return view('admin.admin-content.about.edit',compact('about'));
+        return view('admin.admin-content.career.edit',compact('career'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\About  $about
+     * @param  \App\Career  $career
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, Career $career)
     {
         $inputs = \request()->validate([
             'title' => 'required',
-            'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,gif',
+            'description' => 'required',
+            'deadline' => 'required',
+            'tag' => 'required',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
-        }else{
-            $inputs['image'] = $about->image;
-        }
-
-        $about->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('about.index');
+        $career->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('career.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\About  $about
+     * @param  \App\Career  $career
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy(Career $career)
     {
-        $about->delete();
+        $career->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("about.index");
+        return redirect()->route("career.index");
     }
 }

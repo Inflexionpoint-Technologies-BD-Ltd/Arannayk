@@ -1,24 +1,17 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-
-
-    @if(session('create') != null)
-        <p>{{ session('create') }}</p>
-    @endif
-
-    <h4>Add About Content</h4>
+    <h4>Add Achievement Contents</h4>
     <hr>
 
     <div>
-        <form action="{{ route('about.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('achievement.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
-
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Enter title</label>
+                    <label for="exampleInputEmail1">Enter Title</label>
                     <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="" name="title"
+                           placeholder="Enter title" name="title"
                            class="form-control @error('title') is-invalid @enderror">
                 </div>
 
@@ -26,21 +19,22 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Content</label>
-{{--                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"--}}
-                    {{--                           placeholder="" name="content"--}}
-                    {{--                           class="form-control @error('content') is-invalid @enderror">--}}
 
-                    <textarea name="content" class="form-control @error('content') is-invalid @enderror"></textarea>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Achievement Content</label>
+                    <textarea name="content" id="" cols="30" rows="10"
+                              class="@error('content') is-invalid @enderror form-control"
+                              placeholder="Enter achievement content"></textarea>
                 </div>
 
                 @error('content')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">Enter Image</label>
+                    <label for="exampleFormControlFile1">Enter background image</label>
                     <input type="file" class="form-control-file @error('image') is-invalid @enderror"
                            id="exampleFormControlFile1" name="image">
                 </div>
@@ -48,6 +42,19 @@
                 @error('image')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
+
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Date</label>
+                    <input type="date" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter title" name="date"
+                           class="form-control @error('date') is-invalid @enderror">
+                </div>
+
+                @error('date')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
 
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </form>
