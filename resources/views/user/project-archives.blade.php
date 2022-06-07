@@ -128,6 +128,7 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
+                                                    @foreach($archive as $archive)
                                                     <div class="twelve columns">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
@@ -139,12 +140,12 @@
 
                                                                         <div class="greennature-blog-grid-content">
                                                                             <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Landslide prevention, Nursery Supply Chain and Integrated Homestead Farming</a></h3>
+                                                                                <h3 class="greennature-blog-title"><a>{{ $archive->title }}</a></h3>
 
                                                                                 <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2019-2020</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - FAO </a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Ukhia, Teknaf </a></div>
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $archive->date }}</a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>{{ $archive->funded_by }} </a></div>
+                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $archive->location }}</a></div>
 
                                                                                     <div class="clear"></div>
                                                                                 </div>
@@ -153,12 +154,7 @@
                                                                             <!-- entry-header -->
 
                                                                             <div class="greennature-blog-content">Major Achievements:
-                                                                                <ul>
-
-                                                                                    <li>Landslide prevention through establishing biophysical retaining wall at 10 camp areas</li>
-                                                                                    <li>Restoration of degraded and exposed areas with tree seedlings and grasses</li>
-                                                                                    <li>Strengthening capacity of nursery entrepreneurs in the production of quality plantation material</li>
-                                                                                </ul>
+                                                                                    <p>{!! $archive->achievement !!}</p>
                                                                                 <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
                                                                         </div>
                                                                     </div>
@@ -167,180 +163,14 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    @endforeach
                                                     <div class="clear"></div>
-
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt="" /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Biodiversity assessment of Sajek valley and Dhanpata village common forest</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2019-2020</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded by - TFCA </a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Khagrachari </a></div>
-
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Major Achievements:
-                                                                                <ul>
-
-                                                                                    <li>Status of flora and fauna in Sajek valley and Dhanpata</li>
-                                                                                    <li>Assessment of habitats of wildlife and recommendations for management studies</li>
-
-                                                                                </ul>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clear"></div>
-
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" class="image-projects" /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Strengthening the Supply Chain of Planting Materials and Community-based Reforestation for Landslide Prevention - Ukhiya - Teknaf</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2018-2019</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - FAO </a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Ukhiya, Teknaf</a></div>
-
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Major Achievements:
-                                                                                <ul>
-
-                                                                                    <li>Restoration of degraded land within camps and host communities with trees and grasses</li>
-                                                                                    <li>Improve technical and management capacity of nursery owners</li>
-                                                                                    <li>Create Mass awareness on conservation and restoration of forest</li>
-
-                                                                                </ul>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clear"></div>
-
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Emergency Nutrition and Food Security Intervention for People Affected by the Refugee Crisis in Cox’s Bazar</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2018</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - FAO  </a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Ukhiya, Teknaf</a></div>
-
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Major Achievements:
-                                                                                <ul>
-
-                                                                                    <li>Enrichment tree planting in Rohingya impacted host communities for biodiversity conservation</li>
-                                                                                    <li>Livelihood of host communities is improved through alternative income generating activities (AIGA)</li>
-
-                                                                                </ul>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clear"></div>
-
-                                                    <div class="twelve columns">
-                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                            <div class="greennature-ux greennature-blog-grid-ux">
-                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                    <div class="greennature-standard-style">
-                                                                        <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
-                                                                        </div>
-
-                                                                        <div class="greennature-blog-grid-content">
-                                                                            <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Capacity development of the BFD’s frontline staffs on “Roles and responsibilities in improved management of Sundarbans Mangrove Forest” under “Management of the Sundarbans Mangrove Forests for Biodiversity Conservation and Increased Adaptation to Climate Change (SMP)”</a></h3>
-
-                                                                                <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2018</a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - GIZ  </a></div>
-                                                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>Sundarban</a></div>
-
-                                                                                    <div class="clear"></div>
-                                                                                </div>
-                                                                                <div class="clear"></div>
-                                                                            </header>
-                                                                            <!-- entry-header -->
-
-                                                                            <div class="greennature-blog-content">Major Achievements:
-                                                                                <ul>
-
-                                                                                    <li>Capacity development of BFD frontline staff on PA Rules 2017 and biodiversity conservation</li>
-
-                                                                                </ul>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </article>
-                                                                <!-- #post -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
 
 
                                                     <div class="clear"></div>
 
                                                     <div class="clear"></div>
+
 
                                                     <div class="clear"></div>
                                                 </div>
@@ -380,47 +210,23 @@
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
 
+                                        @foreach($projects as $project)
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
+                                                <a href=""><img src="{{asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="/current-projects">USAID Ecosystems/ Protibesh Activity</a></div>
+                                                <div class="recent-post-widget-title"><a href="/current-projects">{{ $project->title }}</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>2021-2026</a></div>
+                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
+                                        @endforeach
 
-                                        <div class="recent-post-widget">
-                                            <div class="recent-post-widget-thumbnail">
-                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
-                                            </div>
-                                            <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="/current-projects">Landscape Modeling and Planning in Selected Landscapes in the Chittagong Hill Tracts</a></div>
-                                                <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a >2021-2022</a></div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
 
-                                        <div class="recent-post-widget">
-                                            <div class="recent-post-widget-thumbnail">
-                                                <a href=""><img src="{{ asset('./images/forest-ecosystem.jpg') }}" alt="" width="150" height="150" /></a>
-                                            </div>
-                                            <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="/current-projects">Compass CHT forest landscape restoration (FLR) project</a></div>
-                                                <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a href="">2021-2022</a></div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>

@@ -6274,3 +6274,13 @@ input[type="text"].greennature-payment-price-fill {
     height: 250px;
     object-fit: cover;
 }
+.logo-text-style{
+    font-size:25px;
+    color: #0f6848;
+}
+
+.partner-logo-style{
+    width: 400px;
+    height:300px;
+    object-fit: contain;
+}
