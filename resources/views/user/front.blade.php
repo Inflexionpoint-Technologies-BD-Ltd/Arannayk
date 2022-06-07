@@ -117,84 +117,91 @@
                             <div id="P_slider_1" class="master-slider-parent ms-parent-id-1">
                                 <!-- MasterSlider Main -->
                                 <div id="slider_1" class="master-slider ms-skin-default">
+                                    @foreach($sliders as $slider)
 
-                                    <div class="ms-slide" data-delay="7" data-fill-mode="fill">
-                                        <img
-                                            src="{{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }}"
-                                            alt="" title=""
-                                            data-src="{{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }}"/>
+                                        @if($slider->serial == 1)
+                                            <div class="ms-slide" data-delay="7" data-fill-mode="fill">
+                                                <img
+                                                    src="{{ asset('storage/'.$slider->image)}}"
+                                                    alt="" title=""
+                                                    data-src="{{ asset('storage/'.$slider->image) }}"/>
 
-                                        <a href="#" target="_self"
-                                           class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
-                                           data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="400"
-                                           data-delay="987"
-                                           data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                           data-offset-y="208"
-                                           data-origin="ml" data-position="normal">Donate Now</a>
+                                                <a href="#" target="_self"
+                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                   data-duration="400"
+                                                   data-delay="987"
+                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                   data-offset-y="208"
+                                                   data-origin="ml" data-position="normal">Donate Now</a>
 
-                                        <div class="ms-layer msp-cn-1-3"
-                                             data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
-                                             data-duration="437" data-delay="625" data-ease="easeOutQuint"
-                                             data-offset-x="0"
-                                             data-offset-y="105" data-origin="ml" data-position="normal">
-                                            For The Future
-                                        </div>
+                                                <div class="ms-layer msp-cn-1-3"
+                                                     data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
+                                                     data-duration="437" data-delay="625" data-ease="easeOutQuint"
+                                                     data-offset-x="0"
+                                                     data-offset-y="105" data-origin="ml" data-position="normal">
+                                                    {{ $slider->text_content_3 }}
+                                                </div>
 
-                                        <div class="ms-layer msp-cn-1-2"
-                                             data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
-                                             data-duration="425" data-delay="325" data-ease="easeOutQuint"
-                                             data-offset-x="0"
-                                             data-offset-y="-5" data-origin="ml" data-position="normal">
-                                            Conserving Forests
-                                        </div>
+                                                <div class="ms-layer msp-cn-1-2"
+                                                     data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
+                                                     data-duration="425" data-delay="325" data-ease="easeOutQuint"
+                                                     data-offset-x="0"
+                                                     data-offset-y="-5" data-origin="ml" data-position="normal">
+                                                    {{ $slider->text_content_2 }}
+                                                </div>
 
-                                        <div class="ms-layer msp-cn-1-1"
-                                             data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
-                                             data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
-                                             data-offset-y="-100"
-                                             data-origin="ml" data-position="normal">
-                                            Arannayk Foundation
-                                        </div>
-                                    </div>
+                                                <div class="ms-layer msp-cn-1-1"
+                                                     data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
+                                                     data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
+                                                     data-offset-y="-100"
+                                                     data-origin="ml" data-position="normal">
+                                                    {{ $slider->text_content_1 }}
+                                                </div>
+                                            </div>
+                                        @elseif($slider->serial == 2)
+                                            <div class="ms-slide" data-delay="7" data-fill-mode="fill">
+                                                <img
+                                                    src="{{ asset('storage/'.$slider->image) }}"
+                                                    alt="" title=""
+                                                    data-src="{{asset('storage/'.$slider->image)}}"/>
+
+                                                <a href="#" target="_self"
+                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                   data-duration="400"
+                                                   data-delay="987"
+                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                   data-offset-y="227"
+                                                   data-origin="ml" data-position="normal">Learn More</a>
+
+                                                <div class="ms-layer msp-cn-1-9"
+                                                     data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
+                                                     data-duration="437" data-delay="625" data-ease="easeOutQuint"
+                                                     data-offset-x="0"
+                                                     data-offset-y="139" data-origin="ml" data-position="normal">
+                                                    {{ $slider->text_content_2 }}
+                                                </div>
+
+                                                <!-- <div class="ms-layer  msp-cn-1-7" style=""
+                                                                          data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="437"
+                                                                          data-delay="625" data-ease="easeOutQuint" data-offset-x="383"
+                                                                          data-offset-y="139" data-origin="ml" data-position="normal">
+                                                                          als</div> -->
+
+                                                <div class="ms-layer msp-cn-1-5"
+                                                     data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
+                                                     data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
+                                                     data-offset-y="52"
+                                                     data-origin="ml" data-position="normal">
+                                                    {{ $slider->text_content_1 }}
+                                                </div>
+                                            </div>
+                                        @endif
 
 
-                                    <div class="ms-slide" data-delay="7" data-fill-mode="fill">
-                                        <img
-                                            src="{{ asset('./images/slider_images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg') }}"
-                                            alt="" title=""
-                                            data-src="{{asset('./images/slider_images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg')}}"/>
 
-                                        <a href="#" target="_self"
-                                           class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
-                                           data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="400"
-                                           data-delay="987"
-                                           data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                           data-offset-y="227"
-                                           data-origin="ml" data-position="normal">Learn More</a>
-
-                                        <div class="ms-layer msp-cn-1-9"
-                                             data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
-                                             data-duration="437" data-delay="625" data-ease="easeOutQuint"
-                                             data-offset-x="0"
-                                             data-offset-y="139" data-origin="ml" data-position="normal">
-                                            Save The World
-                                        </div>
-
-                                        <!-- <div class="ms-layer  msp-cn-1-7" style=""
-                                                                  data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="437"
-                                                                  data-delay="625" data-ease="easeOutQuint" data-offset-x="383"
-                                                                  data-offset-y="139" data-origin="ml" data-position="normal">
-                                                                  als</div> -->
-
-                                        <div class="ms-layer msp-cn-1-5"
-                                             data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
-                                             data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
-                                             data-offset-y="52"
-                                             data-origin="ml" data-position="normal">
-                                            Help Us
-                                        </div>
-                                    </div>
-                                    <!-- <div class="ms-slide" data-delay="7" data-fill-mode="fill">
+                                        <!-- <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                                             <img src="./images/slider_images/paul-summers-ArtVJ-217Cw-unsplash.jpg" alt="" title=""
                                                                 data-src="./images/slider_images/paul-summers-ArtVJ-217Cw-unsplash.jpg" />
 
@@ -211,6 +218,8 @@
                                                                 Make This World</div>
 
                                                         </div> -->
+
+                                    @endforeach
                                 </div>
                                 <!-- END MasterSlider Main -->
                             </div>
@@ -341,58 +350,58 @@
                         <div class="container">
                             <!------------------------------ Service No 1 ---------------------------------------->
                             @foreach($services as $service)
-                            <div class="six columns service-style">
-                                <div class="greennature-item greennature-action-ads-item"
-                                     style="background: url({{ asset('storage/'.$service->image) }}); background-size: cover; box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);">
-                                    <a href="/services" class="services-title-style">
-                                        <h3 class="action-ads-title" style="color: {{ $service->color_title }}">
-                                            {{ $service->title }}
-                                        </h3>
-                                    </a>
-                                    <!-- <div class="action-ads-caption greennature-skin-info">Your money can cure this
-                                                            earth</div> -->
-                                    <div class="action-ads-divider" style="background: {{ $service->color_title }}"></div>
-                                    <div class="action-ads-content">
-                                        <p>
-{{--                                            Supported to establish sustainable forest conservation--}}
-{{--                                            management system in the Protected Areas (PA) by--}}
-{{--                                            involving local people...--}}
-                                            {!! $service -> content !!}
+                                <div class="six columns service-style">
+                                    <div class="greennature-item greennature-action-ads-item"
+                                         style="background: url({{ asset('storage/'.$service->image) }}); background-size: cover; box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);">
+                                        <a href="/services" class="services-title-style">
+                                            <h3 class="action-ads-title" style="color: {{ $service->color_title }}">
+                                                {{ $service->title }}
+                                            </h3>
+                                        </a>
+                                        <!-- <div class="action-ads-caption greennature-skin-info">Your money can cure this
+                                                                earth</div> -->
+                                        <div class="action-ads-divider"
+                                             style="background: {{ $service->color_title }}"></div>
+                                        <div class="action-ads-content">
+                                            <p>
 
-                                        </p>
-                                        <!-- <a class="action-ads-button large greennature-button greennature-lb-payment"
-                                                                  href="#" style="color: #6d5b1c;background-color: #fec428;">Read More</a> -->
+                                                {!! \Illuminate\Support\Str::limit($service->content,200,'...')  !!}
+
+
+                                            </p>
+                                            <!-- <a class="action-ads-button large greennature-button greennature-lb-payment"
+                                                                      href="#" style="color: #6d5b1c;background-color: #fec428;">Read More</a> -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @endforeach
                             <!-------------------------------------------------- Service No 1 --->
 
                             <!------------------------------ Service No 2 ---------------------------------------->
 
-{{--                            <div class="six columns">--}}
-{{--                                <div class="greennature-item greennature-action-ads-item"--}}
-{{--                                     style="background: url({{ asset('upload/donation-bg-2.jpg') }})">--}}
-{{--                                    <a href="/services" class="services-title-style">--}}
-{{--                                        <h3 class="action-ads-title" style="color: #5dc269">--}}
-{{--                                            Biodiversity monitoring--}}
-{{--                                        </h3>--}}
-{{--                                    </a>--}}
+                            {{--                            <div class="six columns">--}}
+                            {{--                                <div class="greennature-item greennature-action-ads-item"--}}
+                            {{--                                     style="background: url({{ asset('upload/donation-bg-2.jpg') }})">--}}
+                            {{--                                    <a href="/services" class="services-title-style">--}}
+                            {{--                                        <h3 class="action-ads-title" style="color: #5dc269">--}}
+                            {{--                                            Biodiversity monitoring--}}
+                            {{--                                        </h3>--}}
+                            {{--                                    </a>--}}
 
-{{--                                    <!-- <div class="action-ads-caption greennature-skin-info">Your voice does matter--}}
-{{--                                                        </div> -->--}}
-{{--                                    <div class="action-ads-divider" style="background: #5dc269"></div>--}}
-{{--                                    <div class="action-ads-content">--}}
-{{--                                        <p>--}}
-{{--                                            Biodiversity monitoring (flora and fauna) in different--}}
-{{--                                            protected areas and reserve forests for supporting--}}
-{{--                                            management strategies...--}}
-{{--                                        </p>--}}
-{{--                                        <!-- <a class="action-ads-button large greennature-button"--}}
-{{--                                                                  style="color: #ffffff;background-color: #5dc269;" href="#">Read More</a> -->--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                            {{--                                    <!-- <div class="action-ads-caption greennature-skin-info">Your voice does matter--}}
+                            {{--                                                        </div> -->--}}
+                            {{--                                    <div class="action-ads-divider" style="background: #5dc269"></div>--}}
+                            {{--                                    <div class="action-ads-content">--}}
+                            {{--                                        <p>--}}
+                            {{--                                            Biodiversity monitoring (flora and fauna) in different--}}
+                            {{--                                            protected areas and reserve forests for supporting--}}
+                            {{--                                            management strategies...--}}
+                            {{--                                        </p>--}}
+                            {{--                                        <!-- <a class="action-ads-button large greennature-button"--}}
+                            {{--                                                                  style="color: #ffffff;background-color: #5dc269;" href="#">Read More</a> -->--}}
+                            {{--                                    </div>--}}
+                            {{--                                </div>--}}
+                            {{--                            </div>--}}
 
                             <!-------------------------------------------------------------- Service No 2 --->
 
@@ -426,7 +435,8 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" href="/current-projects">More Projects</a>
+                                        <a class="greennature-item-title-link" href="/current-projects">More
+                                            Projects</a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -437,50 +447,51 @@
                                         <div class="clear"></div>
 
                                         @foreach($projects as $project)
-                                        <!--------------------------Project 1 Description------------------------>
-                                        <div class="three columns">
-                                            <div
-                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                    <div class="portfolio-thumbnail greennature-image">
-                                                        <img
-                                                            src="{{ asset('storage/'.$project->image) }}"
-                                                            alt=""
-                                                            style="width: 250px; height: 150px"/><span
-                                                            class="portfolio-overlay">&nbsp;</span><a
-                                                            class="portfolio-overlay-icon"
-                                                            href="{{ asset('storage/'.$project->image) }}"
-                                                            data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                    class="fa fa-search"></i></span></a>
-                                                    </div>
-                                                    <div class="portfolio-classic-content">
-                                                        <h3 class="portfolio-title">
-                                                            <a href="/current-projects">{{ $project -> title }}</a>
-                                                        </h3>
-                                                        <div class="greennature-portfolio-info">
-                                                            <div class="portfolio-info portfolio-tag">
+                                            <!--------------------------Project 1 Description------------------------>
+                                            <div class="three columns">
+                                                <div
+                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                    <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                        <div class="portfolio-thumbnail greennature-image">
+                                                            <img
+                                                                src="{{ asset('storage/'.$project->image) }}"
+                                                                alt=""
+                                                                style="width: 250px; height: 150px"/><span
+                                                                class="portfolio-overlay">&nbsp;</span><a
+                                                                class="portfolio-overlay-icon"
+                                                                href="{{ asset('storage/'.$project->image) }}"
+                                                                data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                        class="fa fa-search"></i></span></a>
+                                                        </div>
+                                                        <div class="portfolio-classic-content">
+                                                            <h3 class="portfolio-title">
+                                                                <a href="/current-projects">{{ $project -> title }}</a>
+                                                            </h3>
+                                                            <div class="greennature-portfolio-info">
+                                                                <div class="portfolio-info portfolio-tag">
                                   <span class="info-head greennature-title">
                                   </span>
-                                                                <p>
-                                                                    {{ $project -> location }}
-                                                                </p>
+                                                                    <p>
+                                                                        {{ $project -> location }}
+                                                                    </p>
+                                                                </div>
+                                                                <div class="clear"></div>
                                                             </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="portfolio-excerpt">
-                                                           {!! \Illuminate\Support\Str::limit($project -> achievement,150,'...')  !!}
+                                                            <div class="portfolio-excerpt">
+                                                                {!! \Illuminate\Support\Str::limit($project -> achievement,150,'...')  !!}
 
-                                                            <div class="clear"></div>
-                                                            <a href="/current-projects" class="excerpt-read-more">Read More</a>
+                                                                <div class="clear"></div>
+                                                                <a href="/current-projects" class="excerpt-read-more">Read
+                                                                    More</a>
+                                                            </div>
+                                                            <a class="portfolio-classic-learn-more" href="#">Learn
+                                                                More</a>
                                                         </div>
-                                                        <a class="portfolio-classic-learn-more" href="#">Learn More</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--------------------------------------Project 1 Description---->
+                                            <!--------------------------------------Project 1 Description---->
                                         @endforeach
-
 
 
                                     </div>
@@ -581,36 +592,36 @@
                                         <div class="clear"></div>
 
                                         @foreach($publications as $publication)
-                                        <div class="three columns">
-                                            <div
-                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                    <div class="portfolio-thumbnail greennature-image">
-                                                        <img src="{{asset('storage/'.$publication->image) }}"
-                                                             style="width: 300px; height: 280px"/><span
-                                                            class="portfolio-overlay">&nbsp;</span><a
-                                                            class="portfolio-overlay-icon"
-                                                            href="{{ asset('storage/'.$publication->image) }}"
-                                                            data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                    class="fa fa-search"></i></span></a>
-                                                    </div>
-                                                    <div class="portfolio-classic-content">
-                                                        <div style="text-align: center">
-                                                            <a class="stunning-item-button large download-button-style"
-                                                               href="{{ asset('storage/'.$publication->file_content) }}"
-                                                               download>Download</a>
+                                            <div class="three columns">
+                                                <div
+                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                    <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                        <div class="portfolio-thumbnail greennature-image">
+                                                            <img src="{{asset('storage/'.$publication->image) }}"
+                                                                 style="width: 300px; height: 280px"/><span
+                                                                class="portfolio-overlay">&nbsp;</span><a
+                                                                class="portfolio-overlay-icon"
+                                                                href="{{ asset('storage/'.$publication->image) }}"
+                                                                data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                        class="fa fa-search"></i></span></a>
                                                         </div>
-                                                        <div class="greennature-portfolio-info">
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="portfolio-excerpt">
-                                                            <div class="clear"></div>
-                                                            <a href="#" class="excerpt-read-more">Read More</a>
+                                                        <div class="portfolio-classic-content">
+                                                            <div style="text-align: center">
+                                                                <a class="stunning-item-button large download-button-style"
+                                                                   href="{{ asset('storage/'.$publication->file_content) }}"
+                                                                   download>Download</a>
+                                                            </div>
+                                                            <div class="greennature-portfolio-info">
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                            <div class="portfolio-excerpt">
+                                                                <div class="clear"></div>
+                                                                <a href="#" class="excerpt-read-more">Read More</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         @endforeach
 
 

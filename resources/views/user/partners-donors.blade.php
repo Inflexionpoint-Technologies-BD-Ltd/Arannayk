@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Board Members</title>
+    <title>Arannayk - Partners & Donors</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -106,39 +106,53 @@
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
             <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Board Members</span>
+            <span class="greennature-page-caption">Our Partners & Donors</span>
         </div>
     </div>
 
-    <section id="content-section-1">
-        <div class="section-container container">
-            <div class="greennature-personnel-item-wrapper" style="margin-bottom: 30px;">
-                <div class="clear"></div>
-                @foreach($board as $board)
-                <div class="four columns">
-                    <div class="greennature-item greennature-personnel-item plain-style">
-                        <div class="greennature-ux greennature-personnel-ux">
-                            <div class="personnel-item">
-                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('storage/'.$board->image) }}" class="team-image" alt="" /></div>
-                                <div class="personnel-info">
-                                    <div class="personnel-author greennature-skin-title">{{ $board->name }}</div>
-                                    <div class="personnel-position greennature-skin-info">{{ $board->position }}</div>
-                                    <div class="personnel-position greennature-skin-info">{{ $board->location }}</div>
+    <section>
+        <div class="content-wrapper">
+            <div class="greennature-content">
+
+                <!-- Above Sidebar Section-->
+
+                <!-- Sidebar With Content Section-->
+                <div class="with-sidebar-wrapper">
+                    <section id="content-section-1">
+                        <div class="section-container container">
+                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
+
+                                <div class="gallery-column three columns">
+                                    <div class="gallery-item">
+                                        <a href="{{ asset('images/partners-logo/usaid-vector-logo.png') }}" data-fancybox-group="greennature-gal-1" data-rel="fancybox">
+                                            <img src="{{ asset('images/partners-logo/usaid-vector-logo.png') }}" alt="" class="partner-logo-style" width="400" height="300" />
+                                        </a>
+                                        <span class="gallery-caption logo-text-style">USAID</span></div>
                                 </div>
+
+                                <div class="gallery-column three columns">
+                                    <div class="gallery-item">
+                                        <a href="{{ asset('images/partners-logo/usaid-vector-logo.png') }}" data-fancybox-group="greennature-gal-1" data-rel="fancybox">
+                                            <img src="{{ asset('images/partners-logo/The_World_Bank_logo.svg.png') }}" alt="" class="partner-logo-style" width="400" height="300" />
+                                        </a>
+                                        <span class="gallery-caption logo-text-style">The World Bank</span></div>
+                                </div>
+
+                                <div class="clear"></div>
+
                             </div>
+                            <div class="clear"></div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-                @endforeach
+                <!-- Below Sidebar Section-->
 
-
-
-
-                <div class="clear"></div>
             </div>
+            <!-- greennature-content -->
             <div class="clear"></div>
         </div>
     </section>
+
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------

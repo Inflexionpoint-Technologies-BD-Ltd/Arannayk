@@ -114,21 +114,21 @@
         <div class="section-container container">
             <div class="greennature-personnel-item-wrapper" style="margin-bottom: 30px;">
                 <div class="clear"></div>
-
+                @foreach($teams as $team)
                 <div class="four columns">
                     <div class="greennature-item greennature-personnel-item plain-style">
                         <div class="greennature-ux greennature-personnel-ux">
                             <div class="personnel-item">
-                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('./upload/personnel-3.jpg') }}" class="team-image" alt="" /></div>
+                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('storage/'.$team->image) }}" class="team-image" alt="" /></div>
                                 <div class="personnel-info">
-                                    <div class="personnel-author greennature-skin-title">David Smith</div>
-                                    <div class="personnel-position greennature-skin-info">Founder</div>
+                                    <div class="personnel-author greennature-skin-title">{{ $team->name }}</div>
+                                    <div class="personnel-position greennature-skin-info">{{ $team->position }}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                @endforeach
 
 
 

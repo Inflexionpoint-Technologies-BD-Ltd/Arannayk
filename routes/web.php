@@ -19,6 +19,8 @@ Route::get('/project-archives', "UserPanelController@projectArchives");
 Route::get('/about-arannayk', "UserPanelController@aboutUs");
 Route::get('/our-team', "UserPanelController@ourTeam");
 Route::get('/board-members', "UserPanelController@boardMembers");
+Route::get('/achievements', "UserPanelController@achievements");
+Route::get('/our-partners', "UserPanelController@partnersDonors");
 
 
 

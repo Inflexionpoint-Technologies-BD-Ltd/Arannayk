@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Str;
+use App\Slider;
 use App\Service;
 use App\Project;
+use App\Archive;
 use App\Publication;
+use App\Team;
+use App\Board;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -13,7 +17,8 @@ class UserPanelController extends Controller
         $services = Service::skip(0)->take(2)->get();
         $projects=Project::skip(0)->take(4)->get();
         $publications=Publication::skip(0)->take(4)->get();
-        return view('user.front',compact('services','projects','publications'));
+        $sliders=Slider::skip(0)->take(2)->get();
+        return view('user.front',compact('services','projects','publications','sliders'));
     }
 
     public function publication(){
@@ -32,7 +37,9 @@ class UserPanelController extends Controller
     }
 
     public function projectArchives(){
-        return view('user.project-archives');
+        $archive= Archive::all();
+        $projects= Project::all();
+        return view('user.project-archives', compact('archive','projects'));
     }
 
     public function aboutUs(){
@@ -40,10 +47,20 @@ class UserPanelController extends Controller
     }
 
     public function ourTeam(){
-        return view('user.our-team');
+        $teams=Team::all();
+        return view('user.our-team', compact('teams'));
     }
 
     public function boardMembers(){
-        return view('user.board-members');
+        $board= Board::all();
+        return view('user.board-members', compact('board'));
+    }
+
+    public function achievements(){
+        return view('user.our-achievement');
+    }
+
+    public function partnersDonors(){
+        return view('user.partners-donors');
     }
 }
