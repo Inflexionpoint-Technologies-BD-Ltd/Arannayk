@@ -95,6 +95,7 @@ class UserPanelController extends Controller
         return view('user.press-release');
     }
     public function activityUpdates(){
+        return view('user.activity-updates');
     }
     public function videoStories(){
     }
