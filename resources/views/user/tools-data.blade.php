@@ -121,6 +121,7 @@
                 <div class="with-sidebar-wrapper">
                     <div class="with-sidebar-container container greennature-class-no-sidebar">
 
+                        @foreach($tools as $tool)
                         <div class="with-sidebar-left twelve columns">
                             <div class="with-sidebar-content twelve columns">
                                 <div class="greennature-item greennature-portfolio-style2 greennature-item-start-content">
@@ -136,11 +137,11 @@
                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                 <div class="greennature-ux greennature-classic-portfolio-ux">
                                                     <div class="portfolio-thumbnail"><img
-                                                            src="{{ asset("upload/shutterstock_256181956.jpg")}}" alt="" class="tools-image-style"
+                                                            src="{{ asset('storage/'.$tool->image)}}" alt="" class="tools-image-style"
                                                         /><span
                                                             class="portfolio-overlay">&nbsp;</span><a
                                                             class="portfolio-overlay-icon"
-                                                            href="{{ asset("upload/shutterstock_256181956.jpg") }}"
+                                                            href="{{ asset('storage/'.$tool->image) }}"
                                                             data-rel="fancybox"><span class="portfolio-icon"><i
                                                                     class="fa fa-search"></i></span></a></div>
                                                     <div class="portfolio-classic-content">
@@ -153,12 +154,12 @@
                                         </div>
                                         <div class="greennature-portfolio-content">
                                             <div class="greennature-portfolio-info">
-                                                <h4 class="head">Title</h4>
+                                                <h4 class="head">{{ $tool->title }}</h4>
 
                                                 <div class="content">
-                                                    <div class="portfolio-info portfolio-clients"><span class="info-head greennature-title">Author </span>The Work Space</div>
-                                                    <div class="portfolio-info portfolio-skills"><span class="info-head greennature-title">Publication Date </span>Cleaning, Volunteering</div>
-                                                    <div class="portfolio-info portfolio-website"><span class="info-head greennature-title">Link </span><a href="http://envato.com/" target="_blank">http://envato.com</a></div>
+                                                    <div class="portfolio-info portfolio-clients"><span class="info-head greennature-title">Author </span>{{ $tool->author }}</div>
+                                                    <div class="portfolio-info portfolio-skills"><span class="info-head greennature-title">Publication Date </span>{{ $tool->publication_date  }}</div>
+                                                    <div class="portfolio-info portfolio-website"><span class="info-head greennature-title">Link </span><a href="{{ $tool->link }}" target="_blank">{{ $tool->link  }}</a></div>
                                                     <div class="clear"></div>
 
 
@@ -167,7 +168,7 @@
                                             <div class="greennature-portfolio-description">
                                                 <h4 class="head">Description</h4>
                                                 <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Integer legentibus erat a ante historiarum dapibus. At nos hinc posthac, sitientis piros Afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Lorem ipsum dolor.</p>
+                                                    <p>{!! $tool->content !!} </p>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -184,7 +185,7 @@
 
                             <div class="clear"></div>
                         </div>
-
+                        @endforeach
 
 
                         <div class="clear"></div>

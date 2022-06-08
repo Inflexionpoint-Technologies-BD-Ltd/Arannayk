@@ -20,6 +20,7 @@ use App\Activity;
 use App\Media;
 use App\Photo;
 use App\Video;
+use App\Tool;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -122,6 +123,7 @@ class UserPanelController extends Controller
         return view('user.blogs',compact('blogs'));
     }
     public function tools(){
-        return view('user.tools-data');
+        $tools= Tool::all();
+        return view('user.tools-data', compact('tools'));
     }
 }
