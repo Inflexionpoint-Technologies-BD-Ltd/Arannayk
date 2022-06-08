@@ -105,14 +105,16 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
+
             <h1 class="section-heading-title">Who We Are</h1>
             <span class="greennature-page-caption">About Arannayk Foundation</span>
         </div>
     </div>
 
     <section id="content-section-2" style="margin-bottom: 3rem;">
+        @foreach($aboutUs as $about)
         <div class="greennature-color-wrapper  gdlr-show-all no-skin greennature-half-bg-wrapper" style="background-color: #ffffff; ">
-            <div class="greennature-half-bg greennature-bg-solid" style="background-image: url({{ asset('./images/forest.jpg') }});"></div>
+            <div class="greennature-half-bg greennature-bg-solid" style="background-image: url({{ asset('storage/'.$about->image) }});"></div>
             <div class="container">
                 <div class="six columns"></div>
                 <div class="six columns">
@@ -124,8 +126,7 @@
                         </div>
                         <div class="about-us-content-wrapper">
                             <div class="about-us-content greennature-skin-content">
-                                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p>{!! $about->content !!}}</p>
                             </div>
 {{--                            <a class="about-us-read-more greennature-button" href="#">Read More</a>--}}
                         </div>
@@ -135,54 +136,32 @@
                 <div class="clear"></div>
             </div>
         </div>
+        @endforeach
         <div class="clear"></div>
     </section>
 
     <section id="content-section-3">
         <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f0f0f0; padding-top: 70px; padding-bottom: 25px; ">
             <div class="container">
+
+             @foreach($missions as $mission)
                 <div class="four columns">
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1-caption">
-                            <div class="column-service-image"><img src="upload/icon-6.png" alt="" width="80" height="80" /></div>
+                            <div class="column-service-image"><img src="{{ asset('storage/'.$mission->icon) }}" alt="" width="80" height="80" /></div>
                             <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Our Mission</h3>
+                                <h3 class="column-service-title">{{ $mission->title }}</h3>
                                 <div class="column-service-caption greennature-skin-info"></div>
                                 <div class="column-service-content greennature-skin-content">
-                                    <p>Dia odio sem nec elit. Donec sed odio dui.</p>
+                                    <p>{{ $mission->content }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1-caption">
-                            <div class="column-service-image"><img src="upload/icon-5.png" alt="" width="80" height="80" /></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Our Vision</h3>
-                                <div class="column-service-caption greennature-skin-info"></div>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Dsem nec elit. Donec sed odio dui.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-1-caption">
-                            <div class="column-service-image"><img src="upload/icon-7.png" alt="" width="80" height="80" /></div>
-                            <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">Our Values</h3>
-                                <div class="column-service-caption greennature-skin-info"></div>
-                                <div class="column-service-content greennature-skin-content">
-                                    <p>Da odio sem nec elit. Donec sed odio dui.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
+
                 <div class="clear"></div>
             </div>
         </div>

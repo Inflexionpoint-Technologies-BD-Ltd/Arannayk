@@ -21,6 +21,8 @@ use App\Media;
 use App\Photo;
 use App\Video;
 use App\Tool;
+use App\About;
+use App\Mission;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -55,7 +57,9 @@ class UserPanelController extends Controller
     }
 
     public function aboutUs(){
-        return view('user.about-arannayk');
+        $aboutUs=About::all();
+        $missions=Mission::all();
+        return view('user.about-arannayk',compact('aboutUs','missions'));
     }
 
     public function ourTeam(){
