@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>View All Photo Info</h4>
+    <h4>View All Tool Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
@@ -11,6 +11,9 @@
             <th>Title</th>
             <th>Image</th>
             <th>Content</th>
+            <th>Author</th>
+            <th>Publication Date</th>
+            <th>Link</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -18,15 +21,18 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($photos as $photo)
+        @foreach($tools as $tool)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $photo->title !!}</td>
-                <td>{!! $photo->content !!}</td>
-                <td><img src="{{ asset('storage/'.$photo->image) }}" alt="" style="width: 100px"></td>
-                <td><a href="{{ route('photo.edit',$photo->id) }}" class="btn btn-info">Update</a></td>
+                <td>{!! $tool->title !!}</td>
+                <td><img src="{{ asset('storage/'.$tool->image) }}" alt="" style="width: 100px"></td>
+                <td>{!! $tool->content !!}</td>
+                <td>{!! $tool->author !!}</td>
+                <td>{!! $tool->publication_date !!}</td>
+                <td>{!! $tool->link !!}</td>
+                <td><a href="{{ route('tool.edit',$tool->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('photo.destroy',$photo->id) }}" method="post">
+                    <form action="{{ route('tool.destroy',$tool->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

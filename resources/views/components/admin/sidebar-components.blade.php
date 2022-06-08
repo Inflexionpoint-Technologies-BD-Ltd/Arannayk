@@ -355,8 +355,8 @@
     <div id="collapsePress" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Components:</h6>
-            <a class="collapse-item" href="{{ route('press.create') }}">Add procurement</a>
-            <a class="collapse-item" href="{{ route('press.index') }}">View All procurements</a>
+            <a class="collapse-item" href="{{ route('press.create') }}">Add press</a>
+            <a class="collapse-item" href="{{ route('press.index') }}">View All press</a>
         </div>
     </div>
 </li>
@@ -472,21 +472,71 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVideo"
-       aria-expanded="true" aria-controls="collapseVideo">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools"
+       aria-expanded="true" aria-controls="collapseTools">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Video Stories</span>
+        <span>Tools & Data</span>
     </a>
-    <div id="collapseVideo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div id="collapseTools" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Components:</h6>
-            <a class="collapse-item" href="{{ route('video.create') }}">Add videos</a>
-            <a class="collapse-item" href="{{ route('video.index') }}">View All videos</a>
+            <a class="collapse-item" href="{{ route('tool.create') }}">Add tools</a>
+            <a class="collapse-item" href="{{ route('tool.index') }}">View All data</a>
         </div>
     </div>
 </li>
 
 {{-- -------------------------------------------------- Video ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Donate ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDonate"
+       aria-expanded="true" aria-controls="collapseDonate">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Donate Content</span>
+    </a>
+    <div id="collapseDonate" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('donate.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('donate.index') }}">View All info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Donate ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Ecosystem ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEcosystem"
+       aria-expanded="true" aria-controls="collapseEcosystem">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Ecosystem Content</span>
+    </a>
+    <div id="collapseEcosystem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('ecosystem.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('ecosystem.index') }}">View All info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Ecosystem ------------------------------------------------------- --}}
 
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}

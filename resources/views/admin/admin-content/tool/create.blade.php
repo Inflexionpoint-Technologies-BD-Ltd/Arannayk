@@ -1,11 +1,11 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>Add Photo Contents</h4>
+    <h4>Add Tool Contents</h4>
     <hr>
 
     <div>
-        <form action="{{ route('photo.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('tool.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
 
@@ -17,6 +17,39 @@
                 </div>
 
                 @error('title')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Author</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter title" name="author"
+                           class="form-control @error('author') is-invalid @enderror">
+                </div>
+
+                @error('author')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Publication Date</label>
+                    <input type="date" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter title" name="publication_date"
+                           class="form-control @error('publication_date') is-invalid @enderror">
+                </div>
+
+                @error('publication_date')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Link</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter title" name="link"
+                           class="form-control @error('link') is-invalid @enderror">
+                </div>
+
+                @error('link')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
