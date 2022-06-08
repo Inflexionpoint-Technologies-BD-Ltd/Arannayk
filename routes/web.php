@@ -185,6 +185,12 @@ Route::middleware('auth')->group(function () {
 
 // -------------------------------- Ecosystem --------------------------------
 
+    // -------------------------------- Mission --------------------------------
+
+    Route::resource('admin/mission',"MissionController");
+
+// -------------------------------- Mission --------------------------------
+
 // --------------------------------- Log out ---------------------------------
 
     Route::get('logout', "AdminController@logout")->name('logout');
