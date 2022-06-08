@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Blog;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class BlogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $blogs = Blog::all();
+        return view('admin.admin-content.blog.index', compact('blogs'));
     }
 
     /**
@@ -25,8 +25,7 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
-
+        return view('admin.admin-content.blog.create');
     }
 
     /**
@@ -40,6 +39,7 @@ class ProcurementController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
+            'tag' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png',
         ]);
 
@@ -47,7 +47,7 @@ class ProcurementController extends Controller
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Blog::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +55,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Blog $blog)
     {
         //
     }
@@ -66,51 +66,53 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit(Blog $blog)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        return view('admin.admin-content.blog.edit',compact('blog'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, Blog $blog)
     {
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
+            'tag' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }else{
-            $inputs['image'] = $procurement->image;
+            $inputs['image'] = $blog->image;
         }
 
-        $procurement->update($inputs);
+        $blog->update($inputs);
         session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        return redirect()->route('blog.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy(Blog $blog)
     {
-        $procurement->delete();
+        $blog->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("blog.index");
     }
 }

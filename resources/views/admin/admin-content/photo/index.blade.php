@@ -18,15 +18,15 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($procurements as $procurement)
+        @foreach($photos as $photo)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $procurement->title !!}</td>
-                <td><img src="{{ asset('storage/'.$procurement->image) }}" alt="" style="width: 100px"></td>
-                <td>{!! $procurement->content !!}</td>
-                <td><a href="{{ route('procurement.edit',$procurement->id) }}" class="btn btn-info">Update</a></td>
+                <td>{!! $photo->title !!}</td>
+                <td>{!! $photo->content !!}</td>
+                <td><img src="{{ asset('storage/'.$photo->image) }}" alt="" style="width: 100px"></td>
+                <td><a href="{{ route('photo.edit',$photo->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('procurement.destroy',$procurement->id) }}" method="post">
+                    <form action="{{ route('photo.destroy',$photo->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

@@ -363,5 +363,130 @@
 
 {{-- -------------------------------------------------- Press Release ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Blog ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlog"
+       aria-expanded="true" aria-controls="collapseBlog">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Blogs</span>
+    </a>
+    <div id="collapseBlog" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('blog.create') }}">Add Blog</a>
+            <a class="collapse-item" href="{{ route('blog.index') }}">View All Blogs</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Blog ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Media ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMedia"
+       aria-expanded="true" aria-controls="collapseMedia">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Media</span>
+    </a>
+    <div id="collapseMedia" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('media.create') }}">Add Media</a>
+            <a class="collapse-item" href="{{ route('media.index') }}">View All Media</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Media ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Activities ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsactivity"
+       aria-expanded="true" aria-controls="collapsactivity">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Activities</span>
+    </a>
+    <div id="collapsactivity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('activity.create') }}">Add Activities</a>
+            <a class="collapse-item" href="{{ route('activity.index') }}">View All Activities</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Activities ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Photo ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhoto"
+       aria-expanded="true" aria-controls="collapsePhoto">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Photo Stories</span>
+    </a>
+    <div id="collapsePhoto" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('photo.create') }}">Add Photos</a>
+            <a class="collapse-item" href="{{ route('photo.index') }}">View All Photos</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Photo ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Video ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVideo"
+       aria-expanded="true" aria-controls="collapseVideo">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Video Stories</span>
+    </a>
+    <div id="collapseVideo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('video.create') }}">Add videos</a>
+            <a class="collapse-item" href="{{ route('video.index') }}">View All videos</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Video ------------------------------------------------------- --}}
+
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Activity;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class ActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $activities = Activity::all();
+        return view('admin.admin-content.activity.index', compact('activities'));
     }
 
     /**
@@ -25,7 +25,7 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
+        return view('admin.admin-content.activity.create');
 
     }
 
@@ -40,14 +40,15 @@ class ProcurementController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'tag' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Activity::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +56,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Activity $activity)
     {
         //
     }
@@ -66,51 +67,52 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit(Activity $activity)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        return view('admin.admin-content.activity.edit',compact('activity'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, Activity $activity)
     {
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
+            'tag' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }else{
-            $inputs['image'] = $procurement->image;
+            $inputs['image'] = $activity->image;
         }
 
-        $procurement->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        $activity->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('activity.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy(Activity $activity)
     {
-        $procurement->delete();
+        $activity->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("activity.index");
     }
 }

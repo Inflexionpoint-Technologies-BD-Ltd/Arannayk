@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>View All Procurement Info</h4>
+    <h4>View All Media Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
@@ -9,8 +9,9 @@
         <tr>
             <th>Serial</th>
             <th>Title</th>
-            <th>Image</th>
             <th>Content</th>
+            <th>Image</th>
+            <th>tag</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -18,15 +19,18 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($procurements as $procurement)
+        @foreach($medias as $media)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $procurement->title !!}</td>
-                <td><img src="{{ asset('storage/'.$procurement->image) }}" alt="" style="width: 100px"></td>
-                <td>{!! $procurement->content !!}</td>
-                <td><a href="{{ route('procurement.edit',$procurement->id) }}" class="btn btn-info">Update</a></td>
+                <td>{!! $media->title !!}</td>
+                <td>{!! $media->content !!}</td>
+                <td><img src="{{ asset('storage/'.$media->image) }}" alt="" style="width: 100px"></td>
+                <td>{!! $media->tag !!}</td>
+
+                <td><a href="{{ route('media.edit',$media->id) }}" class="btn btn-info">Update</a></td>
+
                 <td>
-                    <form action="{{ route('procurement.destroy',$procurement->id) }}" method="post">
+                    <form action="{{ route('media.destroy',$media->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

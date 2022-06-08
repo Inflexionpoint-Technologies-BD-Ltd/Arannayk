@@ -96,7 +96,7 @@ class PressController extends Controller
             $inputs['image'] = $press->image;
         }
 
-        Press::create($inputs);
+        $press->update($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->route('press.index');
     }

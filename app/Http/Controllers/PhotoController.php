@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Photo;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class PhotoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $photos = Photo::all();
+        return view('admin.admin-content.photo.index', compact('photos'));
     }
 
     /**
@@ -25,8 +25,7 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
-
+        return view('admin.admin-content.photo.create');
     }
 
     /**
@@ -47,7 +46,7 @@ class ProcurementController extends Controller
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Photo::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +54,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Photo $photo)
     {
         //
     }
@@ -66,22 +65,23 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit(Photo $photo)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        return view('admin.admin-content.photo.edit',compact('photo'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, Photo $photo)
     {
         $inputs = \request()->validate([
             'title' => 'required',
@@ -92,25 +92,25 @@ class ProcurementController extends Controller
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }else{
-            $inputs['image'] = $procurement->image;
+            $inputs['image'] = $photo->image;
         }
 
-        $procurement->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        $photo->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('photo.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy(Photo $photo)
     {
-        $procurement->delete();
+        $photo->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("photo.index");
     }
 }
