@@ -12,6 +12,7 @@ use App\Board;
 use App\Partner;
 use App\Achievement;
 use App\Career;
+use App\Consultancy;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -77,5 +78,10 @@ class UserPanelController extends Controller
     public function internship(){
         $careers= Career::all();
         return view('user.internship',compact('careers'));
+    }
+
+    public function consultancy(){
+        $consultancy= Consultancy::all();
+        return view('user.consultancy',compact('consultancy'));
     }
 }

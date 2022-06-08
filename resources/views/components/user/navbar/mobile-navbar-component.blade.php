@@ -51,7 +51,7 @@
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="/get-involved/career">Career</a></li>
                     <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
-                    <li class="menu-item"><a href="">Consultancy</a></li>
+                    <li class="menu-item"><a href="/get-involved/consultancy">Consultancy</a></li>
                     <li class="menu-item"><a href="">Procurement</a></li>
                 </ul>
             </li>
