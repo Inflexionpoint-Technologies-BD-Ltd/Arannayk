@@ -24,6 +24,7 @@ Route::get('/our-partners', "UserPanelController@partnersDonors");
 Route::get('/get-involved/career', "UserPanelController@career");
 Route::get('/get-involved/internship', "UserPanelController@internship");
 Route::get('/get-involved/consultancy', "UserPanelController@consultancy");
+Route::get('/get-involved/procurement', "UserPanelController@procurement");
 
 
 

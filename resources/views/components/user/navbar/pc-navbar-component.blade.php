@@ -109,7 +109,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="">Procurement</a>
+                                    <a href="/get-involved/procurement">Procurement</a>
                                 </li>
                             </ul>
                         </li>
