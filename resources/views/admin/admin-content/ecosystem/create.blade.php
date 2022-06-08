@@ -1,11 +1,11 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>Add Photo Contents</h4>
+    <h4>Add Ecosystem Contents</h4>
     <hr>
 
     <div>
-        <form action="{{ route('photo.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('ecosystem.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
 

@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>Add Procurement Contents</h4>
+    <h4>AdEdit Photo Contents</h4>
     <hr>
 
     <div>

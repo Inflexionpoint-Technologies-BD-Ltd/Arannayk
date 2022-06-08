@@ -1,19 +1,20 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>Add Photo Contents</h4>
+    <h4>Add Ecosystem Contents</h4>
     <hr>
 
     <div>
-        <form action="{{ route('photo.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('ecosystem.update',$ecosystem->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
+            @method('put')
             <form>
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Enter Title</label>
                     <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
                            placeholder="Enter title" name="title"
-                           class="form-control @error('title') is-invalid @enderror">
+                           class="form-control @error('title') is-invalid @enderror" value="{{ $ecosystem->title }}">
                 </div>
 
                 @error('title')
@@ -34,7 +35,7 @@
                     <label for="exampleInputEmail1">Enter Content</label>
                     <textarea name="content" id="" cols="30" rows="10"
                               class="@error('content') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content"></textarea>
+                              placeholder="Enter achievement content">{{ $ecosystem->content }}</textarea>
                 </div>
 
                 @error('content')

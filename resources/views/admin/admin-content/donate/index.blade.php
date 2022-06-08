@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>View All Photo Info</h4>
+    <h4>View All Donate Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
@@ -18,15 +18,15 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($photos as $photo)
+        @foreach($donates as $donate)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $photo->title !!}</td>
-                <td>{!! $photo->content !!}</td>
-                <td><img src="{{ asset('storage/'.$photo->image) }}" alt="" style="width: 100px"></td>
-                <td><a href="{{ route('photo.edit',$photo->id) }}" class="btn btn-info">Update</a></td>
+                <td>{!! $donate->title !!}</td>
+                <td>{!! $donate->content !!}</td>
+                <td><img src="{{ asset('storage/'.$donate->image) }}" alt="" style="width: 100px"></td>
+                <td><a href="{{ route('donate.edit',$donate->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('photo.destroy',$photo->id) }}" method="post">
+                    <form action="{{ route('donate.destroy',$donate->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">
