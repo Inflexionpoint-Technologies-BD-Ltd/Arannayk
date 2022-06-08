@@ -126,26 +126,27 @@
                                         <div class="blog-item-wrapper">
                                             <div class="blog-item-holder">
 
+                                                @foreach($blogs as $blog)
                                                 <div class="greennature-item greennature-blog-full">
-
                                                     <div class="greennature-ux greennature-blog-full-ux">
                                                         <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                             <div class="greennature-standard-style">
                                                                 <div>
-                                                                    <a> <img src="{{ asset('upload/shutterstock_70658833-400x400.jpg') }}" class="press-release-image" alt=""  /></a>
+                                                                    <a> <img src="{{ asset('storage/'.$blog->image)  }}" class="press-release-image" alt=""  /></a>
                                                                 </div>
 
                                                                 <div class="blog-content-wrapper">
                                                                     <header class="post-header">
-                                                                        <h3 class="greennature-blog-title"><a>Magna pars studiorum</a></h3>
+                                                                        <h3 class="greennature-blog-title"><a>{{ $blog->title }}</a></h3>
 
                                                                         <div class="clear"></div>
                                                                     </header>
                                                                     <!-- entry-header -->
 
-                                                                    <div class="greennature-blog-content">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa...
+                                                                    <div class="greennature-blog-content">
+                                                                        {!! $blog->content !!}
                                                                         <div class="greennature-blog-info" style="margin-top:2rem;">
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a href="" >Forest</a></div>
+                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a href="" >{{ $blog->tag }}</a></div>
                                                                             <div class="clear"></div>
                                                                         </div>
                                                                         <div class="clear">
@@ -160,6 +161,7 @@
                                                         <!-- #post -->
                                                     </div>
                                                 </div>
+                                                @endforeach
 
 
                                             </div>

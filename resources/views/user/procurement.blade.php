@@ -110,34 +110,81 @@
         </div>
     </div>
 
-    <section id="content-section-2">
+    <section>
+        <div class="content-wrapper">
+            <div class="greennature-content">
 
-        @foreach($procurements as $procurement)
-        <div class="greennature-color-wrapper  gdlr-show-all no-skin greennature-half-bg-wrapper" style="background-color: #ffffff; margin-bottom: 2rem; ">
-            <div class="greennature-half-bg greennature-bg-solid" style="background-image: url({{ asset('storage/'.$procurement->image) }});"></div>
-            <div class="container">
-                <div class="six columns"></div>
-                <div class="six columns">
-                    <div class="greennature-item greennature-about-us-item greennature-small-title">
-                        <div class="about-us-title-wrapper">
-                            <h3 class="about-us-title">{{ $procurement->title }}</h3>
-                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
-                            <div class="about-us-title-divider"></div>
-                        </div>
-                        <div class="about-us-content-wrapper">
-                            <div class="about-us-content greennature-skin-content">
-                                <p>{!! $procurement->content !!}  </p>
+                <!-- Above Sidebar Section-->
+
+                <!-- Sidebar With Content Section-->
+                <div class="with-sidebar-wrapper">
+                    <div class="with-sidebar-container container">
+                        <div class="">
+                            <div class="">
+                                <section id="content-section-1">
+                                    <div class="section-container container">
+                                        <div class="blog-item-wrapper">
+                                            <div class="blog-item-holder">
+
+                                                @foreach($procurements as $procurement)
+                                                    <div class="greennature-item greennature-blog-full">
+                                                        <div class="greennature-ux greennature-blog-full-ux">
+                                                            <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                                <div class="greennature-standard-style">
+                                                                    <div>
+                                                                        <a> <img src="{{ asset('storage/'.$procurement->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                    </div>
+
+                                                                    <div class="blog-content-wrapper">
+                                                                        <header class="post-header">
+                                                                            <h3 class="greennature-blog-title"><a>{{ $procurement->title }}</a></h3>
+
+                                                                            <div class="clear"></div>
+                                                                        </header>
+                                                                        <!-- entry-header -->
+
+                                                                        <div class="greennature-blog-content">
+                                                                            {!! $procurement->content !!}
+                                                                            <div class="greennature-blog-info" style="margin-top:2rem;">
+                                                                                <div class="clear"></div>
+                                                                            </div>
+                                                                            <div class="clear">
+                                                                            </div>
+                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- blog content wrapper -->
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </article>
+                                                            <!-- #post -->
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </section>
                             </div>
+
+                            <div class="clear"></div>
                         </div>
+
+
                         <div class="clear"></div>
                     </div>
                 </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        @endforeach
 
-        <div class="clear"></div>
+                <!-- Below Sidebar Section-->
+
+            </div>
+            <!-- greennature-content -->
+            <div class="clear"></div>
+        </div>
     </section>
 
     <!-------------------------------------------------------------------------

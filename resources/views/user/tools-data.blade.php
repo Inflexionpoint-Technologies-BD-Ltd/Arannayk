@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Press Release</title>
+    <title>Arannayk - Tools & Data</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -31,6 +31,10 @@
     <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all"/>
+
+
+
+
     <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all"/>
@@ -105,8 +109,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Media Center</h1>
-            <span class="greennature-page-caption">Press Release</span>
+            <h1 class="section-heading-title">Knowledge</h1>
+            <span class="greennature-page-caption">Tools & Data</span>
         </div>
     </div>
 
@@ -114,114 +118,87 @@
         <div class="content-wrapper">
             <div class="greennature-content">
 
-                <!-- Above Sidebar Section-->
-
-                <!-- Sidebar With Content Section-->
                 <div class="with-sidebar-wrapper">
-                    <div class="with-sidebar-container container">
-                        <div class="with-sidebar-left eight columns">
+                    <div class="with-sidebar-container container greennature-class-no-sidebar">
+
+                        <div class="with-sidebar-left twelve columns">
                             <div class="with-sidebar-content twelve columns">
-                                <section id="content-section-1">
-                                    <div class="section-container container">
-                                        <div class="blog-item-wrapper">
-                                            <div class="blog-item-holder">
+                                <div class="greennature-item greennature-portfolio-style2 greennature-item-start-content">
+                                    <div id="portfolio-76" class="post-76 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio_category-environment portfolio_category-volunteer portfolio_tag-donation portfolio_tag-volunteer">
+                                        <div class="greennature-portfolio-thumbnail ">
+{{--                                            <div class="greennature-stack-image-wrapper">--}}
+{{--                                                <div class="greennature-stack-image">--}}
+{{--                                                    <a data-fancybox-group="greennature-gal-1" data-rel="fancybox"><img src="{{ asset('upload/shutterstock_256181956.jpg') }}" alt="No Image" width="1280" height="853" /></a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                                @foreach($pressReleases as $press)
-                                                <div class="greennature-item greennature-blog-full">
-                                                    <div class="greennature-ux greennature-blog-full-ux">
-                                                        <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                            <div class="greennature-standard-style">
-                                                                <div class="" class="press-release-style">
-                                                                    <a> <img src="{{ asset('storage/'.$press->image) }}" class="press-release-image" alt="" /></a>
-                                                                </div>
+                                            <div
+                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                    <div class="portfolio-thumbnail"><img
+                                                            src="{{ asset("upload/shutterstock_256181956.jpg")}}" alt="" class="tools-image-style"
+                                                        /><span
+                                                            class="portfolio-overlay">&nbsp;</span><a
+                                                            class="portfolio-overlay-icon"
+                                                            href="{{ asset("upload/shutterstock_256181956.jpg") }}"
+                                                            data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                    class="fa fa-search"></i></span></a></div>
+                                                    <div class="portfolio-classic-content">
+                                                        <div style="text-align:center">
+                                                        </div>
 
-                                                                <div class="blog-content-wrapper">
-                                                                    <header class="post-header">
-                                                                        <h3 class="greennature-blog-title"><a>{{ $press->title }}</a></h3>
-
-                                                                        <div class="greennature-blog-info">
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $press->tag }}</a></div>
-                                                                            <div class="clear"></div>
-                                                                        </div>
-                                                                        <div class="clear"></div>
-                                                                    </header>
-                                                                    <!-- entry-header -->
-
-                                                                    <div class="greennature-blog-content"> {!! $press->content !!}
-                                                                        <div class="clear">
-                                                                        </div>
-{{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-                                                                    </div>
-                                                                </div>
-                                                                <!-- blog content wrapper -->
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                        </article>
-                                                        <!-- #post -->
                                                     </div>
                                                 </div>
-                                                @endforeach
-
                                             </div>
-
                                         </div>
-                                        <div class="clear"></div>
+                                        <div class="greennature-portfolio-content">
+                                            <div class="greennature-portfolio-info">
+                                                <h4 class="head">Title</h4>
+
+                                                <div class="content">
+                                                    <div class="portfolio-info portfolio-clients"><span class="info-head greennature-title">Author </span>The Work Space</div>
+                                                    <div class="portfolio-info portfolio-skills"><span class="info-head greennature-title">Publication Date </span>Cleaning, Volunteering</div>
+                                                    <div class="portfolio-info portfolio-website"><span class="info-head greennature-title">Link </span><a href="http://envato.com/" target="_blank">http://envato.com</a></div>
+                                                    <div class="clear"></div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="greennature-portfolio-description">
+                                                <h4 class="head">Description</h4>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Integer legentibus erat a ante historiarum dapibus. At nos hinc posthac, sitientis piros Afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Lorem ipsum dolor.</p>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
                                     </div>
-                                </section>
+                                    <!-- #portfolio -->
+
+                                    <div class="clear"></div>
+
+                                </div>
+
+
                             </div>
 
                             <div class="clear"></div>
                         </div>
 
-                        <div class="greennature-sidebar greennature-right-sidebar four columns">
-                            <div class="greennature-item-start-content sidebar-right-item">
 
-                                <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Press Releases</h3>
-                                    <div class="clear"></div>
-                                    <div class="greennature-recent-port-widget">
-                                        @foreach($pressReleases as $press)
-                                        <div class="recent-post-widget">
-                                            <div class="recent-post-widget-thumbnail">
-                                                <a><img src="{{asset('storage/'.$press->image)}}" alt="" width="150" height="150" /></a>
-                                            </div>
-                                            <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $press->title }}</a></div>
-                                                <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        @endforeach
 
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Tags</h3>
-                                    <div class="clear"></div>
-                                    <div class="tagcloud">
-                                        @foreach($pressReleases as $press)
-                                        <a class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
-                                        @endforeach
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="clear"></div>
                     </div>
                 </div>
-
-                <!-- Below Sidebar Section-->
 
             </div>
             <!-- greennature-content -->
             <div class="clear"></div>
         </div>
     </section>
+
+
+
 
 
     <!-------------------------------------------------------------------------
@@ -252,9 +229,12 @@
 <script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
+
+
 <script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
+
 <script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>

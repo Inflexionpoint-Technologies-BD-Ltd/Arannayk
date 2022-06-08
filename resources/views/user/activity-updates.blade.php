@@ -128,31 +128,32 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
+                                                    @foreach($activities as $activity)
                                                     <div class="six columns">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                                                                     <div class="greennature-standard-style">
                                                                         <div class="greennature-blog-thumbnail">
-                                                                            <a> <img src="{{ asset('upload/shutterstock_161515241-150x150.jpg') }}" class="activity-updates-image" alt="" width="400" height="300" /></a>
+                                                                            <a> <img src="{{ asset('storage/'.$activity->image) }}" class="activity-updates-image" alt="" width="400" height="300" /></a>
                                                                         </div>
 
                                                                         <div class="greennature-blog-grid-content">
                                                                             <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>Donec luctus imperdiet</a></h3>
+                                                                                <h3 class="greennature-blog-title"><a>{{ $activity->title }}</a></h3>
 
                                                                                 <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-tags"></i><a href="">Forest</a></div>
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-tags"></i><a href="">{{ $activity->tag }}</a></div>
                                                                                     <div class="clear"></div>
                                                                                 </div>
                                                                                 <div class="clear"></div>
                                                                             </header>
                                                                             <!-- entry-header -->
 
-                                                                            <div class="greennature-blog-content">
-                                                                                Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....
+                                                                            <div class="greennature-blog-content" style="text-align: justify">
+                                                                                 {!! $activity->content !!}
 
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+{{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
                                                                         </div>
                                                                     </div>
                                                                 </article>
@@ -160,6 +161,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    @endforeach
 
                                                     <div class="clear"></div>
 
@@ -183,18 +185,21 @@
                                     <h3 class="greennature-widget-title">Recent Activities</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
+
+                                        @foreach($activities as $activity)
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href=""><img src="{{ asset('upload/shutterstock_161515241-150x150.jpg') }}" alt="" width="150" height="150" /></a>
+                                                <a><img src="{{ asset('storage/'.$activity->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="">Wind Energy</a></div>
+                                                <div class="recent-post-widget-title"><a>{{ $activity->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
+                                        @endforeach
 
                                         <div class="clear"></div>
                                     </div>
@@ -204,9 +209,9 @@
                                     <h3 class="greennature-widget-title">Tags</h3>
                                     <div class="clear"></div>
                                     <div class="tagcloud">
-                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">Animal</a>
-                                        <a href="#" class="tag-cloud-link tag-link-12 tag-link-position-2" style="font-size: 8pt;" aria-label="Aside (1 item)">Aside</a>
-                                        <a href="#" class="tag-cloud-link tag-link-13 tag-link-position-3" style="font-size: 11.230769230769pt;" aria-label="Audio (2 items)">Audio</a>
+                                        @foreach($activities as $activity)
+                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
+                                        @endforeach
                                       </div>
                                 </div>
                             </div>

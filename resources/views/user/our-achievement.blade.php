@@ -105,7 +105,7 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">What We Do</h1>
+            <h1 class="section-heading-title">Who We Are</h1>
             <span class="greennature-page-caption">Our Achievements</span>
         </div>
     </div>
@@ -119,57 +119,52 @@
                 <!-- Sidebar With Content Section-->
                 <div class="with-sidebar-wrapper">
                     <div class="with-sidebar-container container">
-                        <div class="with-sidebar-left eight columns">
-                            <div class="with-sidebar-content twelve columns">
+                        <div class="">
+                            <div class="">
                                 <section id="content-section-1">
                                     <div class="section-container container">
                                         <div class="blog-item-wrapper">
                                             <div class="blog-item-holder">
-                                                <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
-                                                    <div class="clear"></div>
 
-                                                    @foreach($achievements as $achievement)
-                                                        <div class="twelve columns" id="{{ $achievement->title }}">
-                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                                <div class="greennature-ux greennature-blog-grid-ux">
-                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                        <div class="greennature-standard-style">
-                                                                            <div class="greennature-blog-thumbnail">
-                                                                                <a href=""> <img src="{{ asset('storage/'.$achievement->image) }}" class="image-projects" alt=""  /></a>
+                                                @foreach($achievements as $achievement)
+                                                    <div class="greennature-item greennature-blog-full">
+                                                        <div class="greennature-ux greennature-blog-full-ux">
+                                                            <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                                <div class="greennature-standard-style">
+                                                                    <div>
+                                                                        <a> <img src="{{ asset('storage/'.$achievement->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                    </div>
+
+                                                                    <div class="blog-content-wrapper">
+                                                                        <header class="post-header">
+                                                                            <h3 class="greennature-blog-title"><a>{{ $achievement->title }}</a></h3>
+
+                                                                            <div class="clear"></div>
+                                                                        </header>
+                                                                        <!-- entry-header -->
+
+                                                                        <div class="greennature-blog-content">
+                                                                            {!! $achievement->content !!}
+                                                                            <div class="greennature-blog-info" style="margin-top:2rem;">
+                                                                                <div class="clear"></div>
                                                                             </div>
-
-                                                                            <div class="greennature-blog-grid-content">
-                                                                                <header class="post-header">
-                                                                                    <h3 class="greennature-blog-title"><a>{{$achievement->title }}</a></h3>
-
-                                                                                    <div class="greennature-blog-info">
-                                                                                        <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $achievement->date }}</a></div>
-
-                                                                                        <div class="clear"></div>
-                                                                                    </div>
-                                                                                    <div class="clear"></div>
-                                                                                </header>
-                                                                                <!-- entry-header -->
-
-                                                                                <div class="greennature-blog-content" style="text-align: justify">
-                                                                                    <p >{!! $achievement->content !!}</p>
-{{--                                                                                    <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+                                                                            <div class="clear">
                                                                             </div>
+                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
                                                                         </div>
-                                                                    </article>
-                                                                    <!-- #post -->
+                                                                    </div>
+                                                                    <!-- blog content wrapper -->
+                                                                    <div class="clear"></div>
                                                                 </div>
-                                                            </div>
+                                                            </article>
+                                                            <!-- #post -->
                                                         </div>
-                                                    @endforeach
+                                                    </div>
+                                                @endforeach
 
-                                                    <div class="clear"></div>
-                                                </div>
+
                                             </div>
 
-                                            {{--                                            <div class="greennature-pagination"><span aria-current='page' class='page-numbers current'>1</span>--}}
-                                            {{--                                                <a class='page-numbers' href='page/2/index.html'>2</a>--}}
-                                            {{--                                                <a class="next page-numbers" href="page/2/index.html">Next &rsaquo;</a></div>--}}
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -179,30 +174,7 @@
                             <div class="clear"></div>
                         </div>
 
-{{--                        <div class="greennature-sidebar greennature-right-sidebar four columns">--}}
-{{--                            <div class="greennature-item-start-content sidebar-right-item">--}}
-{{--                                <div id="search-3" class="widget widget_search greennature-item greennature-widget">--}}
-{{--                                    <div class="gdl-search-form">--}}
-{{--                                        <form method="get" id="searchform" action="https://demo.goodlayers.com/greennature//">--}}
-{{--                                            <div class="search-text" id="search-text">--}}
-{{--                                                <input type="text" name="s" id="s" autocomplete="off" data-default="Type keywords..." />--}}
-{{--                                            </div>--}}
-{{--                                            <input type="submit" id="searchsubmit" value="" />--}}
-{{--                                            <div class="clear"></div>--}}
-{{--                                        </form>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                --}}{{--                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">--}}
-{{--                                --}}{{--                                    <h3 class="greennature-widget-title">Text Widget</h3>--}}
-{{--                                --}}{{--                                    <div class="clear"></div>--}}
-{{--                                --}}{{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
-{{--                                --}}{{--                                </div>--}}
 
-
-
-
-{{--                            </div>--}}
-{{--                        </div>--}}
                         <div class="clear"></div>
                     </div>
                 </div>

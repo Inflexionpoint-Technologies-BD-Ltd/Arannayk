@@ -6306,3 +6306,14 @@ input[type="text"].greennature-payment-price-fill {
     height: 280px;
     object-fit: cover;
 }
+
+.photos-style{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.tools-image-style{
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+}

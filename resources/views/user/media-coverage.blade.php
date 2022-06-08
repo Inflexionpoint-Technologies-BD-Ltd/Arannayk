@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Press Release</title>
+    <title>Arannayk - Media Coverage</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -106,7 +106,7 @@
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
             <h1 class="section-heading-title">Media Center</h1>
-            <span class="greennature-page-caption">Press Release</span>
+            <span class="greennature-page-caption">Media Coverage</span>
         </div>
     </div>
 
@@ -125,44 +125,48 @@
                                     <div class="section-container container">
                                         <div class="blog-item-wrapper">
                                             <div class="blog-item-holder">
+                                                <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
+                                                    <div class="clear"></div>
 
-                                                @foreach($pressReleases as $press)
-                                                <div class="greennature-item greennature-blog-full">
-                                                    <div class="greennature-ux greennature-blog-full-ux">
-                                                        <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                            <div class="greennature-standard-style">
-                                                                <div class="" class="press-release-style">
-                                                                    <a> <img src="{{ asset('storage/'.$press->image) }}" class="press-release-image" alt="" /></a>
+                                                    @foreach($medias as $media)
+                                                        <div class="six columns">
+                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                                <div class="greennature-ux greennature-blog-grid-ux">
+                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                        <div class="greennature-standard-style">
+                                                                            <div class="greennature-blog-thumbnail">
+                                                                                <a> <img src="{{ asset('storage/'.$media->image) }}" class="activity-updates-image" alt="" width="400" height="300" /></a>
+                                                                            </div>
+
+                                                                            <div class="greennature-blog-grid-content">
+                                                                                <header class="post-header">
+                                                                                    <h3 class="greennature-blog-title"><a>{{ $media->title }}</a></h3>
+
+                                                                                    <div class="greennature-blog-info">
+                                                                                        <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-tags"></i><a href="">{{ $media->tag }}</a></div>
+                                                                                        <div class="clear"></div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                </header>
+                                                                                <!-- entry-header -->
+
+                                                                                <div class="greennature-blog-content" style="text-align: justify">
+                                                                                   <p>{!! $media->content !!}</p>
+
+                                                                                    {{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+                                                                                </div>
+                                                                            </div>
+                                                                    </article>
+                                                                    <!-- #post -->
                                                                 </div>
-
-                                                                <div class="blog-content-wrapper">
-                                                                    <header class="post-header">
-                                                                        <h3 class="greennature-blog-title"><a>{{ $press->title }}</a></h3>
-
-                                                                        <div class="greennature-blog-info">
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $press->tag }}</a></div>
-                                                                            <div class="clear"></div>
-                                                                        </div>
-                                                                        <div class="clear"></div>
-                                                                    </header>
-                                                                    <!-- entry-header -->
-
-                                                                    <div class="greennature-blog-content"> {!! $press->content !!}
-                                                                        <div class="clear">
-                                                                        </div>
-{{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-                                                                    </div>
-                                                                </div>
-                                                                <!-- blog content wrapper -->
-                                                                <div class="clear"></div>
                                                             </div>
-                                                        </article>
-                                                        <!-- #post -->
-                                                    </div>
-                                                </div>
-                                                @endforeach
+                                                        </div>
+                                                    @endforeach
 
+                                                    <div class="clear"></div>
+
+                                                    <div class="clear"></div>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -178,36 +182,37 @@
                             <div class="greennature-item-start-content sidebar-right-item">
 
                                 <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Press Releases</h3>
+                                    <h3 class="greennature-widget-title">Recent Media Coverages</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
-                                        @foreach($pressReleases as $press)
-                                        <div class="recent-post-widget">
-                                            <div class="recent-post-widget-thumbnail">
-                                                <a><img src="{{asset('storage/'.$press->image)}}" alt="" width="150" height="150" /></a>
-                                            </div>
-                                            <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $press->title }}</a></div>
-                                                <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>
-                                                    <div class="clear"></div>
+
+                                        @foreach($medias as $media)
+                                            <div class="recent-post-widget">
+                                                <div class="recent-post-widget-thumbnail">
+                                                    <a><img src="{{ asset('storage/'.$media->image) }}" alt="" width="150" height="150" /></a>
                                                 </div>
+                                                <div class="recent-post-widget-content">
+                                                    <div class="recent-post-widget-title"><a>{{ $media->title }}</a></div>
+                                                    <div class="recent-post-widget-info">
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
                                         @endforeach
 
                                         <div class="clear"></div>
                                     </div>
                                 </div>
+
                                 <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Tags</h3>
                                     <div class="clear"></div>
                                     <div class="tagcloud">
-                                        @foreach($pressReleases as $press)
-                                        <a class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
+                                        @foreach($medias as $media)
+                                            <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>
                                         @endforeach
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

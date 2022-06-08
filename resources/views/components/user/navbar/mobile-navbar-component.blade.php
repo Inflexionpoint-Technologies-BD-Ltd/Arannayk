@@ -72,9 +72,9 @@
                 <a href="#">Knowledge</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="./publication">Publications</a>
+                        <a href="/publication">Publications</a>
                     </li>
-                    <li class="menu-item"><a href="">Tools & Data</a></li>
+                    <li class="menu-item"><a href="/tools-data">Tools & Data</a></li>
                 </ul>
             </li>
         </ul>

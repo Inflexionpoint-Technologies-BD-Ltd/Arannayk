@@ -14,6 +14,12 @@ use App\Achievement;
 use App\Career;
 use App\Consultancy;
 use App\Procurement;
+use App\Press;
+use App\Blog;
+use App\Activity;
+use App\Media;
+use App\Photo;
+use App\Video;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -92,18 +98,30 @@ class UserPanelController extends Controller
     }
 
     public function pressRelease(){
-        return view('user.press-release');
+        $pressReleases=Press::all();
+        return view('user.press-release',compact('pressReleases'));
     }
     public function activityUpdates(){
-        return view('user.activity-updates');
+        $activities= Activity::all();
+        return view('user.activity-updates',compact('activities'));
     }
     public function videoStories(){
+        $videos= Video::all();
+        return view('user.video-stories', compact('videos'));
     }
     public function mediaCoverage(){
+        $medias= Media::all();
+        return view('user.media-coverage',compact('medias'));
     }
     public function photos(){
+        $photos = Photo::all();
+        return view('user.photos', compact('photos'));
     }
     public function blogs(){
-        return view('user.blogs');
+        $blogs=Blog::all();
+        return view('user.blogs',compact('blogs'));
+    }
+    public function tools(){
+        return view('user.tools-data');
     }
 }

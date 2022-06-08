@@ -12,7 +12,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 
 Route::get('/', "UserPanelController@index");
-Route::get('/publication', "UserPanelController@publication");
 Route::get('/services', "UserPanelController@services");
 Route::get('/current-projects', "UserPanelController@currentProject");
 Route::get('/project-archives', "UserPanelController@projectArchives");
@@ -34,6 +33,8 @@ Route::get('/media-center/media-coverage', "UserPanelController@mediaCoverage");
 Route::get('/media-center/photos', "UserPanelController@photos");
 Route::get('/media-center/blogs', "UserPanelController@blogs");
 
+Route::get('/publication', "UserPanelController@publication");
+Route::get('/tools-data', "UserPanelController@tools");
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
