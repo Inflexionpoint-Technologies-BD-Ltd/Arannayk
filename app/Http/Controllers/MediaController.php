@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Media;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class MediaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $medias = Media::all();
+        return view('admin.admin-content.media.index', compact('medias'));
     }
 
     /**
@@ -25,14 +25,13 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
-
+        return view('admin.admin-content.media.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -40,14 +39,15 @@ class ProcurementController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'tag' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Media::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +55,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Media $media)
     {
         //
     }
@@ -66,51 +66,56 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit($id)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        $media = Media::findOrFail($id);
+        return view('admin.admin-content.media.edit', compact('media'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, $id)
     {
+        $media = Media::findOrFail($id);
+
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'tag' => 'required',
+            'image' => 'mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
-        }else{
-            $inputs['image'] = $procurement->image;
+        } else {
+            $inputs['image'] = $media->image;
         }
 
-        $procurement->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        $media->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('media.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy($id)
     {
-        $procurement->delete();
+        $media = Media::findOrFail($id);
+        $media->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("media.index");
     }
 }

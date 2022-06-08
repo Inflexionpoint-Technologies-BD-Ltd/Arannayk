@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Video;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $videos = Video::all();
+        return view('admin.admin-content.video.index', compact('videos'));
     }
 
     /**
@@ -25,8 +25,7 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
-
+        return view('admin.admin-content.video.create');
     }
 
     /**
@@ -40,14 +39,14 @@ class ProcurementController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'required|mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Video::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +54,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Video $video)
     {
         //
     }
@@ -66,51 +65,51 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit(Video $video)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        return view('admin.admin-content.video.edit',compact('video'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, Video $video)
     {
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }else{
-            $inputs['image'] = $procurement->image;
+            $inputs['image'] = $video->image;
         }
 
-        $procurement->update($inputs);
-        session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        $video->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('video.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy(Video $video)
     {
-        $procurement->delete();
+        $video->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("video.index");
     }
 }

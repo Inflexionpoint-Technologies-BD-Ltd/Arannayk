@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>View All Procurement Info</h4>
+    <h4>View All Video Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
@@ -18,15 +18,15 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($procurements as $procurement)
+        @foreach($videos as $video)
             <tr>
                 <td>{{ $id += 1 }}</td>
-                <td>{!! $procurement->title !!}</td>
-                <td><img src="{{ asset('storage/'.$procurement->image) }}" alt="" style="width: 100px"></td>
-                <td>{!! $procurement->content !!}</td>
-                <td><a href="{{ route('procurement.edit',$procurement->id) }}" class="btn btn-info">Update</a></td>
+                <td>{!! $video->title !!}</td>
+                <td>{!! $video->content !!}</td>
+                <td><img src="{{ asset('storage/'.$video->image) }}" alt="" style="width: 100px"></td>
+                <td><a href="{{ route('video.edit',$video->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('procurement.destroy',$procurement->id) }}" method="post">
+                    <form action="{{ route('video.destroy',$video->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

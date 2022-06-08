@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Procurement;
+use App\Press;
 use Illuminate\Http\Request;
 
-class ProcurementController extends Controller
+class PressController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProcurementController extends Controller
      */
     public function index()
     {
-        $procurements = Procurement::all();
-        return view('admin.admin-content.procurement.index', compact('procurements'));
+        $presses = Press::all();
+        return view('admin.admin-content.press.index', compact('presses'));
     }
 
     /**
@@ -25,8 +25,7 @@ class ProcurementController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.procurement.create');
-
+        return view('admin.admin-content.press.create');
     }
 
     /**
@@ -40,6 +39,7 @@ class ProcurementController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
+            'tag' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png',
         ]);
 
@@ -47,7 +47,7 @@ class ProcurementController extends Controller
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Procurement::create($inputs);
+        Press::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -55,10 +55,10 @@ class ProcurementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Press  $press
      * @return \Illuminate\Http\Response
      */
-    public function show(Procurement $procurement)
+    public function show(Press $press)
     {
         //
     }
@@ -66,51 +66,52 @@ class ProcurementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Press  $press
      * @return \Illuminate\Http\Response
      */
-    public function edit(Procurement $procurement)
+    public function edit(Press $press)
     {
-        return view('admin.admin-content.procurement.edit',compact('procurement'));
+        return view('admin.admin-content.press.edit',compact('press'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Press  $press
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Procurement $procurement)
+    public function update(Request $request, Press $press)
     {
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
+            'tag' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }else{
-            $inputs['image'] = $procurement->image;
+            $inputs['image'] = $press->image;
         }
 
-        $procurement->update($inputs);
+        $press->update($inputs);
         session()->flash('create', 'Data Created Successfully');
-        return redirect()->route('procurement.index');
+        return redirect()->route('press.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Procurement  $procurement
+     * @param  \App\Press  $press
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Procurement $procurement)
+    public function destroy(Press $press)
     {
-        $procurement->delete();
+        $press->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("procurement.index");
+        return redirect()->route("press.index");
     }
 }
