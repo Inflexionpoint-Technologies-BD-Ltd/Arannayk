@@ -12,7 +12,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 
 Route::get('/', "UserPanelController@index");
-Route::get('/publication', "UserPanelController@publication");
 Route::get('/services', "UserPanelController@services");
 Route::get('/current-projects', "UserPanelController@currentProject");
 Route::get('/project-archives', "UserPanelController@projectArchives");
@@ -22,8 +21,20 @@ Route::get('/board-members', "UserPanelController@boardMembers");
 Route::get('/achievements', "UserPanelController@achievements");
 Route::get('/our-partners', "UserPanelController@partnersDonors");
 
+Route::get('/get-involved/career', "UserPanelController@career");
+Route::get('/get-involved/internship', "UserPanelController@internship");
+Route::get('/get-involved/consultancy', "UserPanelController@consultancy");
+Route::get('/get-involved/procurement', "UserPanelController@procurement");
 
+Route::get('/media-center/press-release', "UserPanelController@pressRelease");
+Route::get('/media-center/activity-updates', "UserPanelController@activityUpdates");
+Route::get('/media-center/video-stories', "UserPanelController@videoStories");
+Route::get('/media-center/media-coverage', "UserPanelController@mediaCoverage");
+Route::get('/media-center/photos', "UserPanelController@photos");
+Route::get('/media-center/blogs', "UserPanelController@blogs");
 
+Route::get('/publication', "UserPanelController@publication");
+Route::get('/tools-data', "UserPanelController@tools");
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------

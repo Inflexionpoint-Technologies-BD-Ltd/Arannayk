@@ -189,17 +189,7 @@
 
                         <div class="greennature-sidebar greennature-right-sidebar four columns">
                             <div class="greennature-item-start-content sidebar-right-item">
-                                <div id="search-3" class="widget widget_search greennature-item greennature-widget">
-                                    <div class="gdl-search-form">
-                                        <form method="get" id="searchform" action="https://demo.goodlayers.com/greennature//">
-                                            <div class="search-text" id="search-text">
-                                                <input type="text" name="s" id="s" autocomplete="off" data-default="Type keywords..." />
-                                            </div>
-                                            <input type="submit" id="searchsubmit" value="" />
-                                            <div class="clear"></div>
-                                        </form>
-                                    </div>
-                                </div>
+
                                 {{--                                <div id="text-2" class="widget widget_text greennature-item greennature-widget">--}}
                                 {{--                                    <h3 class="greennature-widget-title">Text Widget</h3>--}}
                                 {{--                                    <div class="clear"></div>--}}

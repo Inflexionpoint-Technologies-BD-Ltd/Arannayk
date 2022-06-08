@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Video Stories</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,47 +105,46 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Media Center</h1>
+            <span class="greennature-page-caption">Video Stories</span>
         </div>
     </div>
 
-    <section>
-        <div class="content-wrapper">
-            <div class="greennature-content">
+    <section id="content-section-3">
+    <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
+        <div class="container">
 
-                <!-- Above Sidebar Section-->
-
-                <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
-
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
-                                </div>
-                                @endforeach
-
-                                <div class="clear"></div>
-
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </section>
+            @foreach($videos as $video)
+            <div class="six columns">
+                <div class="greennature-video-item greennature-item">
+                    <iframe src="{{ asset('storage/'.$video->image)}}"
+                            width="620" height="348"></iframe>
                 </div>
-                <!-- Below Sidebar Section-->
+                <div class="greennature-item greennature-about-us-item greennature-normal">
+                    <div class="about-us-title-wrapper">
+                        <h4 class="greennature-blog-title">{{ $video->title }}</h4>
+                        <div class="about-us-caption greennature-title-font greennature-skin-info">
+                            <p>{!! $video->content !!}</p>
+                        </div>
+                        <div class="about-us-title-divider"></div>
+                    </div>
+                    <div class="about-us-content-wrapper">
+                        <div class="about-us-content greennature-skin-content">
+                            <p></p>
+                        </div>
 
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
-            <!-- greennature-content -->
+            @endforeach
+
             <div class="clear"></div>
         </div>
+    </div>
+    <div class="clear"></div>
     </section>
+
 
 
     <!-------------------------------------------------------------------------

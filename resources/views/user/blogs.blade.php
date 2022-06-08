@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Blogs</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,8 +105,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Media Center</h1>
+            <span class="greennature-page-caption">Blogs</span>
         </div>
     </div>
 
@@ -118,27 +118,68 @@
 
                 <!-- Sidebar With Content Section-->
                 <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
+                    <div class="with-sidebar-container container">
+                        <div class="">
+                            <div class="">
+                                <section id="content-section-1">
+                                    <div class="section-container container">
+                                        <div class="blog-item-wrapper">
+                                            <div class="blog-item-holder">
 
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
-                                </div>
-                                @endforeach
+                                                @foreach($blogs as $blog)
+                                                <div class="greennature-item greennature-blog-full">
+                                                    <div class="greennature-ux greennature-blog-full-ux">
+                                                        <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                            <div class="greennature-standard-style">
+                                                                <div>
+                                                                    <a> <img src="{{ asset('storage/'.$blog->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                </div>
 
-                                <div class="clear"></div>
+                                                                <div class="blog-content-wrapper">
+                                                                    <header class="post-header">
+                                                                        <h3 class="greennature-blog-title"><a>{{ $blog->title }}</a></h3>
 
+                                                                        <div class="clear"></div>
+                                                                    </header>
+                                                                    <!-- entry-header -->
+
+                                                                    <div class="greennature-blog-content">
+                                                                        {!! $blog->content !!}
+                                                                        <div class="greennature-blog-info" style="margin-top:2rem;">
+                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a href="" >{{ $blog->tag }}</a></div>
+                                                                            <div class="clear"></div>
+                                                                        </div>
+                                                                        <div class="clear">
+                                                                        </div>
+                                                                        {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+                                                                    </div>
+                                                                </div>
+                                                                <!-- blog content wrapper -->
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </article>
+                                                        <!-- #post -->
+                                                    </div>
+                                                </div>
+                                                @endforeach
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </section>
                             </div>
+
                             <div class="clear"></div>
                         </div>
-                    </section>
+
+
+                        <div class="clear"></div>
+                    </div>
                 </div>
+
                 <!-- Below Sidebar Section-->
 
             </div>

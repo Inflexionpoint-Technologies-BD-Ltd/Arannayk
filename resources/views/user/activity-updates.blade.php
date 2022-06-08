@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Activity Updates</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,8 +105,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Media Center</h1>
+            <span class="greennature-page-caption">Activity Updates</span>
         </div>
     </div>
 
@@ -118,27 +118,108 @@
 
                 <!-- Sidebar With Content Section-->
                 <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
+                    <div class="with-sidebar-container container">
+                        <div class="with-sidebar-left eight columns">
+                            <div class="with-sidebar-content twelve columns">
+                                <section id="content-section-1">
+                                    <div class="section-container container">
+                                        <div class="blog-item-wrapper">
+                                            <div class="blog-item-holder">
+                                                <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
+                                                    <div class="clear"></div>
 
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
-                                </div>
-                                @endforeach
+                                                    @foreach($activities as $activity)
+                                                    <div class="six columns">
+                                                        <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                            <div class="greennature-ux greennature-blog-grid-ux">
+                                                                <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                    <div class="greennature-standard-style">
+                                                                        <div class="greennature-blog-thumbnail">
+                                                                            <a> <img src="{{ asset('storage/'.$activity->image) }}" class="activity-updates-image" alt="" width="400" height="300" /></a>
+                                                                        </div>
 
-                                <div class="clear"></div>
+                                                                        <div class="greennature-blog-grid-content">
+                                                                            <header class="post-header">
+                                                                                <h3 class="greennature-blog-title"><a>{{ $activity->title }}</a></h3>
 
+                                                                                <div class="greennature-blog-info">
+                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-tags"></i><a href="">{{ $activity->tag }}</a></div>
+                                                                                    <div class="clear"></div>
+                                                                                </div>
+                                                                                <div class="clear"></div>
+                                                                            </header>
+                                                                            <!-- entry-header -->
+
+                                                                            <div class="greennature-blog-content" style="text-align: justify">
+                                                                                 {!! $activity->content !!}
+
+{{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                                <!-- #post -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    @endforeach
+
+                                                    <div class="clear"></div>
+
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </section>
                             </div>
+
                             <div class="clear"></div>
                         </div>
-                    </section>
+
+                        <div class="greennature-sidebar greennature-right-sidebar four columns">
+                            <div class="greennature-item-start-content sidebar-right-item">
+
+                                <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                                    <h3 class="greennature-widget-title">Recent Activities</h3>
+                                    <div class="clear"></div>
+                                    <div class="greennature-recent-port-widget">
+
+                                        @foreach($activities as $activity)
+                                        <div class="recent-post-widget">
+                                            <div class="recent-post-widget-thumbnail">
+                                                <a><img src="{{ asset('storage/'.$activity->image) }}" alt="" width="150" height="150" /></a>
+                                            </div>
+                                            <div class="recent-post-widget-content">
+                                                <div class="recent-post-widget-title"><a>{{ $activity->title }}</a></div>
+                                                <div class="recent-post-widget-info">
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        @endforeach
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                                    <h3 class="greennature-widget-title">Tags</h3>
+                                    <div class="clear"></div>
+                                    <div class="tagcloud">
+                                        @foreach($activities as $activity)
+                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
+                                        @endforeach
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
+
                 <!-- Below Sidebar Section-->
 
             </div>

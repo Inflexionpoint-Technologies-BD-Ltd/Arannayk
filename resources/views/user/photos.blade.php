@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Photos</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,8 +105,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Media Center</h1>
+            <span class="greennature-page-caption">Photos</span>
         </div>
     </div>
 
@@ -117,27 +117,54 @@
                 <!-- Above Sidebar Section-->
 
                 <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
+                <div class="content-wrapper">
+                    <div class="greennature-content">
 
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
+                        <div class="with-sidebar-wrapper">
+                            <section id="content-section-1">
+                                <div class="section-container container">
+                                    <div class="portfolio-item-wrapper type-classic-portfolio" style="margin-bottom: 20px;">
+                                        <div class="portfolio-item-holder  greennature-portfolio-column-3">
+                                            <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
+                                                <div class="clear"></div>
+
+                                                @foreach($photos as $photo)
+                                                    <div class="three columns">
+                                                        <div
+                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                            <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                                <div class="portfolio-thumbnail greennature-image"><img
+                                                                        src="{{ asset('storage/'.$photo->image)}}" alt="" class="photos-style"
+                                                                    /><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$photo->image) }}"
+                                                                        data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a></div>
+                                                                <div class="portfolio-classic-content">
+                                                                    <div style="text-align:center">
+                                                                       <p>{{ $photo->title }}</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                @endforeach
-
-                                <div class="clear"></div>
-
-                            </div>
-                            <div class="clear"></div>
+                            </section>
                         </div>
-                    </section>
+                        <!-- Below Sidebar Section-->
+
+                    </div>
+                    <!-- greennature-content -->
+                    <div class="clear"></div>
                 </div>
                 <!-- Below Sidebar Section-->
 
@@ -146,6 +173,7 @@
             <div class="clear"></div>
         </div>
     </section>
+
 
 
     <!-------------------------------------------------------------------------

@@ -39,7 +39,7 @@ class VideoController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,video',
+            'image' => 'required',
         ]);
 
         if (request('image')) {
@@ -85,7 +85,6 @@ class VideoController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,video',
         ]);
 
         if (request('image')) {

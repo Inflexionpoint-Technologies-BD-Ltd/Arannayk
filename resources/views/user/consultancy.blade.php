@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Consultancy</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,46 +105,74 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Get Involved</h1>
+            <span class="greennature-page-caption">Consultancy</span>
         </div>
     </div>
 
-    <section>
-        <div class="content-wrapper">
-            <div class="greennature-content">
+    <section id="content-section-2">
+        <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey" style="background-color: #ffffff; padding-top: 55px; padding-bottom: 35px; ">
+            @foreach($consultancy as $consultancy)
+            <div class="container">
 
-                <!-- Above Sidebar Section-->
 
-                <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
-
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
-                                </div>
-                                @endforeach
-
-                                <div class="clear"></div>
-
-                            </div>
-                            <div class="clear"></div>
+                <div class="four columns">
+                    <div class="greennature-ux column-service-ux">
+                        <div class="greennature-item greennature-column-service-item greennature-type-3">
+                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_1) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-                <!-- Below Sidebar Section-->
 
+                <div class="four columns">
+                    <div class="greennature-ux column-service-ux">
+                        <div class="greennature-item greennature-column-service-item greennature-type-3">
+                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_2) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="greennature-ux column-service-ux">
+                        <div class="greennature-item greennature-column-service-item greennature-type-3">
+                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_3) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="clear"></div>
             </div>
-            <!-- greennature-content -->
-            <div class="clear"></div>
+                <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; padding-top: 70px; padding-bottom: 53px; ">
+                    <div class="container">
+                        <div class="">
+                            <div class="greennature-item greennature-about-us-item greennature-normal">
+                                <div class="about-us-title-wrapper">
+                                    <h3 class="about-us-title"> We Provide Consulting Services </h3>
+                                    <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
+                                    <div class="about-us-title-divider"></div>
+                                </div>
+                                <div class="about-us-content-wrapper">
+                                    <div class="about-us-content greennature-skin-content">
+                                        <p>{{ $consultancy->content }}</p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            @endforeach
         </div>
+        <div class="clear"></div>
+    </section>
+
+
+    <section id="content-section-3">
+
+        <div class="clear"></div>
     </section>
 
 

@@ -841,6 +841,7 @@ html .woocommerce .greennature-widget-title {
 .greennature-header-container {
 	position: relative;
 	z-index: 97;
+    max-height: 90px;
 }
 
 .greennature-logo {
@@ -6283,4 +6284,36 @@ input[type="text"].greennature-payment-price-fill {
     width: 400px;
     height:300px;
     object-fit: contain;
+}
+
+.slider-button-custom{
+   color: #fff;
+}
+.consultancy-image-style{
+    width: 480px;
+    height:220px;
+    object-fit: cover;
+}
+
+.press-release-image{
+    width:500px;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.activity-updates-image{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.photos-style{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.tools-image-style{
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
 }

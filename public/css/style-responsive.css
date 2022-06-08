@@ -443,6 +443,11 @@ html body {
         width:960px;
         height: 250px;
     }
+    .press-release-image{
+        width:800px;
+        height: 280px;
+        object-fit: cover;
+    }
 
 	body .container {
 		max-width: 300px;
@@ -471,9 +476,10 @@ html body {
 
 
 @media only screen and (min-width:250px)and (max-width: 959px) {
+
 	.msp-preset-btn-159 {
 		margin-left: 2rem;
-
+        opacity: 0;
 	}
 
 	.ms-layer {
@@ -496,4 +502,11 @@ html body {
 		left: 50%;
 		margin-left: -512px;
 	}
+}
+@media only screen and (min-width:760px)and (max-width: 1050px) {
+    .greennature-logo-container,
+    .greennature-header-container {
+        max-height: 100%;
+    }
+
 }

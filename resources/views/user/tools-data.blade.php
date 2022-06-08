@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Partners & Donors</title>
+    <title>Arannayk - Tools & Data</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -31,6 +31,10 @@
     <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all"/>
+
+
+
+
     <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all"/>
@@ -105,8 +109,8 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Partners & Donors</span>
+            <h1 class="section-heading-title">Knowledge</h1>
+            <span class="greennature-page-caption">Tools & Data</span>
         </div>
     </div>
 
@@ -114,38 +118,88 @@
         <div class="content-wrapper">
             <div class="greennature-content">
 
-                <!-- Above Sidebar Section-->
-
-                <!-- Sidebar With Content Section-->
                 <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="greennature-gallery-item greennature-item" style="margin-bottom: 40px;">
+                    <div class="with-sidebar-container container greennature-class-no-sidebar">
 
-                                @foreach($partners as $partner)
-                                <div class="gallery-column three columns">
-                                    <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
-                                            <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
+                        @foreach($tools as $tool)
+                        <div class="with-sidebar-left twelve columns">
+                            <div class="with-sidebar-content twelve columns">
+                                <div class="greennature-item greennature-portfolio-style2 greennature-item-start-content">
+                                    <div id="portfolio-76" class="post-76 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio_category-environment portfolio_category-volunteer portfolio_tag-donation portfolio_tag-volunteer">
+                                        <div class="greennature-portfolio-thumbnail ">
+{{--                                            <div class="greennature-stack-image-wrapper">--}}
+{{--                                                <div class="greennature-stack-image">--}}
+{{--                                                    <a data-fancybox-group="greennature-gal-1" data-rel="fancybox"><img src="{{ asset('upload/shutterstock_256181956.jpg') }}" alt="No Image" width="1280" height="853" /></a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+
+                                            <div
+                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                    <div class="portfolio-thumbnail"><img
+                                                            src="{{ asset('storage/'.$tool->image)}}" alt="" class="tools-image-style"
+                                                        /><span
+                                                            class="portfolio-overlay">&nbsp;</span><a
+                                                            class="portfolio-overlay-icon"
+                                                            href="{{ asset('storage/'.$tool->image) }}"
+                                                            data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                    class="fa fa-search"></i></span></a></div>
+                                                    <div class="portfolio-classic-content">
+                                                        <div style="text-align:center">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="greennature-portfolio-content">
+                                            <div class="greennature-portfolio-info">
+                                                <h4 class="head">{{ $tool->title }}</h4>
+
+                                                <div class="content">
+                                                    <div class="portfolio-info portfolio-clients"><span class="info-head greennature-title">Author </span>{{ $tool->author }}</div>
+                                                    <div class="portfolio-info portfolio-skills"><span class="info-head greennature-title">Publication Date </span>{{ $tool->publication_date  }}</div>
+                                                    <div class="portfolio-info portfolio-website"><span class="info-head greennature-title">Link </span><a href="{{ $tool->link }}" target="_blank">{{ $tool->link  }}</a></div>
+                                                    <div class="clear"></div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="greennature-portfolio-description">
+                                                <h4 class="head">Description</h4>
+                                                <div class="content">
+                                                    <p>{!! $tool->content !!} </p>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- #portfolio -->
+
+                                    <div class="clear"></div>
+
                                 </div>
-                                @endforeach
 
-                                <div class="clear"></div>
 
                             </div>
+
                             <div class="clear"></div>
                         </div>
-                    </section>
+                        @endforeach
+
+
+                        <div class="clear"></div>
+                    </div>
                 </div>
-                <!-- Below Sidebar Section-->
 
             </div>
             <!-- greennature-content -->
             <div class="clear"></div>
         </div>
     </section>
+
+
+
 
 
     <!-------------------------------------------------------------------------
@@ -176,9 +230,12 @@
 <script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
+
+
 <script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
+
 <script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>

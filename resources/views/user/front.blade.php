@@ -127,7 +127,7 @@
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
                                                 <a href="#" target="_self"
-                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom" style=""
                                                    data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
                                                    data-duration="400"
                                                    data-delay="987"

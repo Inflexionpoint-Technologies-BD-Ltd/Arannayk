@@ -3,7 +3,7 @@
     <!-------------------- Navbar logo ---------------------------------------->
     <div class="greennature-logo-inner">
         <a href="/">
-            <img src="{{ asset('images/logo.png') }}" style="height: 40px" alt="" />
+            <img src="{{ asset('images/logo.png') }}" style="height: 60px" alt="" />
         </a>
     </div>
     <!-------------------------------------------------------------  Navbar Logo --------->
@@ -49,22 +49,22 @@
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="#">Get Involved</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="">Career</a></li>
-                    <li class="menu-item"><a href="">Internship</a></li>
-                    <li class="menu-item"><a href="">Consultancy</a></li>
-                    <li class="menu-item"><a href="">Procurement</a></li>
+                    <li class="menu-item"><a href="/get-involved/career">Career</a></li>
+                    <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
+                    <li class="menu-item"><a href="/get-involved/consultancy">Consultancy</a></li>
+                    <li class="menu-item"><a href="/get-involved/procurement">Procurement</a></li>
                 </ul>
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="#">Media Center</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="">Press Release</a></li>
-                    <li class="menu-item"><a href="">Activity Updates</a></li>
-                    <li class="menu-item"><a href="">Video Stories</a></li>
-                    <li class="menu-item"><a href="">Media Coverage</a></li>
-                    <li class="menu-item"><a href="">Photos</a></li>
-                    <li class="menu-item"><a href="">Blogs</a></li>
+                    <li class="menu-item"><a href="/media-center/press-release">Press Release</a></li>
+                    <li class="menu-item"><a href="/media-center/activity-updates">Activity Updates</a></li>
+                    <li class="menu-item"><a href="/media-center/video-stories">Video Stories</a></li>
+                    <li class="menu-item"><a href="/media-center/media-coverage">Media Coverage</a></li>
+                    <li class="menu-item"><a href="/media-center/photos">Photos</a></li>
+                    <li class="menu-item"><a href="/media-center/blogs">Blogs</a></li>
                 </ul>
             </li>
 
@@ -72,9 +72,9 @@
                 <a href="#">Knowledge</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="./publication">Publications</a>
+                        <a href="/publication">Publications</a>
                     </li>
-                    <li class="menu-item"><a href="">Tools & Data</a></li>
+                    <li class="menu-item"><a href="/tools-data">Tools & Data</a></li>
                 </ul>
             </li>
         </ul>
