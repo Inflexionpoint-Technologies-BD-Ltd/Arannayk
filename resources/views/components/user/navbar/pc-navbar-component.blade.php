@@ -128,10 +128,10 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="">Press Release </a>
+                                    <a href="/media-center/press-release">Press Release </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="">Media Coverage</a>
+                                    <a href="/media-center/media-coverage">Media Coverage</a>
                                 </li>
                             </ul>
                         </li>
@@ -139,18 +139,18 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="">Activity Updates</a>
+                                    <a href="/media-center/activity-updates">Activity Updates</a>
                                 </li>
-                                <li class="menu-item"><a href="">Photos</a></li>
+                                <li class="menu-item"><a href="/media-center/photos">Photos</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="">Video Stories</a>
+                                    <a href="/media-center/video-stories">Video Stories</a>
                                 </li>
-                                <li class="menu-item"><a href="">Blogs</a></li>
+                                <li class="menu-item"><a href="/media-center/blogs">Blogs</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -167,7 +167,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="./publication">Publications</a>
+                                    <a href="/publication">Publications</a>
                                 </li>
                             </ul>
                         </li>

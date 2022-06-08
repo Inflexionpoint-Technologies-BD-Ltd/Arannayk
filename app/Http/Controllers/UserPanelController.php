@@ -90,4 +90,19 @@ class UserPanelController extends Controller
         $procurements=Procurement::all();
         return view('user.procurement',compact('procurements'));
     }
+
+    public function pressRelease(){
+        return view('user.press-release');
+    }
+    public function activityUpdates(){
+    }
+    public function videoStories(){
+    }
+    public function mediaCoverage(){
+    }
+    public function photos(){
+    }
+    public function blogs(){
+        return view('user.blogs');
+    }
 }

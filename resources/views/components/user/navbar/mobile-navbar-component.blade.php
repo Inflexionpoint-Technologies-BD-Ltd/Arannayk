@@ -59,12 +59,12 @@
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="#">Media Center</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="">Press Release</a></li>
-                    <li class="menu-item"><a href="">Activity Updates</a></li>
-                    <li class="menu-item"><a href="">Video Stories</a></li>
-                    <li class="menu-item"><a href="">Media Coverage</a></li>
-                    <li class="menu-item"><a href="">Photos</a></li>
-                    <li class="menu-item"><a href="">Blogs</a></li>
+                    <li class="menu-item"><a href="/media-center/press-release">Press Release</a></li>
+                    <li class="menu-item"><a href="/media-center/activity-updates">Activity Updates</a></li>
+                    <li class="menu-item"><a href="/media-center/video-stories">Video Stories</a></li>
+                    <li class="menu-item"><a href="/media-center/media-coverage">Media Coverage</a></li>
+                    <li class="menu-item"><a href="/media-center/photos">Photos</a></li>
+                    <li class="menu-item"><a href="/media-center/blogs">Blogs</a></li>
                 </ul>
             </li>
 

@@ -443,6 +443,11 @@ html body {
         width:960px;
         height: 250px;
     }
+    .press-release-image{
+        width:800px;
+        height: 280px;
+        object-fit: cover;
+    }
 
 	body .container {
 		max-width: 300px;

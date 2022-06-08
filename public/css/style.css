@@ -6294,3 +6294,11 @@ input[type="text"].greennature-payment-price-fill {
     height:220px;
     object-fit: cover;
 }
+
+.press-release-image{
+    width:500px;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
