@@ -120,6 +120,12 @@ Route::middleware('auth')->group(function () {
 
 // -------------------------------- Procurement --------------------------------
 
+    // -------------------------------- Press --------------------------------
+
+    Route::resource('admin/press',"PressController");
+
+// -------------------------------- Press --------------------------------
+
 // --------------------------------- Log out ---------------------------------
 
     Route::get('logout', "AdminController@logout")->name('logout');

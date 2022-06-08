@@ -338,5 +338,30 @@
 
 {{-- -------------------------------------------------- Procurement ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Press Release ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePress"
+       aria-expanded="true" aria-controls="collapsePress">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Press Release</span>
+    </a>
+    <div id="collapsePress" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Components:</h6>
+            <a class="collapse-item" href="{{ route('press.create') }}">Add procurement</a>
+            <a class="collapse-item" href="{{ route('press.index') }}">View All procurements</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Press Release ------------------------------------------------------- --}}
+
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}
