@@ -193,7 +193,7 @@
                                                 <a><img src="{{asset('storage/'.$press->image)}}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $press->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="#{{ $press->title }}">{{ $press->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>
                                                     <div class="clear"></div>
@@ -211,7 +211,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($pressReleases as $press)
-                                        <a class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
+                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
                                         @endforeach
                                         </div>
                                 </div>

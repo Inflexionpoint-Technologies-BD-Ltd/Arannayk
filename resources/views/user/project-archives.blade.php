@@ -155,7 +155,9 @@
 
                                                                             <div class="greennature-blog-content">Major Achievements:
                                                                                     <p>{!! $archive->achievement !!}</p>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+                                                                                <div class="clear"></div>
+{{--                                                                                <a href="" class="excerpt-read-more">Read More</a>--}}
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </article>

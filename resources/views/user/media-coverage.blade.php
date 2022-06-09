@@ -195,7 +195,7 @@
                                                     <a><img src="{{ asset('storage/'.$media->image) }}" alt="" width="150" height="150" /></a>
                                                 </div>
                                                 <div class="recent-post-widget-content">
-                                                    <div class="recent-post-widget-title"><a>{{ $media->title }}</a></div>
+                                                    <div class="recent-post-widget-title"><a href="{{ $media->title }}">{{ $media->title }}</a></div>
                                                     <div class="recent-post-widget-info">
                                                         <div class="clear"></div>
                                                     </div>
@@ -213,7 +213,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($medias as $media)
-                                            <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>
+                                            <a href="#{{ $media->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>
                                         @endforeach
                                     </div>
                                 </div>

@@ -198,7 +198,7 @@
                                                 <a><img src="{{ asset('storage/'.$activity->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $activity->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="#{{$activity->title}}">{{ $activity->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="clear"></div>
                                                 </div>
@@ -216,7 +216,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($activities as $activity)
-                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
+                                        <a href="#{{ $activity->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
                                         @endforeach
                                       </div>
                                 </div>
