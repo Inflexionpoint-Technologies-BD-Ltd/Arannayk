@@ -1719,3 +1719,23 @@ html .woocommerce-page #content .quantity .minus:hover {
 	color: #ffffff;
 	background-color: #ffffff;
 }
+.pagination > li > a,
+.pagination > li > span {
+    color: #5dc269; // use your own color here
+    border: none;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #5dc269;
+    border-color: #5dc269 !important;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #5dc269; //your color
+    border-color: #5dc269 !important;
+}
