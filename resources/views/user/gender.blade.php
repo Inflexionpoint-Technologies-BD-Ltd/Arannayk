@@ -196,7 +196,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="portfolio-excerpt">
-                                                    {!! \Illuminate\Support\Str::limit($project -> achievement,150,'...')  !!}
+                                                    {!! \Illuminate\Support\Str::words($project -> achievement,50,'...')  !!}
 
                                                     <div class="clear"></div>
                                                     <a href="/current-projects" class="excerpt-read-more">Read
@@ -265,7 +265,7 @@
                                             </div>
                                             <div class="portfolio-classic-content">
                                                 <h3 class="portfolio-title">
-                                                    <a href="{{ route('projects') }}">{{ $blog -> title }}</a>
+                                                    <a href="{{ route('blogs') }}">{{ $blog -> title }}</a>
                                                 </h3>
                                                 <div class="greennature-portfolio-info">
                                                     <div class="portfolio-info portfolio-tag">

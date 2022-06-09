@@ -496,7 +496,7 @@
                                                                 <div class="clear"></div>
                                                             </div>
                                                             <div class="portfolio-excerpt">
-                                                                {!! \Illuminate\Support\Str::limit($project -> achievement,150,'...')  !!}
+                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,50,'...')  !!}</p>
 
                                                                 <div class="clear"></div>
                                                                 <a href="{{ route('projects') }}" class="excerpt-read-more">Read

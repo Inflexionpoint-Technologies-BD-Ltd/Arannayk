@@ -23,7 +23,7 @@
                     <li class="menu-item"><a href="{{ route('boardMembers') }}">Board Members</a></li>
                     <li class="menu-item"><a href="{{ route('team') }}">Our Team</a></li>
                     <li class="menu-item"><a href="{{ route('achievements') }}">Our Achievements</a></li>
-                    <li class="menu-item"><a href="">Timeline</a></li>
+                    <li class="menu-item"><a href="{{ route('timeline') }}">Timeline</a></li>
                     <li class="menu-item">
                         <a href="{{ route('partners') }}">Our Partners & Donors</a>
                     </li>
@@ -43,7 +43,7 @@
                 <a href="#">Where We Work</a>
             </li>
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">Donate</a>
+                <a href="{{ route('donate') }}">Donate</a>
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">

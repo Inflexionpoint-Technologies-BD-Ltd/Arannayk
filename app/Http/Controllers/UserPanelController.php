@@ -24,6 +24,7 @@ use App\Tool;
 use App\About;
 use App\Mission;
 use App\Ecosystem;
+use App\Donate;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -166,5 +167,18 @@ class UserPanelController extends Controller
         $blogs=Blog::skip(0)->take(4)->where('tag','gender')->get();
         $ecosystems = Ecosystem::where('title','gender')->get();
         return view('user.gender',compact('projects', 'blogs','ecosystems'));
+    }
+
+    public function contactUs(){
+        return view('user.contact-us');
+    }
+
+    public function timeline(){
+        return view('user.timeline');
+    }
+
+    public function donate(){
+        $donates=Donate::all();
+        return view('user.donate', compact('donates'));
     }
 }

@@ -31,7 +31,7 @@
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Timeline</a></li>
+                                <li class="menu-item"><a href="{{ route('timeline') }}">Timeline</a></li>
                                 <li class="menu-item">
                                     <a href="{{ route('partners') }}">Our Partners & Donors</a>
                                 </li>
@@ -188,7 +188,7 @@
 
         <!-- ------------------------------------------------------- payment -------------------------------------------- -->
 
-        <a class="greennature-donate-button" href="#" target="_blank"><span
+        <a class="greennature-donate-button" href="{{ route('donate') }}" target="_blank"><span
                 class="greennature-button-overlay"></span>
             <span class="greennature-button-donate-text">Donate</span>
         </a>
