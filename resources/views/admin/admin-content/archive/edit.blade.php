@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h1>Edit project information</h1>
+    <h1>Edit Archive project information</h1>
     <hr>
 
     <div>

@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>Add Video Contents</h4>
+    <h4>Edit Video Contents</h4>
     <hr>
 
     <div>

@@ -10,7 +10,7 @@
     @endif
 
 
-    <h4>Mission, Vision, Values</h4>
+    <h4>View Mission, Vision, Values</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">

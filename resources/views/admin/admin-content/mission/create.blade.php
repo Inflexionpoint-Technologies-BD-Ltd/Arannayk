@@ -7,7 +7,7 @@
         <p>{{ session('create') }}</p>
     @endif
 
-    <h4>Add Mission Information</h4>
+    <h4>Add Mission, Vision, Values Information</h4>
     <hr>
 
     <div>

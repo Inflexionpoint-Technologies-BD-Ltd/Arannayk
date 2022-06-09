@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h4>Edit Services</h4>
+    <h4>Edit Mission, Vision, Values Info</h4>
     <hr>
 
     <div>

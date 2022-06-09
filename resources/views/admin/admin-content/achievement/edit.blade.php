@@ -48,7 +48,7 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1">Enter Date</label>
                     <input type="date" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter title" name="date"
+                           placeholder="" name="date"
                            class="form-control @error('date') is-invalid @enderror" value="{{ $achievement->date }}">
                 </div>
 
