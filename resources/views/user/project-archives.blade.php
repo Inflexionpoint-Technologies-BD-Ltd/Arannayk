@@ -206,7 +206,7 @@
                                                 <a href=""><img src="{{asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="/current-projects">{{ $project->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="{{ route('projects') }}">{{ $project->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>
                                                     <div class="clear"></div>

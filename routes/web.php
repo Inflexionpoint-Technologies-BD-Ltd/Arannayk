@@ -12,29 +12,31 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 
 Route::get('/', "UserPanelController@index");
-Route::get('/services', "UserPanelController@services");
-Route::get('/current-projects', "UserPanelController@currentProject");
-Route::get('/project-archives', "UserPanelController@projectArchives");
-Route::get('/about-arannayk', "UserPanelController@aboutUs");
-Route::get('/our-team', "UserPanelController@ourTeam");
-Route::get('/board-members', "UserPanelController@boardMembers");
-Route::get('/achievements', "UserPanelController@achievements");
-Route::get('/our-partners', "UserPanelController@partnersDonors");
+Route::get('/services', "UserPanelController@services")->name('services');
+Route::get('/current-projects', "UserPanelController@currentProject")->name('projects');
+Route::get('/project-archives', "UserPanelController@projectArchives")->name('archives');
+Route::get('/about-arannayk', "UserPanelController@aboutUs")->name('aboutUs');
+Route::get('/our-team', "UserPanelController@ourTeam")->name('team');
+Route::get('/board-members', "UserPanelController@boardMembers")->name('boardMembers');
+Route::get('/achievements', "UserPanelController@achievements")->name('achievements');
+Route::get('/our-partners', "UserPanelController@partnersDonors")->name('partners');
 
-Route::get('/get-involved/career', "UserPanelController@career");
-Route::get('/get-involved/internship', "UserPanelController@internship");
-Route::get('/get-involved/consultancy', "UserPanelController@consultancy");
-Route::get('/get-involved/procurement', "UserPanelController@procurement");
+Route::get('/get-involved/career', "UserPanelController@career")->name('career');
+Route::get('/get-involved/internship', "UserPanelController@internship")->name('internship');
+Route::get('/get-involved/consultancy', "UserPanelController@consultancy")->name('consultancy');
+Route::get('/get-involved/procurement', "UserPanelController@procurement")->name('procurement');
 
-Route::get('/media-center/press-release', "UserPanelController@pressRelease");
-Route::get('/media-center/activity-updates', "UserPanelController@activityUpdates");
-Route::get('/media-center/video-stories', "UserPanelController@videoStories");
-Route::get('/media-center/media-coverage', "UserPanelController@mediaCoverage");
-Route::get('/media-center/photos', "UserPanelController@photos");
-Route::get('/media-center/blogs', "UserPanelController@blogs");
+Route::get('/media-center/press-release', "UserPanelController@pressRelease")->name('press');
+Route::get('/media-center/activity-updates', "UserPanelController@activityUpdates")->name('activities');
+Route::get('/media-center/video-stories', "UserPanelController@videoStories")->name('videos');
+Route::get('/media-center/media-coverage', "UserPanelController@mediaCoverage")->name('media');
+Route::get('/media-center/photos', "UserPanelController@photos")->name('photos');
+Route::get('/media-center/blogs', "UserPanelController@blogs")->name('blogs');
 
-Route::get('/publication', "UserPanelController@publication");
-Route::get('/tools-data', "UserPanelController@tools");
+Route::get('/publication', "UserPanelController@publication")->name('publication');
+Route::get('/tools-data', "UserPanelController@tools")->name('tools');
+
+Route::get('/forest', "UserPanelController@forest")->name('forest');
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------

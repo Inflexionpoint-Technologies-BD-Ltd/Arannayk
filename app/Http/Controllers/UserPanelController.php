@@ -23,6 +23,7 @@ use App\Video;
 use App\Tool;
 use App\About;
 use App\Mission;
+use App\Ecosystem;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -73,7 +74,7 @@ class UserPanelController extends Controller
     }
 
     public function achievements(){
-        $achievements=Achievement::all();
+        $achievements=Achievement::paginate(6);
         return view('user.our-achievement', compact('achievements'));
     }
 
@@ -122,12 +123,21 @@ class UserPanelController extends Controller
         $photos = Photo::all();
         return view('user.photos', compact('photos'));
     }
+
     public function blogs(){
         $blogs=Blog::all();
         return view('user.blogs',compact('blogs'));
     }
+
     public function tools(){
         $tools= Tool::all();
         return view('user.tools-data', compact('tools'));
+    }
+
+    public function forest(){
+        $projects=Project::skip(0)->take(4)->where('tag','forest')->get();
+        $blogs=Blog::skip(0)->take(4)->where('tag','forest')->get();
+        $ecosystems = Ecosystem::where('title','forest')->get();
+        return view('user.forest',compact('projects', 'blogs','ecosystems'));
     }
 }

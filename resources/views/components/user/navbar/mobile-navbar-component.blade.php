@@ -15,27 +15,27 @@
                 <a href="index.html" aria-current="page"></a>
             </li>
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">Who We Are</a>
+                <a>Who We Are</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="/about-arannayk">About Arannayk Foundation</a>
+                        <a href="{{ route('aboutUs') }}">About Arannayk Foundation</a>
                     </li>
-                    <li class="menu-item"><a href="/board-members">Board Members</a></li>
-                    <li class="menu-item"><a href="/our-team">Our Team</a></li>
-                    <li class="menu-item"><a href="/achievements">Our Achievements</a></li>
+                    <li class="menu-item"><a href="{{ route('boardMembers') }}">Board Members</a></li>
+                    <li class="menu-item"><a href="{{ route('team') }}">Our Team</a></li>
+                    <li class="menu-item"><a href="{{ route('achievements') }}">Our Achievements</a></li>
                     <li class="menu-item"><a href="">Timeline</a></li>
                     <li class="menu-item">
-                        <a href="/our-partners">Our Partners & Donors</a>
+                        <a href="{{ route('partners') }}">Our Partners & Donors</a>
                     </li>
                 </ul>
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">What We Do</a>
+                <a>What We Do</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="/services">Our Services</a></li>
-                    <li class="menu-item"><a href="/current-projects">Current Projects</a></li>
-                    <li class="menu-item"><a href="/project-archives">Project Archives</a></li>
+                    <li class="menu-item"><a href="{{ route('services') }}">Our Services</a></li>
+                    <li class="menu-item"><a href="{{ route('projects') }}">Current Projects</a></li>
+                    <li class="menu-item"><a href="{{ route('archives') }}">Project Archives</a></li>
                 </ul>
             </li>
 
@@ -47,34 +47,34 @@
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">Get Involved</a>
+                <a>Get Involved</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="/get-involved/career">Career</a></li>
-                    <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
-                    <li class="menu-item"><a href="/get-involved/consultancy">Consultancy</a></li>
-                    <li class="menu-item"><a href="/get-involved/procurement">Procurement</a></li>
+                    <li class="menu-item"><a href="{{ route('career') }}">Career</a></li>
+                    <li class="menu-item"><a href="{{ route('internship') }}">Internship</a></li>
+                    <li class="menu-item"><a href="{{ route('consultancy') }}">Consultancy</a></li>
+                    <li class="menu-item"><a href="{{ route('procurement') }}">Procurement</a></li>
                 </ul>
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">Media Center</a>
+                <a>Media Center</a>
                 <ul class="dl-submenu">
-                    <li class="menu-item"><a href="/media-center/press-release">Press Release</a></li>
-                    <li class="menu-item"><a href="/media-center/activity-updates">Activity Updates</a></li>
-                    <li class="menu-item"><a href="/media-center/video-stories">Video Stories</a></li>
-                    <li class="menu-item"><a href="/media-center/media-coverage">Media Coverage</a></li>
-                    <li class="menu-item"><a href="/media-center/photos">Photos</a></li>
-                    <li class="menu-item"><a href="/media-center/blogs">Blogs</a></li>
+                    <li class="menu-item"><a href="{{ route('press') }}">Press Release</a></li>
+                    <li class="menu-item"><a href="{{ route('activities') }}">Activity Updates</a></li>
+                    <li class="menu-item"><a href="{{ route('videos') }}">Video Stories</a></li>
+                    <li class="menu-item"><a href="{{ route('media') }}">Media Coverage</a></li>
+                    <li class="menu-item"><a href="{{ route('photos') }}">Photos</a></li>
+                    <li class="menu-item"><a href="{{ route('blogs') }}">Blogs</a></li>
                 </ul>
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="#">Knowledge</a>
+                <a>Knowledge</a>
                 <ul class="dl-submenu">
                     <li class="menu-item">
-                        <a href="/publication">Publications</a>
+                        <a href="{{ route('publication') }}">Publications</a>
                     </li>
-                    <li class="menu-item"><a href="/tools-data">Tools & Data</a></li>
+                    <li class="menu-item"><a href="{{ route('tools') }}">Tools & Data</a></li>
                 </ul>
             </li>
         </ul>
