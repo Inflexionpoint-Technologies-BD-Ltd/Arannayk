@@ -1732,10 +1732,27 @@ html .woocommerce-page #content .quantity .minus:hover {
 .pagination > .active > span:hover {
     background-color: #5dc269;
     border-color: #5dc269 !important;
+    padding:0.5rem;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
     background-color: #5dc269; //your color
     border-color: #5dc269 !important;
+    padding:0.5rem;
+    margin-right: 5px;
+
+}
+.pagination-style{
+    display: flex;
+    justify-content: center;
+}
+.pagination{
+    display:flex;
+    justify-content: space-between;
+}
+.page-item{
+    margin-left: 5px;
 }

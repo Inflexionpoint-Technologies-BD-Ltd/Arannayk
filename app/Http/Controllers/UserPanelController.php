@@ -37,7 +37,7 @@ class UserPanelController extends Controller
     }
 
     public function publication(){
-        $publications = Publication::all();
+        $publications = Publication::paginate(12);
         return view('user.publication',compact('publications'));
     }
 
@@ -47,14 +47,14 @@ class UserPanelController extends Controller
     }
 
     public function currentProject(){
-        $projects = Project::all();
+        $projects = Project::paginate(5);
         return view('user.currentproject',compact('projects'));
     }
 
     public function projectArchives(){
-        $archive= Archive::all();
+        $archives= Archive::paginate(5);
         $projects= Project::all();
-        return view('user.project-archives', compact('archive','projects'));
+        return view('user.project-archives', compact('archives','projects'));
     }
 
     public function aboutUs(){
@@ -74,7 +74,7 @@ class UserPanelController extends Controller
     }
 
     public function achievements(){
-        $achievements=Achievement::paginate(6);
+        $achievements=Achievement::paginate(5);
         return view('user.our-achievement', compact('achievements'));
     }
 
@@ -104,28 +104,28 @@ class UserPanelController extends Controller
     }
 
     public function pressRelease(){
-        $pressReleases=Press::all();
+        $pressReleases=Press::paginate(5);
         return view('user.press-release',compact('pressReleases'));
     }
     public function activityUpdates(){
-        $activities= Activity::all();
+        $activities= Activity::paginate(6);
         return view('user.activity-updates',compact('activities'));
     }
     public function videoStories(){
-        $videos= Video::all();
+        $videos= Video::paginate(6);
         return view('user.video-stories', compact('videos'));
     }
     public function mediaCoverage(){
-        $medias= Media::all();
+        $medias= Media::paginate(6);
         return view('user.media-coverage',compact('medias'));
     }
     public function photos(){
-        $photos = Photo::all();
+        $photos = Photo::paginate(12);
         return view('user.photos', compact('photos'));
     }
 
     public function blogs(){
-        $blogs=Blog::all();
+        $blogs=Blog::paginate(5);
         return view('user.blogs',compact('blogs'));
     }
 
@@ -139,5 +139,32 @@ class UserPanelController extends Controller
         $blogs=Blog::skip(0)->take(4)->where('tag','forest')->get();
         $ecosystems = Ecosystem::where('title','forest')->get();
         return view('user.forest',compact('projects', 'blogs','ecosystems'));
+    }
+
+    public function climate(){
+        $projects=Project::skip(0)->take(4)->where('tag','climate')->get();
+        $blogs=Blog::skip(0)->take(4)->where('tag','climate')->get();
+        $ecosystems = Ecosystem::where('title','climate')->get();
+        return view('user.climate',compact('projects', 'blogs','ecosystems'));
+    }
+
+    public function biodiversity(){
+        $projects=Project::skip(0)->take(4)->where('tag','biodiversity')->get();
+        $blogs=Blog::skip(0)->take(4)->where('tag','biodiversity')->get();
+        $ecosystems = Ecosystem::where('title','biodiversity')->get();
+        return view('user.biodiversity',compact('projects', 'blogs','ecosystems'));
+    }
+
+    public function sustainability(){
+        $projects=Project::skip(0)->take(4)->where('tag','sustainability')->get();
+        $blogs=Blog::skip(0)->take(4)->where('tag','sustainability')->get();
+        $ecosystems = Ecosystem::where('title','sustainability')->get();
+        return view('user.sustainability',compact('projects', 'blogs','ecosystems'));
+    }
+    public function gender(){
+        $projects=Project::skip(0)->take(4)->where('tag','gender')->get();
+        $blogs=Blog::skip(0)->take(4)->where('tag','gender')->get();
+        $ecosystems = Ecosystem::where('title','gender')->get();
+        return view('user.gender',compact('projects', 'blogs','ecosystems'));
     }
 }

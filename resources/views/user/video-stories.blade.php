@@ -140,6 +140,9 @@
             @endforeach
 
             <div class="clear"></div>
+                <div class="pagination-style">
+                    {{ $videos->links() }}
+                </div>
         </div>
     </div>
     <div class="clear"></div>

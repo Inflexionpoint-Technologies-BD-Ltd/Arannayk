@@ -26,7 +26,6 @@
           href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
           type="text/css" media="all"/>
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
@@ -44,6 +43,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
           integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+{{--    <link rel="stylesheet" href="{{ asset('css/app.css') }}">--}}
+
 </head>
 
 <body data-rsssl="1"
@@ -149,7 +150,7 @@
                                                                         </header>
                                                                         <!-- entry-header -->
 
-                                                                        <div class="greennature-blog-content">
+                                                                        <div class="greennature-blog-content" style="text-align: justify">
                                                                             {!! $achievement->content !!}
                                                                             <div class="greennature-blog-info"
                                                                                  style="margin-top:2rem;">
@@ -174,7 +175,7 @@
 
                                             {{-- ----------------- pagination ------------------------ --}}
 
-                                            <div class="d-flex justify-content-center">
+                                            <div class="pagination-style">
                                                 {{ $achievements->links() }}
                                             </div>
 

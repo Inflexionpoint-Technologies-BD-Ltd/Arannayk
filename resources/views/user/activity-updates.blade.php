@@ -164,7 +164,13 @@
                                                     @endforeach
 
                                                     <div class="clear"></div>
+                                                    {{-- ----------------- pagination ------------------------ --}}
 
+                                                    <div class="pagination-style">
+                                                        {{ $activities->links() }}
+                                                    </div>
+
+                                                    {{-- ----------------- pagination ------------------------ --}}
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>

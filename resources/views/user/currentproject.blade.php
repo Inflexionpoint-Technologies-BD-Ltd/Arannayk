@@ -166,6 +166,13 @@
                                                     @endforeach
 
                                                     <div class="clear"></div>
+                                                    {{-- ----------------- pagination ------------------------ --}}
+
+                                                    <div class="pagination-style">
+                                                        {{ $projects->links() }}
+                                                    </div>
+
+                                                    {{-- ----------------- pagination ------------------------ --}}
                                                 </div>
                                             </div>
 

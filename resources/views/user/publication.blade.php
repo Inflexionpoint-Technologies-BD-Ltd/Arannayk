@@ -156,6 +156,9 @@
                                     @endforeach
 
                                 </div>
+                                <div class="pagination-style">
+                                    {{ $publications->links() }}
+                                </div>
                                 <div class="clear"></div>
                             </div>
                         </div>

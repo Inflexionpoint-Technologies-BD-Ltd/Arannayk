@@ -128,7 +128,7 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
-                                                    @foreach($archive as $archive)
+                                                    @foreach($archives as $archive)
                                                     <div class="twelve columns">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
@@ -166,7 +166,13 @@
                                                     @endforeach
                                                     <div class="clear"></div>
 
+                                                    {{-- ----------------- pagination ------------------------ --}}
 
+                                                    <div class="pagination-style">
+                                                        {{ $archives->links() }}
+                                                    </div>
+
+                                                    {{-- ----------------- pagination ------------------------ --}}
                                                     <div class="clear"></div>
 
                                                     <div class="clear"></div>
@@ -218,6 +224,7 @@
 
 
                                         <div class="clear"></div>
+
                                     </div>
                                 </div>
 

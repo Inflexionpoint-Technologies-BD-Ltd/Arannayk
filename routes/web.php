@@ -37,6 +37,12 @@ Route::get('/publication', "UserPanelController@publication")->name('publication
 Route::get('/tools-data', "UserPanelController@tools")->name('tools');
 
 Route::get('/forest', "UserPanelController@forest")->name('forest');
+Route::get('/biodiversity', "UserPanelController@biodiversity")->name('biodiversity');
+Route::get('/climate', "UserPanelController@climate")->name('climate');
+Route::get('/sustainability', "UserPanelController@sustainability")->name('sustainability');
+Route::get('/gender', "UserPanelController@gender")->name('gender');
+
+
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------

@@ -164,6 +164,9 @@
                                                     @endforeach
 
                                                     <div class="clear"></div>
+                                                    <div class="pagination-style">
+                                                        {{ $medias->links() }}
+                                                    </div>
 
                                                     <div class="clear"></div>
                                                 </div>

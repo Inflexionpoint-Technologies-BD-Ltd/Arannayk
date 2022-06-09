@@ -164,7 +164,13 @@
                                                 @endforeach
 
                                             </div>
+                                            {{-- ----------------- pagination ------------------------ --}}
 
+                                            <div class="pagination-style">
+                                                {{ $pressReleases->links() }}
+                                            </div>
+
+                                            {{-- ----------------- pagination ------------------------ --}}
                                         </div>
                                         <div class="clear"></div>
                                     </div>
