@@ -35,7 +35,7 @@
                     <label for="exampleInputEmail1">Enter Content</label>
                     <textarea name="content" id="" cols="30" rows="10"
                               class="@error('content') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content">{{ $activity->content }}</textarea>
+                              placeholder="Enter content">{{ $activity->content }}</textarea>
                 </div>
 
                 @error('content')
@@ -45,7 +45,7 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1">Enter Tag</label>
                     <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter title" name="tag"
+                           placeholder="" name="tag"
                            class="form-control @error('tag') is-invalid @enderror" value="{{ $activity->tag }}">
                 </div>
 

@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.admin-panel')
 
 @section('content')
-    <h4>View All projects</h4>
+    <h4>View All Archived projects</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">

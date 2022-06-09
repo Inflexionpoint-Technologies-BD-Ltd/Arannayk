@@ -10,7 +10,7 @@
     @endif
 
 
-    <h4>Services</h4>
+    <h4>View All Services</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
