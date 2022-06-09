@@ -4,26 +4,26 @@
             <!-- ----------------------------- Who We Are----------------------------- -->
             <li
                 class="menu-item menu-item-has-childrenmenu-item current-menu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> Who We Are</a>
+                <a class="sf-with-ul-pre"> Who We Are</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/about-arannayk">About Arannayk Foundation </a>
+                                    <a href="{{ route('aboutUs') }}">About Arannayk Foundation </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/board-members">Board Members</a>
+                                    <a href="{{ route('boardMembers') }}">Board Members</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="/our-team">Our Team</a></li>
+                                <li class="menu-item"><a href="{{ route('team') }}">Our Team</a></li>
                                 <li class="menu-item">
-                                    <a href="/achievements">Our Achievements</a>
+                                    <a href="{{ route('achievements') }}">Our Achievements</a>
                                 </li>
                             </ul>
                         </li>
@@ -33,7 +33,7 @@
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="">Timeline</a></li>
                                 <li class="menu-item">
-                                    <a href="/our-partners">Our Partners & Donors</a>
+                                    <a href="{{ route('partners') }}">Our Partners & Donors</a>
                                 </li>
                             </ul>
                         </li>
@@ -45,14 +45,14 @@
             <!-- ----------------------------- What We Do ----------------------------- -->
 
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> What We Do</a>
+                <a class="sf-with-ul-pre"> What We Do</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/services">Our Services</a>
+                                    <a href="{{ route('services') }}">Our Services</a>
                                 </li>
                             </ul>
                         </li>
@@ -60,7 +60,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/current-projects">Current
+                                    <a href="{{ route('projects') }}">Current
                                         Projects</a>
                                 </li>
                             </ul>
@@ -70,7 +70,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/project-archives">Project
+                                    <a href="{{ route('archives') }}">Project
                                         Archives</a>
                                 </li>
                             </ul>
@@ -87,21 +87,21 @@
             <!-- ----------------------------- Get Involved ----------------------------- -->
 
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="/get-involved/career" class="sf-with-ul-pre"> Get Involved</a>
+                <a class="sf-with-ul-pre"> Get Involved</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="/get-involved/career">Career </a></li>
-                                <li class="menu-item"><a href="/get-involved/internship">Internship</a></li>
+                                <li class="menu-item"><a href="{{ route('career') }}">Career </a></li>
+                                <li class="menu-item"><a href="{{ route('internship') }}">Internship</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/get-involved/consultancy">Consultancy</a>
+                                    <a href="{{ route('consultancy') }}">Consultancy</a>
                                 </li>
                             </ul>
                         </li>
@@ -109,7 +109,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/get-involved/procurement">Procurement</a>
+                                    <a href="{{ route('procurement') }}">Procurement</a>
                                 </li>
                             </ul>
                         </li>
@@ -121,17 +121,17 @@
             <!-- ----------------------------- Media Center ----------------------------- -->
 
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> Media Center</a>
+                <a class="sf-with-ul-pre"> Media Center</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/media-center/press-release">Press Release </a>
+                                    <a href="{{ route('press') }}">Press Release </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/media-center/media-coverage">Media Coverage</a>
+                                    <a href="{{ route('media') }}">Media Coverage</a>
                                 </li>
                             </ul>
                         </li>
@@ -139,18 +139,18 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/media-center/activity-updates">Activity Updates</a>
+                                    <a href="{{ route('activities') }}">Activity Updates</a>
                                 </li>
-                                <li class="menu-item"><a href="/media-center/photos">Photos</a></li>
+                                <li class="menu-item"><a href="{{ route('photos') }}">Photos</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/media-center/video-stories">Video Stories</a>
+                                    <a href="{{ route('videos') }}">Video Stories</a>
                                 </li>
-                                <li class="menu-item"><a href="/media-center/blogs">Blogs</a></li>
+                                <li class="menu-item"><a href="{{ route('blogs') }}">Blogs</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -160,14 +160,14 @@
 
             <!-- ----------------------------- Knowledge ----------------------------- -->
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> Knowledge</a>
+                <a class="sf-with-ul-pre"> Knowledge</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children" data-column="four columns"
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/publication">Publications</a>
+                                    <a href="{{ route('publication') }}">Publications</a>
                                 </li>
                             </ul>
                         </li>
@@ -175,7 +175,7 @@
                             data-size="1/3">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a href="/tools-data">Tools & Data</a>
+                                    <a href="{{ route('tools') }}">Tools & Data</a>
                                 </li>
                             </ul>
                         </li>

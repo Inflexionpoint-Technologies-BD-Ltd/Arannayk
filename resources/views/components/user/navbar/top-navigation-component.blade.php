@@ -2,19 +2,19 @@
     <div class="top-navigation-container container">
         <div class="top-navigation-left">
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="#">Forest</a>
+                <a href="/forest">Forest</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="#">Bio-Diversity</a>
+                <a href="/biodiversity">Bio-Diversity</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="#">Climate Change</a>
+                <a href="/climate-change">Climate Change</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="#">Sustainability</a>
+                <a href="/sustainability">Sustainability</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="#">Gender</a>
+                <a href="/gender">Gender</a>
             </div>
         </div>
         <div class="top-navigation-right">

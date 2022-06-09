@@ -11,6 +11,24 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Arannayk Foundation">
+    <meta name="description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arannayk.inflexionpointbd.com/">
+    <meta property="og:title" content="Arannayk Foundation">
+    <meta property="og:description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
+    <meta property="og:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">
+
+    <!-- Twitter -->
+{{--    <meta property="twitter:card" content="summary_large_image">--}}
+{{--    <meta property="twitter:url" content="http://arannayk.org/">--}}
+{{--    <meta property="twitter:title" content="Arannayk Foundation">--}}
+{{--    <meta property="twitter:description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">--}}
+{{--    <meta property="twitter:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">--}}
+
     <title>Arannayk - Home</title>
 
     <link rel="stylesheet"
@@ -263,7 +281,7 @@
                                                     not-for-profit organization established in 2003
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="#">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -293,7 +311,7 @@
                                                     livelihood support to communities.
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="#">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -320,7 +338,7 @@
                                                     Areas (PA)
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="#">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('achievements') }}">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -412,7 +430,7 @@
 
                         <div style="text-align: center; margin-top: 2rem">
                             <!-- <a><button>Explore More Services</button></a> -->
-                            <a class="action-ads-button large more-services" href="/services">
+                            <a class="action-ads-button large more-services" href="{{ route('services') }}">
                                 <span>More Services</span>
                             </a>
                         </div>
@@ -435,7 +453,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" href="/current-projects">More
+                                        <a class="greennature-item-title-link" href="{{ route('projects') }}">More
                                             Projects</a>
                                         <div class="clear"></div>
                                     </div>
@@ -465,7 +483,7 @@
                                                         </div>
                                                         <div class="portfolio-classic-content">
                                                             <h3 class="portfolio-title">
-                                                                <a href="/current-projects">{{ $project -> title }}</a>
+                                                                <a href="{{ route('projects') }}">{{ $project -> title }}</a>
                                                             </h3>
                                                             <div class="greennature-portfolio-info">
                                                                 <div class="portfolio-info portfolio-tag">
@@ -481,7 +499,7 @@
                                                                 {!! \Illuminate\Support\Str::limit($project -> achievement,150,'...')  !!}
 
                                                                 <div class="clear"></div>
-                                                                <a href="/current-projects" class="excerpt-read-more">Read
+                                                                <a href="{{ route('projects') }}" class="excerpt-read-more">Read
                                                                     More</a>
                                                             </div>
                                                             <a class="portfolio-classic-learn-more" href="#">Learn
@@ -580,7 +598,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Publications
                                         </h3>
-                                        <a class="greennature-item-title-link" href="./publication">More
+                                        <a class="greennature-item-title-link" href="{{ route('publication') }}">More
                                             Publications</a>
                                         <div class="clear"></div>
                                     </div>
@@ -654,10 +672,10 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <img src="{{ asset('./images/Arannayk_icons/job (1).png') }}" alt="" width="80"
-                                         height="80"/>
+                                    <a href="{{ route('career') }}"><img src="{{ asset('./images/Arannayk_icons/job (1).png') }}" alt="" width="80"
+                                            height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="#" class="get-involved-heading">Career</a>
+                                        <a href="{{ route('career') }}" class="get-involved-heading">Career</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
@@ -666,10 +684,10 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <img src="{{ asset('./images/Arannayk_icons/handshake.png') }}" alt="" width="80"
-                                         height="80"/>
+                                    <a href="{{ route('consultancy') }}"><img src="{{ asset('./images/Arannayk_icons/handshake.png') }}" alt="" width="80"
+                                                    height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="#" class="get-involved-heading">Consultancy</a>
+                                        <a href="{{ route('consultancy') }}" class="get-involved-heading">Consultancy</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
@@ -678,10 +696,10 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <img src="{{ asset('./images/Arannayk_icons/id-card (1).png') }}" alt="" width="80"
-                                         height="80"/>
+                                    <a href="{{ route('internship') }}"><img src="{{ asset('./images/Arannayk_icons/id-card (1).png') }}" alt="" width="80"
+                                            height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="#" class="get-involved-heading">Internship</a>
+                                        <a href="{{ route('internship') }}" class="get-involved-heading">Internship</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
@@ -690,10 +708,10 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <img src="{{ asset('./images/Arannayk_icons/trolley.png') }}" alt="" width="80"
-                                         height="80"/>
+                                    <a href="{{ route('procurement') }}"><img src="{{ asset('./images/Arannayk_icons/trolley.png') }}" alt="" width="80"
+                                            height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="#" class="get-involved-heading">Procurement</a>
+                                        <a href="{{ route('procurement') }}" class="get-involved-heading">Procurement</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>

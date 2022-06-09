@@ -26,6 +26,8 @@
           href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
           type="text/css" media="all"/>
 
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
@@ -129,15 +131,19 @@
                                                 @foreach($achievements as $achievement)
                                                     <div class="greennature-item greennature-blog-full">
                                                         <div class="greennature-ux greennature-blog-full-ux">
-                                                            <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                            <article id="post-862"
+                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                                 <div class="greennature-standard-style">
                                                                     <div>
-                                                                        <a> <img src="{{ asset('storage/'.$achievement->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                        <a> <img
+                                                                                src="{{ asset('storage/'.$achievement->image)  }}"
+                                                                                class="press-release-image" alt=""/></a>
                                                                     </div>
 
                                                                     <div class="blog-content-wrapper">
                                                                         <header class="post-header">
-                                                                            <h3 class="greennature-blog-title"><a>{{ $achievement->title }}</a></h3>
+                                                                            <h3 class="greennature-blog-title">
+                                                                                <a>{{ $achievement->title }}</a></h3>
 
                                                                             <div class="clear"></div>
                                                                         </header>
@@ -145,7 +151,8 @@
 
                                                                         <div class="greennature-blog-content">
                                                                             {!! $achievement->content !!}
-                                                                            <div class="greennature-blog-info" style="margin-top:2rem;">
+                                                                            <div class="greennature-blog-info"
+                                                                                 style="margin-top:2rem;">
                                                                                 <div class="clear"></div>
                                                                             </div>
                                                                             <div class="clear">
@@ -165,10 +172,19 @@
 
                                             </div>
 
+                                            {{-- ----------------- pagination ------------------------ --}}
+
+                                            <div class="d-flex justify-content-center">
+                                                {{ $achievements->links() }}
+                                            </div>
+
+                                            {{-- ----------------- pagination ------------------------ --}}
+
                                         </div>
                                         <div class="clear"></div>
                                     </div>
                                 </section>
+
                             </div>
 
                             <div class="clear"></div>

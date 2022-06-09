@@ -6317,3 +6317,9 @@ input[type="text"].greennature-payment-price-fill {
     height: 320px;
     object-fit: cover;
 }
+
+.ecosystem-image{
+    width: 520px;
+    height: 320px;
+    object-fit: cover;
+}
