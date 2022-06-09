@@ -55,18 +55,18 @@
                 <div class="clear"></div>
                 <div class="greennature-recent-port2-widget">
                     <div style="margin-bottom: 0.5rem">
-                        <a href="#" style="color: #0c0c0c">Who We Are</a>
+                        <a href="{{ route('aboutUs') }}" style="color: #0c0c0c">Who We Are</a>
                     </div>
                     <div style="margin-bottom: 0.5rem">
-                        <a href="#" style="color: #0c0c0c">What We Do</a>
-                    </div>
-
-                    <div style="margin-bottom: 0.5rem">
-                        <a href="/current-projects" style="color: #0c0c0c">Current Projects</a>
+                        <a href="{{ route('services') }}" style="color: #0c0c0c">What We Do</a>
                     </div>
 
                     <div style="margin-bottom: 0.5rem">
-                        <a href="./publication" style="color: #0c0c0c">Publications</a>
+                        <a href="{{ route('projects') }}" style="color: #0c0c0c">Current Projects</a>
+                    </div>
+
+                    <div style="margin-bottom: 0.5rem">
+                        <a href="{{ route('publication') }}" style="color: #0c0c0c">Publications</a>
                     </div>
 
                     <div style="margin-bottom: 0.5rem">
@@ -84,9 +84,9 @@
                     <div class="stunning-item-caption greennature-skin-content">
                         <h3 class="greennature-widget-title">Support Us</h3>
                     </div>
-                    <a class="stunning-item-button greennature-button large" href="#"
+                    <a class="stunning-item-button greennature-button large" href="{{ route('donate') }}"
                        style="background-color: #eb681c; color: #000">Donate Now</a><a
-                        class="stunning-item-button greennature-button large" href="#" style="color: #000">Get
+                        class="stunning-item-button greennature-button large" href="{{ route('career') }}" style="color: #000">Get
                         Involved</a>
                 </div>
             </div>

@@ -293,9 +293,9 @@
                         <div class="stunning-item-caption greennature-skin-content">
                             <p></p>
                         </div>
-                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="#"
-                           style="background-color: #fec428; color: #ffffff;">Donate Now!</a><a
-                            class="stunning-item-button greennature-button large" href="#">Get Involved</a></div>
+                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="{{ route('donate') }}"
+                           style="background-color: #fec428; color: #fff;">Donate Now!</a><a
+                            class="stunning-item-button greennature-button large" style="color: #fff;" href="{{ route('career') }}">Get Involved</a></div>
                 </div>
                 <div class="clear"></div>
                 <div class="clear"></div>
