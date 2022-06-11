@@ -277,7 +277,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="portfolio-excerpt">
-                                                    {!! \Illuminate\Support\Str::words($blog->content,50,'...')  !!}
+                                                    {!! \Illuminate\Support\Str::words($blog->content,20,'...')  !!}
 
                                                     <div class="clear"></div>
                                                     <a href="{{ route('blogs') }}" class="excerpt-read-more">Read
