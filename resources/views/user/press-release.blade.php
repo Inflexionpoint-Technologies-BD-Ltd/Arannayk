@@ -127,7 +127,7 @@
                                             <div class="blog-item-holder">
 
                                                 @foreach($pressReleases as $press)
-                                                <div class="greennature-item greennature-blog-full">
+                                                <div class="greennature-item greennature-blog-full" id="{{ $press->title }}">
                                                     <div class="greennature-ux greennature-blog-full-ux">
                                                         <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                             <div class="greennature-standard-style">

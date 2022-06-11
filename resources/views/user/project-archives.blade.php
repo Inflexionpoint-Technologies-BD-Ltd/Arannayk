@@ -129,13 +129,13 @@
                                                     <div class="clear"></div>
 
                                                     @foreach($archives as $archive)
-                                                    <div class="twelve columns">
+                                                    <div class="twelve columns" id="{{ $archive->title }}">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                                                                     <div class="greennature-standard-style">
                                                                         <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
+                                                                            <a href=""> <img src="{{ asset('storage/'.$archive->image)  }}" class="image-projects" alt=""  /></a>
                                                                         </div>
 
                                                                         <div class="greennature-blog-grid-content">
@@ -229,13 +229,21 @@
 
                                     </div>
                                 </div>
-
-
+                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                                    <h3 class="greennature-widget-title">Tags</h3>
+                                    <div class="clear"></div>
+                                    <div class="tagcloud">
+                                        @foreach($archives as $archive)
+                                            <a href="#{{ $archive->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $archive->tag }}</a>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
-                </div>
+
 
                 <!-- Below Sidebar Section-->
 

@@ -6162,15 +6162,15 @@ input[type="text"].greennature-payment-price-fill {
 }
 
 .achievements-card:hover {
-	background-color: #6d593e;
+	background-color: #8F704B;
 }
 
 .mission-card {
-	background-color: #3f3221;
+	background-color: #7E6343;
 }
 
 .mission-card:hover {
-	background-color: #6d593e;
+	background-color: #8F704B;
 }
 
 .service-style:hover img {
@@ -6282,7 +6282,7 @@ input[type="text"].greennature-payment-price-fill {
 
 .partner-logo-style{
     width: 400px;
-    height:300px;
+    height:200px;
     object-fit: contain;
 }
 

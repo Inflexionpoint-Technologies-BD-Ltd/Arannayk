@@ -144,7 +144,7 @@
                                                     alt="" title=""
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
-                                                <a href="#" target="_self"
+                                                <a href="{{ route('donate') }}" target="_self"
                                                    class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom" style=""
                                                    data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
                                                    data-duration="400"
@@ -177,14 +177,14 @@
                                                     {{ $slider->text_content_1 }}
                                                 </div>
                                             </div>
-                                        @elseif($slider->serial == 2)
+                                        @else
                                             <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                                 <img
                                                     src="{{ asset('storage/'.$slider->image) }}"
                                                     alt="" title=""
                                                     data-src="{{asset('storage/'.$slider->image)}}"/>
 
-                                                <a href="#" target="_self"
+                                                <a href="{{ route('aboutUs') }}" target="_self"
                                                    class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
                                                    data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
                                                    data-duration="400"
@@ -215,27 +215,25 @@
                                                     {{ $slider->text_content_1 }}
                                                 </div>
                                             </div>
+
+{{--                                      <div class="ms-slide" data-delay="7" data-fill-mode="fill">--}}
+{{--                                                            <img src="{{ asset('storage/'.$slider->image) }}" alt="" title=""--}}
+{{--                                                                data-src="{{ asset('storage/'.$slider->image) }}" />--}}
+
+{{--                                                            <div class="ms-layer  msp-cn-1-10" style=""--}}
+{{--                                                                data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="425"--}}
+{{--                                                                data-delay="425" data-ease="easeOutQuint" data-offset-x="0"--}}
+{{--                                                                data-offset-y="82" data-origin="mc" data-position="normal">--}}
+{{--                                                                {{ $slider->text_content_2 }}</div>--}}
+
+{{--                                                            <div class="ms-layer  msp-cn-1-13" style=""--}}
+{{--                                                                data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="437"--}}
+{{--                                                                data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-15"--}}
+{{--                                                                data-origin="mc" data-position="normal">--}}
+{{--                                                                {{ $slider->text_content_1 }}</div>--}}
+
+{{--                                                        </div>--}}
                                         @endif
-
-
-
-                                        <!-- <div class="ms-slide" data-delay="7" data-fill-mode="fill">
-                                                            <img src="./images/slider_images/paul-summers-ArtVJ-217Cw-unsplash.jpg" alt="" title=""
-                                                                data-src="./images/slider_images/paul-summers-ArtVJ-217Cw-unsplash.jpg" />
-
-                                                            <div class="ms-layer  msp-cn-1-10" style=""
-                                                                data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="425"
-                                                                data-delay="425" data-ease="easeOutQuint" data-offset-x="0"
-                                                                data-offset-y="82" data-origin="mc" data-position="normal">
-                                                                The Better Place</div>
-
-                                                            <div class="ms-layer  msp-cn-1-13" style=""
-                                                                data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="437"
-                                                                data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-15"
-                                                                data-origin="mc" data-position="normal">
-                                                                Make This World</div>
-
-                                                        </div> -->
 
                                     @endforeach
                                 </div>
@@ -253,7 +251,7 @@
                 <!------------------------------ WHO WE ARE ---------------------------------------->
                 <section id="content-section-2">
                     <div class="greennature-color-wrapper gdlr-show-all greennature-skin-brown-column-service" style="
-                  background-color: #2d2418;
+                  background-color: #5f4c33;
                   border-top: 5px solid #3f3221;
                   padding-top: 0px;
                   padding-bottom: 0px;
@@ -278,7 +276,7 @@
                                                 <p>
                                                     Arannayk Foundation, also known as the Bangladesh
                                                     Tropical Forest Conservation Foundation, is a
-                                                    not-for-profit organization established in 2003
+                                                    not-for-profit organization established in 2003.
                                                 </p>
                                             </div>
                                             <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn More</a>
@@ -296,7 +294,7 @@
                                         class="greennature-item greennature-column-service-item greennature-type-2-bg mission-card"
                                         style="margin-bottom: 0px">
                                         <div class="column-service-image">
-                                            <img src="{{ asset('upload/icon-service-2.png') }}" alt="" width="80"
+                                            <img src="{{ asset('upload/pngwing.com.png') }}" alt="" width="80"
                                                  height="80"/>
                                         </div>
                                         <div class="column-service-content-wrapper">
@@ -325,7 +323,7 @@
                                     <div class="greennature-item greennature-column-service-item greennature-type-2"
                                          style="margin-bottom: 0px">
                                         <div class="column-service-image">
-                                            <img src="{{ asset('upload/icon-service-3.png') }}" alt="" width="80"
+                                            <img src="{{ asset('upload/toppng.com-award-icon-2-white-icon-357x488.png') }}" style="height:50px;" alt="" width="80"
                                                  height="80"/>
                                         </div>
                                         <div class="column-service-content-wrapper">
@@ -335,7 +333,7 @@
                                                     The projects of the Arannayk Foundation have made
                                                     significant impact toward restoration and
                                                     conservation of biodiversity in national Protected
-                                                    Areas (PA)
+                                                    Areas (PA).
                                                 </p>
                                             </div>
                                             <a class="column-service-read-more" href="{{ route('achievements') }}">Learn More</a>
@@ -496,7 +494,7 @@
                                                                 <div class="clear"></div>
                                                             </div>
                                                             <div class="portfolio-excerpt">
-                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,50,'...')  !!}</p>
+                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
 
                                                                 <div class="clear"></div>
                                                                 <a href="{{ route('projects') }}" class="excerpt-read-more">Read

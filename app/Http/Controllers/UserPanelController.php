@@ -33,7 +33,7 @@ class UserPanelController extends Controller
         $services = Service::skip(0)->take(2)->get();
         $projects=Project::skip(0)->take(4)->get();
         $publications=Publication::skip(0)->take(4)->get();
-        $sliders=Slider::skip(0)->take(2)->get();
+        $sliders=Slider::skip(0)->take(3)->get();
         return view('user.front',compact('services','projects','publications','sliders'));
     }
 
@@ -85,12 +85,12 @@ class UserPanelController extends Controller
     }
 
     public function career(){
-        $careers= Career::all();
+        $careers= Career::where('tag','career')->get();
         return view('user.career',compact('careers'));
     }
 
     public function internship(){
-        $careers= Career::all();
+        $careers= Career::where('tag','internship')->get();
         return view('user.internship',compact('careers'));
     }
 

@@ -115,8 +115,7 @@
             <div class="container">
                 <div class="six columns">
                     <div class="greennature-video-item greennature-item">
-                        <iframe src="http://player.vimeo.com/video/101707505?title=0&amp;byline=0&amp;portrait=0"
-                                width="620" height="348"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lN-QMt0BB0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="six columns">
@@ -164,7 +163,8 @@
                                 <div class="column-service-content greennature-skin-content">
                                     <p>{!! $service->content !!} </p>
                                 </div>
-                                <a class="column-service-read-more" href="#">Read More</a></div>
+{{--                                <a class="column-service-read-more" href="#">Read More</a>--}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -293,7 +293,7 @@
                         <div class="stunning-item-caption greennature-skin-content">
                             <p></p>
                         </div>
-                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="{{ route('donate') }}"
+                        <a class="stunning-item-button greennature-button large" href="{{ route('donate') }}"
                            style="background-color: #fec428; color: #fff;">Donate Now!</a><a
                             class="stunning-item-button greennature-button large" style="color: #fff;" href="{{ route('career') }}">Get Involved</a></div>
                 </div>

@@ -129,7 +129,7 @@
                                                     <div class="clear"></div>
 
                                                     @foreach($activities as $activity)
-                                                    <div class="six columns">
+                                                    <div class="six columns" id="{{ $activity->title }}">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">

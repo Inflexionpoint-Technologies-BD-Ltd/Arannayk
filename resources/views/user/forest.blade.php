@@ -165,6 +165,7 @@
                             <div class="clear"></div>
 
                             @foreach($projects as $project)
+
                                 <!--------------------------Project 1 Description------------------------>
                                 <div class="three columns">
                                     <div
@@ -196,7 +197,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="portfolio-excerpt">
-                                                    {!! \Illuminate\Support\Str::words($project -> achievement,50,'...')  !!}
+                                                    {!! \Illuminate\Support\Str::words($project -> achievement,13,'...')  !!}
 
                                                     <div class="clear"></div>
                                                     <a href="/current-projects" class="excerpt-read-more">Read
@@ -208,6 +209,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <!--------------------------------------Project 1 Description---->
                             @endforeach
 
