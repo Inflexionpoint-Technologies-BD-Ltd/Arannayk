@@ -259,7 +259,7 @@
                         <div class="container">
                             <!------------------------------ About Arannayak ---------------------------------------->
 
-                            <div class="four columns">
+                            <div class="four columns reveal fade-bottom">
                                 <div class="greennature-ux column-service-ux achievements-card">
                                     <div class="greennature-item greennature-column-service-item greennature-type-2"
                                          style="margin-bottom: 0px">
@@ -288,7 +288,7 @@
 
                             <!------------------------------ Mission, Vision & Values ---------------------------------------->
 
-                            <div class="four columns">
+                            <div class="four columns reveal fade-bottom">
                                 <div class="greennature-ux column-service-ux">
                                     <div
                                         class="greennature-item greennature-column-service-item greennature-type-2-bg mission-card"
@@ -318,7 +318,7 @@
                             <!-------------------------------------------- Mission, Vision & Values ----->
 
                             <!------------------------------ Our Achievements ---------------------------------------->
-                            <div class="four columns">
+                            <div class="four columns reveal fade-bottom">
                                 <div class="greennature-ux column-service-ux achievements-card">
                                     <div class="greennature-item greennature-column-service-item greennature-type-2"
                                          style="margin-bottom: 0px">
@@ -366,7 +366,7 @@
                         <div class="container">
                             <!------------------------------ Service No 1 ---------------------------------------->
                             @foreach($services as $service)
-                                <div class="six columns service-style">
+                                <div class="six columns service-style reveal fade-left">
                                     <div class="greennature-item greennature-action-ads-item"
                                          style="background: url({{ asset('storage/'.$service->image) }}); background-size: cover; box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);">
                                         <a href="/services" class="services-title-style">
@@ -376,7 +376,7 @@
                                         </a>
                                         <!-- <div class="action-ads-caption greennature-skin-info">Your money can cure this
                                                                 earth</div> -->
-                                        <div class="action-ads-divider"
+                                        <div class="action-ads-divider reveal fade-left"
                                              style="background: {{ $service->color_title }}"></div>
                                         <div class="action-ads-content">
                                             <p>
@@ -426,7 +426,7 @@
 
                         <!------------------------------ More Services Button ---------------------------------------->
 
-                        <div style="text-align: center; margin-top: 2rem">
+                        <div style="text-align: center; margin-top: 2rem" class="reveal fade-bottom">
                             <!-- <a><button>Explore More Services</button></a> -->
                             <a class="action-ads-button large more-services" href="{{ route('services') }}">
                                 <span>More Services</span>
@@ -464,7 +464,7 @@
 
                                         @foreach($projects as $project)
                                             <!--------------------------Project 1 Description------------------------>
-                                            <div class="three columns">
+                                            <div class="three columns reveal fade-bottom">
                                                 <div
                                                     class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                     <div class="greennature-ux greennature-classic-portfolio-ux">
@@ -608,7 +608,7 @@
                                         <div class="clear"></div>
 
                                         @foreach($publications as $publication)
-                                            <div class="three columns">
+                                            <div class="three columns reveal fade-bottom">
                                                 <div
                                                     class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                     <div class="greennature-ux greennature-classic-portfolio-ux">
@@ -622,7 +622,7 @@
                                                                         class="fa fa-search"></i></span></a>
                                                         </div>
                                                         <div class="portfolio-classic-content">
-                                                            <div style="text-align: center">
+                                                            <div style="text-align: center" class="reveal fade-bottom">
                                                                 <a class="stunning-item-button large download-button-style"
                                                                    href="{{ asset('storage/'.$publication->file_content) }}"
                                                                    download>Download</a>
@@ -666,7 +666,7 @@
                         </h2>
 
                         <div class="container">
-                            <div class="three columns">
+                            <div class="three columns reveal fade-bottom">
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
@@ -678,7 +678,7 @@
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
                             </div>
-                            <div class="three columns">
+                            <div class="three columns reveal fade-bottom">
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
@@ -690,7 +690,7 @@
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
                             </div>
-                            <div class="three columns">
+                            <div class="three columns reveal fade-bottom">
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
@@ -702,7 +702,7 @@
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
                             </div>
-                            <div class="three columns">
+                            <div class="three columns reveal fade-bottom">
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
@@ -850,6 +850,26 @@
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
         });
     })(jQuery);
+</script>
+
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
 </script>
 </body>
 
