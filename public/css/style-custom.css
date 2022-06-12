@@ -233,13 +233,13 @@ h6 {
 }
 
 #greennature-responsive-navigation.dl-menuwrapper button {
-	background-color: #0c0c0c;
+	background-color: #005e5e;
 }
 
 #greennature-responsive-navigation.dl-menuwrapper button:hover,
 #greennature-responsive-navigation.dl-menuwrapper button.dl-active,
 #greennature-responsive-navigation.dl-menuwrapper ul {
-	background-color: #161616;
+	background-color: #005e5e;
 }
 
 body {
