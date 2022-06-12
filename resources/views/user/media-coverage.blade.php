@@ -195,7 +195,7 @@
                                                     <a><img src="{{ asset('storage/'.$media->image) }}" alt="" width="150" height="150" /></a>
                                                 </div>
                                                 <div class="recent-post-widget-content">
-                                                    <div class="recent-post-widget-title"><a href="{{ $media->title }}">{{ $media->title }}</a></div>
+                                                    <div class="recent-post-widget-title"><a href="#{{ $media->title }}">{{ $media->title }}</a></div>
                                                     <div class="recent-post-widget-info">
                                                         <div class="clear"></div>
                                                     </div>
