@@ -128,8 +128,7 @@
                   "></i></a>
             </div>
             <div class="copyright-right">
-                Design And Developed by Inflexionpoint Technologies BD Ltd. for
-                Arannayak Ltd.
+                Design And Developed by Inflexionpoint Technologies BD Ltd.
             </div>
             <div class="clear"></div>
         </div>
