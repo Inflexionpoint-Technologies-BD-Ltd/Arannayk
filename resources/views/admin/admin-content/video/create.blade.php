@@ -21,7 +21,7 @@
                 @enderror
 
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">Enter image</label>
+                    <label for="exampleFormControlFile1">Enter Video file</label>
                     <input type="file" class="form-control-file @error('image') is-invalid @enderror"
                            id="exampleFormControlFile1" name="image">
                 </div>

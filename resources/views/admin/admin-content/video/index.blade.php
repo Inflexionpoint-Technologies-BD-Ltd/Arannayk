@@ -9,8 +9,8 @@
         <tr>
             <th>Serial</th>
             <th>Title</th>
-            <th>Image</th>
             <th>Content</th>
+            <th>Videos</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
