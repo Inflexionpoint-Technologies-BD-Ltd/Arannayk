@@ -15,7 +15,7 @@ class CreateArchivesTable extends Migration
     {
         Schema::create('archives', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->text('title');
             $table->string('location');
             $table->text('achievement');
             $table->string('image');
