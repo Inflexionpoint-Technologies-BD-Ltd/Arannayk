@@ -193,6 +193,13 @@ Route::middleware('auth')->group(function () {
 
 // -------------------------------- Mission --------------------------------
 
+    // -------------------------------- Timeline --------------------------------
+
+    Route::resource('admin/timeline',"TimelineController");
+
+// -------------------------------- Timeline --------------------------------
+
+
 // --------------------------------- Log out ---------------------------------
 
     Route::get('logout', "AdminController@logout")->name('logout');
