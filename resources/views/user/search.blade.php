@@ -105,31 +105,20 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Timeline</span>
+            <h1 class="section-heading-title"></h1>
+            <span class="greennature-page-caption"></span>
         </div>
     </div>
 
-<section style="margin-top:5rem;margin-bottom:4rem;">
-    <h1></h1>
-    <div class="ul">
-        @foreach($timelines as $timeline)
-            @if($timeline->id%2==1)
-        <li style="--accent-color:#eb681c">
-            <div class="date">{{ $timeline->year }}</div>
-            <div class="title">{{ $timeline->title }}</div>
-            <div class="descr">{!! $timeline->content !!}</div>
-        </li>
-                @elseif($timeline->id%2==0)
-        <li style="--accent-color:#FBCA3E">
-            <div class="date">{{ $timeline->year }}</div>
-            <div class="title">{{ $timeline->title }}</div>
-            <div class="descr">{!! $timeline->content !!} </div>
-        </li>
-            @endif
-        @endforeach
-
+<section class="container" style="margin-bottom:3rem;">
+    <div class="search__container">
+        <p class="search__title">
+            Go ahead, hover over search
+        </p>
+        <input class="search__input" type="text" placeholder="Search">
     </div>
+
+
 </section>
 
 

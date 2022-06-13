@@ -267,7 +267,18 @@
           <div class="clear"></div>
       </div>  </section>
 
+<style>
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+    	border: 0px;
+    	outline: none;
+    	padding: 6px;
+    	max-width: 100%;
+    }
 
+</style>
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------
   Footer------------------------------------------------------------------

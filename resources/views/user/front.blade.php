@@ -251,7 +251,7 @@
                 <!------------------------------ WHO WE ARE ---------------------------------------->
                 <section id="content-section-2">
                     <div class="greennature-color-wrapper gdlr-show-all greennature-skin-brown-column-service" style="
-                  background-color: #5f4c33;
+                  background-color: #9a7e5d;
                   border-top: 5px solid #3f3221;
                   padding-top: 0px;
                   padding-bottom: 0px;

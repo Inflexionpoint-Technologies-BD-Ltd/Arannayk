@@ -48,6 +48,8 @@ Route::get('/sustainability', "UserPanelController@sustainability")->name('susta
 Route::get('/gender', "UserPanelController@gender")->name('gender');
 
 Route::get('/contact-us', "UserPanelController@contactUs")->name('contactUs');
+Route::get('/search', "UserPanelController@search")->name('search');
+
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 

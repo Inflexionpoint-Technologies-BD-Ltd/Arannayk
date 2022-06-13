@@ -143,7 +143,7 @@
                                                                                 <h3 class="greennature-blog-title"><a>{{ $project->title }}</a></h3>
 
                                                                                 <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>
+{{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - {{ $project->funded_by}} </a></div>
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $project->location }} </a></div>
 
@@ -203,7 +203,7 @@
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
 
-                                        @foreach($projects as $project)
+                                        @foreach($widgets as $project)
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
                                                 <a href=""><img src="{{ asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
@@ -211,7 +211,7 @@
                                             <div class="recent-post-widget-content">
                                                 <div class="recent-post-widget-title"><a href="#{{ $project->title }}">{{ $project->title }}</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>
+{{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>

@@ -25,6 +25,7 @@ use App\About;
 use App\Mission;
 use App\Ecosystem;
 use App\Donate;
+use App\Timeline;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -49,13 +50,16 @@ class UserPanelController extends Controller
 
     public function currentProject(){
         $projects = Project::paginate(5);
-        return view('user.currentproject',compact('projects'));
+        $widgets= Project::skip(0)->take(3)->get();
+        return view('user.currentproject',compact('projects','widgets'));
     }
 
     public function projectArchives(){
         $archives= Archive::paginate(5);
+        $widgets= Archive::skip(0)->take(3)->get();
         $projects= Project::all();
-        return view('user.project-archives', compact('archives','projects'));
+
+        return view('user.project-archives', compact('archives','projects','widgets'));
     }
 
     public function aboutUs(){
@@ -174,11 +178,16 @@ class UserPanelController extends Controller
     }
 
     public function timeline(){
-        return view('user.timeline');
+        $timelines=Timeline::all();
+        return view('user.timeline',compact('timelines'));
     }
 
     public function donate(){
         $donates=Donate::all();
         return view('user.donate', compact('donates'));
+    }
+    public function search(){
+        return view('user.search');
+
     }
 }
