@@ -451,7 +451,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" href="{{ route('projects') }}">More
+                                        <a class="greennature-item-title-link" style="font-size:15px;" href="{{ route('projects') }}">More
                                             Projects</a>
                                         <div class="clear"></div>
                                     </div>
@@ -522,12 +522,12 @@
                 </section>
 
                 <!------------------------------ WHERE WE WORK (Map) ---------------------------------------->
-                <section id="content-section-4">
+                <section id="content-section-4" >
                     <div class="greennature-color-wrapper gdlr-show-all no-skin"
-                         style="background-color: #ffffff; padding-bottom: 25px">
+                         style="background-color: #ecb338; padding-bottom: 25px">
                         <div class="container">
                             <div
-                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
+                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium" style="border-color:#000;">
                                 <div class="greennature-item-title-container container">
                                     <div class="greennature-item-title-head">
                                         <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
@@ -535,7 +535,7 @@
                                                  height="80"/>
                                            Where We Work
                                         </h3>
-                                        <a class="greennature-item-title-link"  target="_blank" href="{{ route('map') }}">View Full Map
+                                        <a class="greennature-item-title-link" style="color:#000; font-size:15px;" target="_blank" href="{{ route('map') }}">View Full Map
                                         </a>
                                         <div class="clear"></div>
                                     </div>
@@ -544,26 +544,26 @@
                                             <div class="container">
                                                 <div class="three columns">
                                                     <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">7+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Partnerships</div>
+                                                        <div class="greennature-skill-item-title" style="color: #000;">7+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #000;">Partnerships</div>
                                                     </div>
                                                 </div>
                                                 <div class="three columns">
                                                     <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">5+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Active Projects</div>
+                                                        <div class="greennature-skill-item-title" style="color:  #000;">5+</div>
+                                                        <div class="greennature-skill-item-caption" style="color:  #000;">Active Projects</div>
                                                     </div>
                                                 </div>
                                                 <div class="three columns">
                                                     <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-2.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">40+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Total Projects</div>
+                                                        <div class="greennature-skill-item-title" style="color: #000;">40+</div>
+                                                        <div class="greennature-skill-item-caption" style="color:  #000;">Total Projects</div>
                                                     </div>
                                                 </div>
                                                 <div class="three columns">
                                                     <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">10+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Districts</div>
+                                                        <div class="greennature-skill-item-title" style="color:  #000;">10+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #000;">Districts</div>
                                                     </div>
                                                 </div>
                                                 <div class="clear"></div>
@@ -580,9 +580,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
 
 {{--                <section id="content-section-5" style="margin-bottom: 2rem; margin-top: 2rem">--}}
@@ -659,7 +656,7 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Publications
                                         </h3>
-                                        <a class="greennature-item-title-link" href="{{ route('publication') }}">More
+                                        <a class="greennature-item-title-link"  style="font-size:15px;" href="{{ route('publication') }}">More
                                             Publications</a>
                                         <div class="clear"></div>
                                     </div>
