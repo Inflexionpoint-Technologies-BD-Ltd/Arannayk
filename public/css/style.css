@@ -6554,3 +6554,10 @@ input[type="text"].greennature-payment-price-fill {
     height:40px;
 }
 
+.view-full-map{
+    color:#3f3f3f;
+}
+.view-full-map:hover{
+    color:#005e5e;
+}
+

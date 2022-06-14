@@ -527,7 +527,7 @@
                          style="background-color: #ecb338; padding-bottom: 25px">
                         <div class="container">
                             <div
-                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium" style="border-color:#000;">
+                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium" style="border-color:#3f3f3f;">
                                 <div class="greennature-item-title-container container">
                                     <div class="greennature-item-title-head">
                                         <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
@@ -535,46 +535,48 @@
                                                  height="80"/>
                                            Where We Work
                                         </h3>
-                                        <a class="greennature-item-title-link" style="color:#000; font-size:15px;" target="_blank" href="{{ route('map') }}">View Full Map
+                                        <a class="greennature-item-title-link view-full-map" style="font-size: 15px;" target="_blank" href="{{ route('map') }}">View Full Map
                                         </a>
                                         <div class="clear"></div>
                                     </div>
-                                    <div id="content-section-4">
-                                        <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style=" padding-top: 125px; padding-bottom: 90px; ">
-                                            <div class="container">
-                                                <div class="three columns">
-                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #000;">7+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #000;">Partnerships</div>
-                                                    </div>
-                                                </div>
-                                                <div class="three columns">
-                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color:  #000;">5+</div>
-                                                        <div class="greennature-skill-item-caption" style="color:  #000;">Active Projects</div>
-                                                    </div>
-                                                </div>
-                                                <div class="three columns">
-                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-2.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #000;">40+</div>
-                                                        <div class="greennature-skill-item-caption" style="color:  #000;">Total Projects</div>
-                                                    </div>
-                                                </div>
-                                                <div class="three columns">
-                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color:  #000;">10+</div>
-                                                        <div class="greennature-skill-item-caption" style="color: #000;">Districts</div>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
+
+
+                                    </div>
+                                </div>
+
+                            <div id="content-section-4">
+                                <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style=" padding-top: 100px; padding-bottom: 90px; ">
+                                    <div class="container">
+                                        <div class="three columns">
+                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
+                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">7+</div>
+                                                <div class="greennature-skill-item-caption" style="color:#3f3f3f;">Partnerships</div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80" />
+                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">5+</div>
+                                                <div class="greennature-skill-item-caption" style="color:  #3f3f3f;">Active Projects</div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-2.png') }}" alt="" width="80" height="80" />
+                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">40+</div>
+                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">Total Projects</div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
+                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">10+</div>
+                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">Districts</div>
                                             </div>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
-                                    <div>
-
-                                    </div>
                                 </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div>
                             </div>
 
                         </div>
