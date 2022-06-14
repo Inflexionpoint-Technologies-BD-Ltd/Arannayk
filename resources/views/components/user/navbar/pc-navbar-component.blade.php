@@ -81,7 +81,7 @@
             <!-- ---------------------------------------- What We Do  -->
 
             <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu">
-                <a href="" class="sf-with-ul-pre"> Where We Work</a>
+                <a href="{{ route('map') }}" class="sf-with-ul-pre"> Where We Work</a>
             </li>
 
             <!-- ----------------------------- Get Involved ----------------------------- -->

@@ -54,6 +54,16 @@ class UserPanelController extends Controller
         return view('user.currentproject',compact('projects','widgets'));
     }
 
+    public function viewProjects(){
+        $projects = Project::paginate(5);
+        $widgets= Project::skip(0)->take(3)->get();
+        return view('user.view-projects',compact('projects','widgets'));
+    }
+
+    public function map(){
+        return view('user.map');
+    }
+
     public function projectArchives(){
         $archives= Archive::paginate(5);
         $widgets= Archive::skip(0)->take(3)->get();
@@ -141,36 +151,44 @@ class UserPanelController extends Controller
 
     public function forest(){
         $projects=Project::skip(0)->take(4)->where('tag','forest')->get();
+        $archives=Archive::skip(0)->take(4)->where('tag','forest')->get();
         $blogs=Blog::skip(0)->take(4)->where('tag','forest')->get();
         $ecosystems = Ecosystem::where('title','forest')->get();
-        return view('user.forest',compact('projects', 'blogs','ecosystems'));
+        return view('user.forest',compact('projects', 'blogs','ecosystems','archives'));
     }
 
     public function climate(){
         $projects=Project::skip(0)->take(4)->where('tag','climate')->get();
+        $archives=Archive::skip(0)->take(4)->where('tag','climate')->get();
         $blogs=Blog::skip(0)->take(4)->where('tag','climate')->get();
         $ecosystems = Ecosystem::where('title','climate')->get();
-        return view('user.climate',compact('projects', 'blogs','ecosystems'));
+        return view('user.climate',compact('projects', 'blogs','ecosystems','archives'));
     }
 
     public function biodiversity(){
         $projects=Project::skip(0)->take(4)->where('tag','biodiversity')->get();
+        $archives=Archive::skip(0)->take(4)->where('tag','biodiversity')->get();
+
         $blogs=Blog::skip(0)->take(4)->where('tag','biodiversity')->get();
         $ecosystems = Ecosystem::where('title','biodiversity')->get();
-        return view('user.biodiversity',compact('projects', 'blogs','ecosystems'));
+        return view('user.biodiversity',compact('projects', 'blogs','ecosystems','archives'));
     }
 
     public function sustainability(){
         $projects=Project::skip(0)->take(4)->where('tag','sustainability')->get();
+        $archives=Archive::skip(0)->take(4)->where('tag','sustainability')->get();
+
         $blogs=Blog::skip(0)->take(4)->where('tag','sustainability')->get();
         $ecosystems = Ecosystem::where('title','sustainability')->get();
-        return view('user.sustainability',compact('projects', 'blogs','ecosystems'));
+        return view('user.sustainability',compact('projects', 'blogs','ecosystems','archives'));
     }
     public function gender(){
         $projects=Project::skip(0)->take(4)->where('tag','gender')->get();
+        $archives=Archive::skip(0)->take(4)->where('tag','gender')->get();
+
         $blogs=Blog::skip(0)->take(4)->where('tag','gender')->get();
         $ecosystems = Ecosystem::where('title','gender')->get();
-        return view('user.gender',compact('projects', 'blogs','ecosystems'));
+        return view('user.gender',compact('projects', 'blogs','ecosystems','archives'));
     }
 
     public function contactUs(){
@@ -190,4 +208,6 @@ class UserPanelController extends Controller
         return view('user.search');
 
     }
+
+
 }

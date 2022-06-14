@@ -522,66 +522,129 @@
                 </section>
 
                 <!------------------------------ WHERE WE WORK (Map) ---------------------------------------->
-
-                <section id="content-section-5" style="margin-bottom: 2rem; margin-top: 2rem">
-                    <div
-                        class="greennature-color-wrapper gdlr-show-all greennature-skin-service-half greennature-half-bg-wrapper"
-                        style="background-color: #f5f5f5; padding-bottom: 20px">
-                        <div class="greennature-half-bg greennature-bg-solid" style="
-                            background-image: url({{ asset('./images/map.png') }});
-                            margin-left: 8rem;
-                            "></div>
+                <section id="content-section-4">
+                    <div class="greennature-color-wrapper gdlr-show-all no-skin"
+                         style="background-color: #ffffff; padding-bottom: 25px">
                         <div class="container">
-                            <div class="six columns">
-                                <div class="greennature-item greennature-content-item"></div>
-                            </div>
-                            <div class="six columns">
-                                <div class="greennature-item greennature-icon-with-list-item">
-                                    <div class="list-with-icon-ux greennature-ux">
-                                        <div class="list-with-icon greennature-left">
-                                            <!-- <div class="list-with-icon-image"><img src="upload/icon-1.png" alt=""
-                                                                            width="80" height="80" /></div> -->
-                                            <div class="list-with-icon-content">
-                                                <div class="list-with-icon-title greennature-skin-title">
-                                                    Where We Work
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                            <div
+                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
+                                <div class="greennature-item-title-container container">
+                                    <div class="greennature-item-title-head">
+                                        <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
+                                            <img src="{{ asset('./images/location.png') }}" class="location-pointer" alt="" width="80"
+                                                 height="80"/>
+                                           Where We Work
+                                        </h3>
+                                        <a class="greennature-item-title-link" href="{{ route('map') }}">View Full Map
+                                        </a>
+                                        <div class="clear"></div>
                                     </div>
-
-                                    <div class="list-with-icon-ux greennature-ux">
-                                        <div class="list-with-icon greennature-left">
-                                            <div class="list-with-icon-image">
-                                                <img src="{{ asset('./images/location.png') }}" alt="" width="80"
-                                                     height="80"/>
-                                            </div>
-                                            <div class="list-with-icon-content">
-                                                <div class="list-with-icon-title greennature-skin-title">
-                                                    Dhaka, Bangladesh
+                                    <div id="content-section-4">
+                                        <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style=" padding-top: 125px; padding-bottom: 90px; ">
+                                            <div class="container">
+                                                <div class="three columns">
+                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
+                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">20+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Partnerships</div>
+                                                    </div>
                                                 </div>
-                                                <div class="list-with-icon-caption">
-                                                    <p>
-                                                        527/K Wasi Tower, ECB Chattar, Matikata, Dhaka
-                                                        Cantonment, 1206 Dhaka, Dhaka Division,
-                                                        Bangladesh
-                                                    </p>
+                                                <div class="three columns">
+                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80" />
+                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">5+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Active Projects</div>
+                                                    </div>
                                                 </div>
+                                                <div class="three columns">
+                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-2.png') }}" alt="" width="80" height="80" />
+                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">40+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Total Projects</div>
+                                                    </div>
+                                                </div>
+                                                <div class="three columns">
+                                                    <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
+                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">10+</div>
+                                                        <div class="greennature-skill-item-caption" style="color: #5dc269;">Districts</div>
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
                                             </div>
-
-                                            <br/><br/><br/><br/>
-
-                                            <div class="clear"></div>
                                         </div>
+                                        <div class="clear"></div>
                                     </div>
-                                    <div class="clear"></div>
+                                    <div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="clear"></div>
+
                         </div>
                     </div>
-                    <div class="clear"></div>
                 </section>
+
+
+
+
+
+{{--                <section id="content-section-5" style="margin-bottom: 2rem; margin-top: 2rem">--}}
+{{--                    <div--}}
+{{--                        class="greennature-color-wrapper gdlr-show-all greennature-skin-service-half greennature-half-bg-wrapper"--}}
+{{--                        style="background-color: #f5f5f5; padding-bottom: 20px">--}}
+{{--                        <div class="greennature-half-bg greennature-bg-solid" style="--}}
+{{--                            background-image: url({{ asset('./images/map.png') }});--}}
+{{--                            margin-left: 8rem;--}}
+{{--                            "></div>--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="six columns">--}}
+{{--                                <div class="greennature-item greennature-content-item"></div>--}}
+{{--                            </div>--}}
+{{--                            <div class="six columns">--}}
+{{--                                <div class="greennature-item greennature-icon-with-list-item">--}}
+{{--                                    <div class="list-with-icon-ux greennature-ux">--}}
+{{--                                        <div class="list-with-icon greennature-left">--}}
+{{--                                            <!-- <div class="list-with-icon-image"><img src="upload/icon-1.png" alt=""--}}
+{{--                                                                            width="80" height="80" /></div> -->--}}
+{{--                                            <div class="list-with-icon-content">--}}
+{{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
+{{--                                                    Where We Work--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="clear"></div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+
+{{--                                    <div class="list-with-icon-ux greennature-ux">--}}
+{{--                                        <div class="list-with-icon greennature-left">--}}
+{{--                                            <div class="list-with-icon-image">--}}
+{{--                                                <img src="{{ asset('./images/location.png') }}" alt="" width="80"--}}
+{{--                                                     height="80"/>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="list-with-icon-content">--}}
+{{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
+{{--                                                    Dhaka, Bangladesh--}}
+{{--                                                </div>--}}
+{{--                                                <div class="list-with-icon-caption">--}}
+{{--                                                    <p>--}}
+{{--                                                        527/K Wasi Tower, ECB Chattar, Matikata, Dhaka--}}
+{{--                                                        Cantonment, 1206 Dhaka, Dhaka Division,--}}
+{{--                                                        Bangladesh--}}
+{{--                                                    </p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+
+{{--                                            <br/><br/><br/><br/>--}}
+
+{{--                                            <div class="clear"></div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="clear"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="clear"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="clear"></div>--}}
+{{--                </section>--}}
+
 
                 <!------------------------------ Knowledge (Publications) ---------------------------------------->
                 <section id="content-section-4">

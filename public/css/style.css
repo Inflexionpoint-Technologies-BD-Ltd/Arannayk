@@ -6549,5 +6549,8 @@ input[type="text"].greennature-payment-price-fill {
     background-position: 100% center;
 }
 
-
+.location-pointer{
+    max-width:40px;
+    height:40px;
+}
 

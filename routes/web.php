@@ -48,7 +48,9 @@ Route::get('/sustainability', "UserPanelController@sustainability")->name('susta
 Route::get('/gender', "UserPanelController@gender")->name('gender');
 
 Route::get('/contact-us', "UserPanelController@contactUs")->name('contactUs');
-Route::get('/search', "UserPanelController@search")->name('search');
+
+Route::get('/map', "UserPanelController@map")->name('map');
+Route::get('/projects', "UserPanelController@viewProjects")->name('viewProjects');
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
