@@ -613,5 +613,30 @@
 
 {{-- -------------------------------------------------- Timeline ------------------------------------------------------- --}}
 
+{{-- -------------------------------------------------- Map ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMap"
+       aria-expanded="true" aria-controls="collapseMap">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Map</span>
+    </a>
+    <div id="collapseMap" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Timeline</h6>
+            <a class="collapse-item" href="{{ route('map.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('map.index') }}">View All info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Map ------------------------------------------------------- --}}
+
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}
