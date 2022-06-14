@@ -26,6 +26,7 @@ use App\Mission;
 use App\Ecosystem;
 use App\Donate;
 use App\Timeline;
+use App\Map;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -54,14 +55,21 @@ class UserPanelController extends Controller
         return view('user.currentproject',compact('projects','widgets'));
     }
 
-    public function viewProjects(){
-        $projects = Project::paginate(5);
-        $widgets= Project::skip(0)->take(3)->get();
-        return view('user.view-projects',compact('projects','widgets'));
+    public function viewProjects($project){
+
+//        $projects = Project::paginate(5);
+        $projects = Project::where('location', 'like', '%' . $project . '%')->paginate(5);
+        $archives = Archive::where('location', 'like', '%' . $project . '%')->paginate(5);
+
+        $widgets= Project::where('location', 'like', '%' . $project . '%')->skip(0)->take(3)->get();
+        $widgets_archives= Archive::where('location', 'like', '%' . $project . '%')->skip(0)->take(3)->get();
+
+        return view('user.view-projects',compact('projects','widgets','archives','widgets_archives'));
     }
 
     public function map(){
-        return view('user.map');
+        $maps= Map::all();
+        return view('user.map',compact('maps'));
     }
 
     public function projectArchives(){

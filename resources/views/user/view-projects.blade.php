@@ -166,6 +166,44 @@
                                                         </div>
                                                     @endforeach
 
+                                                    @foreach($archives as $project)
+                                                        <div class="twelve columns" id="{{ $project->title }}">
+                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                                <div class="greennature-ux greennature-blog-grid-ux">
+                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                        <div class="greennature-standard-style">
+                                                                            <div class="greennature-blog-thumbnail">
+                                                                                <a href=""> <img src="{{ asset('storage/'.$project->image) }}" class="image-projects" alt=""  /></a>
+                                                                            </div>
+
+                                                                            <div class="greennature-blog-grid-content">
+                                                                                <header class="post-header">
+                                                                                    <h3 class="greennature-blog-title"><a>{{ $project->title }}</a></h3>
+
+                                                                                    <div class="greennature-blog-info">
+                                                                                        {{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
+                                                                                        <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - {{ $project->funded_by}} </a></div>
+                                                                                        <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $project->location }} </a></div>
+
+                                                                                        <div class="clear"></div>
+                                                                                    </div>
+                                                                                    <div class="clear"></div>
+                                                                                </header>
+                                                                                <!-- entry-header -->
+
+                                                                                <div class="greennature-blog-content">Major Achievements:
+                                                                                    <p>{!! $project->achievement !!}</p>
+                                                                                    {{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                                                    <!-- #post -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
+
                                                     <div class="clear"></div>
                                                     {{-- ----------------- pagination ------------------------ --}}
 
@@ -200,7 +238,7 @@
                                 {{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
                                 {{--                                </div>--}}
                                 <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Projects</h3>
+                                    <h3 class="greennature-widget-title">Our Projects</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
 
@@ -210,7 +248,7 @@
                                                     <a href=""><img src="{{ asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
                                                 </div>
                                                 <div class="recent-post-widget-content">
-                                                    <div class="recent-post-widget-title"><a href="#{{ $project->title }}">{{ $project->title }}</a></div>
+                                                    <div class="recent-post-widget-title"><a href="#{{ $project->title }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a></div>
                                                     <div class="recent-post-widget-info">
                                                         {{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
                                                         <div class="clear"></div>
@@ -219,6 +257,22 @@
                                                 <div class="clear"></div>
                                             </div>
                                         @endforeach
+
+                                        @foreach($widgets_archives as $project)
+                                                <div class="recent-post-widget">
+                                                    <div class="recent-post-widget-thumbnail">
+                                                        <a href=""><img src="{{ asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
+                                                    </div>
+                                                    <div class="recent-post-widget-content">
+                                                        <div class="recent-post-widget-title"><a href="#{{ $project->title }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a></div>
+                                                        <div class="recent-post-widget-info">
+                                                            {{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            @endforeach
 
                                         <div class="clear"></div>
                                     </div>
@@ -231,6 +285,9 @@
                                         @foreach($projects as $project)
                                             <a href="#{{ $project->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $project->tag }}</a>
                                         @endforeach
+                                            @foreach($archives as $project)
+                                                <a href="#{{ $project->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $project->tag }}</a>
+                                            @endforeach
                                     </div>
                                 </div>
 

@@ -69,9 +69,9 @@
                         <a href="{{ route('publication') }}" style="color: #0c0c0c">Publications</a>
                     </div>
 
-                    <div style="margin-bottom: 0.5rem">
-                        <a href="{{ route('contactUs') }}" style="color: #0c0c0c">Contact Us</a>
-                    </div>
+{{--                    <div style="margin-bottom: 0.5rem">--}}
+{{--                        <a href="{{ route('contactUs') }}" style="color: #0c0c0c">Contact Us</a>--}}
+{{--                    </div>--}}
 
                     <div class="clear"></div>
                 </div>

@@ -481,7 +481,7 @@
                                                         </div>
                                                         <div class="portfolio-classic-content">
                                                             <h3 class="portfolio-title">
-                                                                <a href="{{ route('projects') }}">{{ $project -> title }}</a>
+                                                                <a href="{{ route('projects') }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
                                                             </h3>
                                                             <div class="greennature-portfolio-info">
                                                                 <div class="portfolio-info portfolio-tag">
@@ -544,7 +544,7 @@
                                             <div class="container">
                                                 <div class="three columns">
                                                     <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
-                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">20+</div>
+                                                        <div class="greennature-skill-item-title" style="color: #5dc269;">7+</div>
                                                         <div class="greennature-skill-item-caption" style="color: #5dc269;">Partnerships</div>
                                                     </div>
                                                 </div>
