@@ -80,7 +80,7 @@
       Top navigation---------------------------------------------------------
     ---------------------------------------------------------------------- -->
 
-    <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>
+{{--    <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>--}}
 
     <!---------------------------------------------------------------------------------
       --------------------------------------------------------------------------------
@@ -99,14 +99,14 @@
               -----------Mobile Navbar-----------------------------------------
               ------------------------------------------------------------------>
 
-            <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>
+{{--            <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>--}}
 
 
             <!-----------------------------------------------------------------
               -----------------------------------------------------------------
               -----------------------------------------------------------------
               -----------------------------Mobile Navbar----------------------->
-            <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>
+{{--            <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>--}}
 
             <!-----------------------------------------------------------------
               -----------------------------------------------------------------
@@ -125,7 +125,7 @@
 <!------------------------------------------ Navbar ends here--- -->
 
 <div class="break-tags">
-    <br><br><br><br><br><br>
+
 </div>
 
 <div id="map"></div>
@@ -195,7 +195,7 @@
 
     tiles.addTo(map);
     @foreach($maps as $map)
-    L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('{{ $map->location }} <br><br>Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }} <br><br> <a href="{{ route('viewProjects', $map->location) }}" style="text-decoration: none;" > View Projects</a>').addTo(map);
+    L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('{{ $map->location }} <br><br>Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }} <br><br> <a href="{{ route('viewProjects', $map->location) }}" target="_blank" style="text-decoration: none;" > View Projects</a>').addTo(map);
     @endforeach
 </script>
 

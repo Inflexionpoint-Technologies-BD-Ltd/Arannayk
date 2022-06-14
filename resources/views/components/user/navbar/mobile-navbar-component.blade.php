@@ -40,7 +40,7 @@
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="{{ route('map') }}">Where We Work</a>
+                <a href="{{ route('map') }}" target="_blank">Where We Work</a>
             </li>
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="{{ route('donate') }}">Donate</a>

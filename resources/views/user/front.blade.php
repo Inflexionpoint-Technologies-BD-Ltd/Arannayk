@@ -535,7 +535,7 @@
                                                  height="80"/>
                                            Where We Work
                                         </h3>
-                                        <a class="greennature-item-title-link" href="{{ route('map') }}">View Full Map
+                                        <a class="greennature-item-title-link"  target="_blank" href="{{ route('map') }}">View Full Map
                                         </a>
                                         <div class="clear"></div>
                                     </div>
