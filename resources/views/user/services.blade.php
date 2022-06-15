@@ -165,7 +165,7 @@
 
 
 
-                                <div class="column-service-content greennature-skin-content">
+                                <div class="column-service-content greennature-skin-content" style="font-size: 14px;">
                                     <p>{!! $service->content !!} </p>
                                 </div>
 {{--                                <a class="column-service-read-more" href="#">Read More</a>--}}
