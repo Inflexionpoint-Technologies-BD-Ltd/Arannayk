@@ -54,11 +54,22 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+{{--                <div class="form-group">--}}
+{{--                    <label for="exampleInputEmail1">Enter Tag</label>--}}
+{{--                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"--}}
+{{--                           placeholder="Enter title" name="tag"--}}
+{{--                           class="form-control @error('tag') is-invalid @enderror" value="{{ $archive->tag }}">--}}
+{{--                </div>--}}
+
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Tag</label>
-                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter title" name="tag"
-                           class="form-control @error('tag') is-invalid @enderror" value="{{ $archive->tag }}">
+                    <label for="exampleFormControlSelect1">Enter Tag</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="tag">
+                        <option value="Forest" @if($archive->tag == "Forest") selected @endif>Forest</option>
+                        <option value="Biodiversity" @if($archive->tag == "Biodiversity") selected @endif>Biodiversity</option>
+                        <option value="Sustainability" @if($archive->tag == "Sustainability") selected @endif>Sustainability</option>
+                        <option value="Climate" @if($archive->tag == "Climate") selected @endif>Climate</option>
+                        <option value="Gender" @if($archive->tag == "Gender") selected @endif>Gender</option>
+                    </select>
                 </div>
 
                 @error('tag')

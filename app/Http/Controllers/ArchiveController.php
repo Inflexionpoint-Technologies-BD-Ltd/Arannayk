@@ -93,7 +93,7 @@ class ArchiveController extends Controller
             'tag' => 'required',
             'date' => 'required',
             'funded_by' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png',
         ]);
 
         if (request('image')) {
