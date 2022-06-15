@@ -53,11 +53,22 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+{{--                <div class="form-group">--}}
+{{--                    <label for="exampleInputEmail1">Enter Tag</label>--}}
+{{--                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"--}}
+{{--                           placeholder="Enter title" name="tag"--}}
+{{--                           class="form-control @error('tag') is-invalid @enderror">--}}
+{{--                </div>--}}
+
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Tag</label>
-                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter title" name="tag"
-                           class="form-control @error('tag') is-invalid @enderror">
+                    <label for="exampleFormControlSelect1">Enter Tag</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="tag">
+                        <option value="Forest">Forest</option>
+                        <option value="Biodiversity">Biodiversity</option>
+                        <option value="Sustainability">Sustainability</option>
+                        <option value="Climate">Climate</option>
+                        <option value="Gender">Gender</option>
+                    </select>
                 </div>
 
                 @error('tag')
