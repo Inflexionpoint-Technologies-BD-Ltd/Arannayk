@@ -227,8 +227,8 @@
                                     <h3 class="greennature-widget-title">Tags</h3>
                                     <div class="clear"></div>
                                     <div class="tagcloud">
-                                        @foreach($projects as $project)
-                                        <a href="#{{ $project->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $project->tag }}</a>
+                                        @foreach($tags as $project)
+                                        <a href="{{ route('projects',$project->tag) }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $project->tag }}</a>
                                         @endforeach
                                        </div>
                                 </div>

@@ -15,8 +15,8 @@ Route::get('/', "UserPanelController@index");
 Route::get('/donate', "UserPanelController@donate")->name('donate');
 
 Route::get('/services', "UserPanelController@services")->name('services');
-Route::get('/current-projects', "UserPanelController@currentProject")->name('projects');
-Route::get('/project-archives', "UserPanelController@projectArchives")->name('archives');
+Route::get('/current-projects/{search?}', "UserPanelController@currentProject")->name('projects');
+Route::get('/project-archives/{search?}', "UserPanelController@projectArchives")->name('archives');
 
 Route::get('/about-arannayk', "UserPanelController@aboutUs")->name('aboutUs');
 Route::get('/our-team', "UserPanelController@ourTeam")->name('team');

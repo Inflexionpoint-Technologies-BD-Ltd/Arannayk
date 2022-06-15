@@ -233,7 +233,7 @@
                                     <h3 class="greennature-widget-title">Tags</h3>
                                     <div class="clear"></div>
                                     <div class="tagcloud">
-                                        @foreach($archives as $archive)
+                                        @foreach($tags as $archive)
                                             <a href="#{{ $archive->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $archive->tag }}</a>
                                         @endforeach
                                     </div>
