@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Our Achievements</title>
+    <title>Arannayk - Donate</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -25,7 +25,6 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
           type="text/css" media="all"/>
-
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
@@ -43,8 +42,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
           integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-{{--    <link rel="stylesheet" href="{{ asset('css/app.css') }}">--}}
-
 </head>
 
 <body data-rsssl="1"
@@ -108,101 +105,61 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Achievements</span>
+            <h1 class="section-heading-title">Donate</h1>
+            <span class="greennature-page-caption"></span>
         </div>
     </div>
 
-    <section>
-        <div class="content-wrapper">
-            <div class="greennature-content">
-
-                <!-- Above Sidebar Section-->
-
-                <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <div class="with-sidebar-container container">
-                        <div class="">
-                            <div class="">
-                                <section id="content-section-1">
-                                    <div class="section-container container">
-                                        <div class="blog-item-wrapper">
-                                            <div class="blog-item-holder">
-
-                                                @foreach($achievements as $achievement)
-                                                    <div class="greennature-item greennature-blog-full">
-                                                        <div class="greennature-ux greennature-blog-full-ux">
-                                                            <article id="post-862"
-                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                                <div class="greennature-standard-style">
-                                                                    <div>
-                                                                        <a> <img
-                                                                                src="{{ asset('storage/'.$achievement->image)  }}"
-                                                                                class="press-release-image" alt=""/></a>
-                                                                    </div>
-
-                                                                    <div class="blog-content-wrapper">
-                                                                        <header class="post-header">
-                                                                            <h3 class="greennature-blog-title">
-                                                                                <a>{{ $achievement->title }}</a></h3>
-
-                                                                            <div class="clear"></div>
-                                                                        </header>
-                                                                        <!-- entry-header -->
-
-                                                                        <div class="greennature-blog-content" style="text-align: justify">
-                                                                            {!! $achievement->content !!}
-                                                                            <div class="greennature-blog-info"
-                                                                                 style="margin-top:2rem;">
-                                                                                <div class="clear"></div>
-                                                                            </div>
-                                                                            <div class="clear">
-                                                                            </div>
-                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- blog content wrapper -->
-                                                                    <div class="clear"></div>
-                                                                </div>
-                                                            </article>
-                                                            <!-- #post -->
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
-
-                                            </div>
-
-                                            {{-- ----------------- pagination ------------------------ --}}
-
-                                            <div class="pagination-style">
-                                                {{ $achievements->links() }}
-                                            </div>
-
-                                            {{-- ----------------- pagination ------------------------ --}}
-
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </section>
-
-                            </div>
-
-                            <div class="clear"></div>
+    <section id="content-section-3">
+        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
+            <div class="container">
+                <div class="">
+                    @foreach($donates as $donate)
+                    <div class="greennature-item greennature-about-us-item greennature-normal">
+                        <div class="about-us-title-wrapper">
+                            <h3 class="about-us-title" style="text-align: center; font-size:28px">
+                                {{ $donate->title }}
+                            </h3>
+                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
+                            <div class="about-us-title-divider"></div>
                         </div>
-
-
+                        <div class="about-us-content-wrapper">
+                            <div class="about-us-content greennature-skin-content">
+                                <p style="text-align: center;">
+                                    {!! $donate->content  !!}
+                                </p>
+                            </div>
+                        </div>
                         <div class="clear"></div>
                     </div>
+                    @endforeach
                 </div>
-
-                <!-- Below Sidebar Section-->
-
+                <div class="clear"></div>
             </div>
-            <!-- greennature-content -->
-            <div class="clear"></div>
         </div>
+        <div class="clear"></div>
     </section>
+
+    <section id="content-section-5">
+        <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style="background-color:#005e5e; padding-top: 125px; padding-bottom: 90px; ">
+            <div class="container">
+                <div class="greennature-stunning-item-ux greennature-ux">
+                    <div class="greennature-item greennature-stunning-item greennature-stunning-center">
+                        <h2 class="stunning-item-title">The only way to make this happened is to take action!</h2>
+                        <div class="stunning-item-caption greennature-skin-content">
+                            <p></p>
+                        </div>
+                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="#" style="background-color: #fec428; color: #000;">Donate Now</a>
+                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="#">Act Now</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------

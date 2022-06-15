@@ -129,7 +129,7 @@
                                                     <div class="clear"></div>
 
                                                     @foreach($activities as $activity)
-                                                    <div class="six columns">
+                                                    <div class="six columns" id="{{ $activity->title }}">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
@@ -164,7 +164,13 @@
                                                     @endforeach
 
                                                     <div class="clear"></div>
+                                                    {{-- ----------------- pagination ------------------------ --}}
 
+                                                    <div class="pagination-style">
+                                                        {{ $activities->links() }}
+                                                    </div>
+
+                                                    {{-- ----------------- pagination ------------------------ --}}
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -192,7 +198,7 @@
                                                 <a><img src="{{ asset('storage/'.$activity->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $activity->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="#{{$activity->title}}">{{ $activity->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="clear"></div>
                                                 </div>
@@ -210,7 +216,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($activities as $activity)
-                                        <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
+                                        <a href="#{{ $activity->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $activity->tag }}</a>
                                         @endforeach
                                       </div>
                                 </div>

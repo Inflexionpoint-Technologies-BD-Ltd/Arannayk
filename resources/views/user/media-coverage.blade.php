@@ -129,7 +129,7 @@
                                                     <div class="clear"></div>
 
                                                     @foreach($medias as $media)
-                                                        <div class="six columns">
+                                                        <div class="six columns" id="{{ $media->title }}">
                                                             <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                                 <div class="greennature-ux greennature-blog-grid-ux">
                                                                     <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
@@ -164,6 +164,9 @@
                                                     @endforeach
 
                                                     <div class="clear"></div>
+                                                    <div class="pagination-style">
+                                                        {{ $medias->links() }}
+                                                    </div>
 
                                                     <div class="clear"></div>
                                                 </div>
@@ -192,7 +195,7 @@
                                                     <a><img src="{{ asset('storage/'.$media->image) }}" alt="" width="150" height="150" /></a>
                                                 </div>
                                                 <div class="recent-post-widget-content">
-                                                    <div class="recent-post-widget-title"><a>{{ $media->title }}</a></div>
+                                                    <div class="recent-post-widget-title"><a href="#{{ $media->title }}">{{ $media->title }}</a></div>
                                                     <div class="recent-post-widget-info">
                                                         <div class="clear"></div>
                                                     </div>
@@ -210,7 +213,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($medias as $media)
-                                            <a href="#" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>
+                                            <a href="#{{ $media->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>
                                         @endforeach
                                     </div>
                                 </div>

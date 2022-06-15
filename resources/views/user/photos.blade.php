@@ -153,6 +153,9 @@
                                                 @endforeach
 
                                             </div>
+                                            <div class="pagination-style">
+                                                {{ $photos->links() }}
+                                            </div>
                                             <div class="clear"></div>
                                         </div>
                                     </div>

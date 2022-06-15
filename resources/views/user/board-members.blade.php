@@ -110,35 +110,177 @@
         </div>
     </div>
 
-    <section id="content-section-1">
-        <div class="section-container container">
-            <div class="greennature-personnel-item-wrapper" style="margin-bottom: 30px;">
-                <div class="clear"></div>
-                @foreach($board as $board)
-                <div class="four columns">
-                    <div class="greennature-item greennature-personnel-item plain-style">
-                        <div class="greennature-ux greennature-personnel-ux">
-                            <div class="personnel-item">
-                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('storage/'.$board->image) }}" class="team-image" alt="" /></div>
-                                <div class="personnel-info">
-                                    <div class="personnel-author greennature-skin-title">{{ $board->name }}</div>
-                                    <div class="personnel-position greennature-skin-info">{{ $board->position }}</div>
-                                    <div class="personnel-position greennature-skin-info">{{ $board->location }}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section style="margin-top: 5rem;" class="container">
+        <div id="team">
+            @foreach($board as $board)
+
+            <div class="card">
+                <img src="{{ asset('storage/'.$board->image) }}" alt="" />
+                <div class="data">
+                    <h2>{{ $board->name }}</h2>
+                    <i>{{ $board->position }}</i>
+                    <p style="text-align:center;">{{ $board->location }}</p>
+
                 </div>
-                @endforeach
-
-
-
-
-                <div class="clear"></div>
             </div>
-            <div class="clear"></div>
+            @endforeach
+
         </div>
     </section>
+    <style>
+
+        h1{
+            text-align:center;
+            font-size:3em;
+
+        }
+        #team{
+            display:flex;
+            flex-wrap: wrap;
+            flex-grow:3;
+        }
+        .card {
+            width:33%;
+            min-width: 250px;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+            margin:0 0.5% 1% 0;
+            display:inline-block;
+            margin-bottom: 3rem;
+            color: #000;
+        }
+        .card:nth-of-type(3n){
+            margin-right:0;
+        }
+        .card img {
+            width: 100%;
+            min-height:100%;
+            transition:all 0.9s;
+            object-fit: cover;
+        }
+        .card:hover img{
+            transform:scale(1.2,1.2)
+        }
+        .data {
+            position: absolute;
+            /*bottom: 5%;*/
+            background: #fff;
+            text-align:center;
+            width: 90%;
+            height: 80px;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 10px 5%;
+            box-sizing: border-box;
+            opacity: 0.8;
+            transition: all 0.4s
+        }
+
+        .card:hover .data {
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            opacity: 0.9;
+            padding:90px 10%
+        }
+
+        .data h2 {
+            margin: 0 0 5px 0;
+            transition:color 0.4s;
+            font-size: 20px;
+        }
+
+        .data p {
+            opacity: 0;
+            text-align:justify;
+            transition: all 0.2s
+        }
+
+        .card:hover .data p,.card:hover .data a {
+            opacity: 1
+        }
+
+        .data a{
+            color:#000;
+            text-decoration:none;
+            padding:20px;
+            opacity:0
+        }
+        .data a:hover,.card:hover h2{
+            color:#005e5e;
+        }
+        @media (max-width:1180px){
+            .card {
+                width:30%;
+                height:350px;
+                margin-bottom:2rem;
+                margin-right:0.5rem;
+            margin-left: 0.5rem;}
+            .data {
+                bottom: 5%;
+                height: 65px;
+            }
+        }
+        @media (max-width:959px){
+            .card {
+                width:45%;
+                height:400px;
+                margin-bottom:2rem;
+                margin-right:0;
+             }
+            .data {
+                bottom: 5%;
+                height: 65px;
+            }
+        }
+
+        @media (max-width:767px){
+            .card {width:100%;
+                height:300px;
+                margin-bottom:2rem;
+                margin-right:0}
+            .data {
+                bottom: 3%;
+                height: 90px;
+            }
+        }
+
+    </style>
+
+{{--    <section id="content-section-1">--}}
+{{--        <div class="section-container container">--}}
+{{--            <div class="greennature-personnel-item-wrapper" style="margin-bottom: 30px;">--}}
+{{--                <div class="clear"></div>--}}
+{{--              --}}
+{{--                <div class="four columns">--}}
+{{--                    <div class="greennature-item greennature-personnel-item plain-style">--}}
+{{--                        <div class="greennature-ux greennature-personnel-ux">--}}
+{{--                            <div class="personnel-item">--}}
+{{--                                <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('storage/'.$board->image) }}" class="team-image" alt="" /></div>--}}
+{{--                                <div class="personnel-info">--}}
+{{--                                    <div class="personnel-author greennature-skin-title">{{ $board->name }}</div>--}}
+{{--                                    <div class="personnel-position greennature-skin-info">{{ $board->position }}</div>--}}
+{{--                                    <div class="personnel-position greennature-skin-info">{{ $board->location }}</div><br>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                </div>--}}
+
+{{--                @endforeach--}}
+
+
+
+
+{{--                <div class="clear"></div>--}}
+{{--            </div>--}}
+{{--            <div class="clear"></div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------

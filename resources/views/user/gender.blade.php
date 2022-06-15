@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Forest</title>
+    <title>Arannayk - Gender</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,7 +105,7 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Forest</h1>
+            <h1 class="section-heading-title">Gender</h1>
             <span class="greennature-page-caption"></span>
         </div>
     </div>
@@ -113,29 +113,29 @@
     <section id="content-section-3">
         <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
             @foreach($ecosystems as $ecosystem)
-            <div class="container">
-                <div class="six columns">
-                    <div class="greennature-video-item greennature-item">
-                        <img src="{{ asset('storage/'.$ecosystem->image) }}" class="ecosystem-image" alt="" width="80" height="80"/>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div class="greennature-item greennature-about-us-item greennature-normal">
-                        <div class="about-us-title-wrapper">
-                            <h3 class="about-us-title"></h3>
-                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
-                            <div class="about-us-title-divider"></div>
+                <div class="container">
+                    <div class="six columns">
+                        <div class="greennature-video-item greennature-item">
+                            <img src="{{ asset('storage/'.$ecosystem->image) }}" class="ecosystem-image" alt="" width="80" height="80"/>
                         </div>
-                        <div class="about-us-content-wrapper">
-                            <div class="about-us-content greennature-skin-content">
-                                <p>{!! $ecosystem->content !!} </p>
+                    </div>
+                    <div class="six columns">
+                        <div class="greennature-item greennature-about-us-item greennature-normal">
+                            <div class="about-us-title-wrapper">
+                                <h3 class="about-us-title"></h3>
+                                <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
+                                <div class="about-us-title-divider"></div>
                             </div>
+                            <div class="about-us-content-wrapper">
+                                <div class="about-us-content greennature-skin-content">
+                                    <p>{!! $ecosystem->content !!} </p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
                     </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-            </div>
             @endforeach
         </div>
         <div class="clear"></div>
@@ -235,7 +235,7 @@
                         <div class="greennature-item-title-head">
                             <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
                                 <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>
-                               Project Archives
+                                Project Archives
                             </h3>
                             <a class="greennature-item-title-link" href="{{ route('archives') }}">More
                                 Projects</a>
@@ -363,7 +363,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="portfolio-excerpt">
-                                                    {!! \Illuminate\Support\Str::words($blog->content,20,'...')  !!}
+                                                    {!! \Illuminate\Support\Str::limit($blog -> content,150,'...')  !!}
 
                                                     <div class="clear"></div>
                                                     <a href="{{ route('blogs') }}" class="excerpt-read-more">Read

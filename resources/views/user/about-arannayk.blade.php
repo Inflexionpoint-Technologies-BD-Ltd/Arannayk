@@ -126,7 +126,7 @@
                         </div>
                         <div class="about-us-content-wrapper">
                             <div class="about-us-content greennature-skin-content">
-                                <p>{!! $about->content !!}}</p>
+                                <p>{!! $about->content !!}</p>
                             </div>
 {{--                            <a class="about-us-read-more greennature-button" href="#">Read More</a>--}}
                         </div>
@@ -153,7 +153,7 @@
                                 <h3 class="column-service-title">{{ $mission->title }}</h3>
                                 <div class="column-service-caption greennature-skin-info"></div>
                                 <div class="column-service-content greennature-skin-content">
-                                    <p>{{ $mission->content }}</p>
+                                    <p>{!! $mission->content !!} </p>
                                 </div>
                             </div>
                         </div>

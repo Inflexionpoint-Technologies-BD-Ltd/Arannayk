@@ -165,6 +165,13 @@
 
 
                                             </div>
+                                            {{-- ----------------- pagination ------------------------ --}}
+
+                                            <div class="pagination-style">
+                                                {{ $blogs->links() }}
+                                            </div>
+
+                                            {{-- ----------------- pagination ------------------------ --}}
 
                                         </div>
                                         <div class="clear"></div>

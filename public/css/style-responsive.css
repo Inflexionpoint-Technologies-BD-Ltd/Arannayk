@@ -121,6 +121,11 @@ html body {
 
 /*--- mobile landscape style ---*/
 @media only screen and (max-width: 767px) {
+
+    .break-tags{
+        display:none;
+    }
+
 	body .container {
 		max-width: 420px;
 	}
@@ -428,6 +433,45 @@ html body {
 	.greennature-payment-price-preset {
 		margin-bottom: 15px;
 	}
+
+    /* Mobile Transitions */
+
+
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+    .reveal.active {
+        opacity: 1;
+    }
+    .active.fade-bottom {
+        animation: fade-bottom 1s ease-in;
+    }
+    .active.fade-left {
+        animation: fade-left 1s ease-in;
+    }
+    @keyframes fade-bottom {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fade-left {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 600px){

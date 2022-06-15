@@ -128,14 +128,14 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
-                                                    @foreach($archive as $archive)
-                                                    <div class="twelve columns">
+                                                    @foreach($archives as $archive)
+                                                    <div class="twelve columns" id="{{ $archive->title }}">
                                                         <div class="greennature-item greennature-blog-grid greennature-skin-box">
                                                             <div class="greennature-ux greennature-blog-grid-ux">
                                                                 <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                                                                     <div class="greennature-standard-style">
                                                                         <div class="greennature-blog-thumbnail">
-                                                                            <a href=""> <img src="{{ asset('./images/forest-ecosystem.jpg') }}" class="image-projects" alt=""  /></a>
+                                                                            <a href=""> <img src="{{ asset('storage/'.$archive->image)  }}" class="image-projects" alt=""  /></a>
                                                                         </div>
 
                                                                         <div class="greennature-blog-grid-content">
@@ -143,7 +143,7 @@
                                                                                 <h3 class="greennature-blog-title"><a>{{ $archive->title }}</a></h3>
 
                                                                                 <div class="greennature-blog-info">
-                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $archive->date }}</a></div>
+{{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $archive->date }}</a></div>--}}
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>{{ $archive->funded_by }} </a></div>
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $archive->location }}</a></div>
 
@@ -155,7 +155,9 @@
 
                                                                             <div class="greennature-blog-content">Major Achievements:
                                                                                     <p>{!! $archive->achievement !!}</p>
-                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>
+                                                                                <div class="clear"></div>
+{{--                                                                                <a href="" class="excerpt-read-more">Read More</a>--}}
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </article>
@@ -166,7 +168,13 @@
                                                     @endforeach
                                                     <div class="clear"></div>
 
+                                                    {{-- ----------------- pagination ------------------------ --}}
 
+                                                    <div class="pagination-style">
+                                                        {{ $archives->links() }}
+                                                    </div>
+
+                                                    {{-- ----------------- pagination ------------------------ --}}
                                                     <div class="clear"></div>
 
                                                     <div class="clear"></div>
@@ -196,19 +204,19 @@
                                 {{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
                                 {{--                                </div>--}}
                                 <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Recent Projects</h3>
+                                    <h3 class="greennature-widget-title">Project Archives</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
 
-                                        @foreach($projects as $project)
+                                        @foreach($widgets as $archive)
                                         <div class="recent-post-widget">
                                             <div class="recent-post-widget-thumbnail">
-                                                <a href=""><img src="{{asset('storage/'.$project->image) }}" alt="" width="150" height="150" /></a>
+                                                <a href=""><img src="{{asset('storage/'.$archive->image) }}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a href="{{ route('projects') }}">{{ $project->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="#{{ $archive->title}}">{{ $archive->title }}</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>
+{{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $archive->date }}</a></div>--}}
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -218,15 +226,24 @@
 
 
                                         <div class="clear"></div>
+
                                     </div>
                                 </div>
-
-
+                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                                    <h3 class="greennature-widget-title">Tags</h3>
+                                    <div class="clear"></div>
+                                    <div class="tagcloud">
+                                        @foreach($tags as $archive)
+                                            <a href="{{ route('archives',$archive->tag) }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $archive->tag }}</a>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
-                </div>
+
 
                 <!-- Below Sidebar Section-->
 

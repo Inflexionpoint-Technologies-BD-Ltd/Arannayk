@@ -12,14 +12,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 
 Route::get('/', "UserPanelController@index");
+Route::get('/donate', "UserPanelController@donate")->name('donate');
+
 Route::get('/services', "UserPanelController@services")->name('services');
-Route::get('/current-projects', "UserPanelController@currentProject")->name('projects');
-Route::get('/project-archives', "UserPanelController@projectArchives")->name('archives');
+Route::get('/current-projects/{search?}', "UserPanelController@currentProject")->name('projects');
+Route::get('/project-archives/{search?}', "UserPanelController@projectArchives")->name('archives');
+
 Route::get('/about-arannayk', "UserPanelController@aboutUs")->name('aboutUs');
 Route::get('/our-team', "UserPanelController@ourTeam")->name('team');
 Route::get('/board-members', "UserPanelController@boardMembers")->name('boardMembers');
 Route::get('/achievements', "UserPanelController@achievements")->name('achievements');
 Route::get('/our-partners', "UserPanelController@partnersDonors")->name('partners');
+Route::get('/timeline', "UserPanelController@timeline")->name('timeline');
+
 
 Route::get('/get-involved/career', "UserPanelController@career")->name('career');
 Route::get('/get-involved/internship', "UserPanelController@internship")->name('internship');
@@ -37,6 +42,15 @@ Route::get('/publication', "UserPanelController@publication")->name('publication
 Route::get('/tools-data', "UserPanelController@tools")->name('tools');
 
 Route::get('/forest', "UserPanelController@forest")->name('forest');
+Route::get('/biodiversity', "UserPanelController@biodiversity")->name('biodiversity');
+Route::get('/climate', "UserPanelController@climate")->name('climate');
+Route::get('/sustainability', "UserPanelController@sustainability")->name('sustainability');
+Route::get('/gender', "UserPanelController@gender")->name('gender');
+
+Route::get('/contact-us', "UserPanelController@contactUs")->name('contactUs');
+
+Route::get('/map', "UserPanelController@map")->name('map');
+Route::get('/projects/{project}', "UserPanelController@viewProjects")->name('viewProjects');
 
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------

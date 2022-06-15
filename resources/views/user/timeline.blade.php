@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Our Achievements</title>
+    <title>Arannayk - Timeline</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -25,7 +25,6 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
           type="text/css" media="all"/>
-
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
@@ -43,8 +42,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
           integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-{{--    <link rel="stylesheet" href="{{ asset('css/app.css') }}">--}}
-
 </head>
 
 <body data-rsssl="1"
@@ -109,100 +106,32 @@
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
             <h1 class="section-heading-title">Who We Are</h1>
-            <span class="greennature-page-caption">Our Achievements</span>
+            <span class="greennature-page-caption">Timeline</span>
         </div>
     </div>
 
-    <section>
-        <div class="content-wrapper">
-            <div class="greennature-content">
+<section style="margin-top:5rem;margin-bottom:4rem;">
+    <h1></h1>
+    <div class="ul">
+        @foreach($timelines as $timeline)
+            @if($timeline->id%2==1)
+        <li style="--accent-color:#eb681c">
+            <div class="date">{{ $timeline->year }}</div>
+            <div class="title">{{ $timeline->title }}</div>
+            <div class="descr">{!! $timeline->content !!}</div>
+        </li>
+                @elseif($timeline->id%2==0)
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">{{ $timeline->year }}</div>
+            <div class="title">{{ $timeline->title }}</div>
+            <div class="descr">{!! $timeline->content !!} </div>
+        </li>
+            @endif
+        @endforeach
 
-                <!-- Above Sidebar Section-->
+    </div>
+</section>
 
-                <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <div class="with-sidebar-container container">
-                        <div class="">
-                            <div class="">
-                                <section id="content-section-1">
-                                    <div class="section-container container">
-                                        <div class="blog-item-wrapper">
-                                            <div class="blog-item-holder">
-
-                                                @foreach($achievements as $achievement)
-                                                    <div class="greennature-item greennature-blog-full">
-                                                        <div class="greennature-ux greennature-blog-full-ux">
-                                                            <article id="post-862"
-                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                                <div class="greennature-standard-style">
-                                                                    <div>
-                                                                        <a> <img
-                                                                                src="{{ asset('storage/'.$achievement->image)  }}"
-                                                                                class="press-release-image" alt=""/></a>
-                                                                    </div>
-
-                                                                    <div class="blog-content-wrapper">
-                                                                        <header class="post-header">
-                                                                            <h3 class="greennature-blog-title">
-                                                                                <a>{{ $achievement->title }}</a></h3>
-
-                                                                            <div class="clear"></div>
-                                                                        </header>
-                                                                        <!-- entry-header -->
-
-                                                                        <div class="greennature-blog-content" style="text-align: justify">
-                                                                            {!! $achievement->content !!}
-                                                                            <div class="greennature-blog-info"
-                                                                                 style="margin-top:2rem;">
-                                                                                <div class="clear"></div>
-                                                                            </div>
-                                                                            <div class="clear">
-                                                                            </div>
-                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- blog content wrapper -->
-                                                                    <div class="clear"></div>
-                                                                </div>
-                                                            </article>
-                                                            <!-- #post -->
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
-
-                                            </div>
-
-                                            {{-- ----------------- pagination ------------------------ --}}
-
-                                            <div class="pagination-style">
-                                                {{ $achievements->links() }}
-                                            </div>
-
-                                            {{-- ----------------- pagination ------------------------ --}}
-
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </section>
-
-                            </div>
-
-                            <div class="clear"></div>
-                        </div>
-
-
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-                <!-- Below Sidebar Section-->
-
-            </div>
-            <!-- greennature-content -->
-            <div class="clear"></div>
-        </div>
-    </section>
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------

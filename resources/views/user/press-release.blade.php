@@ -127,7 +127,7 @@
                                             <div class="blog-item-holder">
 
                                                 @foreach($pressReleases as $press)
-                                                <div class="greennature-item greennature-blog-full">
+                                                <div class="greennature-item greennature-blog-full" id="{{ $press->title }}">
                                                     <div class="greennature-ux greennature-blog-full-ux">
                                                         <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                             <div class="greennature-standard-style">
@@ -164,7 +164,13 @@
                                                 @endforeach
 
                                             </div>
+                                            {{-- ----------------- pagination ------------------------ --}}
 
+                                            <div class="pagination-style">
+                                                {{ $pressReleases->links() }}
+                                            </div>
+
+                                            {{-- ----------------- pagination ------------------------ --}}
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -187,7 +193,7 @@
                                                 <a><img src="{{asset('storage/'.$press->image)}}" alt="" width="150" height="150" /></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="recent-post-widget-title"><a>{{ $press->title }}</a></div>
+                                                <div class="recent-post-widget-title"><a href="#{{ $press->title }}">{{ $press->title }}</a></div>
                                                 <div class="recent-post-widget-info">
                                                     <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>
                                                     <div class="clear"></div>
@@ -205,7 +211,7 @@
                                     <div class="clear"></div>
                                     <div class="tagcloud">
                                         @foreach($pressReleases as $press)
-                                        <a class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
+                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
                                         @endforeach
                                         </div>
                                 </div>
