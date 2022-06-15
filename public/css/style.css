@@ -1010,10 +1010,11 @@ html .woocommerce .greennature-widget-title {
 
 
 .greennature-page-title-wrapper .greennature-page-caption {
-	font-size: 20px;
+	font-size: 35px;
 	margin: 12px 17px 0px;
 	display: block;
 	font-style: italic;
+    font-weight:700;
 }
 
 .greennature-page-title-wrapper .greennature-page-title-gimmick {
@@ -1764,7 +1765,7 @@ input[type="submit"] {
 }
 
 .greennature-column-service-item .column-service-title {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 25px;
@@ -1794,7 +1795,7 @@ input[type="submit"] {
 .greennature-column-service-item.greennature-type-1 .column-service-title {
 	font-size: 17px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .greennature-column-service-item.greennature-type-1 .column-service-image {
@@ -6559,5 +6560,65 @@ input[type="text"].greennature-payment-price-fill {
 }
 .view-full-map:hover{
     color:#005e5e;
+}
+
+.hover-link-style{
+    background-image: linear-gradient(
+        to right,
+        #5dc269,
+        #5dc269 50%,
+        #5dc269 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.hover-link-style:before{
+    content: '';
+    background: #5dc269;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-link-style:hover{
+    background-position: 0;
+}
+.hover-link-style:hover::before{
+    width:100%;
+}
+
+.button-hover{
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 27px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-top-color: #5dc269;
+    border-right-color: #5dc269;
+    border-bottom-color: #5dc269;
+    border-left-color: #5dc269;
+    letter-spacing: 1px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #5dc269;
+    text-decoration: none;
+    color: #fff;
 }
 

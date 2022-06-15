@@ -106,8 +106,9 @@
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
 
-            <h1 class="section-heading-title">Who We Are</h1>
             <span class="greennature-page-caption">About Arannayk Foundation</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -124,7 +125,7 @@
                             <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
                             <div class="about-us-title-divider"></div>
                         </div>
-                        <div class="about-us-content-wrapper">
+                        <div class="about-us-content-wrapper" style="text-align: justify">
                             <div class="about-us-content greennature-skin-content">
                                 <p>{!! $about->content !!}</p>
                             </div>
@@ -152,7 +153,7 @@
                             <div class="column-service-content-wrapper">
                                 <h3 class="column-service-title">{{ $mission->title }}</h3>
                                 <div class="column-service-caption greennature-skin-info"></div>
-                                <div class="column-service-content greennature-skin-content">
+                                <div class="column-service-content greennature-skin-content" style="text-align: justify">
                                     <p>{!! $mission->content !!} </p>
                                 </div>
                             </div>

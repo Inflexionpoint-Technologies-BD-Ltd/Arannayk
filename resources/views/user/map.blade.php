@@ -195,7 +195,7 @@
 
     tiles.addTo(map);
     @foreach($maps as $map)
-    L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('{{ $map->location }} <br><br>Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }} <br><br> <a href="{{ route('viewProjects', $map->location) }}" target="_blank" style="text-decoration: none;" > View Projects</a>').addTo(map);
+    L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('<p style="font-size: 20px">{{ $map->location }}</p>Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }} <br><br> <a href="{{ route('viewProjects', $map->location) }}" target="_blank" style="text-decoration: none;" > View Projects</a>').addTo(map);
     @endforeach
 </script>
 

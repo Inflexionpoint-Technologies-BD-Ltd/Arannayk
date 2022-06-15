@@ -371,13 +371,15 @@
                                          style="background: url({{ asset('storage/'.$service->image) }}); background-size: cover; box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);">
                                         <a href="/services" class="services-title-style">
                                             <h3 class="action-ads-title" style="color: {{ $service->color_title }}">
-                                                {{ $service->title }}
+                                                {{ \Illuminate\Support\Str::words($service ->title,2,'...')}}
                                             </h3>
                                         </a>
                                         <!-- <div class="action-ads-caption greennature-skin-info">Your money can cure this
                                                                 earth</div> -->
                                         <div class="action-ads-divider reveal fade-left"
-                                             style="background: {{ $service->color_title }}"></div>
+                                             style="background: {{ $service->color_title }}">
+
+                                        </div>
                                         <div class="action-ads-content">
                                             <p>
 
@@ -481,7 +483,7 @@
                                                         </div>
                                                         <div class="portfolio-classic-content">
                                                             <h3 class="portfolio-title">
-                                                                <a href="{{ route('projects') }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
+                                                                <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
                                                             </h3>
                                                             <div class="greennature-portfolio-info">
                                                                 <div class="portfolio-info portfolio-tag">

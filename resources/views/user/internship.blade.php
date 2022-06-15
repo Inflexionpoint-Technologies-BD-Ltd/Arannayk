@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Get Involved</h1>
             <span class="greennature-page-caption">Internship</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -119,22 +120,32 @@
                     <section id="content-section-1">
                         <div class="section-container container eight columns">
 
-                            @foreach($careers as $career)
-                                <div>
-                                    <div class="greennature-item greennature-accordion-item style-1" style="margin-bottom: 60px;">
-                                        <div class="accordion-tab active pre-active">
-                                            <h4 class="accordion-title"><i class="icon-minus" ></i><span>{{ $career->title }}</span></h4>
-                                            <div class="accordion-content">
-                                                <p>{!! $career->description !!} </p>
-                                                <p>Deadline: {{ $career->deadline }}</p>
-                                                <a class="greennature-button small" href="mailto: jobs@arannayk.org" target="_self" style="color:#ffffff; background-color:#f38142; ">Apply</a>
+                            @if($careers->count() > 0)
+
+                                @foreach($careers as $career)
+                                    <div>
+                                        <div class="greennature-item greennature-accordion-item style-1"
+                                             style="margin-bottom: 60px;">
+                                            <div class="accordion-tab active pre-active">
+                                                <h4 class="accordion-title"><i
+                                                        class="icon-minus"></i><span>{{ $career->title }}</span></h4>
+                                                <div class="accordion-content">
+                                                    <p>{!! $career->description !!} </p>
+                                                    <p>Deadline: {{ $career->deadline }}</p>
+                                                    <a class="greennature-button small" href="mailto: jobs@arannayk.org"
+                                                       target="_self" style="color:#ffffff; background-color:#f38142; ">Apply</a>
+                                                </div>
                                             </div>
+
                                         </div>
-
                                     </div>
-                                </div>
 
-                            @endforeach
+                                @endforeach
+
+                            @else
+                                <p>No Job information available</p>
+
+                            @endif
                         </div>
                         <div class="greennature-sidebar greennature-right-sidebar four columns">
                             <div class="greennature-item-start-content sidebar-right-item">
@@ -142,26 +153,37 @@
                                     <h3 class="greennature-widget-title">Contact Information</h3>
                                     <div class="clear"></div>
                                     <div class="textwidget">
-                                        <p>Address: 527/K Wasi Tower, ECB Chattar, Matikata, Dhaka Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh </p>
-                                        <p><i class="greennature-icon fa fa-phone" style="vertical-align: middle; color: #444444; font-size: 16px; "></i>  +02-8711240 </p>
-                                        <p><i class="greennature-icon fa fa-envelope" style="vertical-align: middle; color: #444444; font-size: 16px; "></i>  info@arannayk.org</p>
-                                        <p><i class="greennature-icon fa fa-clock-o" style="vertical-align: middle; color: #444444; font-size: 16px; "></i> Sun-Thu 9:00-17:00</p>
+                                        <p>Address: 527/K Wasi Tower, ECB Chattar, Matikata, Dhaka Cantonment, 1206
+                                            Dhaka, Dhaka Division, Bangladesh </p>
+                                        <p><i class="greennature-icon fa fa-phone"
+                                              style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
+                                            +02-8711240 </p>
+                                        <p><i class="greennature-icon fa fa-envelope"
+                                              style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
+                                            info@arannayk.org</p>
+                                        <p><i class="greennature-icon fa fa-clock-o"
+                                              style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
+                                            Sun-Thu 9:00-17:00</p>
                                     </div>
                                 </div>
                                 <div id="text-8" class="widget widget_text greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Social Media</h3>
                                     <div class="clear"></div>
                                     <div class="textwidget"><a href="">
-                                            <i class="greennature-icon fa fa-facebook" style="vertical-align: middle; color: #444444; font-size: 28px; " ></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-linkedin" style="vertical-align: middle; color: #444444; font-size: 28px; " ></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-instagram" style="vertical-align: middle; color: #444444; font-size: 28px; " ></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-youtube-play" style="vertical-align: middle; color: #444444; font-size: 28px; " ></i></a>
+                                            <i class="greennature-icon fa fa-facebook"
+                                               style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                        <a href=""><i class="greennature-icon fa fa-linkedin"
+                                                      style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                        <a href=""><i class="greennature-icon fa fa-instagram"
+                                                      style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                        <a href=""><i class="greennature-icon fa fa-youtube-play"
+                                                      style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                            <div class="clear"></div>
+                        <div class="clear"></div>
 
                     </section>
                 </div>

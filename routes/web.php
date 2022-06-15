@@ -52,7 +52,8 @@ Route::get('/contact-us', "UserPanelController@contactUs")->name('contactUs');
 Route::get('/map', "UserPanelController@map")->name('map');
 Route::get('/projects/{project}', "UserPanelController@viewProjects")->name('viewProjects');
 Route::get('/view-project/{id}', "UserPanelController@singleproject")->name('viewProject');
-
+Route::get('view-current-project/{id}',"UserPanelController@single_current_project")->name('viewCurrentProject');
+Route::get('view-blogs/{id}',"UserPanelController@single_blog")->name('viewBlog');
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 

@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Get Involved</h1>
             <span class="greennature-page-caption">Procurement</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 

@@ -109,8 +109,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Knowledge</h1>
             <span class="greennature-page-caption">Tools & Data</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -167,7 +168,7 @@
                                             </div>
                                             <div class="greennature-portfolio-description">
                                                 <h4 class="head">Description</h4>
-                                                <div class="content">
+                                                <div class="content" style="text-align: justify">
                                                     <p>{!! $tool->content !!} </p>
                                                 </div>
                                             </div>

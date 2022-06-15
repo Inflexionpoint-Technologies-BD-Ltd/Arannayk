@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Media Center</h1>
+
             <span class="greennature-page-caption">Blogs</span>
+            <h1 class="section-heading-title"></h1>
         </div>
     </div>
 
@@ -143,7 +144,7 @@
                                                                     </header>
                                                                     <!-- entry-header -->
 
-                                                                    <div class="greennature-blog-content">
+                                                                    <div class="greennature-blog-content" style="text-align: justify">
                                                                         {!! $blog->content !!}
                                                                         <div class="greennature-blog-info" style="margin-top:2rem;">
                                                                             <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blog->tag }}</a></div>

@@ -128,7 +128,7 @@
                   "></i></a>
             </div>
             <div class="copyright-right">
-                Design And Developed by Inflexionpoint Technologies BD Ltd.
+                Design And Developed by SiS Inflexionpoint (BD) Ltd.
             </div>
             <div class="clear"></div>
         </div>
