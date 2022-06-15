@@ -146,7 +146,7 @@
                                                                     <div class="greennature-blog-content">
                                                                         {!! $blog->content !!}
                                                                         <div class="greennature-blog-info" style="margin-top:2rem;">
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a href="" >{{ $blog->tag }}</a></div>
+                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blog->tag }}</a></div>
                                                                             <div class="clear"></div>
                                                                         </div>
                                                                         <div class="clear">

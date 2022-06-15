@@ -146,6 +146,7 @@
 {{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - {{ $project->funded_by}} </a></div>
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $project->location }} </a></div>
+                                                                                    <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $project->tag }}</a></div>
 
                                                                                     <div class="clear"></div>
                                                                                 </div>

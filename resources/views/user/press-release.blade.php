@@ -206,15 +206,15 @@
                                         <div class="clear"></div>
                                     </div>
                                 </div>
-                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Tags</h3>
-                                    <div class="clear"></div>
-                                    <div class="tagcloud">
-                                        @foreach($pressReleases as $press)
-                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
-                                        @endforeach
-                                        </div>
-                                </div>
+{{--                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">--}}
+{{--                                    <h3 class="greennature-widget-title">Tags</h3>--}}
+{{--                                    <div class="clear"></div>--}}
+{{--                                    <div class="tagcloud">--}}
+{{--                                        @foreach($pressReleases as $press)--}}
+{{--                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>--}}
+{{--                                        @endforeach--}}
+{{--                                        </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                         <div class="clear"></div>

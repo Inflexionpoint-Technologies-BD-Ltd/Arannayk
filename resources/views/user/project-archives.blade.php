@@ -146,6 +146,7 @@
 {{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $archive->date }}</a></div>--}}
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>{{ $archive->funded_by }} </a></div>
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $archive->location }}</a></div>
+                                                                                    <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $archive->tag }}</a></div>
 
                                                                                     <div class="clear"></div>
                                                                                 </div>
