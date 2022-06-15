@@ -104,7 +104,6 @@ class UserPanelController extends Controller
         return view('user.project-archives', compact('archives', 'widgets', 'tags'));
 
 
-
     }
 
     public function aboutUs()
@@ -202,6 +201,21 @@ class UserPanelController extends Controller
     {
         $tools = Tool::all();
         return view('user.tools-data', compact('tools'));
+    }
+
+    public function singleproject($id)
+    {
+
+//        $projects = Project::paginate(5);
+
+        $projects = Project::find($id);
+
+
+        $archives = Archive::find($id);
+
+
+        return view('user.single-project', compact('projects', 'archives'));
+
     }
 
     public function forest()
