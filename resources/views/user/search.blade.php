@@ -627,7 +627,7 @@
       --------------------------------------------------Footer---------------- -->
 
 </div>
-<x-user.footer.footer-component></x-user.footer.footer-component>
+
 
 <!-- body-wrapper -->
 
