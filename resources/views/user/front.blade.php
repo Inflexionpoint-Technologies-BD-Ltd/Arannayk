@@ -569,7 +569,7 @@
                                         </div>
                                         <div class="three columns">
                                             <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
-                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">10+</div>
+                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">20+</div>
                                                 <div class="greennature-skill-item-caption" style="color: #3f3f3f;">Districts</div>
                                             </div>
                                         </div>

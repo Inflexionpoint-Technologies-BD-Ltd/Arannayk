@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Blogs</title>
+    <title>Arannayk - Press Release</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -105,7 +105,7 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <span class="greennature-page-caption">Blogs</span>
+            <span class="greennature-page-caption">Press Release</span>
             <h1 class="section-heading-title"></h1>
 
 
@@ -129,28 +129,28 @@
                                             <div class="blog-item-holder">
 
 
-                                                @if($blogs != null)
+                                                @if($press != null)
 
                                                     <div class="greennature-item greennature-blog-full">
                                                         <div class="greennature-ux greennature-blog-full-ux">
                                                             <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                                 <div class="greennature-standard-style">
                                                                     <div>
-                                                                        <a> <img src="{{ asset('storage/'.$blogs->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                        <a> <img src="{{ asset('storage/'.$press->image)  }}" class="press-release-image" alt=""  /></a>
                                                                     </div>
 
                                                                     <div class="blog-content-wrapper">
                                                                         <header class="post-header">
-                                                                            <h3 class="greennature-blog-title"><a>{{ $blogs->title }}</a></h3>
+                                                                            <h3 class="greennature-blog-title"><a>{{ $press->title }}</a></h3>
 
                                                                             <div class="clear"></div>
                                                                         </header>
                                                                         <!-- entry-header -->
 
                                                                         <div class="greennature-blog-content">
-                                                                            {!! $blogs->content !!}
+                                                                            {!! $press->content !!}
                                                                             <div class="greennature-blog-info" style="margin-top:2rem;">
-                                                                                <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blogs->tag }}</a></div>
+                                                                                <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $press->tag }}</a></div>
                                                                                 <div class="clear"></div>
                                                                             </div>
                                                                             <div class="clear">

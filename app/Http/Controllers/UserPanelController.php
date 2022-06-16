@@ -30,8 +30,11 @@ use App\Timeline;
 use App\Map;
 use Illuminate\Http\Request;
 
+
 class UserPanelController extends Controller
 {
+    //------------------------------------HOMEPAGE CONTROLLERS--------------------------------------------------//
+
     public function index()
     {
         $services = Service::skip(0)->take(2)->get();
@@ -40,12 +43,10 @@ class UserPanelController extends Controller
         $sliders = Slider::skip(0)->take(3)->get();
         return view('user.front', compact('services', 'projects', 'publications', 'sliders'));
     }
+    //-------------------------------------------------HOMEPAGE CONTROLLERS----------------------//
 
-    public function publication()
-    {
-        $publications = Publication::paginate(12);
-        return view('user.publication', compact('publications'));
-    }
+
+    //------------------------------------WHAT WE DO ( SERVICE, CURRENT PROJECTS, PROJECT ARCHIVES) CONTROLLERS--------------------------------------------------//
 
     public function services()
     {
@@ -71,6 +72,41 @@ class UserPanelController extends Controller
         return view('user.currentproject', compact('projects', 'widgets', 'tags'));
     }
 
+    public function singleproject($id)
+    {
+
+//        $projects = Project::paginate(5);
+
+        $archives = Archive::find($id);
+
+        return view('user.single-project', compact('archives'));
+    }
+
+    public function singlepress($id)
+    {
+
+//        $projects = Press::paginate(5);
+
+        $press = Press::find($id);
+
+        return view('user.single-press', compact('press'));
+    }
+    public function singleAchievement($id)
+    {
+
+//        $projects = Press::paginate(5);
+
+        $achievements = Achievement::find($id);
+
+        return view('user.single-achievement', compact('achievements'));
+    }
+
+    public function single_current_project($id)
+    {
+        $projects = Project::find($id);
+        return view('user.single-current-project', compact('projects'));
+    }
+
     public function viewProjects($project)
     {
 
@@ -82,12 +118,6 @@ class UserPanelController extends Controller
         $widgets_archives = Archive::where('location', 'like', '%' . $project . '%')->skip(0)->take(3)->get();
 
         return view('user.view-projects', compact('projects', 'widgets', 'archives', 'widgets_archives'));
-    }
-
-    public function map()
-    {
-        $maps = Map::all();
-        return view('user.map', compact('maps'));
     }
 
     public function projectArchives($search = null)
@@ -103,8 +133,23 @@ class UserPanelController extends Controller
         $tags = Archive::select('tag')->distinct()->get();
         return view('user.project-archives', compact('archives', 'widgets', 'tags'));
 
-
     }
+
+    //-----------------------------------------------------------WHAT WE DO CONTROLLERS--------------------------//
+
+
+    //------------------------------------WHERE WE WORK (MAP) CONTROLLER--------------------------------------------------//
+
+    public function map()
+    {
+        $maps = Map::all();
+        return view('user.map', compact('maps'));
+    }
+
+    //---------------------------------------------------------------------WHERE WE WORK (MAP) CONTROLLER-----------------------//
+
+
+    //------------------------------------WHO WE ARE CONTROLLER--------------------------------------------------//
 
     public function aboutUs()
     {
@@ -137,6 +182,15 @@ class UserPanelController extends Controller
         return view('user.partners-donors', compact('partners'));
     }
 
+    public function timeline()
+    {
+        $timelines = Timeline::all();
+        return view('user.timeline', compact('timelines'));
+    }
+    //---------------------------------------------------------WHO WE ARE CONTROLLER----------------------//
+
+    //------------------------------------ GET INVOLVED CONTROLLERS --------------------------------------------------//
+
     public function career()
     {
         $careers = Career::where('tag', 'career')->get();
@@ -160,6 +214,9 @@ class UserPanelController extends Controller
         $procurements = Procurement::all();
         return view('user.procurement', compact('procurements'));
     }
+    //----------------------------------------------------- GET INVOLVED CONTROLLERS ----------------//
+
+    //-------------------------- MEDIA CENTER CONTROLLERS ---------------------------//
 
     public function pressRelease()
     {
@@ -197,33 +254,30 @@ class UserPanelController extends Controller
         return view('user.blogs', compact('blogs'));
     }
 
-    public function tools()
-    {
-        $tools = Tool::all();
-        return view('user.tools-data', compact('tools'));
-    }
-
-    public function singleproject($id)
-    {
-
-//        $projects = Project::paginate(5);
-
-        $archives = Archive::find($id);
-
-        return view('user.single-project', compact('archives'));
-    }
-    public function single_current_project($id)
-    {
-        $projects = Project::find($id);
-        return view('user.single-current-project', compact('projects'));
-    }
     public function single_blogs($id)
     {
         $blogs = Blog::find($id);
         return view('user.single-blog', compact('blogs'));
     }
+    //--------------------------------------------------- MEDIA CENTER CONTROLLERS -------------//
+
+    //-------------------------- KNOWLEDGE CONTROLLERS ---------------------------//
+
+    public function publication()
+    {
+        $publications = Publication::paginate(12);
+        return view('user.publication', compact('publications'));
+    }
+
+    public function tools()
+    {
+        $tools = Tool::all();
+        return view('user.tools-data', compact('tools'));
+    }
+    //--------------------------------------------- KNOWLEDGE CONTROLLERS ------------//
 
 
+//------------------------------------Ecosystem Controllers--------------------------------------------------//
     public function forest()
     {
         $projects = Project::skip(0)->take(4)->where('tag', 'forest')->get();
@@ -272,16 +326,15 @@ class UserPanelController extends Controller
         return view('user.gender', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 
+//----------------------------------------------------------------------------Ecosystem Controllers----------------------//
+
     public function contactUs()
     {
         return view('user.contact-us');
     }
 
-    public function timeline()
-    {
-        $timelines = Timeline::all();
-        return view('user.timeline', compact('timelines'));
-    }
+
+//------------------------------------DONATE Controllers--------------------------------------------------//
 
     public function donate()
     {
@@ -289,11 +342,56 @@ class UserPanelController extends Controller
         return view('user.donate', compact('donates'));
     }
 
+//------------------------------------------------DONATE Controllers--------------------//
+
+
+//------------------------------------ SEARCH Controllers--------------------------------------------------//
+
     public function search()
     {
-        return view('user.search');
+//        $achievements = Achievement::all();
+//        $projects = Project::all();
+//        $archives = Archive::all();
+//        $services = Service::all();
+//        $publications = Publication::all();
+//        $blogs = Blog::all();
+//        $press = Press::all();
+//        return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'publications', 'blogs', 'press'));
+
+
+
+        $search_data = "rdgrdghrdglrdgdjhgkrdhgrdjklgdhgrdjklghg";
+
+        $achievements = Achievement::where('title', 'like','%'.$search_data.'%')->get();
+        $projects = Project::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $archives = Archive::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $press = Press::where('title', 'like','%'.$search_data.'%')->get();
+        $services = Service::where('title', 'like','%'.$search_data.'%')->get();
+        $blogs = Blog::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+
+
+        return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'blogs', 'press'));
 
     }
+//----------------------------------------------------- SEARCH Controllers---------------------//
+
+//----------------------------------------------------- SEARCH Form---------------------//
+
+    public function searchForm()
+    {
+        $search_data =  \request('search');
+
+        $achievements = Achievement::where('title', 'like','%'.$search_data.'%')->get();
+        $projects = Project::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $archives = Archive::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $press = Press::where('title', 'like','%'.$search_data.'%')->get();
+        $services = Service::where('title', 'like','%'.$search_data.'%')->get();
+        $blogs = Blog::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'blogs', 'press'));
+    }
+
+
+//----------------------------------------------------- SEARCH Form---------------------//
 
 
 }

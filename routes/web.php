@@ -11,51 +11,267 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
 
-Route::get('/', "UserPanelController@index");
-Route::get('/donate', "UserPanelController@donate")->name('donate');
+// ===================== HOMEPAGE=================================================================
 
-Route::get('/services', "UserPanelController@services")->name('services');
-Route::get('/current-projects/{search?}', "UserPanelController@currentProject")->name('projects');
-Route::get('/project-archives/{search?}', "UserPanelController@projectArchives")->name('archives');
+Route::get('/', "UserPanelController@index");
+// ============================================================ HOMEPAGE =========================
+
+// ========================== WHO WE ARE =================================================
+
+// -------------------------- ABOUT ARANNAYK  -------------------------------------
 
 Route::get('/about-arannayk', "UserPanelController@aboutUs")->name('aboutUs');
+
+// ------------------------------------------------ ABOUT ARANNAYK  ----------------
+
+// -------------------------- OUR TEAM   -------------------------------------
+
 Route::get('/our-team', "UserPanelController@ourTeam")->name('team');
+
+// ---------------------------------------------------  OUR TEAM  -------------
+
+// -------------------------- BOARD MEMBERS  -------------------------------------
+
 Route::get('/board-members', "UserPanelController@boardMembers")->name('boardMembers');
+
+// ------------------------------------------------------- BOARD MEMBERS  ----------
+
+// -------------------------- ACHIEVEMENTS  -----------------------------------------
+
 Route::get('/achievements', "UserPanelController@achievements")->name('achievements');
+
+// -------------------------------------------------- ACHIEVEMENTS  ------------------------------
+
+// -------------------------- PARTNERS & DONORS -------------------------------------
+
 Route::get('/our-partners', "UserPanelController@partnersDonors")->name('partners');
+
+// -------------------------------------------------- PARTNERS & DONORS  --------------
+
+// -------------------------- TIMELINE -------------------------------------
+
 Route::get('/timeline', "UserPanelController@timeline")->name('timeline');
 
+// ---------------------------------------------------- TIMELINE -------------
+
+
+// ==================================================== WHO WE ARE =========================
+
+
+//==================================== WHAT WE DO -======================================
+
+// -------------------------- OUR SERVICES -------------------------------------
+
+Route::get('/services', "UserPanelController@services")->name('services');
+
+// ----------------------------------------------------- OUR SERVICES -----------
+
+// -------------------------- CURRENT PROJECTS -------------------------------------
+
+Route::get('/current-projects/{search?}', "UserPanelController@currentProject")->name('projects');
+
+// ----------------------------------------------------- CURRENT PROJECTS ------------
+
+// -------------------------- PROJECT ARCHIVES -------------------------------------
+
+Route::get('/project-archives/{search?}', "UserPanelController@projectArchives")->name('archives');
+
+// ------------------------------------------------ PROJECT ARCHIVES --------------------
+
+
+// =============================================================== WHAT WE DO =====================
+
+
+
+// ================================= WHERE WE WORK =========================================
+
+Route::get('/map', "UserPanelController@map")->name('map');
+
+// ========================================================== WHERE WE WORK -================
+
+
+// ============================ GET INVOLVED ====================================================
+
+// -------------------------- CAREER -------------------------------------
 
 Route::get('/get-involved/career', "UserPanelController@career")->name('career');
+
+// ---------------------------------------------------- CAREER --------------
+
+// -------------------------- INTERNSHIP -------------------------------------
+
 Route::get('/get-involved/internship', "UserPanelController@internship")->name('internship');
+
+// ------------------------------------------------- INTERNSHIP --------------
+
+// -------------------------- CONSULTANCY -------------------------------------
+
 Route::get('/get-involved/consultancy', "UserPanelController@consultancy")->name('consultancy');
+
+// ----------------------------------------------------- CONSULTANCY ----------
+
+// -------------------------- PROCUREMENT -------------------------------------
+
 Route::get('/get-involved/procurement', "UserPanelController@procurement")->name('procurement');
 
+// ----------------------------------------------------- PROCUREMENT -----------
+
+// ============================================================ GET INVOLVED =====================
+
+
+//================================ MEDIA CENTER =================================================
+
+// -------------------------- PRESS RELEASE--------------------------------
+
 Route::get('/media-center/press-release', "UserPanelController@pressRelease")->name('press');
+
+// ------------------------------------------------- PRESS RELEASE---------
+
+// -------------------------- ACTIVITY UPDATES--------------------------------
+
 Route::get('/media-center/activity-updates', "UserPanelController@activityUpdates")->name('activities');
+
+// ---------------------------------------------------- ACTIVITY UPDATES-------
+
+// -------------------------- VIDEO STORIES ------------------------------------
+
 Route::get('/media-center/video-stories', "UserPanelController@videoStories")->name('videos');
+
+// -------------------------------------------------- VIDEO STORIES -------------
+
+// -------------------------- MEDIA COVERAGE --------------------------------------------
+
 Route::get('/media-center/media-coverage', "UserPanelController@mediaCoverage")->name('media');
+
+// --------------------------------------------------------------- MEDIA COVERAGE --------
+
+// -------------------------- PHOTOS -------------------------------------
+
 Route::get('/media-center/photos', "UserPanelController@photos")->name('photos');
+// -------------------------------------------------- PHOTOS -------------
+
+// -------------------------- BLOGS -------------------------------------
+
 Route::get('/media-center/blogs', "UserPanelController@blogs")->name('blogs');
 
+// ---------------------------------------------- BLOGS ------------------
+
+
+// =================================================================== MEDIA CENTER ===============
+
+
+// ========================================== KNOWLEDGE =============================================
+
+// -------------------------- PUBLICATIONS --------------------------------
+
 Route::get('/publication', "UserPanelController@publication")->name('publication');
+
+// ------------------------------------------------ PUBLICATIONS -----------
+
+// -------------------------- TOOLS & DATA --------------------------------
+
 Route::get('/tools-data', "UserPanelController@tools")->name('tools');
 
+// ------------------------------------------------- TOOLS & DATA ----------
+
+
+// ================================================================== KNOWLEDGE =====================
+
+
+// ===================== ECOSYSTEM ===============================================================
+
+// --------------------------FOREST--------------------------------
+
 Route::get('/forest', "UserPanelController@forest")->name('forest');
+
+// ------------------------------------------------FOREST----------
+
+// -------------------------- BIO - DIVERSITY --------------------------
+
 Route::get('/biodiversity', "UserPanelController@biodiversity")->name('biodiversity');
+
+// ------------------------------------------BIO - DIVERSITY------------
+
+// -------------------------- CLIMATE --------------------------
+
 Route::get('/climate', "UserPanelController@climate")->name('climate');
+
+// --------------------------------------------- CLIMATE ---------
+
+// -------------------------- SUSTAINABILITY --------------------------
+
 Route::get('/sustainability', "UserPanelController@sustainability")->name('sustainability');
+
+// --------------------------------------------- SUSTAINABILITY ---------
+
+// -------------------------- GENDER --------------------------
+
 Route::get('/gender', "UserPanelController@gender")->name('gender');
+
+// ------------------------------------------ GENDER -----------
+
+// =================================================================== ECOSYSTEM -====================================
+
+
+
+// ---------------------------- VIEW PROJECTS BY TAG -------------------------------------------
+
+Route::get('/projects/{project}', "UserPanelController@viewProjects")->name('viewProjects');
+
+// ------------------------------------------------------- VIEW PROJECTS BY TAG ------------------
+
+
+// ---------------------------- VIEW SINGLE PROJECT ARCHIVE BY ID ---------------------------------------------------
+
+Route::get('/view-project/{id}', "UserPanelController@singleproject")->name('viewProject');
+
+// -------------------------------------------------------- VIEW SINGLE PROJECT ARCHIVE BY ID --------------------------
+
+
+// ---------------------------- VIEW SINGLE CURRENTPROJECT BY ID --------------------------------------------------
+
+Route::get('view-current-project/{id}',"UserPanelController@single_current_project")->name('viewCurrentProject');
+
+// -------------------------------------------------------------- VIEW SINGLE CURRENTPROJECT BY ID ---------------------
+
+
+// ---------------------------- VIEW SINGLE BLOG BY ID -------------------------------------------
+
+Route::get('view-blogs/{id}',"UserPanelController@single_blogs")->name('viewBlog');
+
+Route::get('view-press/{id}',"UserPanelController@singlepress")->name('viewPress');
+
+Route::get('view-achievements/{id}',"UserPanelController@singleAchievement")->name('viewAchievement');
+
+// -------------------------------------------------- VIEW SINGLE BLOG BY ID -----------------------------
+
+
+// ---------------------------- CONTACT US -------------------------------------------
 
 Route::get('/contact-us', "UserPanelController@contactUs")->name('contactUs');
 
-Route::get('/map', "UserPanelController@map")->name('map');
-Route::get('/projects/{project}', "UserPanelController@viewProjects")->name('viewProjects');
-Route::get('/view-project/{id}', "UserPanelController@singleproject")->name('viewProject');
-Route::get('view-current-project/{id}',"UserPanelController@single_current_project")->name('viewCurrentProject');
-Route::get('view-blogs/{id}',"UserPanelController@single_blog")->name('viewBlog');
+// ---------------------------------------------- CONTACT US ---------------------------
+
+
+// ---------------------------- DONATE -------------------------------------------
+
+Route::get('/donate', "UserPanelController@donate")->name('donate');
+// ----------------------------------------------------- DONATE -------------------
+
+
+// ---------------------------- SEARCH -------------------------------------------
+
+Route::get('/search', "UserPanelController@search")->name('search');
+
+Route::post('/search',"UserPanelController@searchForm")->name('search.post');
+
+// -------------------------------------------- SEARCH ----------------------------
+
 
 // ----------------------------------------------------------------- User Content --------------------------------------------------------------------------------
+
+
+
 
 // -------------------------------------------------------------- Admin Panel Content ----------------------------------------------------------------------------
 
