@@ -11,7 +11,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
 
-    <title>Arannayk - Timeline</title>
+    <title>Arannayk - Search</title>
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
@@ -620,7 +620,6 @@
   Footer------------------------------------------------------------------
 ---------------------------------------------------------------------- -->
 
-    <x-user.footer.footer-component></x-user.footer.footer-component>
 
     <!-------------------------------------------------------------------------
         ------------------------------------------------------------------------
@@ -628,6 +627,8 @@
       --------------------------------------------------Footer---------------- -->
 
 </div>
+<x-user.footer.footer-component></x-user.footer.footer-component>
+
 <!-- body-wrapper -->
 
 <script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
