@@ -66,6 +66,10 @@
         #map {
             height: 100vh;
         }
+
+        img.huechange {
+            filter: hue-rotate(150deg);
+        }
     </style>
 </head>
 
@@ -80,7 +84,7 @@
       Top navigation---------------------------------------------------------
     ---------------------------------------------------------------------- -->
 
-{{--    <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>--}}
+    {{--    <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>--}}
 
     <!---------------------------------------------------------------------------------
       --------------------------------------------------------------------------------
@@ -99,14 +103,14 @@
               -----------Mobile Navbar-----------------------------------------
               ------------------------------------------------------------------>
 
-{{--            <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>--}}
+            {{--            <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>--}}
 
 
             <!-----------------------------------------------------------------
               -----------------------------------------------------------------
               -----------------------------------------------------------------
               -----------------------------Mobile Navbar----------------------->
-{{--            <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>--}}
+            {{--            <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>--}}
 
             <!-----------------------------------------------------------------
               -----------------------------------------------------------------
@@ -184,6 +188,7 @@
 <script>
     var map = L.map("map").setView([23.7806207, 90.3492859], 7);
 
+
     const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
     const attribution =
@@ -195,7 +200,8 @@
 
     tiles.addTo(map);
     @foreach($maps as $map)
-    L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('<p style="font-size: 20px">{{ $map->location }}</p>Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }} <br><br> <a href="{{ route('viewProjects', $map->location) }}" target="_blank" style="text-decoration: none;" > View Projects</a>').addTo(map);
+    var marker = L.marker([{{ $map->lat }}, {{ $map->long }}]).bindPopup('<div class="map-hover-link-style" style="font-size: 18px; margin-bottom:1rem;">{{ $map->location }}</div><div style="font-size: 16px;">Total Projects: {{ \App\Project::where('location', 'like', '%' . $map->location . '%')->count() + \App\Archive::where('location', 'like', '%' . $map->location . '%')->count() }}</div> <br><br> <a href="{{ route('viewProjects', $map->location) }}" target="_blank" style="text-decoration: none;" ><button class="map-button-hover" >View Projects</button></a>').addTo(map);
+    marker._icon.classList.add("huechange");
     @endforeach
 </script>
 
