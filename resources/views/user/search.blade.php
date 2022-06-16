@@ -113,7 +113,7 @@
     <section class="container" style="margin-bottom:3rem;">
         <div class="search__container">
             <p class="search__title">
-                Go ahead, hover over search
+                Search Here
             </p>
             <form action="{{ route('search.post') }}" method="post">
                 {{ csrf_field() }}
