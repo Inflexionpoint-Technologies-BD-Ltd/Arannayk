@@ -118,7 +118,7 @@
             <form action="{{ route('search.post') }}" method="post">
                 {{ csrf_field() }}
                 <div>
-                    <input class="search__input" type="text" placeholder="Search" name="search">
+                    <input class="search__input" type="text" placeholder="Search" name="search" style="margin-right: 8px;">
                     <button type="submit" class="search-button-style"><i class="fa fa-search"></i></button>
                 </div>
             </form>

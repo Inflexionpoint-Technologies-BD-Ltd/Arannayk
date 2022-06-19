@@ -6511,8 +6511,6 @@ input[type="text"].greennature-payment-price-fill {
 }
 
 .search-button-style{
-    padding:12px 24px;
-    border-radius: 50px;
     border: none;
     background: #fff;
     cursor: pointer;
