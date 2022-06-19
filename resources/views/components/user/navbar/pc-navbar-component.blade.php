@@ -3,7 +3,7 @@
         <ul id="menu-main-menu-1" class="sf-menu greennature-main-menu">
             <!-- ----------------------------- Who We Are----------------------------- -->
             <li
-                class="menu-item menu-item-has-childrenmenu-item current-menu-item menu-item-has-children greennature-mega-menu">
+                class="menu-item menu-item-has-childrenmenu-item  menu-item-has-children greennature-mega-menu">
                 <a class="sf-with-ul-pre"> Who We Are</a>
                 <div class="sf-mega">
                     <ul class="sub-menu">

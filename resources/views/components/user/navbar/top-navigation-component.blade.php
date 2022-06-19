@@ -28,10 +28,6 @@
                 </div>
                 <div class="social-icon">
                     <a href="#" target="_blank">
-                        <i class="fa fa-instagram"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="#" target="_blank">
                         <i class="fa fa-linkedin"></i></a>
                 </div>
                 <div class="social-icon">

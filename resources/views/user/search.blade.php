@@ -113,11 +113,14 @@
     <section class="container" style="margin-bottom:3rem;">
         <div class="search__container">
             <p class="search__title">
-                Search Here
+
             </p>
             <form action="{{ route('search.post') }}" method="post">
                 {{ csrf_field() }}
-                <input class="search__input" type="text" placeholder="Search" name="search">
+                <div>
+                    <input class="search__input" type="text" placeholder="Search" name="search">
+                    <button type="submit" class="search-button-style"><i class="fa fa-search"></i></button>
+                </div>
             </form>
         </div>
     </section>
