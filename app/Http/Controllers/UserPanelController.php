@@ -41,7 +41,9 @@ class UserPanelController extends Controller
         $projects = Project::skip(0)->take(4)->get();
         $publications = Publication::skip(0)->take(4)->get();
         $sliders = Slider::skip(0)->take(3)->get();
-        return view('user.front', compact('services', 'projects', 'publications', 'sliders'));
+        $timelines = Timeline::skip(0)->take(8)->get();
+
+        return view('user.front', compact('services', 'projects', 'publications', 'sliders','timelines'));
     }
     //-------------------------------------------------HOMEPAGE CONTROLLERS----------------------//
 
@@ -368,7 +370,6 @@ class UserPanelController extends Controller
         $press = Press::where('title', 'like','%'.$search_data.'%')->get();
         $services = Service::where('title', 'like','%'.$search_data.'%')->get();
         $blogs = Blog::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
-
 
         return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'blogs', 'press'));
 

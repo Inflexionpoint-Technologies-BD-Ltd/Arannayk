@@ -6420,7 +6420,6 @@ input[type="text"].greennature-payment-price-fill {
 .ul li .title,
 .ul li .descr {
     background: var(--bgColor);
-    position: relative;
     padding-inline: 1.5rem;
 }
 .ul li .title {

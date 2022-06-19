@@ -523,6 +523,44 @@
                     <div class="clear"></div>
                 </section>
 
+                <section style="margin-top:5rem;margin-bottom:4rem;">
+                    <h1></h1>
+                    <div>
+                        <div
+                            class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
+                            <div class="greennature-item-title-container container">
+                                <div class="greennature-item-title-head">
+                                    <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
+                                        <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>
+                                         Timeline
+                                    </h3>
+                                    <a class="greennature-item-title-link" style="font-size:15px;" href="{{ route('timeline') }}">View Full Timeline
+                                       </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ul">
+                        @foreach($timelines as $timeline)
+                            @if($timeline->id%2==1)
+                                <li style="--accent-color:#eb681c">
+                                    <div class="date">{{ $timeline->year }}</div>
+                                    <div class="title">{{ $timeline->title }}</div>
+                                    <div class="descr">{!! $timeline->content !!}</div>
+                                </li>
+                            @elseif($timeline->id%2==0)
+                                <li style="--accent-color:#FBCA3E">
+                                    <div class="date">{{ $timeline->year }}</div>
+                                    <div class="title">{{ $timeline->title }}</div>
+                                    <div class="descr">{!! $timeline->content !!} </div>
+                                </li>
+                            @endif
+                        @endforeach
+
+                    </div>
+                </section>
+
                 <!------------------------------ WHERE WE WORK (Map) ---------------------------------------->
                 <section id="content-section-4" >
                     <div class="greennature-color-wrapper gdlr-show-all no-skin"
