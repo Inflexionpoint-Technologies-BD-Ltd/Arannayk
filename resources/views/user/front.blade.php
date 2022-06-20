@@ -13,21 +13,23 @@
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Arannayk Foundation">
-    <meta name="description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
+    <meta name="description"
+          content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arannayk.inflexionpointbd.com/">
     <meta property="og:title" content="Arannayk Foundation">
-    <meta property="og:description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
+    <meta property="og:description"
+          content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
     <meta property="og:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">
 
     <!-- Twitter -->
-{{--    <meta property="twitter:card" content="summary_large_image">--}}
-{{--    <meta property="twitter:url" content="http://arannayk.org/">--}}
-{{--    <meta property="twitter:title" content="Arannayk Foundation">--}}
-{{--    <meta property="twitter:description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">--}}
-{{--    <meta property="twitter:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">--}}
+    {{--    <meta property="twitter:card" content="summary_large_image">--}}
+    {{--    <meta property="twitter:url" content="http://arannayk.org/">--}}
+    {{--    <meta property="twitter:title" content="Arannayk Foundation">--}}
+    {{--    <meta property="twitter:description" content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">--}}
+    {{--    <meta property="twitter:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">--}}
 
     <title>Arannayk - Home</title>
 
@@ -144,14 +146,28 @@
                                                     alt="" title=""
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
-                                                <a href="{{ route('donate') }}" target="_self"
-                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom" style=""
-                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
-                                                   data-duration="400"
-                                                   data-delay="987"
-                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                                   data-offset-y="208"
-                                                   data-origin="ml" data-position="normal">Donate Now</a>
+                                                @if($loop->last)
+                                                    <a href="{{ route('donate') }}" target="_self"
+                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
+                                                       style=""
+                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                       data-duration="400"
+                                                       data-delay="987"
+                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                       data-offset-y="208"
+                                                       data-origin="ml" data-position="normal">Donate Now</a>
+                                                @else
+                                                    <a href="{{ route('aboutUs') }}" target="_self"
+                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
+                                                       style=""
+                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                       data-duration="400"
+                                                       data-delay="987"
+                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                       data-offset-y="208"
+                                                       data-origin="ml" data-position="normal">Learn More</a>
+                                                @endif
+
 
                                                 <div class="ms-layer msp-cn-1-3"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -183,15 +199,25 @@
                                                     src="{{ asset('storage/'.$slider->image) }}"
                                                     alt="" title=""
                                                     data-src="{{asset('storage/'.$slider->image)}}"/>
-
-                                                <a href="{{ route('aboutUs') }}" target="_self"
+                                                @if($loop->last)
+                                                <a href="{{ route('donate') }}" target="_self"
                                                    class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
                                                    data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
                                                    data-duration="400"
                                                    data-delay="987"
                                                    data-ease="easeOutQuint" data-type="button" data-offset-x="1"
                                                    data-offset-y="227"
-                                                   data-origin="ml" data-position="normal">Learn More</a>
+                                                   data-origin="ml" data-position="normal">Donate Now</a>
+                                                @else
+                                                    <a href="{{ route('aboutUs') }}" target="_self"
+                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                       data-duration="400"
+                                                       data-delay="987"
+                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                       data-offset-y="227"
+                                                       data-origin="ml" data-position="normal">Learn More</a>
+                                                @endif
 
                                                 <div class="ms-layer msp-cn-1-9"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -216,23 +242,25 @@
                                                 </div>
                                             </div>
 
-{{--                                      <div class="ms-slide" data-delay="7" data-fill-mode="fill">--}}
-{{--                                                            <img src="{{ asset('storage/'.$slider->image) }}" alt="" title=""--}}
-{{--                                                                data-src="{{ asset('storage/'.$slider->image) }}" />--}}
+                                            {{--                                            <div class="ms-slide" data-delay="7" data-fill-mode="fill">--}}
+                                            {{--                                                <img src="{{ asset('storage/'.$slider->image) }}" alt="" title=""--}}
+                                            {{--                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>--}}
 
-{{--                                                            <div class="ms-layer  msp-cn-1-10" style=""--}}
-{{--                                                                data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="425"--}}
-{{--                                                                data-delay="425" data-ease="easeOutQuint" data-offset-x="0"--}}
-{{--                                                                data-offset-y="82" data-origin="mc" data-position="normal">--}}
-{{--                                                                {{ $slider->text_content_2 }}</div>--}}
+                                            {{--                                                <div class="ms-layer  msp-cn-1-10" style=""--}}
+                                            {{--                                                     data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+                                            {{--                                                     data-duration="425"--}}
+                                            {{--                                                     data-delay="425" data-ease="easeOutQuint" data-offset-x="0"--}}
+                                            {{--                                                     data-offset-y="82" data-origin="mc" data-position="normal">--}}
+                                            {{--                                                    {{ $slider->text_content_2 }}</div>--}}
 
-{{--                                                            <div class="ms-layer  msp-cn-1-13" style=""--}}
-{{--                                                                data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="437"--}}
-{{--                                                                data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-15"--}}
-{{--                                                                data-origin="mc" data-position="normal">--}}
-{{--                                                                {{ $slider->text_content_1 }}</div>--}}
+                                            {{--                                                <div class="ms-layer  msp-cn-1-13" style=""--}}
+                                            {{--                                                     data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+                                            {{--                                                     data-duration="437"--}}
+                                            {{--                                                     data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-15"--}}
+                                            {{--                                                     data-origin="mc" data-position="normal">--}}
+                                            {{--                                                    {{ $slider->text_content_1 }}</div>--}}
 
-{{--                                                        </div>--}}
+                                            {{--                                            </div>--}}
                                         @endif
 
                                     @endforeach
@@ -279,7 +307,8 @@
                                                     not-for-profit organization established in 2003.
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -309,7 +338,8 @@
                                                     livelihood support to communities.
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('aboutUs') }}">Learn
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -323,8 +353,10 @@
                                     <div class="greennature-item greennature-column-service-item greennature-type-2"
                                          style="margin-bottom: 0px">
                                         <div class="column-service-image">
-                                            <img src="{{ asset('upload/toppng.com-award-icon-2-white-icon-357x488.png') }}" style="height:50px;" alt="" width="80"
-                                                 height="80"/>
+                                            <img
+                                                src="{{ asset('upload/toppng.com-award-icon-2-white-icon-357x488.png') }}"
+                                                style="height:50px;" alt="" width="80"
+                                                height="80"/>
                                         </div>
                                         <div class="column-service-content-wrapper">
                                             <h3 class="column-service-title">Our Achievements</h3>
@@ -336,7 +368,8 @@
                                                     Areas (PA).
                                                 </p>
                                             </div>
-                                            <a class="column-service-read-more" href="{{ route('achievements') }}">Learn More</a>
+                                            <a class="column-service-read-more" href="{{ route('achievements') }}">Learn
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -453,7 +486,8 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Recent Projects
                                         </h3>
-                                        <a class="greennature-item-title-link" style="font-size:15px;" href="{{ route('projects') }}">More
+                                        <a class="greennature-item-title-link" style="font-size:15px;"
+                                           href="{{ route('projects') }}">More
                                             Projects</a>
                                         <div class="clear"></div>
                                     </div>
@@ -499,7 +533,8 @@
                                                                 <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
 
                                                                 <div class="clear"></div>
-                                                                <a href="{{ route('projects') }}" class="excerpt-read-more">Read
+                                                                <a href="{{ route('projects') }}"
+                                                                   class="excerpt-read-more">Read
                                                                     More</a>
                                                             </div>
                                                             <a class="portfolio-classic-learn-more" href="#">Learn
@@ -532,10 +567,11 @@
                                 <div class="greennature-item-title-head">
                                     <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
                                         <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>
-                                         Timeline
+                                        Timeline
                                     </h3>
-                                    <a class="greennature-item-title-link" style="font-size:15px;" href="{{ route('timeline') }}">View Full Timeline
-                                       </a>
+                                    <a class="greennature-item-title-link" style="font-size:15px;"
+                                       href="{{ route('timeline') }}">View Full Timeline
+                                    </a>
                                     <div class="clear"></div>
                                 </div>
                             </div>
@@ -562,53 +598,83 @@
                 </section>
 
                 <!------------------------------ WHERE WE WORK (Map) ---------------------------------------->
-                <section id="content-section-4" >
+                <section id="content-section-4">
                     <div class="greennature-color-wrapper gdlr-show-all no-skin"
                          style="background-color: #ecb338; padding-bottom: 25px">
                         <div class="container">
                             <div
-                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium" style="border-color:#3f3f3f;">
+                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium"
+                                style="border-color:#3f3f3f;">
                                 <div class="greennature-item-title-container container">
                                     <div class="greennature-item-title-head">
                                         <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
-                                            <img src="{{ asset('./images/location.png') }}" class="location-pointer" alt="" width="80"
+                                            <img src="{{ asset('./images/location.png') }}" class="location-pointer"
+                                                 alt="" width="80"
                                                  height="80"/>
-                                           Where We Work
+                                            Where We Work
                                         </h3>
-                                        <a class="greennature-item-title-link view-full-map" style="font-size: 15px;" target="_blank" href="{{ route('map') }}">View Full Map
+                                        <a class="greennature-item-title-link view-full-map" style="font-size: 15px;"
+                                           target="_blank" href="{{ route('map') }}">View Full Map
                                         </a>
                                         <div class="clear"></div>
                                     </div>
 
 
-                                    </div>
                                 </div>
+                            </div>
 
                             <div id="content-section-4">
-                                <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style=" padding-top: 100px; padding-bottom: 90px; ">
+                                <div
+                                    class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
+                                    id="greennature-parallax-wrapper-2" data-bgspeed="0.1"
+                                    style=" padding-top: 100px; padding-bottom: 90px; ">
                                     <div class="container">
                                         <div class="three columns">
-                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-4.png') }}" alt="" width="80" height="80" />
-                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">7+</div>
-                                                <div class="greennature-skill-item-caption" style="color:#3f3f3f;">Partnerships</div>
+                                            <div
+                                                class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2">
+                                                <img src="{{ asset('upload/icon-4.png') }}" alt="" width="80"
+                                                     height="80"/>
+                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">7+
+                                                </div>
+                                                <div class="greennature-skill-item-caption" style="color:#3f3f3f;">
+                                                    Partnerships
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="three columns">
-                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80" />
-                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">5+</div>
-                                                <div class="greennature-skill-item-caption" style="color:  #3f3f3f;">Active Projects</div>
+                                            <div
+                                                class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2">
+                                                <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80"
+                                                     height="80"/>
+                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">5+
+                                                </div>
+                                                <div class="greennature-skill-item-caption" style="color:  #3f3f3f;">
+                                                    Active Projects
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="three columns">
-                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-2.png') }}" alt="" width="80" height="80" />
-                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">40+</div>
-                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">Total Projects</div>
+                                            <div
+                                                class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2">
+                                                <img src="{{ asset('upload/icon-2.png') }}" alt="" width="80"
+                                                     height="80"/>
+                                                <div class="greennature-skill-item-title" style="color: #3f3f3f;">40+
+                                                </div>
+                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">
+                                                    Total Projects
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="three columns">
-                                            <div class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"><img src="{{ asset('upload/icon-6.png') }}" alt="" width="80" height="80" />
-                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">20+</div>
-                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">Districts</div>
+                                            <div
+                                                class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2">
+                                                <img src="{{ asset('upload/icon-6.png') }}" alt="" width="80"
+                                                     height="80"/>
+                                                <div class="greennature-skill-item-title" style="color:  #3f3f3f;">20+
+                                                </div>
+                                                <div class="greennature-skill-item-caption" style="color: #3f3f3f;">
+                                                    Districts
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="clear"></div>
@@ -624,65 +690,65 @@
                 </section>
 
 
-{{--                <section id="content-section-5" style="margin-bottom: 2rem; margin-top: 2rem">--}}
-{{--                    <div--}}
-{{--                        class="greennature-color-wrapper gdlr-show-all greennature-skin-service-half greennature-half-bg-wrapper"--}}
-{{--                        style="background-color: #f5f5f5; padding-bottom: 20px">--}}
-{{--                        <div class="greennature-half-bg greennature-bg-solid" style="--}}
-{{--                            background-image: url({{ asset('./images/map.png') }});--}}
-{{--                            margin-left: 8rem;--}}
-{{--                            "></div>--}}
-{{--                        <div class="container">--}}
-{{--                            <div class="six columns">--}}
-{{--                                <div class="greennature-item greennature-content-item"></div>--}}
-{{--                            </div>--}}
-{{--                            <div class="six columns">--}}
-{{--                                <div class="greennature-item greennature-icon-with-list-item">--}}
-{{--                                    <div class="list-with-icon-ux greennature-ux">--}}
-{{--                                        <div class="list-with-icon greennature-left">--}}
-{{--                                            <!-- <div class="list-with-icon-image"><img src="upload/icon-1.png" alt=""--}}
-{{--                                                                            width="80" height="80" /></div> -->--}}
-{{--                                            <div class="list-with-icon-content">--}}
-{{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
-{{--                                                    Where We Work--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="clear"></div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                {{--                <section id="content-section-5" style="margin-bottom: 2rem; margin-top: 2rem">--}}
+                {{--                    <div--}}
+                {{--                        class="greennature-color-wrapper gdlr-show-all greennature-skin-service-half greennature-half-bg-wrapper"--}}
+                {{--                        style="background-color: #f5f5f5; padding-bottom: 20px">--}}
+                {{--                        <div class="greennature-half-bg greennature-bg-solid" style="--}}
+                {{--                            background-image: url({{ asset('./images/map.png') }});--}}
+                {{--                            margin-left: 8rem;--}}
+                {{--                            "></div>--}}
+                {{--                        <div class="container">--}}
+                {{--                            <div class="six columns">--}}
+                {{--                                <div class="greennature-item greennature-content-item"></div>--}}
+                {{--                            </div>--}}
+                {{--                            <div class="six columns">--}}
+                {{--                                <div class="greennature-item greennature-icon-with-list-item">--}}
+                {{--                                    <div class="list-with-icon-ux greennature-ux">--}}
+                {{--                                        <div class="list-with-icon greennature-left">--}}
+                {{--                                            <!-- <div class="list-with-icon-image"><img src="upload/icon-1.png" alt=""--}}
+                {{--                                                                            width="80" height="80" /></div> -->--}}
+                {{--                                            <div class="list-with-icon-content">--}}
+                {{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
+                {{--                                                    Where We Work--}}
+                {{--                                                </div>--}}
+                {{--                                            </div>--}}
+                {{--                                            <div class="clear"></div>--}}
+                {{--                                        </div>--}}
+                {{--                                    </div>--}}
 
-{{--                                    <div class="list-with-icon-ux greennature-ux">--}}
-{{--                                        <div class="list-with-icon greennature-left">--}}
-{{--                                            <div class="list-with-icon-image">--}}
-{{--                                                <img src="{{ asset('./images/location.png') }}" alt="" width="80"--}}
-{{--                                                     height="80"/>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="list-with-icon-content">--}}
-{{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
-{{--                                                    Dhaka, Bangladesh--}}
-{{--                                                </div>--}}
-{{--                                                <div class="list-with-icon-caption">--}}
-{{--                                                    <p>--}}
-{{--                                                        527/K Wasi Tower, ECB Chattar, Matikata, Dhaka--}}
-{{--                                                        Cantonment, 1206 Dhaka, Dhaka Division,--}}
-{{--                                                        Bangladesh--}}
-{{--                                                    </p>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
+                {{--                                    <div class="list-with-icon-ux greennature-ux">--}}
+                {{--                                        <div class="list-with-icon greennature-left">--}}
+                {{--                                            <div class="list-with-icon-image">--}}
+                {{--                                                <img src="{{ asset('./images/location.png') }}" alt="" width="80"--}}
+                {{--                                                     height="80"/>--}}
+                {{--                                            </div>--}}
+                {{--                                            <div class="list-with-icon-content">--}}
+                {{--                                                <div class="list-with-icon-title greennature-skin-title">--}}
+                {{--                                                    Dhaka, Bangladesh--}}
+                {{--                                                </div>--}}
+                {{--                                                <div class="list-with-icon-caption">--}}
+                {{--                                                    <p>--}}
+                {{--                                                        527/K Wasi Tower, ECB Chattar, Matikata, Dhaka--}}
+                {{--                                                        Cantonment, 1206 Dhaka, Dhaka Division,--}}
+                {{--                                                        Bangladesh--}}
+                {{--                                                    </p>--}}
+                {{--                                                </div>--}}
+                {{--                                            </div>--}}
 
-{{--                                            <br/><br/><br/><br/>--}}
+                {{--                                            <br/><br/><br/><br/>--}}
 
-{{--                                            <div class="clear"></div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="clear"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="clear"></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="clear"></div>--}}
-{{--                </section>--}}
+                {{--                                            <div class="clear"></div>--}}
+                {{--                                        </div>--}}
+                {{--                                    </div>--}}
+                {{--                                    <div class="clear"></div>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                            <div class="clear"></div>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                    <div class="clear"></div>--}}
+                {{--                </section>--}}
 
 
                 <!------------------------------ Knowledge (Publications) ---------------------------------------->
@@ -698,7 +764,8 @@
                                             <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
                                             Publications
                                         </h3>
-                                        <a class="greennature-item-title-link"  style="font-size:15px;" href="{{ route('publication') }}">More
+                                        <a class="greennature-item-title-link" style="font-size:15px;"
+                                           href="{{ route('publication') }}">More
                                             Publications</a>
                                         <div class="clear"></div>
                                     </div>
@@ -772,7 +839,8 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <a href="{{ route('career') }}"><img src="{{ asset('./images/Arannayk_icons/job (1).png') }}" alt="" width="80"
+                                    <a href="{{ route('career') }}"><img
+                                            src="{{ asset('./images/Arannayk_icons/job (1).png') }}" alt="" width="80"
                                             height="80"/></a>
                                     <div class="greennature-skill-item-title">
                                         <a href="{{ route('career') }}" class="get-involved-heading">Career</a>
@@ -784,10 +852,12 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <a href="{{ route('consultancy') }}"><img src="{{ asset('./images/Arannayk_icons/handshake.png') }}" alt="" width="80"
-                                                    height="80"/></a>
+                                    <a href="{{ route('consultancy') }}"><img
+                                            src="{{ asset('./images/Arannayk_icons/handshake.png') }}" alt="" width="80"
+                                            height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="{{ route('consultancy') }}" class="get-involved-heading">Consultancy</a>
+                                        <a href="{{ route('consultancy') }}"
+                                           class="get-involved-heading">Consultancy</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>
@@ -796,7 +866,9 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <a href="{{ route('internship') }}"><img src="{{ asset('./images/Arannayk_icons/id-card (1).png') }}" alt="" width="80"
+                                    <a href="{{ route('internship') }}"><img
+                                            src="{{ asset('./images/Arannayk_icons/id-card (1).png') }}" alt=""
+                                            width="80"
                                             height="80"/></a>
                                     <div class="greennature-skill-item-title">
                                         <a href="{{ route('internship') }}" class="get-involved-heading">Internship</a>
@@ -808,10 +880,12 @@
                                 <div
                                     class="greennature-skill-item-wrapper greennature-skin-content greennature-item greennature-style-2"
                                     style="margin-bottom: 70px">
-                                    <a href="{{ route('procurement') }}"><img src="{{ asset('./images/Arannayk_icons/trolley.png') }}" alt="" width="80"
+                                    <a href="{{ route('procurement') }}"><img
+                                            src="{{ asset('./images/Arannayk_icons/trolley.png') }}" alt="" width="80"
                                             height="80"/></a>
                                     <div class="greennature-skill-item-title">
-                                        <a href="{{ route('procurement') }}" class="get-involved-heading">Procurement</a>
+                                        <a href="{{ route('procurement') }}"
+                                           class="get-involved-heading">Procurement</a>
                                     </div>
                                     <div class="greennature-skill-item-caption" style="color: #ffffff"></div>
                                 </div>

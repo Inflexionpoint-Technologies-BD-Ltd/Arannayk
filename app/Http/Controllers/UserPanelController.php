@@ -40,7 +40,7 @@ class UserPanelController extends Controller
         $services = Service::skip(0)->take(2)->get();
         $projects = Project::skip(0)->take(4)->get();
         $publications = Publication::skip(0)->take(4)->get();
-        $sliders = Slider::skip(0)->take(3)->get();
+        $sliders = Slider::all();
         $timelines = Timeline::skip(0)->take(8)->get();
 
         return view('user.front', compact('services', 'projects', 'publications', 'sliders','timelines'));
