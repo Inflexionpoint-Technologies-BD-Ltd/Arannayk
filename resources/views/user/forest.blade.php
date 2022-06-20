@@ -184,7 +184,7 @@
                                             </div>
                                             <div class="portfolio-classic-content">
                                                 <h3 class="portfolio-title">
-                                                    <a href="/current-projects">{{ $project -> title }}</a>
+                                                    <a href="{{  route('viewCurrentProject', $project->id) }}">{{ $project -> title }}</a>
                                                 </h3>
                                                 <div class="greennature-portfolio-info">
                                                     <div class="portfolio-info portfolio-tag">
@@ -269,7 +269,7 @@
                                             <div class="portfolio-classic-content">
                                                 <h3 class="portfolio-title">
 
-                                                    <a href="{{ route('archives') }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}
+                                                    <a href="{{ route('viewProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}
                                                     </a>
                                                 </h3>
                                                 <div class="greennature-portfolio-info">
@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="portfolio-classic-content">
                                                 <h3 class="portfolio-title">
-                                                    <a href="{{ route('blogs') }}">{{ $blog -> title }}</a>
+                                                    <a href="{{ route('viewBlog', $blog->id) }}">{{ $blog -> title }}</a>
                                                 </h3>
                                                 <div class="greennature-portfolio-info">
                                                     <div class="portfolio-info portfolio-tag">

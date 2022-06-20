@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">What We Do</h1>
             <span class="greennature-page-caption">Current Projects</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -146,6 +147,7 @@
 {{--                                                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - {{ $project->funded_by}} </a></div>
                                                                                     <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $project->location }} </a></div>
+                                                                                    <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $project->tag }}</a></div>
 
                                                                                     <div class="clear"></div>
                                                                                 </div>

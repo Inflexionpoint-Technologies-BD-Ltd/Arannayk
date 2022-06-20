@@ -1010,10 +1010,11 @@ html .woocommerce .greennature-widget-title {
 
 
 .greennature-page-title-wrapper .greennature-page-caption {
-	font-size: 20px;
+	font-size: 35px;
 	margin: 12px 17px 0px;
 	display: block;
 	font-style: italic;
+    font-weight:700;
 }
 
 .greennature-page-title-wrapper .greennature-page-title-gimmick {
@@ -1764,7 +1765,7 @@ input[type="submit"] {
 }
 
 .greennature-column-service-item .column-service-title {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 25px;
@@ -1794,7 +1795,7 @@ input[type="submit"] {
 .greennature-column-service-item.greennature-type-1 .column-service-title {
 	font-size: 17px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .greennature-column-service-item.greennature-type-1 .column-service-image {
@@ -6419,7 +6420,6 @@ input[type="text"].greennature-payment-price-fill {
 .ul li .title,
 .ul li .descr {
     background: var(--bgColor);
-    position: relative;
     padding-inline: 1.5rem;
 }
 .ul li .title {
@@ -6505,28 +6505,32 @@ input[type="text"].greennature-payment-price-fill {
 .search__title {
     font-size: 22px;
     font-weight: 900;
-    text-align: center;
+
     color: #eb681c;
 }
 
-.search__input {
-    width: 100%;
-    padding: 12px 24px;
+.search-button-style{
+    border: none;
+    background: #fff;
+    cursor: pointer;
 
-    background-color: transparent;
+}
+
+.search__input {
+    width: 80%;
+    padding: 12px 24px;
     transition: transform 250ms ease-in-out;
     font-size: 14px;
     line-height: 18px;
 
     color: #575756;
-    background-color: transparent;
+    background-color: #fff;
     /*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
 
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 95% center;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 1px solid #575756;
     transition: all 250ms ease-in-out;
     backface-visibility: hidden;
@@ -6539,7 +6543,7 @@ input[type="text"].greennature-payment-price-fill {
     letter-spacing: 1.5px;
 }
 
-.search__input:hover,
+
 .search__input:focus {
     padding: 12px 0;
     outline: 0;
@@ -6561,3 +6565,120 @@ input[type="text"].greennature-payment-price-fill {
     color:#005e5e;
 }
 
+.hover-link-style{
+    background-image: linear-gradient(
+        to right,
+        #5dc269,
+        #5dc269 50%,
+        #5dc269 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.hover-link-style:before{
+    content: '';
+    background: #5dc269;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-link-style:hover{
+    background-position: 0;
+}
+.hover-link-style:hover::before{
+    width:100%;
+}
+
+.button-hover{
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 27px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-top-color: #5dc269;
+    border-right-color: #5dc269;
+    border-bottom-color: #5dc269;
+    border-left-color: #5dc269;
+    letter-spacing: 1px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #5dc269;
+    text-decoration: none;
+    color: #fff;
+}
+
+.map-button-hover{
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 1px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8674f;
+    text-decoration: none;
+    color: #fff;
+}
+.map-button-hover:hover{
+    background-color: #ff5330;
+    text-decoration: none;
+    color: #fff;
+}
+.map-hover-link-style{
+    background-image: linear-gradient(
+        to right,
+        #ff5330,
+        #ff5330 50%,
+        #ff5330 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.map-hover-link-style:before{
+    content: '';
+    background: #ff5330;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.map-hover-link-style:hover{
+    background-position: 0;
+}
+.map-hover-link-style:hover::before{
+    width:100%;
+}

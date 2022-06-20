@@ -19,8 +19,6 @@
                 <a href="{{ route('gender') }}">Gender</a>
             </div>
 
-
-
         </div>
         <div class="top-navigation-right">
             <div class="top-social-wrapper">
@@ -30,20 +28,16 @@
                 </div>
                 <div class="social-icon">
                     <a href="#" target="_blank">
-                        <i class="fa fa-instagram"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="#" target="_blank">
                         <i class="fa fa-linkedin"></i></a>
                 </div>
                 <div class="social-icon">
                     <a href="#" target="_blank">
                         <i class="fa fa-youtube-play"></i></a>
                 </div>
-{{--                <div class="social-icon" style="margin-left:2rem;">--}}
-{{--                    <a href="{{ route('search') }}">--}}
-{{--                        <i class="fa fa-search"></i></a>--}}
-{{--                </div>--}}
+                <div class="social-icon" style="margin-left:2rem;">
+                    <a href="{{ route('search') }}">
+                        <i class="fa fa-search"></i></a>
+                </div>
                 <div class="clear"></div>
 
             </div>

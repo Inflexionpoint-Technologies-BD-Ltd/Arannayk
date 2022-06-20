@@ -98,21 +98,14 @@
     <div class="copyright-wrapper">
         <div class="copyright-container container">
             <div class="copyright-left">
-                <a href="http://facebook.com/goodlayers">
+                <a href="">
                     <i class="greennature-icon fa fa-facebook" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
 
-                <a href="#"><i class="greennature-icon fa fa-instagram" style="
-                    vertical-align: middle;
-                    color: #bbbbbb;
-                    font-size: 20px;
-                  "></i>
-                </a>
-
-                <a href="http://twitter.com/goodlayers">
+                <a href="">
                     <i class="greennature-icon fa fa-linkedin" style="
                     vertical-align: middle;
                     color: #bbbbbb;
@@ -121,14 +114,14 @@
                     </i>
                 </a>
 
-                <a href="#"><i class="greennature-icon fa fa-youtube-play" style="
+                <a href=""><i class="greennature-icon fa fa-youtube-play" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
             </div>
             <div class="copyright-right">
-                Design And Developed by Inflexionpoint Technologies BD Ltd.
+                Design And Developed by SiS Inflexionpoint (BD) Ltd.
             </div>
             <div class="clear"></div>
         </div>

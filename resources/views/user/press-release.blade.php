@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Media Center</h1>
             <span class="greennature-page-caption">Press Release</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -148,7 +149,7 @@
                                                                     </header>
                                                                     <!-- entry-header -->
 
-                                                                    <div class="greennature-blog-content"> {!! $press->content !!}
+                                                                    <div class="greennature-blog-content" style="text-align: justify"> {!! $press->content !!}
                                                                         <div class="clear">
                                                                         </div>
 {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
@@ -206,15 +207,15 @@
                                         <div class="clear"></div>
                                     </div>
                                 </div>
-                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
-                                    <h3 class="greennature-widget-title">Tags</h3>
-                                    <div class="clear"></div>
-                                    <div class="tagcloud">
-                                        @foreach($pressReleases as $press)
-                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>
-                                        @endforeach
-                                        </div>
-                                </div>
+{{--                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">--}}
+{{--                                    <h3 class="greennature-widget-title">Tags</h3>--}}
+{{--                                    <div class="clear"></div>--}}
+{{--                                    <div class="tagcloud">--}}
+{{--                                        @foreach($pressReleases as $press)--}}
+{{--                                        <a href="#{{ $press->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $press->tag }}</a>--}}
+{{--                                        @endforeach--}}
+{{--                                        </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                         <div class="clear"></div>

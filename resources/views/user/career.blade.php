@@ -105,8 +105,9 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Get Involved</h1>
             <span class="greennature-page-caption">Career</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
@@ -119,7 +120,9 @@
                     <section id="content-section-1">
                         <div class="section-container container eight columns">
 
-                            @foreach($careers as $career)
+                            @if($careers->count() > 0)
+
+                                @foreach($careers as $career)
                                     <div>
                                         <div class="greennature-item greennature-accordion-item style-1"
                                              style="margin-bottom: 60px;">
@@ -136,8 +139,15 @@
 
                                         </div>
                                     </div>
+                                @endforeach
 
-                                    @endforeach
+                            @else
+
+                                <p>No Job information available</p>
+
+                            @endif
+
+
                         </div>
                         <div class="greennature-sidebar greennature-right-sidebar four columns">
                             <div class="greennature-item-start-content sidebar-right-item">
@@ -165,8 +175,6 @@
                                             <i class="greennature-icon fa fa-facebook"
                                                style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
                                         <a href=""><i class="greennature-icon fa fa-linkedin"
-                                                      style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-instagram"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
                                         <a href=""><i class="greennature-icon fa fa-youtube-play"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>

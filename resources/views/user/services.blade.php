@@ -105,13 +105,14 @@
     <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
         <div class="greennature-page-title-overlay"></div>
         <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">What We Do</h1>
             <span class="greennature-page-caption">Our Services</span>
+            <h1 class="section-heading-title"></h1>
+
         </div>
     </div>
 
     <section id="content-section-3">
-        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
+        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; ">
             <div class="container">
                 <div class="six columns">
                     <div class="greennature-video-item greennature-item">
@@ -132,7 +133,7 @@
                                     government agencies and academic institutions for conservation and restoration of
                                     forests of Bangladesh. The major areas of interventions include...</p>
                             </div>
-                            <a class="about-us-read-more greennature-button" href="#content-section-2">Learn More</a>
+                            <a class="button-hover" href="{{ route('aboutUs') }}">Learn More</a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -145,22 +146,26 @@
 
     <section id="content-section-2">
         <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey"
-             style="background-color: #f0f0f0; padding-bottom: 15px; ">
+             style="background-color: #fff; padding-bottom: 15px; ">
             <div class="container">
                 {{--                <p class="services-page-subheading">AF has so far provided 150 grants to different organizations--}}
                 {{--                    including NGOs,--}}
                 {{--                    government agencies and academic institutions for conservation and restoration of--}}
                 {{--                    forests of Bangladesh. The major areas of interventions include:</p>--}}
                @foreach($services as $service)
-                <div class="four columns">
+                <div>
                     <div class="greennature-ux column-service-ux">
                         <div class="greennature-item greennature-column-service-item greennature-type-1"
-                             style="margin-bottom: 45px;">
+                             style="margin-bottom: 30px;">
                             <div class="column-service-image"><img src="{{ asset('storage/'.$service->icon) }}" alt="" width="40"
                                                                    height="40"/></div>
                             <div class="column-service-content-wrapper">
-                                <h3 class="column-service-title">{{ $service->title }}</h3>
-                                <div class="column-service-content greennature-skin-content">
+
+                                <h3 class="column-service-title hover-link-style" >{{ $service->title }}</h3>
+
+
+
+                                <div class="column-service-content greennature-skin-content" style="font-size: 14px;">
                                     <p>{!! $service->content !!} </p>
                                 </div>
 {{--                                <a class="column-service-read-more" href="#">Read More</a>--}}
