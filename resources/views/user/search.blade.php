@@ -100,15 +100,15 @@
         </div>
     </header>
     <!------------------------------------------ Navbar ends here--- -->
+    <br><br><br><br> <br><br>
 
-
-    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-        <div class="greennature-page-title-overlay"></div>
-        <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title"></h1>
-            <span class="greennature-page-caption"></span>
-        </div>
-    </div>
+{{--    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">--}}
+{{--        <div class="greennature-page-title-overlay"></div>--}}
+{{--        <div class="greennature-page-title-container container">--}}
+{{--            <h1 class="section-heading-title"></h1>--}}
+{{--            <span class="greennature-page-caption"></span>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <section class="container" style="margin-bottom:3rem;">
         <div class="search__container">
