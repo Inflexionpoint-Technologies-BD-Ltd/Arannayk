@@ -112,7 +112,7 @@
 {{--        </div>--}}
 {{--    </div>--}}
 
-    <br> <br> <br> <br>
+    <br> <br> <br> <br> <br>
 
     <section id="content-section-2" style="margin-bottom: 3rem;">
         @foreach($aboutUs as $about)
