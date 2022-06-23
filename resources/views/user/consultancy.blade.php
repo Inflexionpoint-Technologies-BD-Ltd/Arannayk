@@ -102,14 +102,16 @@
     <!------------------------------------------ Navbar ends here--- -->
 
 
-    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-        <div class="greennature-page-title-overlay"></div>
-        <div class="greennature-page-title-container container">
-            <span class="greennature-page-caption">Consultancy</span>
-            <h1 class="section-heading-title"></h1>
+{{--    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">--}}
+{{--        <div class="greennature-page-title-overlay"></div>--}}
+{{--        <div class="greennature-page-title-container container">--}}
+{{--            <span class="greennature-page-caption">Consultancy</span>--}}
+{{--            <h1 class="section-heading-title"></h1>--}}
 
-        </div>
-    </div>
+{{--        </div>--}}
+{{--    </div>--}}
+
+    <br> <br> <br> <br> <br>
 
     <section id="content-section-2">
         <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey" style="background-color: #ffffff; padding-top: 55px; padding-bottom: 35px; ">

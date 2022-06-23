@@ -102,16 +102,18 @@
     <!------------------------------------------ Navbar ends here--- -->
 
 
-    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-        <div class="greennature-page-title-overlay"></div>
-        <div class="greennature-page-title-container container">
-            <span class="greennature-page-caption">Our Partners & Donors</span>
-            <h1 class="section-heading-title"></h1>
+{{--    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">--}}
+{{--        <div class="greennature-page-title-overlay"></div>--}}
+{{--        <div class="greennature-page-title-container container">--}}
+{{--            <span class="greennature-page-caption">Our Partners & Donors</span>--}}
+{{--            <h1 class="section-heading-title"></h1>--}}
 
-        </div>
-    </div>
+{{--        </div>--}}
+{{--    </div>--}}
 
-    <section>
+    <br> <br> <br> <br> <br>
+
+    <section style="margin-top:2rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
 
@@ -147,6 +149,7 @@
             <div class="clear"></div>
         </div>
     </section>
+    <br> <br> <br> <br> <br>
 
 
     <!-------------------------------------------------------------------------

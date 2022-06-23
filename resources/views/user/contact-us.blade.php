@@ -102,13 +102,15 @@
     <!------------------------------------------ Navbar ends here--- -->
 
 
-    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-        <div class="greennature-page-title-overlay"></div>
-        <div class="greennature-page-title-container container">
-            <h1 class="section-heading-title">Contact Us</h1>
-            <span class="greennature-page-caption"></span>
-        </div>
-    </div>
+{{--    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">--}}
+{{--        <div class="greennature-page-title-overlay"></div>--}}
+{{--        <div class="greennature-page-title-container container">--}}
+{{--            <h1 class="section-heading-title">Contact Us</h1>--}}
+{{--            <span class="greennature-page-caption"></span>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+    <br> <br> <br> <br> <br>
 
   <section>
       <div class="content-wrapper">
