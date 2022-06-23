@@ -172,12 +172,11 @@
                                 <div id="text-8" class="widget widget_text greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Social Media</h3>
                                     <div class="clear"></div>
-                                    <div class="textwidget"><a href="">
+                                    <div class="textwidget"><a href="https://www.facebook.com/arannaykfoundation/">
                                             <i class="greennature-icon fa fa-facebook"
                                                style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-linkedin"
-                                                      style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-youtube-play"
+
+                                        <a href="https://www.youtube.com/user/Arannayk/videos"><i class="greennature-icon fa fa-youtube-play"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
 
                                     </div>

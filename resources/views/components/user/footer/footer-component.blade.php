@@ -99,23 +99,16 @@
         <div class="copyright-wrapper">
             <div class="copyright-container container">
                 <div class="copyright-left">
-                    <a href="">
+                    <a href="https://www.facebook.com/arannaykfoundation/">
                         <i class="greennature-icon fa fa-facebook" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
 
-                    <a href="">
-                        <i class="greennature-icon fa fa-linkedin" style="
-                    vertical-align: middle;
-                    color: #bbbbbb;
-                    font-size: 20px;
-                  ">
-                        </i>
-                    </a>
 
-                    <a href=""><i class="greennature-icon fa fa-youtube-play" style="
+
+                    <a href="https://www.youtube.com/user/Arannayk/videos"><i class="greennature-icon fa fa-youtube-play" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
