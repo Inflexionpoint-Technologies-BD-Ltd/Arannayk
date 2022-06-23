@@ -113,7 +113,7 @@
 
     <br> <br> <br> <br> <br>
 
-    <section class="container">
+    <section class="container" style="margin-top:2rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
 
@@ -201,6 +201,7 @@
         </div>
     </section>
 
+    <br> <br>
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------

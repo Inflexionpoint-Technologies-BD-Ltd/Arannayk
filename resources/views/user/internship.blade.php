@@ -114,7 +114,7 @@
 
     <br> <br> <br> <br> <br>
 
-    <section class="container">
+    <section class="container" style="margin-top:2rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
 
@@ -198,6 +198,8 @@
             <div class="clear"></div>
         </div>
     </section>
+
+    <br> <br> <br> <br> <br>
 
 
     <!-------------------------------------------------------------------------

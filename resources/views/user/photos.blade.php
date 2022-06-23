@@ -113,7 +113,7 @@
 
     <br> <br> <br> <br> <br>
 
-    <section>
+    <section style="margin-top: 3rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
 
@@ -180,6 +180,7 @@
         </div>
     </section>
 
+    <br> <br> <br><br>
 
 
     <!-------------------------------------------------------------------------
