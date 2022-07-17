@@ -6682,3 +6682,20 @@ input[type="text"].greennature-payment-price-fill {
 .map-hover-link-style:hover::before{
     width:100%;
 }
+.widget-box-style h3{
+    padding: 10px 15px;
+    text-shadow: none;
+    line-height: 1.2;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    background: #5dc269;
+    width: 100%;
+    max-width: 210px;
+    text-align: center;
+    margin-bottom: 15px;
+}

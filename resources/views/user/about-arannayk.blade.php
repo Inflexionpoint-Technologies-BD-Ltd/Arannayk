@@ -102,17 +102,17 @@
     <!------------------------------------------ Navbar ends here--- -->
 
 
-{{--    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">--}}
-{{--        <div class="greennature-page-title-overlay"></div>--}}
-{{--        <div class="greennature-page-title-container container">--}}
+    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
+        <div class="greennature-page-title-overlay"></div>
+        <div class="greennature-page-title-container container">
 
-{{--            <span class="greennature-page-caption">About Arannayk Foundation</span>--}}
-{{--            <h1 class="section-heading-title"></h1>--}}
+            <span class="greennature-page-caption">About Arannayk Foundation</span>
+            <h1 class="section-heading-title"></h1>
 
-{{--        </div>--}}
-{{--    </div>--}}
+        </div>
+    </div>
 
-    <br> <br> <br> <br> <br>
+
 
     <section id="content-section-2" style="margin-bottom: 3rem;">
         @foreach($aboutUs as $about)

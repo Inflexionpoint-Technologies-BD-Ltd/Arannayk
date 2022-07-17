@@ -736,7 +736,7 @@ table.style-2 tr:nth-child(even) {
 
 .greennature-testimonial-item .testimonial-item-inner,
 .greennature-testimonial-item .testimonial-author-image {
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 }
 
 .greennature-testimonial-item .testimonial-content {

@@ -266,7 +266,7 @@ html body {
 
 	/*--- page item ---*/
 	.greennature-item-title-head .greennature-nav-title {
-		display: none;
+		/*display: none;*/
 	}
 
 	.greennature-item-title-wrapper.greennature-left .greennature-item-title,

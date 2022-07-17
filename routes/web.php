@@ -231,6 +231,7 @@ Route::get('/view-project/{id}', "UserPanelController@singleproject")->name('vie
 // ---------------------------- VIEW SINGLE CURRENTPROJECT BY ID --------------------------------------------------
 
 Route::get('view-current-project/{id}',"UserPanelController@single_current_project")->name('viewCurrentProject');
+Route::get('view-archived-project/{id}',"UserPanelController@single_archived_projects")->name('viewArchivedProject');
 
 // -------------------------------------------------------------- VIEW SINGLE CURRENTPROJECT BY ID ---------------------
 

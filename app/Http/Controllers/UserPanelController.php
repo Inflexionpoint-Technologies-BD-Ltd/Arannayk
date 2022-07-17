@@ -106,8 +106,16 @@ class UserPanelController extends Controller
     public function single_current_project($id)
     {
         $projects = Project::find($id);
+
         return view('user.single-current-project', compact('projects'));
     }
+    public function single_archived_projects($id)
+    {
+        $projects = Archive::find($id);
+
+        return view('user.single-current-project', compact('projects'));
+    }
+
 
     public function viewProjects($project)
     {

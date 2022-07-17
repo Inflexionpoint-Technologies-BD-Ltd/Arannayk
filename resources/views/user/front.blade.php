@@ -474,8 +474,182 @@
                 <!-------------------------------------------------------------- WHAT WE DO (OUR SERVICES) --->
 
                 <!------------------------------ WHAT WE DO (CURRENT PROJECTS) ---------------------------------------->
+                <section id="content-section-1">
+                    <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 75px; padding-bottom: 5px; ">
+                        <div class="container">
+                            <div class="greennature-testimonial-item-wrapper" style="margin-bottom: 80px;">
+                                <div class="greennature-item-title-wrapper greennature-item  greennature-nav-container greennature-left greennature-small ">
+                                    <div
+                                        class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
+                                    <div class="greennature-item-title-container container">
+                                        <div class="greennature-item-title-head">
+                                            <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
+                                                <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
+                                                Recent Projects
+                                            </h3>
+                                            <span class="greennature-nav-title"><i class="icon-angle-left greennature-flex-prev"></i><i class="icon-angle-right greennature-flex-next"></i></span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="greennature-item greennature-testimonial-item carousel round-style">
+                                    <div class="greennature-ux greennature-testimonial-ux">
+                                        <div class="flexslider" data-type="carousel" data-nav-container="greennature-testimonial-item" data-columns="3">
+                                            <ul class="slides">
+                                                @foreach($projects as $project)
+
+                                                <li class="testimonial-item">
+                                                    <div class="testimonial-item-inner greennature-skin-box">
+                                                        <div class="testimonial-content-wrapper">
+
+                                                            <div class="testimonial-content greennature-skin-content">
+
+                                                                <div class="portfolio-thumbnail greennature-image">
+                                                                    <img
+                                                                        src="{{ asset('storage/'.$project->image) }}"
+                                                                        alt=""
+                                                                        style="width: 250px; height: 150px"/><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$project->image) }}"
+                                                                        data-rel="fancybox"><span class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
+                                                                </div>
+                                                                <div class="portfolio-classic-content">
+                                                                    <h5 class="portfolio-title" style="margin-top: 10px; font-weight: 500;">
+                                                                        <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
+                                                                    </h5>
+                                                                    <div class="greennature-portfolio-info">
+                                                                        <div class="portfolio-info portfolio-tag">
+                                  <span class="info-head greennature-title">
+                                  </span>
+                                                                            <p>
+                                                                                {{ $project -> location }}
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                    </div>
+                                                                    <div class="portfolio-excerpt">
+                                                                        <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
+
+                                                                        <div class="clear"></div>
+                                                                        <a href="{{ route('viewCurrentProject', $project->id) }}"
+                                                                           class="excerpt-read-more">Read
+                                                                            More</a>
+                                                                    </div>
+                                                                    <a class="portfolio-classic-learn-more" href="#">Learn
+                                                                        More</a>
+                                                                </div>
+                                                                @endforeach
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+
+{{--                <section id="content-section-4">--}}
+{{--                    <div class="greennature-color-wrapper gdlr-show-all no-skin"--}}
+{{--                         style="background-color: #ffffff; padding-bottom: 25px">--}}
+{{--                        <div class="container">--}}
+{{--                            <div--}}
+{{--                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">--}}
+{{--                                <div class="greennature-item-title-container container">--}}
+{{--                                    <div class="greennature-item-title-head">--}}
+{{--                                        <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">--}}
+{{--                                            <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our--}}
+{{--                                            Recent Projects--}}
+{{--                                        </h3>--}}
+{{--                                        <a class="greennature-item-title-link" style="font-size:15px;"--}}
+{{--                                           href="{{ route('projects') }}">More--}}
+{{--                                            Projects</a>--}}
+{{--                                        <div class="clear"></div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="portfolio-item-wrapper type-classic-portfolio">--}}
+{{--                                <div class="portfolio-item-holder greennature-portfolio-column-4">--}}
+{{--                                    <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">--}}
+{{--                                        <div class="clear"></div>--}}
+
+{{--                                        @foreach($projects as $project)--}}
+{{--                                            <!--------------------------Project 1 Description------------------------>--}}
+{{--                                            <div class="three columns reveal fade-bottom">--}}
+{{--                                                <div--}}
+{{--                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
+{{--                                                    <div class="greennature-ux greennature-classic-portfolio-ux">--}}
+{{--                                                        <div class="portfolio-thumbnail greennature-image">--}}
+{{--                                                            <img--}}
+{{--                                                                src="{{ asset('storage/'.$project->image) }}"--}}
+{{--                                                                alt=""--}}
+{{--                                                                style="width: 250px; height: 150px"/><span--}}
+{{--                                                                class="portfolio-overlay">&nbsp;</span><a--}}
+{{--                                                                class="portfolio-overlay-icon"--}}
+{{--                                                                href="{{ asset('storage/'.$project->image) }}"--}}
+{{--                                                                data-rel="fancybox"><span class="portfolio-icon"><i--}}
+{{--                                                                        class="fa fa-search"></i></span></a>--}}
+{{--                                                        </div>--}}
+{{--                                                        <div class="portfolio-classic-content">--}}
+{{--                                                            <h3 class="portfolio-title">--}}
+{{--                                                                <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>--}}
+{{--                                                            </h3>--}}
+{{--                                                            <div class="greennature-portfolio-info">--}}
+{{--                                                                <div class="portfolio-info portfolio-tag">--}}
+{{--                                  <span class="info-head greennature-title">--}}
+{{--                                  </span>--}}
+{{--                                                                    <p>--}}
+{{--                                                                        {{ $project -> location }}--}}
+{{--                                                                    </p>--}}
+{{--                                                                </div>--}}
+{{--                                                                <div class="clear"></div>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="portfolio-excerpt">--}}
+{{--                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>--}}
+
+{{--                                                                <div class="clear"></div>--}}
+{{--                                                                <a href="{{ route('projects') }}"--}}
+{{--                                                                   class="excerpt-read-more">Read--}}
+{{--                                                                    More</a>--}}
+{{--                                                            </div>--}}
+{{--                                                            <a class="portfolio-classic-learn-more" href="#">Learn--}}
+{{--                                                                More</a>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <!--------------------------------------Project 1 Description---->--}}
+{{--                                        @endforeach--}}
+
+
+{{--                                    </div>--}}
+{{--                                    <div class="clear"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="clear"></div>--}}
+{{--                            <div class="clear"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="clear"></div>--}}
+{{--                </section>--}}
+
                 <section id="content-section-4">
-                    <div class="greennature-color-wrapper gdlr-show-all no-skin"
+                    <div class=""
                          style="background-color: #ffffff; padding-bottom: 25px">
                         <div class="container">
                             <div
@@ -483,12 +657,12 @@
                                 <div class="greennature-item-title-container container">
                                     <div class="greennature-item-title-head">
                                         <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
-                                            <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
-                                            Recent Projects
+                                            <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>
+                                            Timeline
                                         </h3>
                                         <a class="greennature-item-title-link" style="font-size:15px;"
-                                           href="{{ route('projects') }}">More
-                                            Projects</a>
+                                           href="{{ route('timeline') }}">View Full Timeline
+                                        </a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -498,53 +672,24 @@
                                     <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
                                         <div class="clear"></div>
 
-                                        @foreach($projects as $project)
-                                            <!--------------------------Project 1 Description------------------------>
-                                            <div class="three columns reveal fade-bottom">
-                                                <div
-                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                    <div class="greennature-ux greennature-classic-portfolio-ux">
-                                                        <div class="portfolio-thumbnail greennature-image">
-                                                            <img
-                                                                src="{{ asset('storage/'.$project->image) }}"
-                                                                alt=""
-                                                                style="width: 250px; height: 150px"/><span
-                                                                class="portfolio-overlay">&nbsp;</span><a
-                                                                class="portfolio-overlay-icon"
-                                                                href="{{ asset('storage/'.$project->image) }}"
-                                                                data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                        class="fa fa-search"></i></span></a>
-                                                        </div>
-                                                        <div class="portfolio-classic-content">
-                                                            <h3 class="portfolio-title">
-                                                                <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
-                                                            </h3>
-                                                            <div class="greennature-portfolio-info">
-                                                                <div class="portfolio-info portfolio-tag">
-                                  <span class="info-head greennature-title">
-                                  </span>
-                                                                    <p>
-                                                                        {{ $project -> location }}
-                                                                    </p>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                            <div class="portfolio-excerpt">
-                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
+                                        <div class="ul">
+                                            @foreach($timelines as $timeline)
+                                                @if($timeline->id%2==1)
+                                                    <li style="--accent-color:#eb681c">
+                                                        <div class="date">{{ $timeline->year }}</div>
+                                                        <div class="title">{{ $timeline->title }}</div>
+                                                        <div class="descr">{!! $timeline->content !!}</div>
+                                                    </li>
+                                                @elseif($timeline->id%2==0)
+                                                    <li style="--accent-color:#FBCA3E">
+                                                        <div class="date">{{ $timeline->year }}</div>
+                                                        <div class="title">{{ $timeline->title }}</div>
+                                                        <div class="descr">{!! $timeline->content !!} </div>
+                                                    </li>
+                                                @endif
+                                            @endforeach
 
-                                                                <div class="clear"></div>
-                                                                <a href="{{ route('projects') }}"
-                                                                   class="excerpt-read-more">Read
-                                                                    More</a>
-                                                            </div>
-                                                            <a class="portfolio-classic-learn-more" href="#">Learn
-                                                                More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--------------------------------------Project 1 Description---->
-                                        @endforeach
+                                        </div>
 
 
                                     </div>
@@ -558,44 +703,6 @@
                     <div class="clear"></div>
                 </section>
 
-                <section style="margin-top:5rem;margin-bottom:4rem;">
-                    <h1></h1>
-                    <div>
-                        <div
-                            class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
-                            <div class="greennature-item-title-container container">
-                                <div class="greennature-item-title-head">
-                                    <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
-                                        <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>
-                                        Timeline
-                                    </h3>
-                                    <a class="greennature-item-title-link" style="font-size:15px;"
-                                       href="{{ route('timeline') }}">View Full Timeline
-                                    </a>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ul">
-                        @foreach($timelines as $timeline)
-                            @if($timeline->id%2==1)
-                                <li style="--accent-color:#eb681c">
-                                    <div class="date">{{ $timeline->year }}</div>
-                                    <div class="title">{{ $timeline->title }}</div>
-                                    <div class="descr">{!! $timeline->content !!}</div>
-                                </li>
-                            @elseif($timeline->id%2==0)
-                                <li style="--accent-color:#FBCA3E">
-                                    <div class="date">{{ $timeline->year }}</div>
-                                    <div class="title">{{ $timeline->title }}</div>
-                                    <div class="descr">{!! $timeline->content !!} </div>
-                                </li>
-                            @endif
-                        @endforeach
-
-                    </div>
-                </section>
 
                 <!------------------------------ WHERE WE WORK (Map) ---------------------------------------->
                 <section id="content-section-4">
