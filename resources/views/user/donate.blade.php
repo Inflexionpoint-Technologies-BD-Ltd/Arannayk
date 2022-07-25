@@ -150,8 +150,8 @@
                         <div class="stunning-item-caption greennature-skin-content">
                             <p></p>
                         </div>
-                        <a class="stunning-item-button greennature-button large greennature-lb-payment" href="#" style="background-color: #fec428; color: #000;">Donate Now</a>
-                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="#">Act Now</a>
+                        <a class="stunning-item-button greennature-button large" href={{ route('donation-form') }} style="background-color: #fec428; color: #000;">Donate Now</a>
+                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="{{ route('career') }}">Act Now</a>
                     </div>
                 </div>
                 <div class="clear"></div>
