@@ -151,7 +151,7 @@
                             <p></p>
                         </div>
                         <a class="stunning-item-button greennature-button large" href={{ route('donation-form') }} style="background-color: #fec428; color: #000;">Donate Now</a>
-                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="{{ route('career') }}">Act Now</a>
+{{--                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="{{ route('career') }}">Act Now</a>--}}
                     </div>
                 </div>
                 <div class="clear"></div>
