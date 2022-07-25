@@ -112,7 +112,6 @@
     </div>
 
 
-
     <section class="container" style="margin-top:2rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
@@ -173,12 +172,19 @@
                                 <div id="text-8" class="widget widget_text greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Social Media</h3>
                                     <div class="clear"></div>
-                                    <div class="textwidget"><a href="https://www.facebook.com/arannaykfoundation/">
+                                    <div class="textwidget">
+                                        <a href="https://www.facebook.com/arannaykfoundation/">
                                             <i class="greennature-icon fa fa-facebook"
                                                style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
 
-                                        <a href="https://www.youtube.com/user/Arannayk/videos"><i class="greennature-icon fa fa-youtube-play"
+                                        <a href="https://www.youtube.com/user/Arannayk/videos"><i
+                                                class="greennature-icon fa fa-youtube-play"
+                                                style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                        <a href=""><i class="greennature-icon fa fa-linkedin"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                        <a href="https://www.flickr.com/people/137990726@N07/"><i
+                                                class="greennature-icon fa fa-flickr"
+                                                style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
 
                                     </div>
                                 </div>

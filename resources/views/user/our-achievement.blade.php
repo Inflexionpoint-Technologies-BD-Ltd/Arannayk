@@ -121,8 +121,9 @@
                 <!-- Above Sidebar Section-->
 
                 <!-- Sidebar With Content Section-->
+
                 <div class="with-sidebar-wrapper">
-                    <div class="with-sidebar-container container">
+                    <div class="with-sidebar-container" >
                         <div class="">
                             <div class="">
                                 <section id="content-section-1">
@@ -130,38 +131,46 @@
                                         <div class="blog-item-wrapper">
                                             <div class="blog-item-holder">
 
+
+
                                                 @foreach($achievements as $achievement)
                                                     <div class="greennature-item greennature-blog-full">
                                                         <div class="greennature-ux greennature-blog-full-ux">
                                                             <article id="post-862"
                                                                      class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                                 <div class="greennature-standard-style">
-                                                                    <div>
-                                                                        <a> <img
-                                                                                src="{{ asset('storage/'.$achievement->image)  }}"
-                                                                                class="press-release-image" alt=""/></a>
-                                                                    </div>
-
-                                                                    <div class="blog-content-wrapper">
-                                                                        <header class="post-header">
-                                                                            <h3 class="greennature-blog-title">
-                                                                                <a>{{ $achievement->title }}</a></h3>
-
-                                                                            <div class="clear"></div>
-                                                                        </header>
-                                                                        <!-- entry-header -->
-
-                                                                        <div class="greennature-blog-content" style="text-align: justify">
-                                                                            {!! $achievement->content !!}
-                                                                            <div class="greennature-blog-info"
-                                                                                 style="margin-top:2rem;">
-                                                                                <div class="clear"></div>
-                                                                            </div>
-                                                                            <div class="clear">
-                                                                            </div>
-                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+                                                                    <div class="four columns" style="margin-right:2rem;">
+                                                                        <div>
+                                                                            <a> <img
+                                                                                    src="{{ asset('storage/'.$achievement->image)  }}"
+                                                                                    class="press-release-image" alt=""/></a>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="" style="">
+                                                                        <div class="blog-content-wrapper">
+                                                                            <header class="post-header">
+                                                                                <h3 class="greennature-blog-title">
+                                                                                    <a>{{ $achievement->title }}</a></h3>
+
+                                                                                <div class="clear"></div>
+                                                                            </header>
+                                                                            <!-- entry-header -->
+
+                                                                            <div class="greennature-blog-content" style="text-align: justify">
+                                                                                {!! $achievement->content !!}
+                                                                                <div class="greennature-blog-info"
+                                                                                     style="margin-top:2rem;">
+                                                                                    <div class="clear"></div>
+                                                                                </div>
+                                                                                <div class="clear">
+                                                                                </div>
+                                                                                {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
                                                                     <!-- blog content wrapper -->
                                                                     <div class="clear"></div>
                                                                 </div>

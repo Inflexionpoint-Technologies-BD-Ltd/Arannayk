@@ -31,6 +31,18 @@
                     <a href="https://www.youtube.com/user/Arannayk/videos" target="_blank">
                         <i class="fa fa-youtube-play"></i></a>
                 </div>
+
+                <div class="social-icon">
+                    <a href="" target="_blank">
+                        <i class="fa fa-linkedin"></i></a>
+                </div>
+
+                <div class="social-icon">
+                    <a href="https://www.flickr.com/people/137990726@N07/" target="_blank">
+                        <i class="fa fa-flickr"></i></a>
+                </div>
+
+
                 <div class="social-icon" style="margin-left:2rem;">
                     <a href="{{ route('search') }}">
                         <i class="fa fa-search"></i></a>

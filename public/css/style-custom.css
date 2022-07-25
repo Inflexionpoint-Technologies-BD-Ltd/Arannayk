@@ -197,6 +197,7 @@ h6 {
 .greennature-main-menu>li>.sub-menu a,
 .greennature-main-menu>li>.sf-mega a {
 	color: #f4f4f4;
+    font-size: 14px;
 }
 
 .greennature-main-menu>li>.sub-menu a:hover,

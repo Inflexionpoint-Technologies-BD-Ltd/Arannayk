@@ -106,13 +106,22 @@
                     font-size: 20px;
                   "></i></a>
 
-
-
                     <a href="https://www.youtube.com/user/Arannayk/videos"><i class="greennature-icon fa fa-youtube-play" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
+                    <a href=""><i class="greennature-icon fa fa-linkedin" style="
+                    vertical-align: middle;
+                    color: #bbbbbb;
+                    font-size: 20px;
+                  "></i></a>
+                    <a href="https://www.flickr.com/people/137990726@N07/"><i class="greennature-icon fa fa-flickr" style="
+                    vertical-align: middle;
+                    color: #bbbbbb;
+                    font-size: 20px;
+                  "></i></a>
+
                 </div>
                 <div class="copyright-right">
                     Design And Developed by SiS Inflexionpoint (BD) Ltd.

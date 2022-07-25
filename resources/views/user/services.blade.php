@@ -112,38 +112,6 @@
     </div>
 
 
-    <section id="content-section-3">
-        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; ">
-            <div class="container">
-                <div class="six columns">
-                    <div class="greennature-video-item greennature-item">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lN-QMt0BB0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div class="greennature-item greennature-about-us-item greennature-normal">
-                        <div class="about-us-title-wrapper">
-                            <h3 class="about-us-title">What We Do?</h3>
-                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
-                            <div class="about-us-title-divider"></div>
-                        </div>
-                        <div class="about-us-content-wrapper">
-                            <div class="about-us-content greennature-skin-content">
-                                <p>AF has so far provided 150 grants to different organizations
-                                    including NGOs,
-                                    government agencies and academic institutions for conservation and restoration of
-                                    forests of Bangladesh. The major areas of interventions include...</p>
-                            </div>
-                            <a class="button-hover" href="{{ route('aboutUs') }}">Learn More</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </section>
 
     <section id="content-section-2">
         <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey"
@@ -289,9 +257,42 @@
         <div class="clear"></div>
     </section>
 
+    <section id="content-section-3">
+        <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; ">
+            <div class="container">
+                <div class="six columns">
+                    <div class="greennature-video-item greennature-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lN-QMt0BB0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <div class="greennature-item greennature-about-us-item greennature-normal">
+                        <div class="about-us-title-wrapper">
+                            <h3 class="about-us-title">What We Do?</h3>
+                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
+                            <div class="about-us-title-divider"></div>
+                        </div>
+                        <div class="about-us-content-wrapper">
+                            <div class="about-us-content greennature-skin-content">
+                                <p>AF has so far provided 150 grants to different organizations
+                                    including NGOs,
+                                    government agencies and academic institutions for conservation and restoration of
+                                    forests of Bangladesh. The major areas of interventions include...</p>
+                            </div>
+                            <a class="button-hover" href="{{ route('aboutUs') }}">Learn More</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
     <section id="content-section-5">
         <div class="greennature-color-wrapper  gdlr-show-all no-skin"
-             style="background-color: #f3f3f3; padding-top: 85px; padding-bottom: 62px; ">
+             style="background-color: #fff; padding-top: 85px; padding-bottom: 62px; ">
             <div class="container">
                 <div class="greennature-stunning-item-ux greennature-ux">
                     <div class="greennature-item greennature-stunning-item greennature-stunning-center">

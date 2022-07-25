@@ -38,7 +38,7 @@ class UserPanelController extends Controller
     public function index()
     {
         $services = Service::skip(0)->take(2)->get();
-        $projects = Project::skip(0)->take(4)->get();
+        $projects = Project::all();
         $publications = Publication::skip(0)->take(4)->get();
         $sliders = Slider::all();
         $timelines = Timeline::skip(0)->take(8)->get();
