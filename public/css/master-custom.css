@@ -1175,6 +1175,7 @@
     font-size: 72px;
     line-height: normal;
     color: rgb(238, 170, 68);
+    margin-top: -50px !important;
 }
 
 .msp-cn-1-7 {
@@ -1195,6 +1196,8 @@
     line-height: normal;
     color: rgb(238, 170, 68);
     text-transform: uppercase;
+    margin-top: -10px !important;
+
 }
 
 .msp-cn-1-10 {

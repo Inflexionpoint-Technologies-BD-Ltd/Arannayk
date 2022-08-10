@@ -146,18 +146,8 @@
                                                     alt="" title="" style="opacity: 0.3; object-fit: cover"
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
-                                                @if($loop->last)
-{{--                                                    <a href="{{ route('donate') }}" target="_self" style="margin-top:30px;"--}}
-{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"--}}
-{{--                                                       style=""--}}
-{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
-{{--                                                       data-duration="400"--}}
-{{--                                                       data-delay="987"--}}
-{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
-{{--                                                       data-offset-y="208"--}}
-{{--                                                       data-origin="ml" data-position="normal">Donate Now</a>--}}
-                                                @else
-                                                    <a href="{{ route('aboutUs') }}" target="_self" style="margin-top:30px;"
+                                                @if($loop->first)
+                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top:30px;"
                                                        class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
                                                        style=""
                                                        data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
@@ -166,6 +156,16 @@
                                                        data-ease="easeOutQuint" data-type="button" data-offset-x="1"
                                                        data-offset-y="208"
                                                        data-origin="ml" data-position="normal">Learn More</a>
+                                                @else
+{{--                                                    <a href="{{ route('aboutUs') }}" target="_self" style="margin-top:30px;"--}}
+{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"--}}
+{{--                                                       style=""--}}
+{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+{{--                                                       data-duration="400"--}}
+{{--                                                       data-delay="987"--}}
+{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+{{--                                                       data-offset-y="208"--}}
+{{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
                                                 @endif
 
 
@@ -200,24 +200,24 @@
                                                     alt="" title=""
                                                     data-src="{{asset('storage/'.$slider->image)}}"
                                                     style="opacity: 0.3; object-fit: cover"/>
-                                                @if($loop->last)
-{{--                                                <a href="{{ route('aboutUs') }}" target="_self" style="margin-top: 30px;"--}}
-{{--                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"--}}
-{{--                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
-{{--                                                   data-duration="400"--}}
-{{--                                                   data-delay="987"--}}
-{{--                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
-{{--                                                   data-offset-y="227"--}}
-{{--                                                   data-origin="ml" data-position="normal">Donate Now</a>--}}
+                                                @if($loop->first)
+                                                <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"
+                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                   data-duration="400"
+                                                   data-delay="987"
+                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                   data-offset-y="227"
+                                                   data-origin="ml" data-position="normal">Learn More</a>
                                                 @else
-                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"
-                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
-                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
-                                                       data-duration="400"
-                                                       data-delay="987"
-                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                                       data-offset-y="227"
-                                                       data-origin="ml" data-position="normal">Learn More</a>
+{{--                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"--}}
+{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"--}}
+{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+{{--                                                       data-duration="400"--}}
+{{--                                                       data-delay="987"--}}
+{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+{{--                                                       data-offset-y="227"--}}
+{{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
                                                 @endif
 
                                                 <div class="ms-layer msp-cn-1-9" style="margin-top: 30px !important; margin-bottom: 30px !important;"
