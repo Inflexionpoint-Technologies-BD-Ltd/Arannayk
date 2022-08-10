@@ -136,28 +136,28 @@
                             <!-- MasterSlider -->
                             <div id="P_slider_1" class="master-slider-parent ms-parent-id-1">
                                 <!-- MasterSlider Main -->
-                                <div id="slider_1" class="master-slider ms-skin-default">
+                                <div id="slider_1" class="master-slider ms-skin-default" style="background: black; overflow: hidden;">
                                     @foreach($sliders as $slider)
 
                                         @if($slider->serial == 1)
                                             <div class="ms-slide" data-delay="7" data-fill-mode="fill">
                                                 <img
                                                     src="{{ asset('storage/'.$slider->image)}}"
-                                                    alt="" title=""
+                                                    alt="" title="" style="opacity: 0.3; object-fit: cover"
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
                                                 @if($loop->last)
-                                                    <a href="{{ route('donate') }}" target="_self"
-                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
-                                                       style=""
-                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
-                                                       data-duration="400"
-                                                       data-delay="987"
-                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                                       data-offset-y="208"
-                                                       data-origin="ml" data-position="normal">Donate Now</a>
+{{--                                                    <a href="{{ route('donate') }}" target="_self" style="margin-top:30px;"--}}
+{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"--}}
+{{--                                                       style=""--}}
+{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+{{--                                                       data-duration="400"--}}
+{{--                                                       data-delay="987"--}}
+{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+{{--                                                       data-offset-y="208"--}}
+{{--                                                       data-origin="ml" data-position="normal">Donate Now</a>--}}
                                                 @else
-                                                    <a href="{{ route('aboutUs') }}" target="_self"
+                                                    <a href="{{ route('aboutUs') }}" target="_self" style="margin-top:30px;"
                                                        class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
                                                        style=""
                                                        data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
@@ -169,7 +169,7 @@
                                                 @endif
 
 
-                                                <div class="ms-layer msp-cn-1-3"
+                                                <div class="ms-layer msp-cn-1-3" style="margin-top:30px; !important;"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
                                                      data-duration="437" data-delay="625" data-ease="easeOutQuint"
                                                      data-offset-x="0"
@@ -177,7 +177,7 @@
                                                     {{ $slider->text_content_3 }}
                                                 </div>
 
-                                                <div class="ms-layer msp-cn-1-2"
+                                                <div class="ms-layer msp-cn-1-2" style="margin-top:30px; !important;"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
                                                      data-duration="425" data-delay="325" data-ease="easeOutQuint"
                                                      data-offset-x="0"
@@ -185,7 +185,7 @@
                                                     {{ $slider->text_content_2 }}
                                                 </div>
 
-                                                <div class="ms-layer msp-cn-1-1"
+                                                <div class="ms-layer msp-cn-1-1" style="margin-top:30px; !important;"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
                                                      data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
                                                      data-offset-y="-100"
@@ -198,18 +198,19 @@
                                                 <img
                                                     src="{{ asset('storage/'.$slider->image) }}"
                                                     alt="" title=""
-                                                    data-src="{{asset('storage/'.$slider->image)}}"/>
+                                                    data-src="{{asset('storage/'.$slider->image)}}"
+                                                    style="opacity: 0.3; object-fit: cover"/>
                                                 @if($loop->last)
-                                                <a href="{{ route('donate') }}" target="_self"
-                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
-                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
-                                                   data-duration="400"
-                                                   data-delay="987"
-                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                                   data-offset-y="227"
-                                                   data-origin="ml" data-position="normal">Donate Now</a>
+{{--                                                <a href="{{ route('aboutUs') }}" target="_self" style="margin-top: 30px;"--}}
+{{--                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"--}}
+{{--                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+{{--                                                   data-duration="400"--}}
+{{--                                                   data-delay="987"--}}
+{{--                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+{{--                                                   data-offset-y="227"--}}
+{{--                                                   data-origin="ml" data-position="normal">Donate Now</a>--}}
                                                 @else
-                                                    <a href="{{ route('aboutUs') }}" target="_self"
+                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"
                                                        class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
                                                        data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
                                                        data-duration="400"
@@ -219,7 +220,7 @@
                                                        data-origin="ml" data-position="normal">Learn More</a>
                                                 @endif
 
-                                                <div class="ms-layer msp-cn-1-9"
+                                                <div class="ms-layer msp-cn-1-9" style="margin-top: 30px !important; margin-bottom: 30px !important;"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
                                                      data-duration="437" data-delay="625" data-ease="easeOutQuint"
                                                      data-offset-x="0"

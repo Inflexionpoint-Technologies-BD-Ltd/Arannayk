@@ -42,6 +42,12 @@
                         <i class="fa fa-flickr"></i></a>
                 </div>
 
+                <div class="social-icon">
+                    <a href="https://twitter.com/Arannayk" target="_blank">
+                        <i class="fa fa-twitter"></i></a>
+                </div>
+
+
 
                 <div class="social-icon" style="margin-left:2rem;">
                     <a href="{{ route('search') }}">
