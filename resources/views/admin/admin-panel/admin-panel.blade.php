@@ -426,7 +426,15 @@
         toolbar: 'numlist bullist'
     });
 </script>
-
+{{--<script>--}}
+{{--    tinymce.init({--}}
+{{--        selector: 'textarea',--}}
+{{--        plugins: 'advlist autolink lists link image charmap preview anchor pagebreak | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',--}}
+{{--        toolbar_mode: 'floating',--}}
+{{--        toolbar: 'numlist bullist',--}}
+{{--        menubar: 'table',--}}
+{{--    });--}}
+{{--</script>--}}
 </body>
 
 </html>

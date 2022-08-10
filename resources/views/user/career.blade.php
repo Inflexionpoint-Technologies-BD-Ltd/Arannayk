@@ -120,7 +120,13 @@
                 <div class="above-sidebar-wrapper">
                     <section id="content-section-1">
                         <div class="section-container container eight columns">
+                            <h3 class="greennature-widget-title">Arannayk Foundation Careers </h3>
+                            <p style="margin-bottom:4rem; text-align: justify; margin-right:2rem; font-size:16px;">
+                                Are you passionate about conserving our forest and biodiversity for the future by making a difference?
+                                At Arannayk Foundation, we do not just dream of conserving forest for future, we are actively working on it!
+                                Are you ready to take up the challenge?
 
+                            </p>
                             @if($careers->count() > 0)
 
                                 @foreach($careers as $career)
@@ -144,7 +150,7 @@
 
                             @else
 
-                                <p>No Job information available</p>
+                                <p>No Job Vacancies available</p>
 
                             @endif
 

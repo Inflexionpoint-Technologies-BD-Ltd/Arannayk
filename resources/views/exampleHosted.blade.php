@@ -72,6 +72,8 @@
 
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Donate Now</h4>
+            <p>There is no limit to donate an amount. If you would like to donate a large amount and need help in the process please email at <a href="mailto:info@arannayk.org">info@arannayk.org.</a>
+            </p>
             <form action="{{ url('/pay') }}" method="POST" class="needs-validation">
                 <input type="hidden" value="{{ csrf_token() }}" name="_token" />
                 <div class="row">

@@ -159,7 +159,7 @@
                                                                             <div class="greennature-blog-content">
                                                                                 <p> {!! Str::limit($project->achievement, 500, ' ...') !!}
                                                                                 </p>
-{{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+                                                                                <a href="{{ route('viewCurrentProject', $project->id) }}" style="margin-bottom:4rem;" class="excerpt-read-more">Read More</a></div>
                                                                         </div>
                                                                     </div>
                                                                 </article>
