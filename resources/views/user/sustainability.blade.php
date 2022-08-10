@@ -132,6 +132,12 @@
                                     <p>{!! $ecosystem->content !!} </p>
                                 </div>
                             </div>
+                            <div>
+                                <img src="{{ asset('images/sustain-1.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                <img src="{{ asset('images/sustain-2.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                            </div>
+
+
                             <div class="clear"></div>
                         </div>
                     </div>

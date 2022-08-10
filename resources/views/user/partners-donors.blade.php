@@ -127,10 +127,10 @@
                                 @foreach($partners as $partner)
                                 <div class="gallery-column three columns">
                                     <div class="gallery-item">
-                                        <a href="{{ asset('storage/'.$partner->image) }} " data-fancybox-group="greennature-gal-1" data-rel="fancybox">
+                                        <div data-fancybox-group="greennature-gal-1" >
                                             <img src="{{ asset('storage/'.$partner->image) }}" alt="" class="partner-logo-style" width="400" height="300" />
-                                        </a>
-                                        <span class="gallery-caption logo-text-style">{{ $partner->name }}</span></div>
+                                        </div>
+                                        <span class="gallery-caption logo-text-style"></span></div>
                                 </div>
                                 @endforeach
 

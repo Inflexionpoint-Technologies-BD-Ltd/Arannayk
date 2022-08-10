@@ -143,7 +143,7 @@
                                                                         <div>
                                                                             <a> <img
                                                                                     src="{{ asset('storage/'.$achievement->image)  }}"
-                                                                                    class="press-release-image" alt=""/></a>
+                                                                                    class="press-release-image" style="width:150px; height: 150px;" alt=""/></a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="" style="">

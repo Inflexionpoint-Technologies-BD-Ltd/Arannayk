@@ -156,8 +156,9 @@
                                                                             </header>
                                                                             <!-- entry-header -->
 
-                                                                            <div class="greennature-blog-content">Major Achievements:
-                                                                                    <p>{!! $project->achievement !!}</p>
+                                                                            <div class="greennature-blog-content">
+                                                                                <p> {!! Str::limit($project->achievement, 500, ' ...') !!}
+                                                                                </p>
 {{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
                                                                         </div>
                                                                     </div>

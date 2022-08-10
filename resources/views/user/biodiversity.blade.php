@@ -132,6 +132,18 @@
                                 <div class="about-us-content greennature-skin-content">
                                     <p>{!! $ecosystem->content !!} </p>
                                 </div>
+                                <div>
+                                    <img src="{{ asset('images/bio-1.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-2.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-3.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-4.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-5.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-6.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-7.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{ asset('images/bio-8.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                    <img src="{{asset('images/bio-9.png') }}" style="width:80px; height:80px;">
+
+                                </div>
                             </div>
                             <div class="clear"></div>
                         </div>

@@ -131,6 +131,11 @@
                                 <div class="about-us-content greennature-skin-content">
                                     <p>{!! $ecosystem->content !!} </p>
                                 </div>
+                                <div>
+                                    <img src="{{ asset('images/climate-1.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+
+                                </div>
+
                             </div>
                             <div class="clear"></div>
                         </div>
