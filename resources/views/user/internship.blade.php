@@ -126,11 +126,10 @@
 
                                 @foreach($careers as $career)
                                     <div>
-                                        <div class="greennature-item greennature-accordion-item style-1"
+                                        <div class="greennature-item"
                                              style="margin-bottom: 60px;">
-                                            <div class="accordion-tab active pre-active">
-                                                <h4 class="accordion-title"><i
-                                                        class="icon-minus"></i><span>{{ $career->title }}</span></h4>
+                                            <div class="">
+                                                <h4 class="accordion-title"><span>{{ $career->title }}</span></h4>
                                                 <div class="accordion-content">
                                                     <p>{!! $career->description !!} </p>
                                                     <p>Deadline: {{ $career->deadline }}</p>
