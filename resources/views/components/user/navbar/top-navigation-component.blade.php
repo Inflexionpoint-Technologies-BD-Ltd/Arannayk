@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="social-icon">
-                    <a href="https://www.flickr.com/people/137990726@N07/" target="_blank">
+                    <a href="https://www.flickr.com/photos/137990726@N07/albums/" target="_blank">
                         <i class="fa fa-flickr"></i></a>
                 </div>
 

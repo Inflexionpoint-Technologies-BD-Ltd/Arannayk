@@ -116,7 +116,7 @@
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
-                    <a href="https://www.flickr.com/people/137990726@N07/"><i class="greennature-icon fa fa-flickr" style="
+                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i class="greennature-icon fa fa-flickr" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;

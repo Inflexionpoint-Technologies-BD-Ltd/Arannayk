@@ -178,7 +178,7 @@
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
                                         <a href=""><i class="greennature-icon fa fa-linkedin"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
-                                        <a href="https://www.flickr.com/people/137990726@N07/"><i
+                                        <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i
                                                 class="greennature-icon fa fa-flickr"
                                                 style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
                                         <a href="https://twitter.com/Arannayk"><i
