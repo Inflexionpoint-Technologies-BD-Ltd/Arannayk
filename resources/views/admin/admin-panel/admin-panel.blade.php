@@ -430,9 +430,9 @@
 <script>
     tinymce.init({
         selector: 'textarea',
-        plugins: ['advlist autolink lists link image charmap preview anchor pagebreak' , 'table'],
+        plugins: ['advlist autolink lists link image charmap preview anchor pagebreak' , 'table','lists'],
         toolbar_mode: 'floating',
-        toolbar: 'numlist bullist | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',
+        toolbar: ['numlist bullist','table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol'],
         // menubar: 'table',
     });
 </script>
