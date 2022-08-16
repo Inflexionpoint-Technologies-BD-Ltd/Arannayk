@@ -390,7 +390,16 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
+{{-------------------------------- hiding tinymce domain notification ----------------------------- --}}
 
+<style>
+    .tox-notifications-container{
+        display: none !important;
+    }
+</style>
+
+
+{{-------------------------------- hiding tinymce domain notification ----------------------------- --}}
 
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -421,9 +430,10 @@
 <script>
     tinymce.init({
         selector: 'textarea',
-        plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+        plugins: ['advlist autolink lists link image charmap preview anchor pagebreak' , 'table'],
         toolbar_mode: 'floating',
-        toolbar: 'numlist bullist'
+        toolbar: 'numlist bullist | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',
+        // menubar: 'table',
     });
 </script>
 {{--<script>--}}
