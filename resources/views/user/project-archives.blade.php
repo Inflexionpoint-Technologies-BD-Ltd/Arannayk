@@ -156,7 +156,7 @@
                                                                             </header>
                                                                             <!-- entry-header -->
 
-                                                                            <div class="greennature-blog-content">Major Achievements:
+                                                                            <div class="greennature-blog-content"><h6></h6>
                                                                                     <p>{!! $archive->achievement !!}</p>
                                                                                 <div class="clear"></div>
 {{--                                                                                <a href="" class="excerpt-read-more">Read More</a>--}}
