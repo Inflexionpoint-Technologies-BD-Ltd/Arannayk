@@ -427,12 +427,21 @@
     });
 </script>
 
+<script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5/tinymce.min.js"></script>
+
+
+
 <script>
     tinymce.init({
+        /* ... */
+        fontsize_formats: "8pt 9pt 10pt 11pt 12pt 13pt 14pt 15pt 16pt 17pt 18pt 24pt 30pt 36pt 48pt 60pt",
         selector: 'textarea',
-        plugins: ['advlist autolink lists link image charmap preview anchor pagebreak' , 'table','lists'],
+        plugins: ['advlist autolink lists link image charmap preview anchor pagebreak' , 'table'],
         toolbar_mode: 'floating',
-        toolbar: ['numlist bullist','table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol'],
+        toolbar: 'numlist bullist | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol',
+        content_style: "@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');",
+        font_formats:
+            "Andale Mono=andale mono,times; Arial=arial,helvetica,sans-serif; Arial Black=arial black,avant garde; Book Antiqua=book antiqua,palatino; Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Symbol=symbol; Tahoma=tahoma,arial,helvetica,sans-serif; Terminal=terminal,monaco; Times New Roman=times new roman,times; Trebuchet MS=trebuchet ms,geneva; Verdana=verdana,geneva; Webdings=webdings; Wingdings=wingdings,zapf dingbats; Lato='Lato'",
         // menubar: 'table',
     });
 </script>
