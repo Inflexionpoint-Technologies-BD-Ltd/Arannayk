@@ -146,8 +146,8 @@
                                                                                     class="press-release-image" style="width:150px; height: 150px;" alt=""/></a>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="" style="">
-                                                                        <div class="blog-content-wrapper">
+                                                                    <div class="six columns" style="">
+                                                                        <div class="">
                                                                             <header class="post-header">
                                                                                 <h3 class="greennature-blog-title">
                                                                                     <a>{{ $achievement->title }}</a></h3>
