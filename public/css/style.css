@@ -973,7 +973,6 @@ html .woocommerce .greennature-widget-title {
 }
 
 .greennature-page-title-wrapper {
-	padding: 85px 0px 80px;
 	position: relative;
 	z-index: 89;
 	line-height: 1;
@@ -1011,10 +1010,11 @@ html .woocommerce .greennature-widget-title {
 
 .greennature-page-title-wrapper .greennature-page-caption {
 	font-size: 35px;
-	margin: 12px 17px 0px;
+	margin: -12px 17px 0px;
 	display: block;
 	font-style: italic;
     font-weight:700;
+    padding-bottom: 2.8rem;
 }
 
 .greennature-page-title-wrapper .greennature-page-title-gimmick {

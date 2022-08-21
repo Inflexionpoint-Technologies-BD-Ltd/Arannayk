@@ -133,9 +133,9 @@
                                                         <div class="greennature-ux greennature-blog-full-ux">
                                                             <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                                 <div class="greennature-standard-style">
-                                                                    <div>
-                                                                        <a> <img src="{{ asset('storage/'.$procurement->image)  }}" class="press-release-image" alt=""  /></a>
-                                                                    </div>
+{{--                                                                    <div>--}}
+{{--                                                                        <a> <img src="{{ asset('storage/'.$procurement->image)  }}" class="press-release-image" alt=""  /></a>--}}
+{{--                                                                    </div>--}}
 
                                                                     <div class="blog-content-wrapper">
                                                                         <header class="post-header">

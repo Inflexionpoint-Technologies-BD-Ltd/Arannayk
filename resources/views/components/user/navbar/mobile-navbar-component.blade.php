@@ -42,9 +42,6 @@
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a href="{{ route('map') }}" target="_blank">Where We Work</a>
             </li>
-            <li class="menu-item menu-item-has-children menu-item-15">
-                <a href="{{ route('donate') }}">Donate</a>
-            </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
                 <a>Get Involved</a>
@@ -76,6 +73,21 @@
                     </li>
                     <li class="menu-item"><a href="{{ route('tools') }}">Tools & Data</a></li>
                 </ul>
+            </li>
+
+            <li class="menu-item menu-item-has-children menu-item-15">
+                <a>Ecosystem</a>
+                <ul class="dl-submenu">
+                    <li class="menu-item"><a href="{{ route('forest') }}">Forest</a></li>
+                    <li class="menu-item"><a href="{{ route('biodiversity') }}">Bio-Diversity</a></li>
+                    <li class="menu-item"><a href="{{ route('climate') }}">Climate Change</a></li>
+                    <li class="menu-item"><a href="{{ route('sustainability') }}">Sustainability</a></li>
+                    <li class="menu-item"><a href="{{ route('gender') }}">Gender</a></li>
+
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children menu-item-15" style="background-color:#ecb338">
+                <a href="{{ route('donate') }}">Donate</a>
             </li>
         </ul>
     </div>
