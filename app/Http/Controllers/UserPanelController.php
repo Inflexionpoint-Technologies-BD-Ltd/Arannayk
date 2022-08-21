@@ -182,7 +182,7 @@ class UserPanelController extends Controller
 
     public function achievements()
     {
-        $achievements = Achievement::paginate(5);
+        $achievements = Achievement::all();
         return view('user.our-achievement', compact('achievements'));
     }
 

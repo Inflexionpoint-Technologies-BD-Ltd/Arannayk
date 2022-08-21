@@ -181,13 +181,13 @@
                                                             <a class="portfolio-classic-learn-more" href="#">Learn
                                                                 More</a>
                                                         </div>
-                                                        @endforeach
+
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </li>
-
+                                    @endforeach
 
                                 </ul>
                             </div>
