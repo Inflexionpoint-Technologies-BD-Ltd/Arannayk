@@ -132,15 +132,19 @@
 
                                                         <div class="greennature-item greennature-blog-full">
                                                             <div class="greennature-ux greennature-blog-full-ux">
-                                                                <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                                <article id="post-862"
+                                                                         class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                                                                     <div class="greennature-standard-style">
                                                                         <div>
-                                                                            <a> <img src="{{ asset('storage/'.$projects->image)  }}" class="press-release-image" alt=""  /></a>
+                                                                            <a> <img
+                                                                                    src="{{ asset('storage/'.$projects->image)  }}"
+                                                                                    class="press-release-image" alt=""/></a>
                                                                         </div>
 
                                                                         <div class="blog-content-wrapper">
                                                                             <header class="post-header">
-                                                                                <h3 class="greennature-blog-title"><a>{{ $projects->title }}</a></h3>
+                                                                                <h3 class="greennature-blog-title">
+                                                                                    <a>{{ $projects->title }}</a></h3>
 
                                                                                 <div class="clear"></div>
                                                                             </header>
@@ -148,8 +152,12 @@
 
                                                                             <div class="greennature-blog-content">
                                                                                 {!! $projects->achievement !!}
-                                                                                <div class="greennature-blog-info" style="margin-top:2rem;">
-                                                                                    <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $projects->tag }}</a></div>
+                                                                                <div class="greennature-blog-info"
+                                                                                     style="margin-top:2rem;">
+                                                                                    <div
+                                                                                        class="blog-info blog-author greennature-skin-info">
+                                                                                        <i class="fa fa-tags"></i><a>{{ $projects->tag }}</a>
+                                                                                    </div>
                                                                                     <div class="clear"></div>
                                                                                 </div>
                                                                                 <div class="clear">
@@ -198,38 +206,10 @@
                                 {{--                                    <div class="clear"></div>--}}
                                 {{--                                    <div class="textwidget">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>--}}
                                 {{--                                </div>--}}
-                                <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                                <div id="gdlr-recent-portfolio-widget-2"
+                                     class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
                                     <div class="widget-box-style">
                                         <h3 class="greennature-widget-title" style="color:#fff;">Project Details</h3>
-
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="greennature-recent-port-widget">
-
-
-                                            <div class="recent-post-widget">
-                                                <div class="recent-post-widget-thumbnail">
-                                                    <a href=""></a>
-                                                </div>
-                                                <div class="recent-post-widget-content">
-                                                    <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-location-arrow"></i><a>{{ $projects->location }} </a></div>
-
-                                                    <div class="recent-post-widget-info">
-                                                        {{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-
-
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-
-                                <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                    <div class="widget-box-style">
-                                        <h3 class="greennature-widget-title" style="color:#fff;">Partners & Donors</h3>
 
                                     </div>
                                     <div class="clear"></div>
@@ -241,7 +221,9 @@
                                                 <a href=""></a>
                                             </div>
                                             <div class="recent-post-widget-content">
-                                                <div class="blog-info blog-comment greennature-skin-info"><i class="fa fa-heart"></i><a>Funded By - {{ $projects->funded_by}} </a></div>
+                                                <div class="blog-info blog-comment greennature-skin-info"><i
+                                                        class="fa fa-location-arrow"></i><a>{{ $projects->location }} </a>
+                                                </div>
 
                                                 <div class="recent-post-widget-info">
                                                     {{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-calendar"></i><a>{{ $project->date }}</a></div>--}}
@@ -256,12 +238,90 @@
                                     </div>
                                 </div>
 
-                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                                <div id="gdlr-recent-portfolio-widget-2"
+                                     class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                                    <div class="widget-box-style">
+                                        <h3 class="greennature-widget-title" style="color:#fff;">Partners & Donors</h3>
+
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="greennature-recent-port-widget">
+
+
+                                        <div class="recent-post-widget">
+                                            <div class="recent-post-widget-thumbnail">
+                                                <a href=""></a>
+                                            </div>
+                                            <div class="recent-post-widget-content">
+                                                <div class="blog-info blog-comment greennature-skin-info"><i
+                                                        class="fa fa-heart"></i><a>Funded By
+                                                        - {{ $projects->funded_by}} </a></div>
+
+                                                <div class="recent-post-widget-info">
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+
+                                {{--  ------------------------------------------------ SDG Achievement -------------------------------------------- --}}
+
+                                <div id="gdlr-recent-portfolio-widget-2"
+                                     class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                                    <div class="widget-box-style">
+                                        <h3 class="greennature-widget-title" style="color:#fff;">SDG'S Achieved</h3>
+
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="greennature-recent-port-widget">
+
+
+                                        <div class="recent-post-widget">
+                                            <div class="recent-post-widget-thumbnail">
+                                                <a href=""></a>
+                                            </div>
+                                            <div class="recent-post-widget-content">
+
+                                                <div>
+
+                                                    @foreach($svgs as $svg)
+                                                        <img src="{{ asset('storage/'.$svg->image) }}" alt=""
+                                                             style="width: 100px; height: 100px">
+                                                    @endforeach
+                                                </div>
+
+
+                                                <div class="recent-post-widget-info">
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+
+                                {{--  ------------------------------------------------ SDG Achievement -------------------------------------------- --}}
+
+
+                                <div id="tag_cloud-2"
+                                     class="widget widget_tag_cloud greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Tags</h3>
                                     <div class="clear"></div>
                                     <div class="tagcloud">
 
-                                            <a href="{{ route('projects',$projects->tag) }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $projects->tag }}</a>
+                                        <a href="{{ route('projects',$projects->tag) }}"
+                                           class="tag-cloud-link tag-link-11 tag-link-position-1"
+                                           style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $projects->tag }}</a>
 
                                     </div>
                                 </div>
@@ -280,8 +340,6 @@
             <div class="clear"></div>
         </div>
     </section>
-
-
 
 
     <!-------------------------------------------------------------------------
