@@ -120,7 +120,7 @@
             <div class="six columns">
                 <div class="greennature-video-item greennature-item">
                     <iframe src="{{ asset('storage/'.$video->image)}}"
-                            width="620" height="348"></iframe>
+                            width="450" height="348"></iframe>
                 </div>
                 <div class="greennature-item greennature-about-us-item greennature-normal">
                     <div class="about-us-title-wrapper">
