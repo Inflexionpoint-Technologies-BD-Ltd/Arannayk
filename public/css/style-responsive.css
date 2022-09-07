@@ -93,6 +93,9 @@ html body {
 }
 
 @media only screen and (max-width: 959px) {
+    iframe{
+        width: 300px;
+    }
     .search__input {
         margin-left:2rem;
         width: 80%;
@@ -133,6 +136,9 @@ html body {
 
 /*--- mobile landscape style ---*/
 @media only screen and (max-width: 767px) {
+    iframe{
+        width:300px;
+    }
     .search__input {
         margin-left:2rem;
         width: 50%;
@@ -494,6 +500,10 @@ html body {
 	.greennature-skill-item-wrapper .greennature-skill-item-title{
 		font-size:32px;
 	}
+    iframe{
+        width: 250px;
+
+    }
 }
 
 
