@@ -32,6 +32,13 @@
                 <td>{{ $project->funded_by }}</td>
                 <td>{{ $project->date }}</td>
                 <td><img src="{{ asset('storage/'.$project->image) }}" alt="" style="width: 100px"></td>
+
+                {{-- ----------------------------- SDG ICONS --------------------------------- --}}
+
+                <td><a href="{{ route('svg.show',[$project->id,'project_type'=>'project']) }}" class="btn btn-info">SDG ICONS</a></td>
+
+                {{-- ----------------------------- SDG ICONS --------------------------------- --}}
+
                 <td><a href="{{ route('project.edit',$project->id) }}" class="btn btn-info">Update</a></td>
                 <td>
                     <form action="{{ route('project.destroy',$project->id) }}" method="post">

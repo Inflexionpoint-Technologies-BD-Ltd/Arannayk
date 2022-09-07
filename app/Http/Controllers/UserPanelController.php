@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Svg;
 use Illuminate\Support\Str;
 use App\Slider;
 use App\Service;
@@ -43,7 +44,7 @@ class UserPanelController extends Controller
         $sliders = Slider::all();
         $timelines = Timeline::skip(0)->take(8)->get();
 
-        return view('user.front', compact('services', 'projects', 'publications', 'sliders','timelines'));
+        return view('user.front', compact('services', 'projects', 'publications', 'sliders', 'timelines'));
     }
     //-------------------------------------------------HOMEPAGE CONTROLLERS----------------------//
 
@@ -93,6 +94,7 @@ class UserPanelController extends Controller
 
         return view('user.single-press', compact('press'));
     }
+
     public function singleAchievement($id)
     {
 
@@ -107,13 +109,18 @@ class UserPanelController extends Controller
     {
         $projects = Project::find($id);
 
-        return view('user.single-current-project', compact('projects'));
+        $svgs = Svg::where('project_id', $id)->get();
+
+        return view('user.single-current-project', compact('projects', 'svgs'));
     }
+
     public function single_archived_projects($id)
     {
         $projects = Archive::find($id);
 
-        return view('user.single-current-project', compact('projects'));
+        $svgs = Svg::where('archive_id', $id)->get();
+
+        return view('user.single-current-project', compact('projects','svgs'));
     }
 
 
@@ -369,15 +376,14 @@ class UserPanelController extends Controller
 //        return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'publications', 'blogs', 'press'));
 
 
-
         $search_data = "rdgrdghrdglrdgdjhgkrdhgrdjklgdhgrdjklghg";
 
-        $achievements = Achievement::where('title', 'like','%'.$search_data.'%')->get();
-        $projects = Project::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
-        $archives = Archive::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
-        $press = Press::where('title', 'like','%'.$search_data.'%')->get();
-        $services = Service::where('title', 'like','%'.$search_data.'%')->get();
-        $blogs = Blog::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $achievements = Achievement::where('title', 'like', '%' . $search_data . '%')->get();
+        $projects = Project::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
+        $archives = Archive::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
+        $press = Press::where('title', 'like', '%' . $search_data . '%')->get();
+        $services = Service::where('title', 'like', '%' . $search_data . '%')->get();
+        $blogs = Blog::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
 
         return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'blogs', 'press'));
 
@@ -388,14 +394,14 @@ class UserPanelController extends Controller
 
     public function searchForm()
     {
-        $search_data =  \request('search');
+        $search_data = \request('search');
 
-        $achievements = Achievement::where('title', 'like','%'.$search_data.'%')->get();
-        $projects = Project::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
-        $archives = Archive::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
-        $press = Press::where('title', 'like','%'.$search_data.'%')->get();
-        $services = Service::where('title', 'like','%'.$search_data.'%')->get();
-        $blogs = Blog::where('title', 'like','%'.$search_data.'%')->orWhere('tag', 'like','%'.$search_data.'%')->get();
+        $achievements = Achievement::where('title', 'like', '%' . $search_data . '%')->get();
+        $projects = Project::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
+        $archives = Archive::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
+        $press = Press::where('title', 'like', '%' . $search_data . '%')->get();
+        $services = Service::where('title', 'like', '%' . $search_data . '%')->get();
+        $blogs = Blog::where('title', 'like', '%' . $search_data . '%')->orWhere('tag', 'like', '%' . $search_data . '%')->get();
         return view('user.search', compact('achievements', 'projects', 'archives', 'services', 'blogs', 'press'));
     }
 
