@@ -120,7 +120,7 @@ class UserPanelController extends Controller
 
         $svgs = Svg::where('archive_id', $id)->get();
 
-        return view('user.single-current-project', compact('projects','svgs'));
+        return view('user.single-archived-project', compact('projects','svgs'));
     }
 
 

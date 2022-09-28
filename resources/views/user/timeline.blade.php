@@ -116,13 +116,13 @@
     <h1></h1>
     <div class="ul">
         @foreach($timelines as $timeline)
-            @if($timeline->id%2==1)
+            @if($timeline->year%2==1)
         <li style="--accent-color:#eb681c">
             <div class="date">{{ $timeline->year }}</div>
             <div class="title">{{ $timeline->title }}</div>
             <div class="descr">{!! $timeline->content !!}</div>
         </li>
-                @elseif($timeline->id%2==0)
+                @elseif($timeline->year%2==0)
         <li style="--accent-color:#FBCA3E">
             <div class="date">{{ $timeline->year }}</div>
             <div class="title">{{ $timeline->title }}</div>
