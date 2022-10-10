@@ -390,11 +390,12 @@
                 <section id="content-section-3">
                     <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all no-skin"
                          id="greennature-parallax-wrapper-1" data-bgspeed="0.11" style="
-                        background-image: url({{ asset('upload/donation-bg.jpg') }});
+                        background-image: url({{ asset('upload/elephants.jpeg') }});
+                       box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);
                         padding-top: 90px;
                         padding-bottom: 65px;
                         ">
-                        <h2 style="text-align: center; margin-bottom: 2rem">
+                        <h2 style="text-align: center; margin-bottom: 2rem; color: #fff">
                             Our Services
                         </h2>
                         <div class="container">
@@ -675,13 +676,13 @@
 
                                         <div class="ul">
                                             @foreach($timelines as $timeline)
-                                                @if($timeline->id%2==1)
+                                                @if($timeline->year%2==1)
                                                     <li style="--accent-color:#eb681c">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
                                                         <div class="descr">{!! $timeline->content !!}</div>
                                                     </li>
-                                                @elseif($timeline->id%2==0)
+                                                @elseif($timeline->year%2==0)
                                                     <li style="--accent-color:#FBCA3E">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
@@ -934,7 +935,7 @@
                     <div
                         class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
                         id="greennature-parallax-wrapper-3" data-bgspeed="0.15" style="
-                        background-image: url({{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }});
+                        background-image: url({{ asset('./images/slider_images/bg-100.jpeg') }});
                         padding-top: 100px;
                         padding-bottom: 80px;
                         ">

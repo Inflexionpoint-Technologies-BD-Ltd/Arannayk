@@ -124,7 +124,7 @@
                                 <div class="personnel-author-image greennature-skin-border"><img src="{{ asset('storage/'.$team->image) }}" class="team-image" alt="" /></div>
                                 <div class="personnel-info">
                                     <div class="personnel-author greennature-skin-title">{{ $team->name }}</div>
-                                    <div class="personnel-position greennature-skin-info">{{ $team->position }}</div>
+                                    <div class="personnel-position greennature-skin-info" style="font-size: 11px">{{ $team->position }}</div>
                                 </div>
                             </div>
                         </div>
