@@ -122,7 +122,7 @@
 {{--                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
 {{--                </div>--}}
                 <div class="greennature-video-item greennature-item">
-                    <iframe src="{{ asset('storage/'.$video->image)}}"
+                    <iframe src="https://www.youtube.com/watch?v=DWaB4PXCwFU"
                             width="400" height="315"></iframe>
                 </div>
                 <div class="greennature-item greennature-about-us-item greennature-normal">
