@@ -112,46 +112,43 @@
     </div>
 
 
-{{--    <section id="content-section-3">--}}
-{{--    <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">--}}
-{{--        <div class="container">--}}
+    <section id="content-section-3">
+    <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
+        <div class="container">
 
-{{--            @foreach($videos as $video)--}}
-{{--            <div class="six columns">--}}
-{{--                <div class="greennature-video-item greennature-item">--}}
-{{--                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
-{{--                </div>--}}
-{{--                <div class="greennature-video-item greennature-item">--}}
-{{--                    <iframe src="{{ asset('storage/'.$video->image)}}"--}}
-{{--                            width="450" height="348"></iframe>--}}
-{{--                </div>--}}
-{{--                <div class="greennature-item greennature-about-us-item greennature-normal">--}}
-{{--                    <div class="about-us-title-wrapper">--}}
-{{--                        <h4 class="greennature-blog-title">{{ $video->title }}</h4>--}}
-{{--                        <div class="about-us-caption greennature-title-font greennature-skin-info">--}}
-{{--                            <p>{!! $video->content !!}</p>--}}
-{{--                        </div>--}}
-{{--                        <div class="about-us-title-divider"></div>--}}
-{{--                    </div>--}}
-{{--                    <div class="about-us-content-wrapper">--}}
-{{--                        <div class="about-us-content greennature-skin-content">--}}
-{{--                            <p></p>--}}
-{{--                        </div>--}}
+            @foreach($videos as $video)
+            <div class="six columns">
+                <div class="greennature-video-item greennature-item">
+                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
-{{--                    </div>--}}
-{{--                    <div class="clear"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            @endforeach--}}
+                <div class="greennature-item greennature-about-us-item greennature-normal">
+                    <div class="about-us-title-wrapper">
+                        <h4 class="greennature-blog-title">{{ $video->title }}</h4>
+                        <div class="about-us-caption greennature-title-font greennature-skin-info">
+                            <p>{!! $video->content !!}</p>
+                        </div>
+                        <div class="about-us-title-divider"></div>
+                    </div>
+                    <div class="about-us-content-wrapper">
+                        <div class="about-us-content greennature-skin-content">
+                            <p></p>
+                        </div>
 
-{{--            <div class="clear"></div>--}}
-{{--                <div class="pagination-style">--}}
-{{--                    {{ $videos->links() }}--}}
-{{--                </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="clear"></div>--}}
-{{--    </section>--}}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            @endforeach
+
+            <div class="clear"></div>
+                <div class="pagination-style">
+                    {{ $videos->links() }}
+                </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    </section>
 
     <br> <br>
 
