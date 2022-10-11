@@ -119,7 +119,7 @@
             @foreach($videos as $video)
             <div class="six columns">
                 <div class="greennature-video-item greennature-item">
-                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="greennature-item greennature-about-us-item greennature-normal">
