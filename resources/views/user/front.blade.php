@@ -675,20 +675,22 @@
                                         <div class="clear"></div>
 
                                         <div class="ul">
+                                            @php($tid=0)
                                             @foreach($timelines as $timeline)
-                                                @if($timeline->year%2==1)
+                                                @if($tid%2==1)
                                                     <li style="--accent-color:#eb681c">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
                                                         <div class="descr">{!! $timeline->content !!}</div>
                                                     </li>
-                                                @elseif($timeline->year%2==0)
+                                                @elseif($tid%2==0)
                                                     <li style="--accent-color:#FBCA3E">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
                                                         <div class="descr">{!! $timeline->content !!} </div>
                                                     </li>
                                                 @endif
+                                                    @php($tid++)
                                             @endforeach
 
                                         </div>
