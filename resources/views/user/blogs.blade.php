@@ -140,14 +140,15 @@
 
                                                                 <div class="blog-content-wrapper">
                                                                     <header class="post-header">
-                                                                        <h3 class="greennature-blog-title"><a>{{ $blog->title }}</a></h3>
-
+                                                                        <h3 class="greennature-blog-title">
+                                                                        <a href="{{ route('viewBlog', $blog->id) }}">{{ $blog -> title }}</a>
+                                                                        </h3>
                                                                         <div class="clear"></div>
                                                                     </header>
                                                                     <!-- entry-header -->
 
                                                                     <div class="greennature-blog-content" style="text-align: justify">
-                                                                        {!! $blog->content !!}
+                                                                        {!! \Illuminate\Support\Str::words($blog->content,80,'...')  !!}
                                                                         <div class="greennature-blog-info" style="margin-top:2rem;">
                                                                             <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blog->tag }}</a></div>
                                                                             <div class="clear"></div>
