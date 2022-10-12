@@ -935,9 +935,8 @@
                     <div
                         class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
                         id="greennature-parallax-wrapper-3" data-bgspeed="0.15" style="
-                        background-image: url({{ asset('./images/slider_images/bg-100.jpeg') }});
-                        padding-top: 100px;
-                        padding-bottom: 80px;
+                        background-image: url({{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }});
+
                         ">
                         <h2 class="section-title">
                             Get Involved
