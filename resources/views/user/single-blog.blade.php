@@ -112,84 +112,156 @@
         </div>
     </div>
 
-
-    <section>
+    <section style="margin-top: 3rem;">
         <div class="content-wrapper">
             <div class="greennature-content">
 
                 <!-- Above Sidebar Section-->
 
                 <!-- Sidebar With Content Section-->
-                <div class="with-sidebar-wrapper">
-                    <div class="with-sidebar-container container">
-                        <div class="">
-                            <div class="">
-                                <section id="content-section-1">
-                                    <div class="section-container container">
-                                        <div class="blog-item-wrapper">
-                                            <div class="blog-item-holder">
+                <div class="content-wrapper">
+                    <div class="greennature-content">
 
+                        <div class="with-sidebar-wrapper">
+                            <section id="content-section-1">
+                                <div class="section-container container">
+                                    <div class="portfolio-item-wrapper type-classic-portfolio"
+                                         style="margin-bottom: 20px;">
+                                        <div class="portfolio-item-holder  greennature-portfolio-column-3">
+                                            <div class="greennature-isotope" data-type="portfolio"
+                                                 data-layout="fitRows">
+                                                <div class="clear"></div>
 
                                                 @if($blogs != null)
-
-                                                    <div class="greennature-item greennature-blog-full">
-                                                        <div class="greennature-ux greennature-blog-full-ux">
-                                                            <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                                <div class="greennature-standard-style">
-                                                                    <div>
-                                                                        <a> <img src="{{ asset('storage/'.$blogs->image)  }}" class="press-release-image" alt=""  /></a>
-                                                                    </div>
-
-                                                                    <div class="blog-content-wrapper">
-                                                                        <header class="post-header">
-                                                                            <h3 class="greennature-blog-title"><a>{{ $blogs->title }}</a></h3>
-
-                                                                            <div class="clear"></div>
-                                                                        </header>
-                                                                        <!-- entry-header -->
-
-                                                                        <div class="greennature-blog-content">
-                                                                            {!! $blogs->content !!}
-                                                                            <div class="greennature-blog-info" style="margin-top:2rem;">
-                                                                                <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blogs->tag }}</a></div>
-                                                                                <div class="clear"></div>
-                                                                            </div>
-                                                                            <div class="clear">
-                                                                            </div>
-                                                                            {{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- blog content wrapper -->
-                                                                    <div class="clear"></div>
+                                                    <div class="three columns">
+                                                        <div
+                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                            <div
+                                                                class="greennature-ux greennature-classic-portfolio-ux">
+                                                                <div class="portfolio-thumbnail greennature-image"><img
+                                                                        src="{{ asset('storage/'.$blogs->image)}}"
+                                                                        alt="" class="photos-style"
+                                                                    /><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        data-rel="fancybox"><span
+                                                                            class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
                                                                 </div>
-                                                            </article>
-                                                            <!-- #post -->
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                @endif
+
+
+                                                    </div>
+                                                    <div class="three columns">
+                                                        <div
+                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                            <div
+                                                                class="greennature-ux greennature-classic-portfolio-ux">
+                                                                <div class="portfolio-thumbnail greennature-image"><img
+                                                                        src="{{ asset('storage/'.$blogs->image)}}"
+                                                                        alt="" class="photos-style"
+                                                                    /><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        data-rel="fancybox"><span
+                                                                            class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                    <div class="three columns">
+                                                        <div
+                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                            <div
+                                                                class="greennature-ux greennature-classic-portfolio-ux">
+                                                                <div class="portfolio-thumbnail greennature-image"><img
+                                                                        src="{{ asset('storage/'.$blogs->image)}}"
+                                                                        alt="" class="photos-style"
+                                                                    /><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        data-rel="fancybox"><span
+                                                                            class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                    <div class="three columns">
+                                                        <div
+                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                            <div
+                                                                class="greennature-ux greennature-classic-portfolio-ux">
+                                                                <div class="portfolio-thumbnail greennature-image"><img
+                                                                        src="{{ asset('storage/'.$blogs->image)}}"
+                                                                        alt="" class="photos-style"
+                                                                    /><span
+                                                                        class="portfolio-overlay">&nbsp;</span><a
+                                                                        class="portfolio-overlay-icon"
+                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        data-rel="fancybox"><span
+                                                                            class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                    <div class="clear"></div>
 
                                             </div>
-                                            {{-- ----------------- pagination ------------------------ --}}
+                                            <div class="blog-content-wrapper">
+                                                <header class="post-header">
+                                                    <h3 class="greennature-blog-title">
+                                                        <a>{{ $blogs->title }}</a></h3>
 
+                                                    <div class="clear"></div>
+                                                </header>
+                                                <!-- entry-header -->
 
+                                                <div class="greennature-blog-content">
+                                                    {!! $blogs->content !!}
+                                                    <div class="greennature-blog-info"
+                                                         style="margin-top:2rem;">
+                                                        <div
+                                                            class="blog-info blog-author greennature-skin-info">
+                                                            <i class="fa fa-tags"></i><a>{{ $blogs->tag }}</a>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="clear">
+                                                    </div>
 
-                                            {{-- ----------------- pagination ------------------------ --}}
+                                                </div>
+                                            </div>
+                                            @endif
 
                                         </div>
-                                        <div class="clear"></div>
                                     </div>
-                                </section>
-                            </div>
-
-                            <div class="clear"></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </section>
                         </div>
+                        <!-- Below Sidebar Section-->
 
-
-                        <div class="clear"></div>
                     </div>
+                    <!-- greennature-content -->
+                    <div class="clear"></div>
                 </div>
-
                 <!-- Below Sidebar Section-->
 
             </div>
@@ -197,6 +269,92 @@
             <div class="clear"></div>
         </div>
     </section>
+
+
+    {{--    <section>--}}
+    {{--        <div class="content-wrapper">--}}
+    {{--            <div class="greennature-content">--}}
+
+    {{--                <!-- Above Sidebar Section-->--}}
+
+    {{--                <!-- Sidebar With Content Section-->--}}
+    {{--                <div class="with-sidebar-wrapper">--}}
+    {{--                    <div class="with-sidebar-container container">--}}
+    {{--                        <div class="">--}}
+    {{--                            <div class="">--}}
+    {{--                                <section id="content-section-1">--}}
+    {{--                                    <div class="section-container container">--}}
+    {{--                                        <div class="blog-item-wrapper">--}}
+    {{--                                            <div class="blog-item-holder">--}}
+
+
+    {{--                                                @if($blogs != null)--}}
+
+    {{--                                                    <div class="greennature-item greennature-blog-full">--}}
+    {{--                                                        <div class="greennature-ux greennature-blog-full-ux">--}}
+    {{--                                                            <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">--}}
+    {{--                                                                <div class="greennature-standard-style">--}}
+    {{--                                                                    <div>--}}
+    {{--                                                                        <a> <img src="{{ asset('storage/'.$blogs->image)  }}" class="press-release-image" alt=""  /></a>--}}
+    {{--                                                                    </div>--}}
+
+    {{--                                                                    <div class="blog-content-wrapper">--}}
+    {{--                                                                        <header class="post-header">--}}
+    {{--                                                                            <h3 class="greennature-blog-title"><a>{{ $blogs->title }}</a></h3>--}}
+
+    {{--                                                                            <div class="clear"></div>--}}
+    {{--                                                                        </header>--}}
+    {{--                                                                        <!-- entry-header -->--}}
+
+    {{--                                                                        <div class="greennature-blog-content">--}}
+    {{--                                                                            {!! $blogs->content !!}--}}
+    {{--                                                                            <div class="greennature-blog-info" style="margin-top:2rem;">--}}
+    {{--                                                                                <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $blogs->tag }}</a></div>--}}
+    {{--                                                                                <div class="clear"></div>--}}
+    {{--                                                                            </div>--}}
+    {{--                                                                            <div class="clear">--}}
+    {{--                                                                            </div>--}}
+    {{--                                                                            --}}{{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+    {{--                                                                        </div>--}}
+    {{--                                                                    </div>--}}
+    {{--                                                                    <!-- blog content wrapper -->--}}
+    {{--                                                                    <div class="clear"></div>--}}
+    {{--                                                                </div>--}}
+    {{--                                                            </article>--}}
+    {{--                                                            <!-- #post -->--}}
+    {{--                                                        </div>--}}
+    {{--                                                    </div>--}}
+
+    {{--                                                @endif--}}
+
+    {{--                                            </div>--}}
+    {{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
+
+
+
+    {{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
+
+    {{--                                        </div>--}}
+    {{--                                        <div class="clear"></div>--}}
+    {{--                                    </div>--}}
+    {{--                                </section>--}}
+    {{--                            </div>--}}
+
+    {{--                            <div class="clear"></div>--}}
+    {{--                        </div>--}}
+
+
+    {{--                        <div class="clear"></div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+
+    {{--                <!-- Below Sidebar Section-->--}}
+
+    {{--            </div>--}}
+    {{--            <!-- greennature-content -->--}}
+    {{--            <div class="clear"></div>--}}
+    {{--        </div>--}}
+    {{--    </section>--}}
 
 
     <!-------------------------------------------------------------------------
