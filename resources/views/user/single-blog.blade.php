@@ -133,14 +133,14 @@
                                                 <div class="clear"></div>
 
                                                 @if($blogs != null)
-                                                    <div class="three columns">
+                                                    <div class="six columns">
                                                         <div
                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                             <div
                                                                 class="greennature-ux greennature-classic-portfolio-ux">
                                                                 <div class="portfolio-thumbnail greennature-image"><img
                                                                         src="{{ asset('storage/'.$blogs->image)}}"
-                                                                        alt="" class="photos-style"
+                                                                        alt="" class="photos-style" style="height:200px; width:200px;"
                                                                     /><span
                                                                         class="portfolio-overlay">&nbsp;</span><a
                                                                         class="portfolio-overlay-icon"
@@ -155,72 +155,96 @@
 
 
                                                     </div>
-                                                    <div class="three columns">
+                                                    @if($blogs->image_2 != null)
+                                                    <div class="six columns">
                                                         <div
                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                             <div
                                                                 class="greennature-ux greennature-classic-portfolio-ux">
                                                                 <div class="portfolio-thumbnail greennature-image"><img
-                                                                        src="{{ asset('storage/'.$blogs->image)}}"
-                                                                        alt="" class="photos-style"
+                                                                        src="{{ asset('storage/'.$blogs->image_2)}}"
+                                                                        alt="" class="photos-style" style="height:300px"
                                                                     /><span
                                                                         class="portfolio-overlay">&nbsp;</span><a
                                                                         class="portfolio-overlay-icon"
-                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        href="{{ asset('storage/'.$blogs->image_2) }}"
                                                                         data-rel="fancybox"><span
                                                                             class="portfolio-icon"><i
                                                                                 class="fa fa-search"></i></span></a>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
-
                                                     </div>
-                                                    <div class="three columns">
+                                                    @endif
+
+                                                    @if($blogs->image_3 != null)
+                                                    <div class="six columns">
                                                         <div
                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                             <div
                                                                 class="greennature-ux greennature-classic-portfolio-ux">
                                                                 <div class="portfolio-thumbnail greennature-image"><img
-                                                                        src="{{ asset('storage/'.$blogs->image)}}"
-                                                                        alt="" class="photos-style"
+                                                                        src="{{ asset('storage/'.$blogs->image_3)}}"
+                                                                        alt="" class="photos-style" style="height:300px"
                                                                     /><span
                                                                         class="portfolio-overlay">&nbsp;</span><a
                                                                         class="portfolio-overlay-icon"
-                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        href="{{ asset('storage/'.$blogs->image_3) }}"
                                                                         data-rel="fancybox"><span
                                                                             class="portfolio-icon"><i
                                                                                 class="fa fa-search"></i></span></a>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
-
                                                     </div>
-                                                    <div class="three columns">
+                                                    @endif
+
+                                                    @if($blogs->image_4 != null)
+                                                    <div class="six columns">
                                                         <div
                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
                                                             <div
                                                                 class="greennature-ux greennature-classic-portfolio-ux">
                                                                 <div class="portfolio-thumbnail greennature-image"><img
-                                                                        src="{{ asset('storage/'.$blogs->image)}}"
+                                                                        src="{{ asset('storage/'.$blogs->image_4)}}"
                                                                         alt="" class="photos-style"
+                                                                        style="height:300px"
                                                                     /><span
                                                                         class="portfolio-overlay">&nbsp;</span><a
                                                                         class="portfolio-overlay-icon"
-                                                                        href="{{ asset('storage/'.$blogs->image) }}"
+                                                                        href="{{ asset('storage/'.$blogs->image_4) }}"
                                                                         data-rel="fancybox"><span
                                                                             class="portfolio-icon"><i
                                                                                 class="fa fa-search"></i></span></a>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
-
                                                     </div>
+                                                    @endif
+
+                                                    @if($blogs->image_5 != null)
+                                                        <div class="six columns">
+                                                            <div
+                                                                class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                                <div
+                                                                    class="greennature-ux greennature-classic-portfolio-ux">
+                                                                    <div class="portfolio-thumbnail greennature-image"><img
+                                                                            src="{{ asset('storage/'.$blogs->image_5)}}"
+                                                                            alt="" class="photos-style"
+                                                                            style="height:300px"
+                                                                        /><span
+                                                                            class="portfolio-overlay">&nbsp;</span><a
+                                                                            class="portfolio-overlay-icon"
+                                                                            href="{{ asset('storage/'.$blogs->image_5) }}"
+                                                                            data-rel="fancybox"><span
+                                                                                class="portfolio-icon"><i
+                                                                                    class="fa fa-search"></i></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endif
+
                                                     <div class="clear"></div>
 
                                             </div>
