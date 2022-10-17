@@ -177,7 +177,7 @@ class UserPanelController extends Controller
 
     public function ourTeam()
     {
-        $teams = Team::all();
+        $teams = Team::orderBy('priority','asc')->get();
         return view('user.our-team', compact('teams'));
     }
 
