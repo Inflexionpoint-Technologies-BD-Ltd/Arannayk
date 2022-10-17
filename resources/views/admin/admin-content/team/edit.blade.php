@@ -47,6 +47,29 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Priority number</label>
+                    <input type="number" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="" name="priority"
+                           class="form-control @error('priority') is-invalid @enderror" value="{{ $team->priority }}">
+                </div>
+
+                @error('priority')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Linked in url</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="" name="ln"
+                           class="form-control @error('ln') is-invalid @enderror" value="{{ $team->ln }}">
+                </div>
+
+                @error('ln')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </form>
         </form>

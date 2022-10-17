@@ -40,6 +40,9 @@ class TeamController extends Controller
             'name' => 'required',
             'position' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png,gif',
+            'priority' => 'required',
+            'ln' => 'required',
+
         ]);
 
         if (request('image')) {
@@ -86,6 +89,8 @@ class TeamController extends Controller
             'name' => 'required',
             'position' => 'required',
             'image' => 'mimes:jpeg,jpg,png,gif',
+            'priority' => 'required',
+            'ln' => 'required',
         ]);
 
         if (request('image')) {
