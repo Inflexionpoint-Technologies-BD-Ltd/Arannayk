@@ -158,10 +158,12 @@
                                     @endforeach
 
                                 </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
                                 <div class="pagination-style">
                                     {{ $publications->links() }}
                                 </div>
-                                <div class="clear"></div>
+
                             </div>
                         </div>
                         <div class="clear"></div>
