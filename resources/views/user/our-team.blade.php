@@ -125,6 +125,12 @@
                                 <div class="personnel-info">
                                     <div class="personnel-author greennature-skin-title">{{ $team->name }}</div>
                                     <div class="personnel-position greennature-skin-info" style="font-size: 11px">{{ $team->position }}</div>
+                                    <div class="personnel-position greennature-skin-info">
+                                        <div class="social-icon">
+                                            <a href="{{ $team->ln }}" target="_blank">
+                                                <i class="fa fa-linkedin-square"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
