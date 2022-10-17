@@ -42,7 +42,7 @@ class UserPanelController extends Controller
         $projects = Project::all();
         $publications = Publication::skip(0)->take(4)->get();
         $sliders = Slider::all();
-        $timelines = Timeline::skip(0)->take(8)->get();
+        $timelines = Timeline::skip(0)->take(3)->get();
 
         return view('user.front', compact('services', 'projects', 'publications', 'sliders', 'timelines'));
     }
@@ -202,7 +202,8 @@ class UserPanelController extends Controller
     public function timeline()
     {
         $timelines = Timeline::all();
-        return view('user.timeline', compact('timelines'));
+        $timeline_id=0;
+        return view('user.timeline', compact('timelines','timeline_id'));
     }
     //---------------------------------------------------------WHO WE ARE CONTROLLER----------------------//
 

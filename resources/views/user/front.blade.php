@@ -675,20 +675,22 @@
                                         <div class="clear"></div>
 
                                         <div class="ul">
+                                            @php($tid=0)
                                             @foreach($timelines as $timeline)
-                                                @if($timeline->year%2==1)
+                                                @if($tid%2==1)
                                                     <li style="--accent-color:#eb681c">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
                                                         <div class="descr">{!! $timeline->content !!}</div>
                                                     </li>
-                                                @elseif($timeline->year%2==0)
+                                                @elseif($tid%2==0)
                                                     <li style="--accent-color:#FBCA3E">
                                                         <div class="date">{{ $timeline->year }}</div>
                                                         <div class="title">{{ $timeline->title }}</div>
                                                         <div class="descr">{!! $timeline->content !!} </div>
                                                     </li>
                                                 @endif
+                                                    @php($tid++)
                                             @endforeach
 
                                         </div>
@@ -935,9 +937,8 @@
                     <div
                         class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
                         id="greennature-parallax-wrapper-3" data-bgspeed="0.15" style="
-                        background-image: url({{ asset('./images/slider_images/bg-100.jpeg') }});
-                        padding-top: 100px;
-                        padding-bottom: 80px;
+                        background-image: url({{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }});
+
                         ">
                         <h2 class="section-title">
                             Get Involved

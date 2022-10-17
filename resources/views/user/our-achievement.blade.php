@@ -152,7 +152,7 @@
                                                             <img
                                                                 src="{{ asset('storage/'.$achievement->image) }}"
                                                                 alt=""
-                                                                style="width:150px; height: 150px;"/><span
+                                                                style="width:150px; height: 150px; margin: auto; display: block"/><span
                                                                 class="portfolio-overlay">&nbsp;</span><a
                                                                 class="portfolio-overlay-icon"
                                                                 href="{{ asset('storage/'.$achievement->image) }}"
@@ -161,20 +161,17 @@
                                                         </div>
                                                         <div class="portfolio-classic-content">
                                                             <h5 class="portfolio-title"
-                                                                style="margin-top: 10px; font-weight: 500;">
+                                                                style="margin-top: 10px; font-weight: 500; text-align: center">
                                                                 <a>{{ $achievement -> title }}</a>
                                                             </h5>
                                                             <div class="greennature-portfolio-info">
-                                                                <div class="portfolio-info portfolio-tag">
-                                  <span class="info-head greennature-title">
-                                  </span>
 
-                                                                </div>
                                                                 <div class="clear"></div>
                                                             </div>
-                                                            <div class="portfolio-excerpt">
-                                                                <p>{!! $achievement->content  !!}</p>
-
+                                                            <div class="portfolio-excerpt" style="margin-left: auto; margin-right: auto">
+                                                                <div>
+                                                                    <p style="margin-left: auto; margin-right: auto">{!! $achievement->content  !!}</p>
+                                                                </div>
                                                                 <div class="clear"></div>
 
                                                             </div>
@@ -200,108 +197,108 @@
         </div>
         <div class="clear"></div>
     </section>
-{{--    <section>--}}
-{{--        <div class="content-wrapper">--}}
-{{--            <div class="greennature-content">--}}
+    {{--    <section>--}}
+    {{--        <div class="content-wrapper">--}}
+    {{--            <div class="greennature-content">--}}
 
-{{--                <!-- Above Sidebar Section-->--}}
+    {{--                <!-- Above Sidebar Section-->--}}
 
-{{--                <!-- Sidebar With Content Section-->--}}
+    {{--                <!-- Sidebar With Content Section-->--}}
 
-{{--                <div class="with-sidebar-wrapper">--}}
-{{--                    <div class="with-sidebar-container">--}}
-{{--                        <div class="">--}}
-{{--                            <div class="">--}}
-{{--                                <section id="content-section-1">--}}
-{{--                                    <div class="section-container container">--}}
-{{--                                        <div class="blog-item-wrapper">--}}
-{{--                                            <div class="blog-item-holder">--}}
-
-
-{{--                                                @foreach($achievements as $achievement)--}}
-{{--                                                    <div class="greennature-item greennature-blog-full">--}}
-{{--                                                        <div class="greennature-ux greennature-blog-full-ux">--}}
-{{--                                                            <article id="post-862"--}}
-{{--                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">--}}
-{{--                                                                <div class="greennature-standard-style">--}}
-{{--                                                                    <div class="four columns"--}}
-{{--                                                                         style="margin-right:2rem;">--}}
-{{--                                                                        <div>--}}
-{{--                                                                            <a> <img--}}
-{{--                                                                                    src="{{ asset('storage/'.$achievement->image)  }}"--}}
-{{--                                                                                    class="press-release-image"--}}
-{{--                                                                                    style="width:150px; height: 150px;"--}}
-{{--                                                                                    alt=""/></a>--}}
-{{--                                                                        </div>--}}
-{{--                                                                    </div>--}}
-{{--                                                                    <div class="six columns" style="">--}}
-{{--                                                                        <div class="">--}}
-{{--                                                                            <header class="post-header">--}}
-{{--                                                                                <h3 class="greennature-blog-title">--}}
-{{--                                                                                    <a>{{ $achievement->title }}</a>--}}
-{{--                                                                                </h3>--}}
-
-{{--                                                                                <div class="clear"></div>--}}
-{{--                                                                            </header>--}}
-{{--                                                                            <!-- entry-header -->--}}
-
-{{--                                                                            <div class="greennature-blog-content"--}}
-{{--                                                                                 style="text-align: justify">--}}
-{{--                                                                                {!! $achievement->content !!}--}}
-{{--                                                                                <div class="greennature-blog-info"--}}
-{{--                                                                                     style="margin-top:2rem;">--}}
-{{--                                                                                    <div class="clear"></div>--}}
-{{--                                                                                </div>--}}
-{{--                                                                                <div class="clear">--}}
-{{--                                                                                </div>--}}
-{{--                                                                                --}}{{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
-{{--                                                                            </div>--}}
-{{--                                                                        </div>--}}
-{{--                                                                    </div>--}}
+    {{--                <div class="with-sidebar-wrapper">--}}
+    {{--                    <div class="with-sidebar-container">--}}
+    {{--                        <div class="">--}}
+    {{--                            <div class="">--}}
+    {{--                                <section id="content-section-1">--}}
+    {{--                                    <div class="section-container container">--}}
+    {{--                                        <div class="blog-item-wrapper">--}}
+    {{--                                            <div class="blog-item-holder">--}}
 
 
-{{--                                                                    <!-- blog content wrapper -->--}}
-{{--                                                                    <div class="clear"></div>--}}
-{{--                                                                </div>--}}
-{{--                                                            </article>--}}
-{{--                                                            <!-- #post -->--}}
-{{--                                                        </div>--}}
-{{--                                                    </div>--}}
-{{--                                                @endforeach--}}
+    {{--                                                @foreach($achievements as $achievement)--}}
+    {{--                                                    <div class="greennature-item greennature-blog-full">--}}
+    {{--                                                        <div class="greennature-ux greennature-blog-full-ux">--}}
+    {{--                                                            <article id="post-862"--}}
+    {{--                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">--}}
+    {{--                                                                <div class="greennature-standard-style">--}}
+    {{--                                                                    <div class="four columns"--}}
+    {{--                                                                         style="margin-right:2rem;">--}}
+    {{--                                                                        <div>--}}
+    {{--                                                                            <a> <img--}}
+    {{--                                                                                    src="{{ asset('storage/'.$achievement->image)  }}"--}}
+    {{--                                                                                    class="press-release-image"--}}
+    {{--                                                                                    style="width:150px; height: 150px;"--}}
+    {{--                                                                                    alt=""/></a>--}}
+    {{--                                                                        </div>--}}
+    {{--                                                                    </div>--}}
+    {{--                                                                    <div class="six columns" style="">--}}
+    {{--                                                                        <div class="">--}}
+    {{--                                                                            <header class="post-header">--}}
+    {{--                                                                                <h3 class="greennature-blog-title">--}}
+    {{--                                                                                    <a>{{ $achievement->title }}</a>--}}
+    {{--                                                                                </h3>--}}
+
+    {{--                                                                                <div class="clear"></div>--}}
+    {{--                                                                            </header>--}}
+    {{--                                                                            <!-- entry-header -->--}}
+
+    {{--                                                                            <div class="greennature-blog-content"--}}
+    {{--                                                                                 style="text-align: justify">--}}
+    {{--                                                                                {!! $achievement->content !!}--}}
+    {{--                                                                                <div class="greennature-blog-info"--}}
+    {{--                                                                                     style="margin-top:2rem;">--}}
+    {{--                                                                                    <div class="clear"></div>--}}
+    {{--                                                                                </div>--}}
+    {{--                                                                                <div class="clear">--}}
+    {{--                                                                                </div>--}}
+    {{--                                                                                --}}{{--                                                                        <a href="../2013/12/09/magna-pars-studiorum/index.html" class="excerpt-read-more">Read More</a>--}}
+    {{--                                                                            </div>--}}
+    {{--                                                                        </div>--}}
+    {{--                                                                    </div>--}}
 
 
-{{--                                            </div>--}}
-
-{{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
-
-{{--                                            <div class="pagination-style">--}}
-{{--                                                {{ $achievements->links() }}--}}
-{{--                                            </div>--}}
-
-{{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
-
-{{--                                        </div>--}}
-{{--                                        <div class="clear"></div>--}}
-{{--                                    </div>--}}
-{{--                                </section>--}}
-
-{{--                            </div>--}}
-
-{{--                            <div class="clear"></div>--}}
-{{--                        </div>--}}
+    {{--                                                                    <!-- blog content wrapper -->--}}
+    {{--                                                                    <div class="clear"></div>--}}
+    {{--                                                                </div>--}}
+    {{--                                                            </article>--}}
+    {{--                                                            <!-- #post -->--}}
+    {{--                                                        </div>--}}
+    {{--                                                    </div>--}}
+    {{--                                                @endforeach--}}
 
 
-{{--                        <div class="clear"></div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+    {{--                                            </div>--}}
 
-{{--                <!-- Below Sidebar Section-->--}}
+    {{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
 
-{{--            </div>--}}
-{{--            <!-- greennature-content -->--}}
-{{--            <div class="clear"></div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+    {{--                                            <div class="pagination-style">--}}
+    {{--                                                {{ $achievements->links() }}--}}
+    {{--                                            </div>--}}
+
+    {{--                                            --}}{{-- ----------------- pagination ------------------------ --}}
+
+    {{--                                        </div>--}}
+    {{--                                        <div class="clear"></div>--}}
+    {{--                                    </div>--}}
+    {{--                                </section>--}}
+
+    {{--                            </div>--}}
+
+    {{--                            <div class="clear"></div>--}}
+    {{--                        </div>--}}
+
+
+    {{--                        <div class="clear"></div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+
+    {{--                <!-- Below Sidebar Section-->--}}
+
+    {{--            </div>--}}
+    {{--            <!-- greennature-content -->--}}
+    {{--            <div class="clear"></div>--}}
+    {{--        </div>--}}
+    {{--    </section>--}}
 
     <!-------------------------------------------------------------------------
   ------------------------------------------------------------------------
