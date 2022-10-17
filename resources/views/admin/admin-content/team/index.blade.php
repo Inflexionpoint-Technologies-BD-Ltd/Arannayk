@@ -19,6 +19,8 @@
             <th>Serial</th>
             <th>name</th>
             <th>position</th>
+            <th>priority</th>
+            <th>ln</th>
             <th>image</th>
             <th>Update</th>
             <th>Delete</th>
@@ -32,6 +34,8 @@
                 <td>{{ $id += 1 }}</td>
                 <td>{{ $team->name }}</td>
                 <td>{{ $team->position }}</td>
+                <td>{{ $team->priority }}</td>
+                <td>{{ $team->ln }}</td>
                 <td><img src="{{ asset('storage/'.$team->image) }}" alt="" style="width: 100px"></td>
                 <td><a href="{{ route('team.edit',$team->id) }}" class="btn btn-info">Update</a></td>
                 <td>

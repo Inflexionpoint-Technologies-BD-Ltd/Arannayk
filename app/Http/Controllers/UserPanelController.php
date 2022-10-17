@@ -39,7 +39,7 @@ class UserPanelController extends Controller
     public function index()
     {
         $services = Service::skip(0)->take(2)->get();
-        $projects = Project::all();
+        $projects = Project::orderBy('id','desc')->get();
         $publications = Publication::skip(0)->take(4)->get();
         $sliders = Slider::all();
         $timelines = Timeline::skip(0)->take(3)->get();
@@ -238,37 +238,37 @@ class UserPanelController extends Controller
 
     public function pressRelease()
     {
-        $pressReleases = Press::paginate(5);
+        $pressReleases = Press::orderBy('id','desc')->paginate(5);
         return view('user.press-release', compact('pressReleases'));
     }
 
     public function activityUpdates()
     {
-        $activities = Activity::paginate(6);
+        $activities = Activity::orderBy('id','desc')->paginate(6);
         return view('user.activity-updates', compact('activities'));
     }
 
     public function videoStories()
     {
-        $videos = Video::paginate(6);
+        $videos = Video::orderBy('id','desc')->paginate(6);
         return view('user.video-stories', compact('videos'));
     }
 
     public function mediaCoverage()
     {
-        $medias = Media::paginate(6);
+        $medias = Media::orderBy('id','desc')->paginate(6);
         return view('user.media-coverage', compact('medias'));
     }
 
     public function photos()
     {
-        $photos = Photo::paginate(12);
+        $photos = Photo::orderBy('id','desc')->paginate(12);
         return view('user.photos', compact('photos'));
     }
 
     public function blogs()
     {
-        $blogs = Blog::paginate(5);
+        $blogs = Blog::orderBy('id','desc')->paginate(5);
         return view('user.blogs', compact('blogs'));
     }
 
@@ -283,7 +283,7 @@ class UserPanelController extends Controller
 
     public function publication()
     {
-        $publications = Publication::paginate(12);
+        $publications = Publication::orderBy('id','desc')->paginate(12);
         return view('user.publication', compact('publications'));
     }
 
@@ -298,49 +298,49 @@ class UserPanelController extends Controller
 //------------------------------------Ecosystem Controllers--------------------------------------------------//
     public function forest()
     {
-        $projects = Project::skip(0)->take(4)->where('tag', 'forest')->get();
-        $archives = Archive::skip(0)->take(4)->where('tag', 'forest')->get();
-        $blogs = Blog::skip(0)->take(4)->where('tag', 'forest')->get();
-        $ecosystems = Ecosystem::where('title', 'forest')->get();
+        $projects = Project::skip(0)->take(4)->where('tag', 'forest')->orderBy('id','desc')->get();
+        $archives = Archive::skip(0)->take(4)->where('tag', 'forest')->orderBy('id','desc')->get();
+        $blogs = Blog::skip(0)->take(4)->where('tag', 'forest')->orderBy('id','desc')->get();
+        $ecosystems = Ecosystem::where('title', 'forest')->orderBy('id','desc')->get();
         return view('user.forest', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 
     public function climate()
     {
-        $projects = Project::skip(0)->take(4)->where('tag', 'climate')->get();
-        $archives = Archive::skip(0)->take(4)->where('tag', 'climate')->get();
-        $blogs = Blog::skip(0)->take(4)->where('tag', 'climate')->get();
-        $ecosystems = Ecosystem::where('title', 'climate')->get();
+        $projects = Project::skip(0)->take(4)->where('tag', 'climate')->orderBy('id','desc')->get();
+        $archives = Archive::skip(0)->take(4)->where('tag', 'climate')->orderBy('id','desc')->get();
+        $blogs = Blog::skip(0)->take(4)->where('tag', 'climate')->orderBy('id','desc')->get();
+        $ecosystems = Ecosystem::where('title', 'climate')->orderBy('id','desc')->get();
         return view('user.climate', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 
     public function biodiversity()
     {
-        $projects = Project::skip(0)->take(4)->where('tag', 'biodiversity')->get();
-        $archives = Archive::skip(0)->take(4)->where('tag', 'biodiversity')->get();
+        $projects = Project::skip(0)->take(4)->where('tag', 'biodiversity')->orderBy('id','desc')->get();
+        $archives = Archive::skip(0)->take(4)->where('tag', 'biodiversity')->orderBy('id','desc')->get();
 
-        $blogs = Blog::skip(0)->take(4)->where('tag', 'biodiversity')->get();
-        $ecosystems = Ecosystem::where('title', 'biodiversity')->get();
+        $blogs = Blog::skip(0)->take(4)->where('tag', 'biodiversity')->orderBy('id','desc')->get();
+        $ecosystems = Ecosystem::where('title', 'biodiversity')->orderBy('id','desc')->get();
         return view('user.biodiversity', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 
     public function sustainability()
     {
-        $projects = Project::skip(0)->take(4)->where('tag', 'sustainability')->get();
-        $archives = Archive::skip(0)->take(4)->where('tag', 'sustainability')->get();
+        $projects = Project::skip(0)->take(4)->where('tag', 'sustainability')->orderBy('id','desc')->get();
+        $archives = Archive::skip(0)->take(4)->where('tag', 'sustainability')->orderBy('id','desc')->get();
 
-        $blogs = Blog::skip(0)->take(4)->where('tag', 'sustainability')->get();
-        $ecosystems = Ecosystem::where('title', 'sustainability')->get();
+        $blogs = Blog::skip(0)->take(4)->where('tag', 'sustainability')->orderBy('id','desc')->get();
+        $ecosystems = Ecosystem::where('title', 'sustainability')->orderBy('id','desc')->get();
         return view('user.sustainability', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 
     public function gender()
     {
-        $projects = Project::skip(0)->take(4)->where('tag', 'gender')->get();
-        $archives = Archive::skip(0)->take(4)->where('tag', 'gender')->get();
+        $projects = Project::skip(0)->take(4)->where('tag', 'gender')->orderBy('id','desc')->get();
+        $archives = Archive::skip(0)->take(4)->where('tag', 'gender')->orderBy('id','desc')->get();
 
-        $blogs = Blog::skip(0)->take(4)->where('tag', 'gender')->get();
-        $ecosystems = Ecosystem::where('title', 'gender')->get();
+        $blogs = Blog::skip(0)->take(4)->where('tag', 'gender')->orderBy('id','desc')->get();
+        $ecosystems = Ecosystem::where('title', 'gender')->orderBy('id','desc')->get();
         return view('user.gender', compact('projects', 'blogs', 'ecosystems', 'archives'));
     }
 

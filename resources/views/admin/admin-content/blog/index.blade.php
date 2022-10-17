@@ -11,6 +11,10 @@
             <th>Title</th>
             <th>Content</th>
             <th>Image</th>
+            <th>Image 2</th>
+            <th>Image 3</th>
+            <th>Image 4</th>
+            <th>Image 5</th>
             <th>tag</th>
             <th>Update</th>
             <th>Delete</th>
@@ -25,6 +29,10 @@
                 <td>{!! $blog->title !!}</td>
                 <td>{!! $blog->content !!}</td>
                 <td><img src="{{ asset('storage/'.$blog->image) }}" alt="" style="width: 100px"></td>
+                <td><img src="{{ asset('storage/'.$blog->image_2) }}" alt="" style="width: 100px"></td>
+                <td><img src="{{ asset('storage/'.$blog->image_3) }}" alt="" style="width: 100px"></td>
+                <td><img src="{{ asset('storage/'.$blog->image_4) }}" alt="" style="width: 100px"></td>
+                <td><img src="{{ asset('storage/'.$blog->image_5) }}" alt="" style="width: 100px"></td>
                 <td>{!! $blog->tag !!}</td>
 
                 <td><a href="{{ route('blog.edit',$blog->id) }}" class="btn btn-info">Update</a></td>

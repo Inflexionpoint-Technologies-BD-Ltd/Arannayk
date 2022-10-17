@@ -32,6 +32,48 @@
                 @enderror
 
                 <div class="form-group">
+                    <label for="exampleFormControlFile1">Enter second image [Optional]</label>
+                    <input type="file" class="form-control-file @error('image_2') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="image_2">
+                </div>
+
+                @error('image_2')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Enter third image [Optional]</label>
+                    <input type="file" class="form-control-file @error('image_3') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="image_3">
+                </div>
+
+                @error('image_3')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Enter fourth image [Optional]</label>
+                    <input type="file" class="form-control-file @error('image_4') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="image_4">
+                </div>
+
+                @error('image_4')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Enter fifth image [Optional]</label>
+                    <input type="file" class="form-control-file @error('image_5') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="image_5">
+                </div>
+
+                @error('image_5')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+
+                <div class="form-group">
                     <label for="exampleInputEmail1">Enter Content</label>
                     <textarea name="content" id="" cols="30" rows="10"
                               class="@error('content') is-invalid @enderror form-control"
