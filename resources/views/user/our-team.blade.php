@@ -128,7 +128,7 @@
                                     <div class="personnel-position greennature-skin-info">
                                         <div class="social-icon">
                                             <a href="{{ $team->ln }}" target="_blank">
-                                                <i class="fa fa-linkedin-square"></i></a>
+                                                <i class="fa fa-linkedin-square fa-2x" style="color: #0072b1"></i></a>
                                         </div>
                                     </div>
                                 </div>
