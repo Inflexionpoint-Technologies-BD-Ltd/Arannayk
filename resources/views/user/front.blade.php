@@ -1101,7 +1101,7 @@
                 grabCursor: false,
                 swipe: true,
                 mouse: false,
-                keyboard: true,
+                keyboard: false,
                 layout: "fullwidth",
                 wheel: false,
                 autoplay: false,
