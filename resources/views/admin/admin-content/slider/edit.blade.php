@@ -67,7 +67,7 @@
                     <select class="form-control" id="exampleFormControlSelect1" name="serial">
                         <option @if($slider->serial == 1) selected @endif>1</option>
                         <option @if($slider->serial == 2) selected @endif>2</option>
-                        <option @if($slider->serial == 3) selected @endif>3</option>
+{{--                        <option @if($slider->serial == 3) selected @endif>3</option>--}}
                     </select>
                 </div>
 

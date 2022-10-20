@@ -66,7 +66,7 @@
                     <select class="form-control" id="exampleFormControlSelect1" name="serial">
                         <option>1</option>
                         <option>2</option>
-                        <option>3</option>
+{{--                        <option>3</option>--}}
                     </select>
                 </div>
 

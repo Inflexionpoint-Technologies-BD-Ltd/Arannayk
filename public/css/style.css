@@ -6272,10 +6272,16 @@ input[type="text"].greennature-payment-price-fill {
     object-fit: cover;
 }
 .team-image{
-    width: 400px;
+    display: block;
+    margin: auto;
     height: 250px;
+    width: auto;
     object-fit: cover;
 }
+.personnel-position, .personnel-author{
+    text-align: center;
+}
+
 .logo-text-style{
     font-size:25px;
     color: #0f6848;
