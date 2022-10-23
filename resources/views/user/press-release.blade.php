@@ -142,7 +142,7 @@
                                                                         <h3 class="greennature-blog-title"><a>{{ $press->title }}</a></h3>
 
                                                                         <div class="greennature-blog-info">
-                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>
+{{--                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>--}}
                                                                             <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-tags"></i><a>{{ $press->tag }}</a></div>
                                                                             <div class="clear"></div>
                                                                         </div>
@@ -197,7 +197,7 @@
                                             <div class="recent-post-widget-content">
                                                 <div class="recent-post-widget-title"><a href="#{{ $press->title }}">{{ $press->title }}</a></div>
                                                 <div class="recent-post-widget-info">
-                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>
+{{--                                                    <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a>{{ $press->created_at-> format('d/m/y') }}</a></div>--}}
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>

@@ -12,6 +12,7 @@
             <th>Content</th>
             <th>Image</th>
             <th>tag</th>
+            <th>priority</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -23,9 +24,10 @@
             <tr>
                 <td>{{ $id += 1 }}</td>
                 <td>{!! $press->title !!}</td>
-                <td>{!! $press->content !!}</td>
+                <td>{!! \Illuminate\Support\Str::limit($press->content,'100','...')  !!}</td>
                 <td><img src="{{ asset('storage/'.$press->image) }}" alt="" style="width: 100px"></td>
                 <td>{!! $press->tag !!}</td>
+                <td>{{ $press->priority }}</td>
 
                 <td><a href="{{ route('press.edit',$press->id) }}" class="btn btn-info">Update</a></td>
 

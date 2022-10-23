@@ -14,7 +14,7 @@ class PressController extends Controller
      */
     public function index()
     {
-        $presses = Press::all();
+        $presses = Press::orderBy('id','desc')->get();
         return view('admin.admin-content.press.index', compact('presses'));
     }
 
@@ -41,6 +41,7 @@ class PressController extends Controller
             'content' => 'required',
             'tag' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png',
+            'priority' => 'required',
         ]);
 
         if (request('image')) {
@@ -88,6 +89,7 @@ class PressController extends Controller
             'content' => 'required',
             'tag' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
+            'priority' => 'required',
         ]);
 
         if (request('image')) {
