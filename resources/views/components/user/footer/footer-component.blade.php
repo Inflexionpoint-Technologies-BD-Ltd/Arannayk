@@ -111,7 +111,7 @@
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
-                    <a href=""><i class="greennature-icon fa fa-linkedin" style="
+                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i class="greennature-icon fa fa-linkedin" style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;

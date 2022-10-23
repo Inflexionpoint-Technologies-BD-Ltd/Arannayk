@@ -7,7 +7,7 @@
                 <a href="{{ route('forest') }}">Forest</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
-                <a href="{{ route('biodiversity') }}">Bio-Diversity</a>
+                <a href="{{ route('biodiversity') }}">Biodiversity</a>
             </div>
             <div class="top-navigation-left-text" style="margin-right: 2rem">
                 <a href="{{ route('climate') }}">Climate Change</a>
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="social-icon">
-                    <a href="" target="_blank">
+                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247" target="_blank">
                         <i class="fa fa-linkedin"></i></a>
                 </div>
 

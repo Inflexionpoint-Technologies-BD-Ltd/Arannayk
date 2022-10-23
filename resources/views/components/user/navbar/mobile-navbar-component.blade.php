@@ -76,7 +76,7 @@
             </li>
 
             <li class="menu-item menu-item-has-children menu-item-15">
-                <a>Ecosystem</a>
+                <a>Thematic Areas</a>
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="{{ route('forest') }}">Forest</a></li>
                     <li class="menu-item"><a href="{{ route('biodiversity') }}">Bio-Diversity</a></li>
