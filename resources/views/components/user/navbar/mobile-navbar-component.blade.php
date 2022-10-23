@@ -79,7 +79,7 @@
                 <a>Thematic Areas</a>
                 <ul class="dl-submenu">
                     <li class="menu-item"><a href="{{ route('forest') }}">Forest</a></li>
-                    <li class="menu-item"><a href="{{ route('biodiversity') }}">Bio-Diversity</a></li>
+                    <li class="menu-item"><a href="{{ route('biodiversity') }}">Biodiversity</a></li>
                     <li class="menu-item"><a href="{{ route('climate') }}">Climate Change</a></li>
                     <li class="menu-item"><a href="{{ route('sustainability') }}">Sustainability</a></li>
                     <li class="menu-item"><a href="{{ route('gender') }}">Gender</a></li>
