@@ -186,7 +186,7 @@
                                         <a href="https://www.youtube.com/user/Arannayk/videos"><i
                                                 class="greennature-icon fa fa-youtube-play"
                                                 style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
-                                        <a href=""><i class="greennature-icon fa fa-linkedin"
+                                        <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i class="greennature-icon fa fa-linkedin"
                                                       style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
                                         <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i
                                                 class="greennature-icon fa fa-flickr"
