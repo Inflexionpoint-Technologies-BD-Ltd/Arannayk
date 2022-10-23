@@ -7,6 +7,7 @@
 <html lang="en-US">
 <!--<![endif]-->
 
+
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
@@ -119,7 +120,13 @@
             @foreach($videos as $video)
             <div class="six columns">
                 <div class="greennature-video-item greennature-item">
-                    <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {{-- <iframe width="400" height="315" src="{{ asset('storage/'.$video->image)}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
+
+
+                    <video controls width="400" height="315">
+                        <source src="{{ asset('storage/'.$video->image)}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
                 </div>
 
 
