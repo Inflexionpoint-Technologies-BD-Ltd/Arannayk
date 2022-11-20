@@ -155,7 +155,9 @@
 
 
                                                     </div>
-                                                    @if($blogs->image_2 != null)
+
+
+                                                    @if($blogs->image_2 != null && pathinfo(asset('storage/'.$blogs->image_2),PATHINFO_EXTENSION) == 'jpg' || pathinfo(asset('storage/'.$blogs->image_2),PATHINFO_EXTENSION) == 'jpeg' || pathinfo(asset('storage/'.$blogs->image_2),PATHINFO_EXTENSION) == 'png')
                                                         <div class="six columns">
                                                             <div
                                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
@@ -179,7 +181,7 @@
                                                         </div>
                                                     @endif
 
-                                                    @if($blogs->image_3 != null)
+                                                    @if($blogs->image_3 != null && pathinfo(asset('storage/'.$blogs->image_3),PATHINFO_EXTENSION) == 'jpg' || pathinfo(asset('storage/'.$blogs->image_3),PATHINFO_EXTENSION) == 'jpeg' || pathinfo(asset('storage/'.$blogs->image_3),PATHINFO_EXTENSION) == 'png')
                                                         <div class="six columns">
                                                             <div
                                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
@@ -203,7 +205,7 @@
                                                         </div>
                                                     @endif
 
-                                                    @if($blogs->image_4 != null)
+                                                    @if($blogs->image_4 != null && pathinfo(asset('storage/'.$blogs->image_4),PATHINFO_EXTENSION) == 'jpg' || pathinfo(asset('storage/'.$blogs->image_4),PATHINFO_EXTENSION) == 'jpeg' || pathinfo(asset('storage/'.$blogs->image_4),PATHINFO_EXTENSION) == 'png')
                                                         <div class="six columns">
                                                             <div
                                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
@@ -227,7 +229,7 @@
                                                         </div>
                                                     @endif
 
-                                                    @if($blogs->image_5 != null)
+                                                    @if($blogs->image_5 != null && pathinfo(asset('storage/'.$blogs->image_5),PATHINFO_EXTENSION) == 'jpg' || pathinfo(asset('storage/'.$blogs->image_5),PATHINFO_EXTENSION) == 'jpeg' || pathinfo(asset('storage/'.$blogs->image_5),PATHINFO_EXTENSION) == 'png')
                                                         <div class="six columns">
                                                             <div
                                                                 class="greennature-item greennature-portfolio-item greennature-classic-portfolio">

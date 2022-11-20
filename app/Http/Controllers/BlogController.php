@@ -110,10 +110,10 @@ class BlogController extends Controller
             'content' => 'required',
             'tag' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
-            'image_2' => 'nullable|mimes:jpeg,jpg,png',
-            'image_3' => 'nullable|mimes:jpeg,jpg,png',
-            'image_4' => 'nullable|mimes:jpeg,jpg,png',
-            'image_5' => 'nullable|mimes:jpeg,jpg,png',
+            'image_2' => 'nullable',
+            'image_3' => 'nullable',
+            'image_4' => 'nullable',
+            'image_5' => 'nullable',
         ]);
 
         if (request('image')) {
