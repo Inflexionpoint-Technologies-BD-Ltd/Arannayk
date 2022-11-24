@@ -18,11 +18,11 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://arannayk.inflexionpointbd.com/">
+    <meta property="og:url" content="https://arannayk.org/">
     <meta property="og:title" content="Arannayk Foundation">
     <meta property="og:description"
           content="Supporting tropical forest conservation activities in Bangladesh. Established through joint initiatives of the US Govt. and Bangladesh Govt. in 2003 as a NPO.">
-    <meta property="og:image" content="http://arannayk.org/assets/bg/home-what-we-do.jpg">
+    <meta property="og:image" content="{{ asset('img/logo_arn.png') }}">
 
     <!-- Twitter -->
     {{--    <meta property="twitter:card" content="summary_large_image">--}}

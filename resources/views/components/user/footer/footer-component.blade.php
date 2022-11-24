@@ -5,7 +5,7 @@
                 <div id="text-5" class="widget widget_text greennature-item greennature-widget">
                     <div class="textwidget">
                         <p>
-                            <img src="{{ asset('images/logo_5.png') }}" style="width: 170px" alt=""/>
+                            <img src="{{ asset('img/logo_arn.png') }}" style="width: 170px" alt=""/>
                         </p>
                     </div>
                 </div>
