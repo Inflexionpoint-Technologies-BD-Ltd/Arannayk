@@ -18,7 +18,7 @@
                         <span class="clear"></span><span class="greennature-space"
                                                          style="margin-top: -6px; display: block"></span>
                         Address: 527/K Wasi Tower, ECB Chattar, Matikata, Dhaka
-                        Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh
+                        Cantonment, 6th floor, 1206 Dhaka, Dhaka Division, Bangladesh
                         <span class="clear"></span><span class="greennature-space"
                                                          style="margin-top: 10px; display: block"></span>
 
@@ -89,6 +89,7 @@
                            style="background-color: #eb681c; color: #000">Donate Now</a><a
                             class="stunning-item-button greennature-button large" href="{{ route('career') }}" style="color: #000">Get
                             Involved</a>
+                            <img src="{{ asset('img/ssl.png') }}" alt="">
                     </div>
                 </div>
             </div>
