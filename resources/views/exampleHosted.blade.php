@@ -174,8 +174,8 @@
 
 
                                <div class="custom-control custom-checkbox">
-                                   <input type="checkbox" class="custom-control-input" id="save-info">
-                                   <label class="custom-control-label" for="save-info">I HAVE READ AND AGREE TO THE WEBSITE'S <a href="">TERMS AND CONDITIONS</a>, <a href="">PRIVACY POLICY</a>, AND <a href="">REFUND POLICY</a></label>
+                                   <input type="checkbox" class="custom-control-input" id="save-info" required>
+                                   <label class="custom-control-label" for="save-info">I HAVE READ AND AGREE TO THE WEBSITE'S <a href="{{ route('terms') }}">TERMS AND CONDITIONS</a>, <a href="{{ route('terms') }}">PRIVACY POLICY</a>, AND <a href="{{ route('terms') }}">REFUND POLICY</a></label>
                                </div>
                                <hr class="mb-4">
 

@@ -1,12 +1,16 @@
 <div>
+
     <footer class="footer-wrapper">
         <div class="footer-container container">
             <div class="footer-column three columns" id="footer-widget-1">
                 <div id="text-5" class="widget widget_text greennature-item greennature-widget">
+
                     <div class="textwidget">
+
                         <p>
-                            <img src="{{ asset('img/logo_arn.png') }}" style="width: 170px" alt=""/>
+                            <img src="{{ asset('img/logo_arn.png') }}" style="width: 170px" alt="" />
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -16,42 +20,44 @@
                     <div class="clear"></div>
                     <div class="textwidget">
                         <span class="clear"></span><span class="greennature-space"
-                                                         style="margin-top: -6px; display: block"></span>
-                        Address: 527/K Wasi Tower, ECB Chattar, Matikata, Dhaka
-                        Cantonment, 6th floor, 1206 Dhaka, Dhaka Division, Bangladesh
+                            style="margin-top: -6px; display: block"></span>
+                        Address: <b>572/K</b>, 6th floor, Wasi Tower, ECB Chattar, Matikata, Dhaka
+                        Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh
                         <span class="clear"></span><span class="greennature-space"
-                                                         style="margin-top: 10px; display: block"></span>
+                            style="margin-top: 10px; display: block"></span>
 
                         <i class="greennature-icon fa fa-phone"
-                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>
+                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
                         +02-8711240
 
                         <span class="clear"></span><span class="greennature-space"
-                                                         style="margin-top: 10px; display: block"></span>
+                            style="margin-top: 10px; display: block"></span>
 
                         <!-- <i class="greennature-icon fa fa-mobile"
                                           style="vertical-align: middle; color: #fff; font-size: 20px; "></i> +1833-232-3443 -->
 
                         <span class="clear"></span><span class="greennature-space"
-                                                         style="margin-top: 10px; display: block"></span>
+                            style="margin-top: 10px; display: block"></span>
 
                         <i class="greennature-icon fa fa-envelope-o"
-                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>
+                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
                         info@arannayk.org
 
                         <span class="clear"></span><span class="greennature-space"
-                                                         style="margin-top: 10px; display: block"></span>
+                            style="margin-top: 10px; display: block"></span>
 
                         <i class="greennature-icon fa fa-globe"
-                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>
+                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
                         http://arannayk.org/
-                    </div>
+                    </div><br>
+                    <p><b>RJSC :</b> C-550(02)/2003</p>
+
                 </div>
             </div>
 
             <div class="footer-column three columns" id="footer-widget-4">
                 <div id="gdlr-recent-portfolio2-widget-6"
-                     class="widget widget_gdlr-recent-portfolio2-widget greennature-item greennature-widget">
+                    class="widget widget_gdlr-recent-portfolio2-widget greennature-item greennature-widget">
                     <h3 class="greennature-widget-title">Quick Links</h3>
                     <div class="clear"></div>
                     <div class="greennature-recent-port2-widget">
@@ -69,10 +75,16 @@
                         <div style="margin-bottom: 0.5rem">
                             <a href="{{ route('publication') }}" style="color: #0c0c0c">Publications</a>
                         </div>
+                        <div style="margin-bottom: 0.5rem">
+                            <a href="{{ route('terms') }}" style="color: #0c0c0c">Terms & Conditions</a>
+                        </div>
+                        <div style="margin-bottom: 0.5rem">
+                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Refund Policy & Privacy Policy</a>
+                        </div>
 
-                        {{--                    <div style="margin-bottom: 0.5rem">--}}
-                        {{--                        <a href="{{ route('contactUs') }}" style="color: #0c0c0c">Contact Us</a>--}}
-                        {{--                    </div>--}}
+                        {{--                    <div style="margin-bottom: 0.5rem"> --}}
+                        {{--                        <a href="{{ route('contactUs') }}" style="color: #0c0c0c">Contact Us</a> --}}
+                        {{--                    </div> --}}
 
                         <div class="clear"></div>
                     </div>
@@ -86,43 +98,55 @@
                             <h3 class="greennature-widget-title">Support Us</h3>
                         </div>
                         <a class="stunning-item-button greennature-button large" href="{{ route('donate') }}"
-                           style="background-color: #eb681c; color: #000">Donate Now</a><a
-                            class="stunning-item-button greennature-button large" href="{{ route('career') }}" style="color: #000">Get
+                            style="background-color: #eb681c; color: #000">Donate Now</a><a
+                            class="stunning-item-button greennature-button large" href="{{ route('career') }}"
+                            style="color: #000">Get
                             Involved</a>
-                            <img src="{{ asset('img/ssl.png') }}" alt="">
+                        {{-- <img src="{{ asset('img/ssl.png') }}" alt="" style="height: 60px;  "> --}}
                     </div>
                 </div>
             </div>
+            <img src="{{ asset('img/ssl.png') }}" alt="" style="height: 90px; float: left;  ">
 
-            <div class="clear"></div>
+            <div class="clear"> </div>
+
         </div>
+
 
         <div class="copyright-wrapper">
             <div class="copyright-container container">
                 <div class="copyright-left">
                     <a href="https://www.facebook.com/arannaykfoundation/">
-                        <i class="greennature-icon fa fa-facebook" style="
+                        <i class="greennature-icon fa fa-facebook"
+                            style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
 
-                    <a href="https://www.youtube.com/user/Arannayk/videos"><i class="greennature-icon fa fa-youtube-play" style="
+                    <a href="https://www.youtube.com/user/Arannayk/videos"><i
+                            class="greennature-icon fa fa-youtube-play"
+                            style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
-                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i class="greennature-icon fa fa-linkedin" style="
+                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i
+                            class="greennature-icon fa fa-linkedin"
+                            style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
-                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i class="greennature-icon fa fa-flickr" style="
+                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i
+                            class="greennature-icon fa fa-flickr"
+                            style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                   "></i></a>
-                    <a href="https://twitter.com/Arannayk"><i class="greennature-icon fa fa-twitter" style="
+                    <a href="https://twitter.com/Arannayk"><i class="greennature-icon fa fa-twitter"
+                            style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
@@ -138,5 +162,3 @@
         </div>
     </footer>
 </div>
-
-

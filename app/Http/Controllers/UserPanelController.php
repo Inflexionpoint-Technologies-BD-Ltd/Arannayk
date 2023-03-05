@@ -408,6 +408,13 @@ class UserPanelController extends Controller
 
 
 //----------------------------------------------------- SEARCH Form---------------------//
+// ---------------------------------Terms & COnditions---------------------------------//
+
+function terms(){
+    return view('user.terms');
+}
+
+// ---------------------------------Terms & COnditions---------------------------------//
 
 
 }
