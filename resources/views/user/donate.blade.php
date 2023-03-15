@@ -116,23 +116,23 @@
             <div class="container">
                 <div class="">
                     @foreach($donates as $donate)
-                    <div class="greennature-item greennature-about-us-item greennature-normal">
-                        <div class="about-us-title-wrapper">
-                            <h3 class="about-us-title" style="text-align: center; font-size:28px">
-                                {{ $donate->title }}
-                            </h3>
-                            <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
-                            <div class="about-us-title-divider"></div>
-                        </div>
-                        <div class="about-us-content-wrapper">
-                            <div class="about-us-content greennature-skin-content">
-                                <p style="text-align: center;">
-                                    {!! $donate->content  !!}
-                                </p>
+                        <div class="greennature-item greennature-about-us-item greennature-normal">
+                            <div class="about-us-title-wrapper">
+                                <h3 class="about-us-title" style="text-align: center; font-size:28px">
+                                    {{ $donate->title }}
+                                </h3>
+                                <div class="about-us-caption greennature-title-font greennature-skin-info"></div>
+                                <div class="about-us-title-divider"></div>
                             </div>
+                            <div class="about-us-content-wrapper">
+                                <div class="about-us-content greennature-skin-content">
+                                    <p style="text-align: center;">
+                                        {!! $donate->content  !!}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
-                    </div>
                     @endforeach
                 </div>
                 <div class="clear"></div>
@@ -142,16 +142,21 @@
     </section>
 
     <section id="content-section-5">
-        <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin" id="greennature-parallax-wrapper-2" data-bgspeed="0.1" style="background-color:#005e5e; padding-top: 125px; padding-bottom: 90px; ">
+        <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
+             id="greennature-parallax-wrapper-2" data-bgspeed="0.1"
+             style="background-color:#005e5e; padding-top: 125px; padding-bottom: 90px; ">
             <div class="container">
                 <div class="greennature-stunning-item-ux greennature-ux">
                     <div class="greennature-item greennature-stunning-item greennature-stunning-center">
-                        <h2 class="stunning-item-title">The only way to make this happened is to take action!</h2>
+                        <h2 class="stunning-item-title">The only way to
+                            make this happen is
+                            by taking action!</h2>
                         <div class="stunning-item-caption greennature-skin-content">
                             <p></p>
                         </div>
-                        <a class="stunning-item-button greennature-button large" href={{ route('donation-form') }} style="background-color: #fec428; color: #000;">Donate Now</a>
-{{--                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="{{ route('career') }}">Act Now</a>--}}
+                        <a class="stunning-item-button greennature-button large" href="{{ route('donation-form') }}"
+                           style="background-color: #fec428; color: #000;">Donate Now</a>
+                        {{--                        <a class="stunning-item-button greennature-button large"  style="color: #000" href="{{ route('career') }}">Act Now</a>--}}
                     </div>
                 </div>
                 <div class="clear"></div>

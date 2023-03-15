@@ -21,7 +21,7 @@
                     <div class="textwidget">
                         <span class="clear"></span><span class="greennature-space"
                             style="margin-top: -6px; display: block"></span>
-                        Address: <b>572/K</b>, 6th floor, Wasi Tower, ECB Chattar, Matikata, Dhaka
+                        Address: 572/K, 6th floor, Wasi Tower, ECB Chattar, Matikata, Dhaka
                         Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh
                         <span class="clear"></span><span class="greennature-space"
                             style="margin-top: 10px; display: block"></span>
@@ -79,8 +79,11 @@
                             <a href="{{ route('terms') }}" style="color: #0c0c0c">Terms & Conditions</a>
                         </div>
                         <div style="margin-bottom: 0.5rem">
-                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Refund Policy & Privacy Policy</a>
+                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Refund Policy </a><br>
+                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Privacy Policy </a>
+
                         </div>
+
 
                         {{--                    <div style="margin-bottom: 0.5rem"> --}}
                         {{--                        <a href="{{ route('contactUs') }}" style="color: #0c0c0c">Contact Us</a> --}}

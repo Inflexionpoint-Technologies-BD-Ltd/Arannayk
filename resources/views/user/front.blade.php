@@ -937,7 +937,7 @@
                     <div
                         class="greennature-parallax-wrapper greennature-background-image gdlr-show-all greennature-skin-dark-skin"
                         id="greennature-parallax-wrapper-3" data-bgspeed="0.15" style="
-                        background-image: url({{ asset('./images/slider_images/matthew-smith-Rfflri94rs8-unsplash.jpg') }});
+                        background-image: url({{ asset('./images/slider_images/get.jpg') }});
 
                         ">
                         <h2 class="section-title">

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Library\SslCommerz\SslCommerzNotification;
-
+use Illuminate\Support\Facades\Http;
 class SslCommerzPaymentController extends Controller
 {
 
@@ -15,12 +15,15 @@ class SslCommerzPaymentController extends Controller
 
     public function exampleEasyCheckout()
     {
+
         return view('exampleEasycheckout');
     }
 
     public function exampleHostedCheckout()
     {
-        return view('exampleHosted');
+        $countries = Http::get('https://restcountries.com/v3.1/all')->json();
+
+        return view('exampleHosted', compact('countries'));
     }
 
     public function index(Request $request)

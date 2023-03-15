@@ -31,8 +31,8 @@
 <body class="bg-light">
 <div class="container">
     <div class="py-5 text-center">
-{{--        <h2>Hosted Payment - SSLCommerz</h2>--}}
-{{--        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. We have provided this sample form for understanding Hosted Checkout Payment with SSLCommerz.</p>--}}
+        {{--        <h2>Hosted Payment - SSLCommerz</h2>--}}
+        {{--        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. We have provided this sample form for understanding Hosted Checkout Payment with SSLCommerz.</p>--}}
     </div>
 
     <div class="row">
@@ -72,10 +72,11 @@
 
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Donate Now</h4>
-            <p>There is no limit to donate an amount. If you would like to donate a large amount and need help in the process please email at <a href="mailto:info@arannayk.org">info@arannayk.org.</a>
+            <p>There is no limit to donate an amount. If you would like to donate a large amount and need help in the
+                process please email at <a href="mailto:info@arannayk.org">info@arannayk.org.</a>
             </p>
             <form action="{{ url('/pay') }}" method="POST" class="needs-validation">
-                <input type="hidden" value="{{ csrf_token() }}" name="_token" />
+                <input type="hidden" value="{{ csrf_token() }}" name="_token"/>
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <label for="firstName">Full name</label>
@@ -121,7 +122,7 @@
                 <div class="mb-3">
                     <label for="amount">Donation Amount</label>
                     <input type="number" class="form-control" name="amount" id="total_amount" placeholder=""
-                           value="" required>
+                           value="" required min="1000">
                     <div class="invalid-feedback">
                         Please enter the amount.
                     </div>
@@ -137,8 +138,14 @@
                         <label for="country">Country</label>
                         <select class="custom-select d-block w-100" id="country" required>
                             <option value="">Choose...</option>
-                            <option value="Bangladesh">Bangladesh</option>
+                            @foreach($countries as $country)
+                                <option
+                                    value="{{ $country['name']['common']  }}">{{ $country['name']['common']  }}</option>
+                            @endforeach
                         </select>
+                        <div id="other-country-input" style="display: none;">
+                            <input type="text" id="other-country-name" placeholder="Enter country name">
+                        </div>
                         <div class="invalid-feedback">
                             Please select a valid country.
                         </div>
@@ -148,6 +155,15 @@
                         <select class="custom-select d-block w-100" id="state" required>
                             <option value="">Choose...</option>
                             <option value="Dhaka">Dhaka</option>
+                            <option value="Chattogram">Chattogram</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                            <option value="Rangpur">Rangpur</option>
+
+                            <option value="Barishal">Barishal</option>
+
                         </select>
                         <div class="invalid-feedback">
                             Please provide a valid state.
@@ -163,23 +179,22 @@
                 </div>
 
 
-
-                               <hr class="mb-4">
-                               {{-- <div class="custom-control custom-checkbox">
-                                   <input type="checkbox" class="custom-control-input" id="same-address">
-                                   <input type="hidden" value="" name="amount" id="total_amount" required/>
-                                   <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
-                                       address</label>
-                               </div> --}}
-
-
-                               <div class="custom-control custom-checkbox">
-                                   <input type="checkbox" class="custom-control-input" id="save-info" required>
-                                   <label class="custom-control-label" for="save-info">I HAVE READ AND AGREE TO THE WEBSITE'S <a href="{{ route('terms') }}">TERMS AND CONDITIONS</a>, <a href="{{ route('terms') }}">PRIVACY POLICY</a>, AND <a href="{{ route('terms') }}">REFUND POLICY</a></label>
-                               </div>
-                               <hr class="mb-4">
+                <hr class="mb-4">
+                {{-- <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="same-address">
+                    <input type="hidden" value="" name="amount" id="total_amount" required/>
+                    <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
+                        address</label>
+                </div> --}}
 
 
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="save-info" required>
+                    <label class="custom-control-label" for="save-info">I HAVE READ AND AGREE TO THE WEBSITE'S <a
+                            href="{{ route('terms') }}">TERMS AND CONDITIONS</a>, <a href="{{ route('terms') }}">PRIVACY
+                            POLICY</a>, AND <a href="{{ route('terms') }}">REFUND POLICY</a></label>
+                </div>
+                <hr class="mb-4">
 
 
                 <button class="btn btn-danger btn-lg btn-block" type="submit">Add Donation</button>

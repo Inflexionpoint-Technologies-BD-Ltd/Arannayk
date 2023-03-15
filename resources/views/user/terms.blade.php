@@ -152,8 +152,8 @@
                                       <li>All relevant circumstances justifying your request</li>
                                   </ul>
                                   <p>Upon receipt we will review your request and endeavor to respond to you within ten working days. If
-                                      the request is accepted, we will process the refund as soon as possible. Please note that it may take 10-
-                                      14 business days until a refund reaches your account.
+                                      the request is accepted, we will process the refund as soon as possible. Please note that it may take
+                                      7 to 10 working days until a refund reaches your account.
                                   </p>
                                   <h1>Privacy Policy</h1>
                                   <p>Arannayk Foundation is committed to protecting both personal as well as business information you
