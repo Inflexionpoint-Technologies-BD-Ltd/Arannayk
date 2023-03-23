@@ -43,7 +43,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Enter Image</label>
                     <input type="file" class="form-control-file @error('image') is-invalid @enderror"
-                           id="exampleFormControlFile1" name="image">
+                           id="exampleFormControlFile1" name="files[]" multiple>
                 </div>
 
                 @error('image')

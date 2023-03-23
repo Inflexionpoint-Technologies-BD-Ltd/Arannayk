@@ -42,7 +42,7 @@ class UserPanelController extends Controller
         $projects = Project::orderBy('id','desc')->get();
         $publications = Publication::skip(0)->take(4)->get();
         $sliders = Slider::all();
-        $timelines = Timeline::skip(0)->take(3)->get();
+        $timelines = Timeline::orderBy('year','desc')->skip(0)->take(3)->get();
 
         return view('user.front', compact('services', 'projects', 'publications', 'sliders', 'timelines'));
     }

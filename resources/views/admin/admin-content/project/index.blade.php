@@ -15,6 +15,7 @@
             <th>funded_by</th>
             <th>Image</th>
             <th>Project Date</th>
+            <th>SVG ICONS</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -30,8 +31,8 @@
                 <td>{!! $project->achievement !!}</td>
                 <td>{{ $project->tag }}</td>
                 <td>{{ $project->funded_by }}</td>
-                <td>{{ $project->date }}</td>
                 <td><img src="{{ asset('storage/'.$project->image) }}" alt="" style="width: 100px"></td>
+                <td>{{ $project->date }}</td>
 
                 {{-- ----------------------------- SDG ICONS --------------------------------- --}}
 

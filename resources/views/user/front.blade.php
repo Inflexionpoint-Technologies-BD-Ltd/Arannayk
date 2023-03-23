@@ -406,7 +406,7 @@
                                          style="background: url({{ asset('storage/'.$service->image) }}); background-size: cover; box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.7);">
                                         <a href="/services" class="services-title-style">
                                             <h3 class="action-ads-title" style="color: {{ $service->color_title }}">
-                                                {{ \Illuminate\Support\Str::words($service ->title,2,'...')}}
+                                                {{ \Illuminate\Support\Str::words($service ->title,4,'...')}}
                                             </h3>
                                         </a>
                                         <!-- <div class="action-ads-caption greennature-skin-info">Your money can cure this

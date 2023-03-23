@@ -32,53 +32,62 @@ class SvgController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
 
         $inputs = \request()->validate([
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'files[]' => 'required|mimes:jpeg,jpg,png',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
+
+        if (\request('sdg_type') == 'project') {
+            if (request('files')) {
+                $files = $request->file('files');
+                foreach ($files as $image) {
+                    $inputs['image'] = $image->store('photos');
+                    Svg::create([
+                        'image' => $inputs['image'],
+                        'project_id' => request('sdg_id')
+                    ]);
+                }
+            }
         }
 
-        if (\request('sdg_type') == 'project'){
-            Svg::create([
-                'image' => $inputs['image'],
-                'project_id' => request('sdg_id')
-            ]);
+        if (\request('sdg_type') == 'archive') {
+            if (request('files')) {
+                $files = $request->file('files');
+                foreach ($files as $image) {
+                    $inputs['image'] = $image->store('photos');
+                    Svg::create([
+                        'image' => $inputs['image'],
+                        'project_id' => request('sdg_id')
+                    ]);
+                }
+            }
         }
 
-        if (\request('sdg_type') == 'archive'){
-            Svg::create([
-                'image' => $inputs['image'],
-                'archive_id' => request('sdg_id')
-            ]);
-        }
-
-        session()->flash("create","Data added successfully");
+        session()->flash("create", "Data added successfully");
         return redirect()->back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Svg  $svg
+     * @param \App\Svg $svg
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        return view("admin.admin-content.sdg.create",compact('id'));
+        return view("admin.admin-content.sdg.create", compact('id'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Svg  $svg
+     * @param \App\Svg $svg
      * @return \Illuminate\Http\Response
      */
     public function edit($svg)
@@ -90,8 +99,8 @@ class SvgController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Svg  $svg
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Svg $svg
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $svg)
@@ -105,12 +114,12 @@ class SvgController extends Controller
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
-        }else{
+        } else {
             $inputs['image'] = $svg_data->image;
         }
 
         $svg_data->update($inputs);
-        session()->flash("update","Data updated successfully");
+        session()->flash("update", "Data updated successfully");
         return redirect()->route('svg.index');
 
     }
@@ -118,7 +127,7 @@ class SvgController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Svg  $svg
+     * @param \App\Svg $svg
      * @return \Illuminate\Http\Response
      */
     public function destroy($svg)
