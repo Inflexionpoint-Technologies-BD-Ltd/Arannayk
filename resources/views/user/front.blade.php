@@ -904,16 +904,15 @@
                                                         <div class="portfolio-classic-content">
                                                             <div style="text-align: center" class="reveal fade-bottom">
                                                                 <a class="stunning-item-button large download-button-style"
-                                                                   href="{{ asset('storage/'.$publication->file_content) }}"
-                                                                   download>Download</a>
+                                                                   href="{{ asset('storage/'.$publication->file_content) }}">View Publication</a>
                                                             </div>
                                                             <div class="greennature-portfolio-info">
                                                                 <div class="clear"></div>
                                                             </div>
-                                                            <div class="portfolio-excerpt">
-                                                                <div class="clear"></div>
-                                                                <a href="#" class="excerpt-read-more">Read More</a>
-                                                            </div>
+{{--                                                            <div class="portfolio-excerpt">--}}
+{{--                                                                <div class="clear"></div>--}}
+{{--                                                                <a href="#" class="excerpt-read-more">Read More</a>--}}
+{{--                                                            </div>--}}
                                                         </div>
                                                     </div>
                                                 </div>

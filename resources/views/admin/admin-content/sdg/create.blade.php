@@ -22,13 +22,13 @@
 
                 <div class="form-group">
 
-{{--                    <label for="exampleInputEmail1">SDG Project Type Initial ( Don't change )</label>--}}
+                    {{--                    <label for="exampleInputEmail1">SDG Project Type Initial ( Don't change )</label>--}}
 
                     <input type="hidden" id="exampleInputEmail1" aria-describedby="emailHelp"
                            placeholder="Project Type" name="sdg_type" value="{{ request('project_type') }}"
                            class="form-control">
 
-{{--                    <label for="exampleInputEmail1">SDG Project Type Initial ( Don't change )</label>--}}
+                    {{--                    <label for="exampleInputEmail1">SDG Project Type Initial ( Don't change )</label>--}}
 
 
                     <input type="hidden" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -42,13 +42,14 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Enter Image</label>
-                    <input type="file" class="form-control-file @error('image') is-invalid @enderror"
-                           id="exampleFormControlFile1" name="files[]" multiple>
+                    <input type="file" class="form-control-file @error('files.*') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="files[]" multiple required>
                 </div>
 
-                @error('image')
+                @error('files.*')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
+
 
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </form>

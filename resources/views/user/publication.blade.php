@@ -143,7 +143,7 @@
                                                 <div class="portfolio-classic-content">
                                                     <div style="text-align:center">
                                                         <a class="stunning-item-button large download-button-style"
-                                                           href="{{ asset('storage/'.$publication->file_content) }}" download>Download</a>
+                                                           href="{{ asset('storage/'.$publication->file_content) }}">View Publication</a>
                                                     </div>
 
                                                     <div class="portfolio-excerpt">

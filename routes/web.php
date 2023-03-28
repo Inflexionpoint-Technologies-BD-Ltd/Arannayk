@@ -140,6 +140,7 @@ Route::get('/get-involved/procurement', "UserPanelController@procurement")->name
 // -------------------------- PRESS RELEASE--------------------------------
 
 Route::get('/media-center/press-release', "UserPanelController@pressRelease")->name('press');
+Route::get('/media-center/single-press-release/{id}', "UserPanelController@singlepressRelease")->name('single-press');
 
 // ------------------------------------------------- PRESS RELEASE---------
 

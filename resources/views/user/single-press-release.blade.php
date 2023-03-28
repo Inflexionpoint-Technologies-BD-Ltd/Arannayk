@@ -128,61 +128,53 @@
                                         <div class="blog-item-wrapper">
                                             <div class="blog-item-holder">
 
-                                                @foreach($pressReleases as $press)
-                                                    <div class="greennature-item greennature-blog-full"
-                                                         id="{{ $press->title }}">
-                                                        <div class="greennature-ux greennature-blog-full-ux">
-                                                            <article id="post-862"
-                                                                     class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
-                                                                <div class="greennature-standard-style">
-                                                                    <div class="press-release-style">
-                                                                        <a> <img
-                                                                                src="{{ asset('storage/'.$press->image) }}"
-                                                                                class="press-release-image" alt=""/></a>
-                                                                    </div>
+                                                <div class="greennature-item greennature-blog-full"
+                                                     id="{{ $singlepressRelease->title }}">
+                                                    <div class="greennature-ux greennature-blog-full-ux">
+                                                        <article id="post-862"
+                                                                 class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                                                            <div class="greennature-standard-style">
+                                                                <div class="press-release-style">
+                                                                    <a> <img
+                                                                            src="{{ asset('storage/'.$singlepressRelease->image) }}"
+                                                                            class="press-release-image" alt=""/></a>
+                                                                </div>
 
-                                                                    <div class="blog-content-wrapper">
-                                                                        <header class="post-header">
-                                                                            <h3 class="greennature-blog-title">
-                                                                                <a>{{ $press->title }}</a></h3>
+                                                                <div class="blog-content-wrapper">
+                                                                    <header class="post-header">
+                                                                        <h3 class="greennature-blog-title">
+                                                                            <a>{{ $singlepressRelease->title }}</a></h3>
 
-                                                                            <div class="greennature-blog-info">
-                                                                                {{--                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>--}}
-                                                                                <div
-                                                                                    class="blog-info blog-author greennature-skin-info">
-                                                                                    <i class="fa fa-tags"></i><a>{{ $press->tag }}</a>
-                                                                                </div>
-                                                                                <div class="clear"></div>
+                                                                        <div class="greennature-blog-info">
+                                                                            {{--                                                                            <div class="blog-info blog-author greennature-skin-info"><i class="fa fa-edit"></i><a>Posted on {{ $press->created_at-> format('d/m/y') }} </a></div>--}}
+                                                                            <div
+                                                                                class="blog-info blog-author greennature-skin-info">
+                                                                                <i class="fa fa-tags"></i><a>{{ $singlepressRelease->tag }}</a>
                                                                             </div>
                                                                             <div class="clear"></div>
-                                                                        </header>
-                                                                        <!-- entry-header -->
-
-                                                                        <div class="greennature-blog-content"
-                                                                             style="text-align: justify"> {!! \Illuminate\Support\Str::limit($press->content, '1500', ".....")  !!}
-                                                                            <div class="clear">
-                                                                            </div>
-                                                                            <a href="{{ route('single-press', $press->id) }}"
-                                                                               class="excerpt-read-more">Read More</a>
                                                                         </div>
+                                                                        <div class="clear"></div>
+                                                                    </header>
+                                                                    <!-- entry-header -->
+
+                                                                    <div class="greennature-blog-content"
+                                                                         style="text-align: justify"> {!! $singlepressRelease->content  !!}
+                                                                        <div class="clear">
+                                                                        </div>
+{{--                                                                        <a href="{{ route('single-press', $press->id) }}"--}}
+{{--                                                                           class="excerpt-read-more">Read More</a>--}}
                                                                     </div>
-                                                                    <!-- blog content wrapper -->
-                                                                    <div class="clear"></div>
                                                                 </div>
-                                                            </article>
-                                                            <!-- #post -->
-                                                        </div>
+                                                                <!-- blog content wrapper -->
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        </article>
+                                                        <!-- #post -->
                                                     </div>
-                                                @endforeach
+                                                </div>
 
                                             </div>
-                                            {{-- ----------------- pagination ------------------------ --}}
 
-                                            <div class="pagination-style">
-                                                {{ $pressReleases->links() }}
-                                            </div>
-
-                                            {{-- ----------------- pagination ------------------------ --}}
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -214,9 +206,18 @@
                                                         <div class="clear"></div>
                                                     </div>
                                                 </div>
+
                                                 <div class="clear"></div>
                                             </div>
                                         @endforeach
+
+                                            {{-- ----------------- pagination ------------------------ --}}
+
+                                            <div class="pagination-style">
+                                                {{ $pressReleases->links() }}
+                                            </div>
+
+                                            {{-- ----------------- pagination ------------------------ --}}
 
                                         <div class="clear"></div>
                                     </div>

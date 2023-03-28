@@ -26,6 +26,7 @@
           href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
           type="text/css" media="all"/>
 
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
@@ -113,40 +114,40 @@
 
 
     <section id="content-section-2">
-        <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey" style="background-color: #ffffff; padding-top: 55px; padding-bottom: 35px; ">
+        <div class="greennature-color-wrapper  gdlr-show-all greennature-skin-light-grey"
+             style="background-color: #ffffff; padding-top: 55px; padding-bottom: 35px; ">
             @foreach($consultancy as $consultancy)
-            <div class="container">
+                <div class="container">
 
-
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-3">
-                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_1) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
+                    <div class="row" style="margin: 0; padding: 0">
+                        <div class="col"></div>
+                        <div class="col-md-4">
+                            <div class="greennature-ux column-service-ux">
+                                <div class="greennature-item greennature-column-service-item greennature-type-3">
+                                    <div class="column-service-image"><img
+                                            src="{{ asset('storage/'.$consultancy->image_2) }}"
+                                            class="consultancy-image-style" alt="" width="500" height="279"/></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-3">
-                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_2) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
+                        <div class="col-md-4">
+                            <div class="greennature-ux column-service-ux">
+                                <div class="greennature-item greennature-column-service-item greennature-type-3">
+                                    <div class="column-service-image"><img
+                                            src="{{ asset('storage/'.$consultancy->image_3) }}"
+                                            class="consultancy-image-style" alt="" width="500" height="279"/></div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col"></div>
+
                     </div>
+
+                    <div class="clear"></div>
                 </div>
-
-                <div class="four columns">
-                    <div class="greennature-ux column-service-ux">
-                        <div class="greennature-item greennature-column-service-item greennature-type-3">
-                            <div class="column-service-image"><img src="{{ asset('storage/'.$consultancy->image_3) }}" class="consultancy-image-style" alt="" width="500" height="279" /></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="clear"></div>
-            </div>
-                <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; padding-top: 70px; padding-bottom: 53px; ">
+                <div class="greennature-color-wrapper  gdlr-show-all no-skin"
+                     style="background-color: #f3f3f3; padding-top: 70px; padding-bottom: 53px; ">
                     <div class="container">
                         <div class="">
                             <div class="greennature-item greennature-about-us-item greennature-normal">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Project;
 use App\Svg;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class SvgController extends Controller
 {
@@ -37,11 +38,9 @@ class SvgController extends Controller
      */
     public function store(Request $request)
     {
-
-        $inputs = \request()->validate([
-            'files[]' => 'required|mimes:jpeg,jpg,png',
+        $validatedData = $request->validate([
+            'files.*' => 'required|mimes:jpeg,png',
         ]);
-
 
         if (\request('sdg_type') == 'project') {
             if (request('files')) {
