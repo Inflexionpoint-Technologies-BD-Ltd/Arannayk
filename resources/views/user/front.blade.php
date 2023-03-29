@@ -136,7 +136,8 @@
                             <!-- MasterSlider -->
                             <div id="P_slider_1" class="master-slider-parent ms-parent-id-1">
                                 <!-- MasterSlider Main -->
-                                <div id="slider_1" class="master-slider ms-skin-default" style="background: black; overflow: hidden;">
+                                <div id="slider_1" class="master-slider ms-skin-default"
+                                     style="background: black; overflow: hidden;">
                                     @foreach($sliders as $slider)
 
                                         @if($slider->serial == 1)
@@ -147,7 +148,8 @@
                                                     data-src="{{ asset('storage/'.$slider->image) }}"/>
 
                                                 @if($loop->first)
-                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top:30px;"
+                                                    <a href="{{ route('projects') }}" target="_self"
+                                                       style="margin-top:30px;"
                                                        class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"
                                                        style=""
                                                        data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
@@ -157,15 +159,15 @@
                                                        data-offset-y="208"
                                                        data-origin="ml" data-position="normal">Learn More</a>
                                                 @else
-{{--                                                    <a href="{{ route('aboutUs') }}" target="_self" style="margin-top:30px;"--}}
-{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"--}}
-{{--                                                       style=""--}}
-{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
-{{--                                                       data-duration="400"--}}
-{{--                                                       data-delay="987"--}}
-{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
-{{--                                                       data-offset-y="208"--}}
-{{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
+                                                    {{--                                                    <a href="{{ route('aboutUs') }}" target="_self" style="margin-top:30px;"--}}
+                                                    {{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159 slider-button-custom"--}}
+                                                    {{--                                                       style=""--}}
+                                                    {{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+                                                    {{--                                                       data-duration="400"--}}
+                                                    {{--                                                       data-delay="987"--}}
+                                                    {{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+                                                    {{--                                                       data-offset-y="208"--}}
+                                                    {{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
                                                 @endif
 
 
@@ -174,7 +176,7 @@
                                                      data-duration="437" data-delay="625" data-ease="easeOutQuint"
                                                      data-offset-x="0"
                                                      data-offset-y="105" data-origin="ml" data-position="normal">
-                                                    {{ $slider->text_content_3 }}
+                                                    {!! $slider->text_content_3 !!}
                                                 </div>
 
                                                 <div class="ms-layer msp-cn-1-2" style="margin-top:30px; !important;"
@@ -182,7 +184,7 @@
                                                      data-duration="425" data-delay="325" data-ease="easeOutQuint"
                                                      data-offset-x="0"
                                                      data-offset-y="-5" data-origin="ml" data-position="normal">
-                                                    {{ $slider->text_content_2 }}
+                                                    {!!  $slider->text_content_2 !!}
                                                 </div>
 
                                                 <div class="ms-layer msp-cn-1-1" style="margin-top:30px; !important;"
@@ -190,7 +192,7 @@
                                                      data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
                                                      data-offset-y="-100"
                                                      data-origin="ml" data-position="normal">
-                                                    {{ $slider->text_content_1 }}
+                                                    {!! $slider->text_content_1 !!}
                                                 </div>
                                             </div>
                                         @else
@@ -201,26 +203,28 @@
                                                     data-src="{{asset('storage/'.$slider->image)}}"
                                                     style="opacity: 0.3; object-fit: cover"/>
                                                 @if($loop->first)
-                                                <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"
-                                                   class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
-                                                   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
-                                                   data-duration="400"
-                                                   data-delay="987"
-                                                   data-ease="easeOutQuint" data-type="button" data-offset-x="1"
-                                                   data-offset-y="227"
-                                                   data-origin="ml" data-position="normal">Learn More</a>
+                                                    <a href="{{ route('projects') }}" target="_self"
+                                                       style="margin-top: 30px;"
+                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"
+                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"
+                                                       data-duration="400"
+                                                       data-delay="987"
+                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"
+                                                       data-offset-y="227"
+                                                       data-origin="ml" data-position="normal">Learn More</a>
                                                 @else
-{{--                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"--}}
-{{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"--}}
-{{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
-{{--                                                       data-duration="400"--}}
-{{--                                                       data-delay="987"--}}
-{{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
-{{--                                                       data-offset-y="227"--}}
-{{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
+                                                    {{--                                                    <a href="{{ route('projects') }}" target="_self" style="margin-top: 30px;"--}}
+                                                    {{--                                                       class="ms-layer ms-btn ms-btn-round ms-btn-n msp-preset-btn-159"--}}
+                                                    {{--                                                       data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)"--}}
+                                                    {{--                                                       data-duration="400"--}}
+                                                    {{--                                                       data-delay="987"--}}
+                                                    {{--                                                       data-ease="easeOutQuint" data-type="button" data-offset-x="1"--}}
+                                                    {{--                                                       data-offset-y="227"--}}
+                                                    {{--                                                       data-origin="ml" data-position="normal">Learn More</a>--}}
                                                 @endif
 
-                                                <div class="ms-layer msp-cn-1-9" style="margin-top: 30px !important; margin-bottom: 30px !important;"
+                                                <div class="ms-layer msp-cn-1-9"
+                                                     style="margin-top: 30px !important; margin-bottom: 30px !important;"
                                                      data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
                                                      data-duration="437" data-delay="625" data-ease="easeOutQuint"
                                                      data-offset-x="0"
@@ -477,81 +481,88 @@
 
                 <!------------------------------ WHAT WE DO (CURRENT PROJECTS) ---------------------------------------->
                 <section id="content-section-1">
-                    <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 75px; padding-bottom: 5px; ">
+                    <div class="greennature-color-wrapper  gdlr-show-all no-skin"
+                         style="background-color: #ffffff; padding-top: 75px; padding-bottom: 5px; ">
                         <div class="container">
                             <div class="greennature-testimonial-item-wrapper" style="margin-bottom: 80px;">
-                                <div class="greennature-item-title-wrapper greennature-item  greennature-nav-container greennature-left greennature-small ">
+                                <div
+                                    class="greennature-item-title-wrapper greennature-item  greennature-nav-container greennature-left greennature-small ">
                                     <div
                                         class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">
-                                    <div class="greennature-item-title-container container">
-                                        <div class="greennature-item-title-head">
-                                            <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
-                                                <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our
-                                                Recent Projects
-                                            </h3>
-                                            <span class="greennature-nav-title"><i class="icon-angle-left greennature-flex-prev"></i><i class="icon-angle-right greennature-flex-next"></i></span>
-                                            <div class="clear"></div>
+                                        <div class="greennature-item-title-container container">
+                                            <div class="greennature-item-title-head">
+                                                <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">
+                                                    <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80"
+                                                         height="80"/>Our
+                                                    Recent Projects
+                                                </h3>
+                                                <span class="greennature-nav-title"><i
+                                                        class="icon-angle-left greennature-flex-prev"></i><i
+                                                        class="icon-angle-right greennature-flex-next"></i></span>
+                                                <div class="clear"></div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <div class="greennature-item greennature-testimonial-item carousel round-style">
                                     <div class="greennature-ux greennature-testimonial-ux">
-                                        <div class="flexslider" data-type="carousel" data-nav-container="greennature-testimonial-item" data-columns="3">
+                                        <div class="flexslider" data-type="carousel"
+                                             data-nav-container="greennature-testimonial-item" data-columns="3">
                                             <ul class="slides">
                                                 @foreach($projects as $project)
 
-                                                <li class="testimonial-item">
-                                                    <div class="testimonial-item-inner greennature-skin-box">
-                                                        <div class="testimonial-content-wrapper">
+                                                    <li class="testimonial-item">
+                                                        <div class="testimonial-item-inner greennature-skin-box">
+                                                            <div class="testimonial-content-wrapper">
 
-                                                            <div class="testimonial-content greennature-skin-content">
+                                                                <div
+                                                                    class="testimonial-content greennature-skin-content">
 
-                                                                <div class="portfolio-thumbnail greennature-image">
-                                                                    <img
-                                                                        src="{{ asset('storage/'.$project->image) }}"
-                                                                        alt=""
-                                                                        style="width: 250px; height: 150px"/><span
-                                                                        class="portfolio-overlay">&nbsp;</span><a
-                                                                        class="portfolio-overlay-icon"
-                                                                        href="{{ asset('storage/'.$project->image) }}"
-                                                                        data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                                class="fa fa-search"></i></span></a>
-                                                                </div>
-                                                                <div class="portfolio-classic-content">
-                                                                    <h5 class="portfolio-title" style="margin-top: 10px; font-weight: 500;">
-                                                                        <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
-                                                                    </h5>
-                                                                    <div class="greennature-portfolio-info">
-                                                                        <div class="portfolio-info portfolio-tag">
+                                                                    <div class="portfolio-thumbnail greennature-image">
+                                                                        <img
+                                                                            src="{{ asset('storage/'.$project->image) }}"
+                                                                            alt=""
+                                                                            style="width: 250px; height: 150px"/><span
+                                                                            class="portfolio-overlay">&nbsp;</span><a
+                                                                            class="portfolio-overlay-icon"
+                                                                            href="{{ asset('storage/'.$project->image) }}"
+                                                                            data-rel="fancybox"><span
+                                                                                class="portfolio-icon"><i
+                                                                                    class="fa fa-search"></i></span></a>
+                                                                    </div>
+                                                                    <div class="portfolio-classic-content">
+                                                                        <h5 class="portfolio-title"
+                                                                            style="margin-top: 10px; font-weight: 500;">
+                                                                            <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>
+                                                                        </h5>
+                                                                        <div class="greennature-portfolio-info">
+                                                                            <div class="portfolio-info portfolio-tag">
                                   <span class="info-head greennature-title">
                                   </span>
-                                                                            <p>
-                                                                                {{ $project -> location }}
-                                                                            </p>
+                                                                                <p>
+                                                                                    {{ $project -> location }}
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="clear"></div>
                                                                         </div>
-                                                                        <div class="clear"></div>
-                                                                    </div>
-                                                                    <div class="portfolio-excerpt">
-                                                                        <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
+                                                                        <div class="portfolio-excerpt">
+                                                                            <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>
 
-                                                                        <div class="clear"></div>
-                                                                        <a href="{{ route('viewCurrentProject', $project->id) }}"
-                                                                           class="excerpt-read-more">Read
+                                                                            <div class="clear"></div>
+                                                                            <a href="{{ route('viewCurrentProject', $project->id) }}"
+                                                                               class="excerpt-read-more">Read
+                                                                                More</a>
+                                                                        </div>
+                                                                        <a class="portfolio-classic-learn-more"
+                                                                           href="#">Learn
                                                                             More</a>
                                                                     </div>
-                                                                    <a class="portfolio-classic-learn-more" href="#">Learn
-                                                                        More</a>
+                                                                    @endforeach
                                                                 </div>
-                                                                @endforeach
+
                                                             </div>
-
                                                         </div>
-                                                    </div>
-                                                </li>
-
-
-
+                                                    </li>
 
 
                                             </ul>
@@ -566,89 +577,89 @@
                     <div class="clear"></div>
                 </section>
 
-{{--                <section id="content-section-4">--}}
-{{--                    <div class="greennature-color-wrapper gdlr-show-all no-skin"--}}
-{{--                         style="background-color: #ffffff; padding-bottom: 25px">--}}
-{{--                        <div class="container">--}}
-{{--                            <div--}}
-{{--                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">--}}
-{{--                                <div class="greennature-item-title-container container">--}}
-{{--                                    <div class="greennature-item-title-head">--}}
-{{--                                        <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">--}}
-{{--                                            <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our--}}
-{{--                                            Recent Projects--}}
-{{--                                        </h3>--}}
-{{--                                        <a class="greennature-item-title-link" style="font-size:15px;"--}}
-{{--                                           href="{{ route('projects') }}">More--}}
-{{--                                            Projects</a>--}}
-{{--                                        <div class="clear"></div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="portfolio-item-wrapper type-classic-portfolio">--}}
-{{--                                <div class="portfolio-item-holder greennature-portfolio-column-4">--}}
-{{--                                    <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">--}}
-{{--                                        <div class="clear"></div>--}}
+                {{--                <section id="content-section-4">--}}
+                {{--                    <div class="greennature-color-wrapper gdlr-show-all no-skin"--}}
+                {{--                         style="background-color: #ffffff; padding-bottom: 25px">--}}
+                {{--                        <div class="container">--}}
+                {{--                            <div--}}
+                {{--                                class="greennature-item-title-wrapper greennature-item greennature-left-divider greennature-medium">--}}
+                {{--                                <div class="greennature-item-title-container container">--}}
+                {{--                                    <div class="greennature-item-title-head">--}}
+                {{--                                        <h3 class="greennature-item-title greennature-skin-title greennature-skin-border">--}}
+                {{--                                            <img src="{{ asset('upload/icon-5.png') }}" alt="" width="80" height="80"/>Our--}}
+                {{--                                            Recent Projects--}}
+                {{--                                        </h3>--}}
+                {{--                                        <a class="greennature-item-title-link" style="font-size:15px;"--}}
+                {{--                                           href="{{ route('projects') }}">More--}}
+                {{--                                            Projects</a>--}}
+                {{--                                        <div class="clear"></div>--}}
+                {{--                                    </div>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                            <div class="portfolio-item-wrapper type-classic-portfolio">--}}
+                {{--                                <div class="portfolio-item-holder greennature-portfolio-column-4">--}}
+                {{--                                    <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">--}}
+                {{--                                        <div class="clear"></div>--}}
 
-{{--                                        @foreach($projects as $project)--}}
-{{--                                            <!--------------------------Project 1 Description------------------------>--}}
-{{--                                            <div class="three columns reveal fade-bottom">--}}
-{{--                                                <div--}}
-{{--                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
-{{--                                                    <div class="greennature-ux greennature-classic-portfolio-ux">--}}
-{{--                                                        <div class="portfolio-thumbnail greennature-image">--}}
-{{--                                                            <img--}}
-{{--                                                                src="{{ asset('storage/'.$project->image) }}"--}}
-{{--                                                                alt=""--}}
-{{--                                                                style="width: 250px; height: 150px"/><span--}}
-{{--                                                                class="portfolio-overlay">&nbsp;</span><a--}}
-{{--                                                                class="portfolio-overlay-icon"--}}
-{{--                                                                href="{{ asset('storage/'.$project->image) }}"--}}
-{{--                                                                data-rel="fancybox"><span class="portfolio-icon"><i--}}
-{{--                                                                        class="fa fa-search"></i></span></a>--}}
-{{--                                                        </div>--}}
-{{--                                                        <div class="portfolio-classic-content">--}}
-{{--                                                            <h3 class="portfolio-title">--}}
-{{--                                                                <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>--}}
-{{--                                                            </h3>--}}
-{{--                                                            <div class="greennature-portfolio-info">--}}
-{{--                                                                <div class="portfolio-info portfolio-tag">--}}
-{{--                                  <span class="info-head greennature-title">--}}
-{{--                                  </span>--}}
-{{--                                                                    <p>--}}
-{{--                                                                        {{ $project -> location }}--}}
-{{--                                                                    </p>--}}
-{{--                                                                </div>--}}
-{{--                                                                <div class="clear"></div>--}}
-{{--                                                            </div>--}}
-{{--                                                            <div class="portfolio-excerpt">--}}
-{{--                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>--}}
+                {{--                                        @foreach($projects as $project)--}}
+                {{--                                            <!--------------------------Project 1 Description------------------------>--}}
+                {{--                                            <div class="three columns reveal fade-bottom">--}}
+                {{--                                                <div--}}
+                {{--                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">--}}
+                {{--                                                    <div class="greennature-ux greennature-classic-portfolio-ux">--}}
+                {{--                                                        <div class="portfolio-thumbnail greennature-image">--}}
+                {{--                                                            <img--}}
+                {{--                                                                src="{{ asset('storage/'.$project->image) }}"--}}
+                {{--                                                                alt=""--}}
+                {{--                                                                style="width: 250px; height: 150px"/><span--}}
+                {{--                                                                class="portfolio-overlay">&nbsp;</span><a--}}
+                {{--                                                                class="portfolio-overlay-icon"--}}
+                {{--                                                                href="{{ asset('storage/'.$project->image) }}"--}}
+                {{--                                                                data-rel="fancybox"><span class="portfolio-icon"><i--}}
+                {{--                                                                        class="fa fa-search"></i></span></a>--}}
+                {{--                                                        </div>--}}
+                {{--                                                        <div class="portfolio-classic-content">--}}
+                {{--                                                            <h3 class="portfolio-title">--}}
+                {{--                                                                <a href="{{ route('viewCurrentProject', $project->id) }}">{{ \Illuminate\Support\Str::words($project -> title,13,'...')}}</a>--}}
+                {{--                                                            </h3>--}}
+                {{--                                                            <div class="greennature-portfolio-info">--}}
+                {{--                                                                <div class="portfolio-info portfolio-tag">--}}
+                {{--                                  <span class="info-head greennature-title">--}}
+                {{--                                  </span>--}}
+                {{--                                                                    <p>--}}
+                {{--                                                                        {{ $project -> location }}--}}
+                {{--                                                                    </p>--}}
+                {{--                                                                </div>--}}
+                {{--                                                                <div class="clear"></div>--}}
+                {{--                                                            </div>--}}
+                {{--                                                            <div class="portfolio-excerpt">--}}
+                {{--                                                                <p>{!! \Illuminate\Support\Str::words($project->achievement,13,'...')  !!}</p>--}}
 
-{{--                                                                <div class="clear"></div>--}}
-{{--                                                                <a href="{{ route('projects') }}"--}}
-{{--                                                                   class="excerpt-read-more">Read--}}
-{{--                                                                    More</a>--}}
-{{--                                                            </div>--}}
-{{--                                                            <a class="portfolio-classic-learn-more" href="#">Learn--}}
-{{--                                                                More</a>--}}
-{{--                                                        </div>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <!--------------------------------------Project 1 Description---->--}}
-{{--                                        @endforeach--}}
+                {{--                                                                <div class="clear"></div>--}}
+                {{--                                                                <a href="{{ route('projects') }}"--}}
+                {{--                                                                   class="excerpt-read-more">Read--}}
+                {{--                                                                    More</a>--}}
+                {{--                                                            </div>--}}
+                {{--                                                            <a class="portfolio-classic-learn-more" href="#">Learn--}}
+                {{--                                                                More</a>--}}
+                {{--                                                        </div>--}}
+                {{--                                                    </div>--}}
+                {{--                                                </div>--}}
+                {{--                                            </div>--}}
+                {{--                                            <!--------------------------------------Project 1 Description---->--}}
+                {{--                                        @endforeach--}}
 
 
-{{--                                    </div>--}}
-{{--                                    <div class="clear"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="clear"></div>--}}
-{{--                            <div class="clear"></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="clear"></div>--}}
-{{--                </section>--}}
+                {{--                                    </div>--}}
+                {{--                                    <div class="clear"></div>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                            <div class="clear"></div>--}}
+                {{--                            <div class="clear"></div>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                    <div class="clear"></div>--}}
+                {{--                </section>--}}
 
                 <section id="content-section-4">
                     <div class=""
@@ -690,7 +701,7 @@
                                                         <div class="descr">{!! $timeline->content !!} </div>
                                                     </li>
                                                 @endif
-                                                    @php($tid++)
+                                                @php($tid++)
                                             @endforeach
 
                                         </div>
@@ -904,15 +915,16 @@
                                                         <div class="portfolio-classic-content">
                                                             <div style="text-align: center" class="reveal fade-bottom">
                                                                 <a class="stunning-item-button large download-button-style"
-                                                                   href="{{ asset('storage/'.$publication->file_content) }}">View Publication</a>
+                                                                   href="{{ asset('storage/'.$publication->file_content) }}">View
+                                                                    Publication</a>
                                                             </div>
                                                             <div class="greennature-portfolio-info">
                                                                 <div class="clear"></div>
                                                             </div>
-{{--                                                            <div class="portfolio-excerpt">--}}
-{{--                                                                <div class="clear"></div>--}}
-{{--                                                                <a href="#" class="excerpt-read-more">Read More</a>--}}
-{{--                                                            </div>--}}
+                                                            {{--                                                            <div class="portfolio-excerpt">--}}
+                                                            {{--                                                                <div class="clear"></div>--}}
+                                                            {{--                                                                <a href="#" class="excerpt-read-more">Read More</a>--}}
+                                                            {{--                                                            </div>--}}
                                                         </div>
                                                     </div>
                                                 </div>

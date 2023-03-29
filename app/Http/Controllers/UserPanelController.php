@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Image;
 use App\Svg;
 use Illuminate\Support\Str;
 use App\Slider;
@@ -224,7 +225,8 @@ class UserPanelController extends Controller
     public function consultancy()
     {
         $consultancy = Consultancy::all();
-        return view('user.consultancy', compact('consultancy'));
+        $images = Image::where('type', 'concurrency')->get();
+        return view('user.consultancy', compact('consultancy','images'));
     }
 
     public function procurement()

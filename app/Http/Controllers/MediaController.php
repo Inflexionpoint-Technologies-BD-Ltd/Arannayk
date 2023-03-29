@@ -38,14 +38,14 @@ class MediaController extends Controller
     {
         $inputs = \request()->validate([
             'title' => 'required',
-            'content' => 'required',
-            'tag' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,video',
+//            'content' => 'required',
+//            'tag' => 'required',
+//            'image' => 'required|mimes:jpeg,jpg,png,video',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
-        }
+//        if (request('image')) {
+//            $inputs['image'] = \request('image')->store('photos');
+//        }
 
         Media::create($inputs);
         session()->flash('create', 'Data Created Successfully');
@@ -88,16 +88,16 @@ class MediaController extends Controller
 
         $inputs = \request()->validate([
             'title' => 'required',
-            'content' => 'required',
-            'tag' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,video',
+//            'content' => 'required',
+//            'tag' => 'required',
+//            'image' => 'mimes:jpeg,jpg,png,video',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
-        } else {
-            $inputs['image'] = $media->image;
-        }
+//        if (request('image')) {
+//            $inputs['image'] = \request('image')->store('photos');
+//        } else {
+//            $inputs['image'] = $media->image;
+//        }
 
         $media->update($inputs);
         session()->flash('create', 'Data Updated Successfully');

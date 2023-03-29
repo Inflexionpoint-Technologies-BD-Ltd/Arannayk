@@ -37,9 +37,9 @@ class SliderController extends Controller
     public function store(Request $request)
     {
         $inputs = \request()->validate([
-            'text_content_1' => 'required',
-            'text_content_2' => 'required',
-            'text_content_3' => 'required',
+            'text_content_1' => 'nullable',
+            'text_content_2' => 'nullable',
+            'text_content_3' => 'nullable',
             'image' => 'required|mimes:jpeg,jpg,png,gif',
             'serial' => 'required',
         ]);
@@ -87,9 +87,9 @@ class SliderController extends Controller
     public function update(Request $request, Slider $slider)
     {
         $inputs = \request()->validate([
-            'text_content_1' => 'required',
-            'text_content_2' => 'required',
-            'text_content_3' => 'required',
+            'text_content_1' => 'nullable',
+            'text_content_2' => 'nullable',
+            'text_content_3' => 'nullable',
             'image' => 'mimes:jpeg,jpg,png,gif',
             'serial' => 'required',
         ]);

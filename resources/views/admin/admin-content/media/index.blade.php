@@ -8,10 +8,10 @@
         <thead>
         <tr>
             <th>Serial</th>
-            <th>Title</th>
-            <th>Content</th>
-            <th>Image</th>
-            <th>tag</th>
+            <th>URL</th>
+{{--            <th>Content</th>--}}
+{{--            <th>Image</th>--}}
+{{--            <th>tag</th>--}}
             <th>Update</th>
             <th>Delete</th>
         </tr>
@@ -23,9 +23,9 @@
             <tr>
                 <td>{{ $id += 1 }}</td>
                 <td>{!! $media->title !!}</td>
-                <td>{!! $media->content !!}</td>
-                <td><img src="{{ asset('storage/'.$media->image) }}" alt="" style="width: 100px"></td>
-                <td>{!! $media->tag !!}</td>
+{{--                <td>{!! $media->content !!}</td>--}}
+{{--                <td><img src="{{ asset('storage/'.$media->image) }}" alt="" style="width: 100px"></td>--}}
+{{--                <td>{!! $media->tag !!}</td>--}}
 
                 <td><a href="{{ route('media.edit',$media->id) }}" class="btn btn-info">Update</a></td>
 

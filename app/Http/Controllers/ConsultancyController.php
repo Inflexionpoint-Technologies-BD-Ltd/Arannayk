@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Consultancy;
+use App\Image;
 use Illuminate\Http\Request;
 
 class ConsultancyController extends Controller
@@ -14,8 +15,9 @@ class ConsultancyController extends Controller
      */
     public function index()
     {
+        $images = Image::where('type', 'concurrency')->get();
         $consultancies = Consultancy::all();
-        return view('admin.admin-content.consultancy.index', compact('consultancies'));
+        return view('admin.admin-content.consultancy.index', compact('consultancies', 'images'));
     }
 
     /**
@@ -39,24 +41,24 @@ class ConsultancyController extends Controller
         $inputs = \request()->validate([
 
             'content' => 'required',
-            'image_1' => 'required|mimes:jpeg,jpg,png',
-            'image_2' => 'required|mimes:jpeg,jpg,png',
-            'image_3' => 'required|mimes:jpeg,jpg,png',
+            'files.*' => 'required|mimes:jpeg,png',
         ]);
 
-        if (request('image_1')) {
-            $inputs['image_1'] = \request('image_1')->store('photos');
+        if (request('files')) {
+            $files = $request->file('files');
+            foreach ($files as $image) {
+                $inputs['image'] = $image->store('photos');
+                Image::create([
+                    'image' => $inputs['image'],
+                    'type' => 'concurrency'
+                ]);
+            }
         }
 
-        if (request('image_2')) {
-            $inputs['image_2'] = \request('image_2')->store('photos');
-        }
-        if (request('image_3')) {
-            $inputs['image_3'] = \request('image_3')->store('photos');
-        }
 
-
-        Consultancy::create($inputs);
+        Consultancy::create([
+            'content' => $inputs['content']
+        ]);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -94,31 +96,24 @@ class ConsultancyController extends Controller
     {
         $inputs = \request()->validate([
             'content' => 'required',
-            'image_1' => 'mimes:jpeg,jpg,png',
-            'image_2' => 'mimes:jpeg,jpg,png',
-            'image_3' => 'mimes:jpeg,jpg,png',
+            'files.*' => 'mimes:jpeg,png',
         ]);
 
-        if (request('image_1')) {
-            $inputs['image_1'] = \request('image_1')->store('photos');
-        } else {
-            $inputs['image_1'] = $consultancy->image_1;
-        }
-
-        if (request('image_2')) {
-            $inputs['image_2'] = \request('image_2')->store('photos');
-        } else {
-            $inputs['image_2'] = $consultancy->image_2;
-        }
-
-        if (request('image_3')) {
-            $inputs['image_3'] = \request('image_3')->store('photos');
-        } else {
-            $inputs['image_3'] = $consultancy->image_3;
+        if (request('files')) {
+            $files = $request->file('files');
+            foreach ($files as $image) {
+                $inputs['image'] = $image->store('photos');
+                Image::create([
+                    'image' => $inputs['image'],
+                    'type' => 'concurrency'
+                ]);
+            }
         }
 
 
-        $consultancy->update($inputs);
+        $consultancy->update([
+            'content' => $inputs['content']
+        ]);
         session()->flash('create', 'Data Updated Successfully');
         return redirect()->route("consultancy.index");
     }

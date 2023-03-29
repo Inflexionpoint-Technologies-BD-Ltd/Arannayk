@@ -129,34 +129,78 @@
                                                 <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
                                                     <div class="clear"></div>
 
+
+                                                    {{--  --------------------------------- iframe --------------------------------- --}}
+
+                                                    <style>
+                                                        .iframe-container {
+                                                            position: relative;
+                                                            width: 100%;
+                                                            height: 0;
+                                                            padding-bottom: 56.25%; /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */
+                                                        }
+
+                                                        .iframe-container iframe {
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
+                                                    </style>
+
                                                     @foreach($medias as $media)
-                                                        <div class="six columns" id="{{ $media->title }}">
-                                                            <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                    <div class="iframe-container">
+                                                        <iframe src="{{ $media->title }}"></iframe>
+                                                    </div>
+                                                    <br><br>
+                                                    @endforeach
+
+
+                                                    {{--  --------------------------------- iframe --------------------------------- --}}
+
+
+                                                    @foreach($medias as $media)
+                                                        <div class="twelve columns" id="{{ $media->title }}">
+                                                            <div
+                                                                class="greennature-item greennature-blog-grid greennature-skin-box">
                                                                 <div class="greennature-ux greennature-blog-grid-ux">
-                                                                    <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                    <article id="post-852"
+                                                                             class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                                                                         <div class="greennature-standard-style">
                                                                             <div class="greennature-blog-thumbnail">
-                                                                                <a> <img src="{{ asset('storage/'.$media->image) }}" class="activity-updates-image" alt="" width="400" height="300" /></a>
+                                                                                <a> <img
+                                                                                        src="{{ asset('storage/'.$media->image) }}"
+                                                                                        class="activity-updates-image"
+                                                                                        alt="" width="400"
+                                                                                        height="300"/></a>
                                                                             </div>
 
                                                                             <div class="greennature-blog-grid-content">
                                                                                 <header class="post-header">
-                                                                                    <h3 class="greennature-blog-title"><a>{{ $media->title }}</a></h3>
+                                                                                    <h3 class="greennature-blog-title">
+                                                                                        <a>{{ $media->title }}</a></h3>
 
                                                                                     <div class="greennature-blog-info">
-                                                                                        <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-tags"></i><a href="">{{ $media->tag }}</a></div>
+                                                                                        <div
+                                                                                            class="blog-info blog-date greennature-skin-info">
+                                                                                            <i class="fa fa-tags"></i><a
+                                                                                                href="">{{ $media->tag }}</a>
+                                                                                        </div>
                                                                                         <div class="clear"></div>
                                                                                     </div>
                                                                                     <div class="clear"></div>
                                                                                 </header>
                                                                                 <!-- entry-header -->
 
-                                                                                <div class="greennature-blog-content" style="text-align: justify">
-                                                                                   <p>{!! $media->content !!}</p>
+                                                                                <div class="greennature-blog-content"
+                                                                                     style="text-align: justify">
+                                                                                    <p>{!! $media->content !!}</p>
 
                                                                                     {{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
                                                                                 </div>
                                                                             </div>
+                                                                        </div>
                                                                     </article>
                                                                     <!-- #post -->
                                                                 </div>
@@ -185,7 +229,8 @@
                         <div class="greennature-sidebar greennature-right-sidebar four columns">
                             <div class="greennature-item-start-content sidebar-right-item">
 
-                                <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                                <div id="gdlr-recent-portfolio-widget-2"
+                                     class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
                                     <h3 class="greennature-widget-title">Recent Media Coverages</h3>
                                     <div class="clear"></div>
                                     <div class="greennature-recent-port-widget">
@@ -193,10 +238,12 @@
                                         @foreach($medias as $media)
                                             <div class="recent-post-widget">
                                                 <div class="recent-post-widget-thumbnail">
-                                                    <a><img src="{{ asset('storage/'.$media->image) }}" alt="" width="150" height="150" /></a>
+                                                    <a><img src="{{ asset('storage/'.$media->image) }}" alt=""
+                                                            width="150" height="150"/></a>
                                                 </div>
                                                 <div class="recent-post-widget-content">
-                                                    <div class="recent-post-widget-title"><a href="#{{ $media->title }}">{{ $media->title }}</a></div>
+                                                    <div class="recent-post-widget-title"><a
+                                                            href="#{{ $media->title }}">{{ $media->title }}</a></div>
                                                     <div class="recent-post-widget-info">
                                                         <div class="clear"></div>
                                                     </div>
@@ -209,15 +256,15 @@
                                     </div>
                                 </div>
 
-{{--                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">--}}
-{{--                                    <h3 class="greennature-widget-title">Tags</h3>--}}
-{{--                                    <div class="clear"></div>--}}
-{{--                                    <div class="tagcloud">--}}
-{{--                                        @foreach($medias as $media)--}}
-{{--                                            <a href="#{{ $media->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>--}}
-{{--                                        @endforeach--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                {{--                                <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">--}}
+                                {{--                                    <h3 class="greennature-widget-title">Tags</h3>--}}
+                                {{--                                    <div class="clear"></div>--}}
+                                {{--                                    <div class="tagcloud">--}}
+                                {{--                                        @foreach($medias as $media)--}}
+                                {{--                                            <a href="#{{ $media->title }}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;" aria-label="Animal (1 item)">{{ $media->tag }}</a>--}}
+                                {{--                                        @endforeach--}}
+                                {{--                                    </div>--}}
+                                {{--                                </div>--}}
                             </div>
                         </div>
                         <div class="clear"></div>
