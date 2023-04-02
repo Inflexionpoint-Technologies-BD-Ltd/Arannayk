@@ -105,7 +105,7 @@
     <div id="sdg" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">SDG Contents:</h6>
-{{--            <a class="collapse-item" href="{{ route('project.create') }}">Add Projects</a>--}}
+            {{--            <a class="collapse-item" href="{{ route('project.create') }}">Add Projects</a>--}}
             <a class="collapse-item" href="{{ route('svg.index') }}">View All SDG Tag</a>
         </div>
     </div>
@@ -663,6 +663,31 @@
 </li>
 
 {{-- -------------------------------------------------- Map ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
+
+<!-- Heading -->
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#top"
+       aria-expanded="true" aria-controls="top">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Top Nav options</span>
+    </a>
+    <div id="top" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Top Nav options</h6>
+            <a class="collapse-item" href="{{ route('top.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('top.index') }}">View All info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
 
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}

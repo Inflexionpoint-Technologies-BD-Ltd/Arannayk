@@ -7,11 +7,11 @@
         <p>{{ session('create') }}</p>
     @endif
 
-    <h4>Add About Content</h4>
+    <h4>Add Top Nav Content</h4>
     <hr>
 
     <div>
-        <form action="{{ route('about.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('top.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
 
@@ -49,7 +49,30 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Enter Tag</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="tag">
+                        <option value="Forest">Forest</option>
+                        <option value="Biodiversity">Biodiversity</option>
+                        <option value="Sustainability">Sustainability</option>
+                        <option value="Climate">Climate</option>
+                        <option value="Gender">Gender</option>
+                    </select>
+                </div>
 
+                @error('tag')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Add SDG icons</label>
+                    <input type="file" class="form-control-file @error('files.*') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="files[]">
+                </div>
+
+                @error('files.*')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
 
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </form>
