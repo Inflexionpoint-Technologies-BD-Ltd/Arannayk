@@ -136,102 +136,137 @@
                                                  data-layout="fitRows">
                                                 <div class="clear"></div>
 
-                                                <?php $id = 1 ?>
+                                                <?php $id = 0 ?>
 
-                                                {{--  ------------------------------------------ Slider ------------------------------------------ --}}
+                                                @foreach($titles as $title)
+                                                        <?php $id += 1 ?>
 
-                                                <div id="carouselExampleIndicators1{{$id}}" class="carousel slide"
-                                                     data-ride="carousel">
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#carouselExampleIndicators1" data-slide-to="0"
-                                                            class="active"></li>
-                                                        <li data-target="#carouselExampleIndicators1{{$id}}"
-                                                            data-slide-to="1"></li>
-                                                        <li data-target="#carouselExampleIndicators1{{$id}}"
-                                                            data-slide-to="2"></li>
-                                                    </ol>
-                                                    <div class="carousel-inner">
-                                                        <div class="carousel-item active">
-                                                            <img class="d-block w-100"
-                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                                                                 alt="First slide">
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                                <p>fsefsefsefsef</p>
+                                                    @if(\App\Photo::where('title', $title->title_first)->count() != 0)
+
+                                                        <h3 class="greennature-blog-title"
+                                                            style="text-align: center; font-weight: bold">
+                                                            <a>{{ $title->title_first}}</a></h3>
+                                                        <br>
+
+                                                        {{--  ------------------------------------------ Slider ------------------------------------------ --}}
+
+
+
+                                                        <div id="carouselExampleIndicators1{{$id}}"
+                                                             class="carousel slide"
+                                                             data-ride="carousel">
+                                                            {{--                                                        <ol class="carousel-indicators">--}}
+                                                            {{--                                                            <li data-target="#carouselExampleIndicators1"--}}
+                                                            {{--                                                                data-slide-to="0"--}}
+                                                            {{--                                                                class="active"></li>--}}
+                                                            {{--                                                            <li data-target="#carouselExampleIndicators1{{$id}}"--}}
+                                                            {{--                                                                data-slide-to="1"></li>--}}
+                                                            {{--                                                            <li data-target="#carouselExampleIndicators1{{$id}}"--}}
+                                                            {{--                                                                data-slide-to="2"></li>--}}
+                                                            {{--                                                            <li data-target="#carouselExampleIndicators1{{$id}}"--}}
+                                                            {{--                                                                data-slide-to="3"></li>--}}
+
+                                                            {{--                                                        </ol>--}}
+                                                            <div class="carousel-inner">
+
+                                                                    <?php $id_2 = 0; ?>
+                                                                @foreach(\App\Photo::where('title', $title->title_first)->get() as $slider_data)
+                                                                        <?php $id_2 += 1 ?>
+
+                                                                    @if($id_2 == 1)
+
+                                                                        <div class="carousel-item active">
+                                                                            <img class="d-block w-100"
+                                                                                 src="{{ asset('storage/'.$slider_data->image) }}"
+                                                                                 alt="First slide">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <p>{!! $slider_data->content !!}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    @else
+
+                                                                        <div class="carousel-item">
+                                                                            <img class="d-block w-100"
+                                                                                 src="{{ asset('storage/'.$slider_data->image) }}"
+                                                                                 alt="Second slide">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <p>{!! $slider_data->content !!}</p>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    @endif
+
+                                                                @endforeach
+                                                                {{--                                                            <div class="carousel-item">--}}
+                                                                {{--                                                                <img class="d-block w-100"--}}
+                                                                {{--                                                                     src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"--}}
+                                                                {{--                                                                     alt="Third slide">--}}
+                                                                {{--                                                                <div class="carousel-caption d-none d-md-block">--}}
+                                                                {{--                                                                    <p>fsefsefsefsef</p>--}}
+                                                                {{--                                                                </div>--}}
+                                                                {{--                                                            </div>--}}
                                                             </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <img class="d-block w-100"
-                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                                                                 alt="Second slide">
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                                <p>fsefsefsefsef</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <img class="d-block w-100"
-                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                                                                 alt="Third slide">
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                                <p>fsefsefsefsef</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a class="carousel-control-prev"
-                                                       href="#carouselExampleIndicators1{{$id}}"
-                                                       role="button" data-slide="prev">
+                                                            <a class="carousel-control-prev"
+                                                               href="#carouselExampleIndicators1{{$id}}"
+                                                               role="button" data-slide="prev">
                                                         <span class="carousel-control-prev-icon"
                                                               aria-hidden="true"></span>
-                                                        <span class="sr-only">Previous</span>
-                                                    </a>
-                                                    <a class="carousel-control-next"
-                                                       href="#carouselExampleIndicators1{{$id}}"
-                                                       role="button" data-slide="next">
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next"
+                                                               href="#carouselExampleIndicators1{{$id}}"
+                                                               role="button" data-slide="next">
                                                         <span class="carousel-control-next-icon"
                                                               aria-hidden="true"></span>
-                                                        <span class="sr-only">Next</span>
-                                                    </a>
-                                                </div>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
 
-                                                {{--  ------------------------------------------ Slider ------------------------------------------ --}}
+                                                        {{--  ------------------------------------------ Slider ------------------------------------------ --}}
 
-                                                <br>
+                                                        <br>
 
-                                                {{--  ------------------------------------------ Images ------------------------------------------ --}}
+                                                        {{--  ------------------------------------------ Images ------------------------------------------ --}}
 
-                                                @foreach($photos as $photo)
-                                                    <div class="three columns">
-                                                        <div
-                                                            class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                            <div
-                                                                class="greennature-ux greennature-classic-portfolio-ux">
-                                                                <div class="portfolio-thumbnail greennature-image"><img
-                                                                        src="{{ asset('storage/'.$photo->image)}}"
-                                                                        alt="" class="photos-style"
-                                                                    /><span
-                                                                        class="portfolio-overlay">&nbsp;</span><a
-                                                                        class="portfolio-overlay-icon"
-                                                                        href="{{ asset('storage/'.$photo->image) }}"
-                                                                        data-rel="fancybox"><span
-                                                                            class="portfolio-icon"><i
-                                                                                class="fa fa-search"></i></span></a>
-                                                                </div>
-                                                                <div class="portfolio-classic-content">
-                                                                    <div style="text-align:center">
-                                                                        <p>{{ $photo->title }}</p>
+                                                        @foreach(\App\Photo::where('title', $title->title_first)->get() as $photo)
+                                                            <div class="three columns">
+                                                                <div
+                                                                    class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
+                                                                    <div
+                                                                        class="greennature-ux greennature-classic-portfolio-ux">
+                                                                        <div
+                                                                            class="portfolio-thumbnail greennature-image">
+                                                                            <img
+                                                                                src="{{ asset('storage/'.$photo->image)}}"
+                                                                                alt="" class="photos-style"
+                                                                            /><span
+                                                                                class="portfolio-overlay">&nbsp;</span><a
+                                                                                class="portfolio-overlay-icon"
+                                                                                href="{{ asset('storage/'.$photo->image) }}"
+                                                                                data-rel="fancybox"><span
+                                                                                    class="portfolio-icon"><i
+                                                                                        class="fa fa-search"></i></span></a>
+                                                                        </div>
+                                                                        <div class="portfolio-classic-content">
+                                                                            <div style="text-align:center">
+                                                                                <p>{{ $photo->title }}</p>
+                                                                            </div>
+
+                                                                        </div>
                                                                     </div>
-
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
+                                                        @endforeach
+
+                                                        {{--  ------------------------------------------ Images ------------------------------------------ --}}
+                                                        <br><br>
+                                                    @endif
                                                 @endforeach
-
-                                                {{--  ------------------------------------------ Images ------------------------------------------ --}}
-
-
                                             </div>
                                             <div class="pagination-style">
-                                                {{ $photos->links() }}
+                                                {{ $titles->links() }}
                                             </div>
                                             <div class="clear"></div>
                                         </div>

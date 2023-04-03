@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Photo;
 use App\Title;
 use Illuminate\Http\Request;
 
@@ -62,7 +63,7 @@ class TitleController extends Controller
      */
     public function edit(Title $title)
     {
-        //
+        return view('admin.admin-content.title.edit', compact('title'));
     }
 
     /**
@@ -74,7 +75,22 @@ class TitleController extends Controller
      */
     public function update(Request $request, Title $title)
     {
-        //
+
+        $inputs = \request()->validate([
+            'title_first' => 'required',
+
+        ]);
+
+
+        if (Photo::where('title', $title->title_first)->count() != 0) {
+            Photo::where('title', $title->title_first)->update([
+                'title' => $inputs['title_first']
+            ]);
+        }
+
+        $title->update($inputs);
+        session()->flash('create', 'Data Updated Successfully');
+        return redirect()->route('photo.index');
     }
 
     /**
@@ -85,6 +101,7 @@ class TitleController extends Controller
      */
     public function destroy(Title $title)
     {
-        //
+        $title->delete();
+        return back();
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Photo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SslCommerzPaymentController;
@@ -12,7 +13,9 @@ Auth::routes(['register' => false]);
 
 
 Route::get('gg', function (){
-    return \App\Photo::where('title',"Forest Management")->get();
+    Photo::where('title', 'gg')->update([
+        'title' => 'Forest Management'
+    ]);;
 });
 
 Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);

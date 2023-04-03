@@ -18,7 +18,8 @@ class PhotoController extends Controller
     public function index()
     {
         $photos = Photo::all();
-        return view('admin.admin-content.photo.index', compact('photos'));
+        $titles = Title::all();
+        return view('admin.admin-content.photo.index', compact('photos','titles'));
     }
 
     /**
