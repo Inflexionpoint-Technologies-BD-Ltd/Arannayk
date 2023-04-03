@@ -113,11 +113,12 @@
 
     <section id="content-section-3">
         <div class="greennature-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; ">
-            @foreach($ecosystems as $ecosystem)
+            @foreach($sus as $ecosystem)
                 <div class="container">
                     <div class="six columns">
                         <div class="greennature-video-item greennature-item">
-                            <img src="{{ asset('storage/'.$ecosystem->image) }}" class="ecosystem-image" alt="" width="80" height="80"/>
+                            <img src="{{ asset('storage/'.$ecosystem->image) }}" class="ecosystem-image" alt=""
+                                 width="80" height="80"/>
                         </div>
                     </div>
                     <div class="six columns">
@@ -133,8 +134,16 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="{{ asset('images/sustain-1.png') }}" style="width:80px; height:80px; margin-right: 10px;">
-                                <img src="{{ asset('images/sustain-2.png') }}" style="width:80px; height:80px; margin-right: 10px;">
+                                @foreach($sdgs as $image)
+                                    <img src="{{ asset('storage/'.$image->image) }}"
+                                         style="width:80px; height:80px; margin-right: 10px;">
+                                @endforeach
+
+                                {{--                                <img src="{{ asset('images/forest-pic-2.png') }}" style="width:80px; height:80px; margin-right: 10px;">--}}
+                                {{--                                <img src="{{ asset('images/forest-pic-3.png') }}" style="width:80px; height:80px; margin-right: 10px;">--}}
+                                {{--                                <img src="{{ asset('images/forest-pic-4.png') }}" style="width:80px; height:80px; margin-right: 10px;">--}}
+                                {{--                                <img src="{{ asset('images/forest-pic-5.png') }}" style="width:80px; height:80px;">--}}
+
                             </div>
 
 

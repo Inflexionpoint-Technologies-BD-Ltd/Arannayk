@@ -22,8 +22,8 @@
             <tr>
                 <td>{{ $id += 1 }}</td>
                 <td>{!! $photo->title !!}</td>
-                <td>{!! $photo->content !!}</td>
                 <td><img src="{{ asset('storage/'.$photo->image) }}" alt="" style="width: 100px"></td>
+                <td>{!! $photo->content !!}</td>
                 <td><a href="{{ route('photo.edit',$photo->id) }}" class="btn btn-info">Update</a></td>
                 <td>
                     <form action="{{ route('photo.destroy',$photo->id) }}" method="post">

@@ -38,6 +38,8 @@
           type="text/css"
           media="all"/>
     <link rel="stylesheet" href="{{ asset('css/master-custom.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css" media="all"/>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
           integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
@@ -120,32 +122,102 @@
 
                 <!-- Sidebar With Content Section-->
                 <div class="content-wrapper">
+
+
                     <div class="greennature-content">
 
                         <div class="with-sidebar-wrapper">
                             <section id="content-section-1">
                                 <div class="section-container container">
-                                    <div class="portfolio-item-wrapper type-classic-portfolio" style="margin-bottom: 20px;">
+                                    <div class="portfolio-item-wrapper type-classic-portfolio"
+                                         style="margin-bottom: 20px;">
                                         <div class="portfolio-item-holder  greennature-portfolio-column-3">
-                                            <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
+                                            <div class="greennature-isotope" data-type="portfolio"
+                                                 data-layout="fitRows">
                                                 <div class="clear"></div>
+
+                                                <?php $id = 1 ?>
+
+                                                {{--  ------------------------------------------ Slider ------------------------------------------ --}}
+
+                                                <div id="carouselExampleIndicators1{{$id}}" class="carousel slide"
+                                                     data-ride="carousel">
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#carouselExampleIndicators1" data-slide-to="0"
+                                                            class="active"></li>
+                                                        <li data-target="#carouselExampleIndicators1{{$id}}"
+                                                            data-slide-to="1"></li>
+                                                        <li data-target="#carouselExampleIndicators1{{$id}}"
+                                                            data-slide-to="2"></li>
+                                                    </ol>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img class="d-block w-100"
+                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                                                                 alt="First slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <p>fsefsefsefsef</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100"
+                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                                                                 alt="Second slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <p>fsefsefsefsef</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100"
+                                                                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                                                                 alt="Third slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <p>fsefsefsefsef</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev"
+                                                       href="#carouselExampleIndicators1{{$id}}"
+                                                       role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                              aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next"
+                                                       href="#carouselExampleIndicators1{{$id}}"
+                                                       role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                              aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                                {{--  ------------------------------------------ Slider ------------------------------------------ --}}
+
+                                                <br>
+
+                                                {{--  ------------------------------------------ Images ------------------------------------------ --}}
 
                                                 @foreach($photos as $photo)
                                                     <div class="three columns">
                                                         <div
                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
-                                                            <div class="greennature-ux greennature-classic-portfolio-ux">
+                                                            <div
+                                                                class="greennature-ux greennature-classic-portfolio-ux">
                                                                 <div class="portfolio-thumbnail greennature-image"><img
-                                                                        src="{{ asset('storage/'.$photo->image)}}" alt="" class="photos-style"
+                                                                        src="{{ asset('storage/'.$photo->image)}}"
+                                                                        alt="" class="photos-style"
                                                                     /><span
                                                                         class="portfolio-overlay">&nbsp;</span><a
                                                                         class="portfolio-overlay-icon"
                                                                         href="{{ asset('storage/'.$photo->image) }}"
-                                                                        data-rel="fancybox"><span class="portfolio-icon"><i
-                                                                                class="fa fa-search"></i></span></a></div>
+                                                                        data-rel="fancybox"><span
+                                                                            class="portfolio-icon"><i
+                                                                                class="fa fa-search"></i></span></a>
+                                                                </div>
                                                                 <div class="portfolio-classic-content">
                                                                     <div style="text-align:center">
-                                                                       <p>{{ $photo->title }}</p>
+                                                                        <p>{{ $photo->title }}</p>
                                                                     </div>
 
                                                                 </div>
@@ -153,6 +225,9 @@
                                                         </div>
                                                     </div>
                                                 @endforeach
+
+                                                {{--  ------------------------------------------ Images ------------------------------------------ --}}
+
 
                                             </div>
                                             <div class="pagination-style">
@@ -196,6 +271,7 @@
 
 </div>
 <!-- body-wrapper -->
+<script src="{{ asset('js/app.js') }}"></script>
 
 <script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js') }}"></script>

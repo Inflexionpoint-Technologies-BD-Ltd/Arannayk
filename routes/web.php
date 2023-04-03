@@ -10,6 +10,11 @@ Auth::routes(['register' => false]);
 
 // SSLCOMMERZ Start
 
+
+Route::get('gg', function (){
+    return \App\Photo::where('title',"Forest Management")->get();
+});
+
 Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
 Route::get('/payment-form', [SslCommerzPaymentController::class, 'exampleHostedCheckout'])->name('donation-form');;
 
@@ -30,6 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ===================== HOMEPAGE=================================================================
 
 Route::get('/', "UserPanelController@index");
+
 // ============================================================ HOMEPAGE =========================
 
 // ========================== WHO WE ARE =================================================
@@ -480,6 +486,12 @@ Route::middleware('auth')->group(function () {
     Route::resource('admin/top',"TopController");
 
 // -------------------------------- top --------------------------------
+
+    // -------------------------------- title --------------------------------
+
+    Route::resource('admin/title',"TitleController");
+
+// -------------------------------- title --------------------------------
 
 
 // --------------------------------- Log out ---------------------------------

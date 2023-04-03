@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Image;
 use App\Photo;
+use App\Svg;
+use App\Title;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
@@ -25,13 +28,14 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.photo.create');
+        $titles = Title::all();
+        return view('admin.admin-content.photo.create', compact('titles'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -39,14 +43,26 @@ class PhotoController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+//            'image' => 'required|mimes:jpeg,jpg,png',
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
+        $inputs2 = \request()->validate([
+            'files.*' => 'required|mimes:jpeg,png',
+        ]);
+
+//        if (request('image')) {
+//            $inputs['image'] = \request('image')->store('photos');
+//        }
+
+        if (request('files')) {
+            $files = $request->file('files');
+            foreach ($files as $image) {
+                $inputs['image'] = $image->store('photos');
+                Photo::create($inputs);
+
+            }
         }
 
-        Photo::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -54,7 +70,7 @@ class PhotoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param \App\Photo $photo
      * @return \Illuminate\Http\Response
      */
     public function show(Photo $photo)
@@ -65,20 +81,21 @@ class PhotoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param \App\Photo $photo
      * @return \Illuminate\Http\Response
      */
     public function edit(Photo $photo)
     {
-        return view('admin.admin-content.photo.edit',compact('photo'));
+        $titles = Title::all();
+        return view('admin.admin-content.photo.edit', compact('photo', 'titles'));
 
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Photo  $photo
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Photo $photo
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Photo $photo)
@@ -86,14 +103,21 @@ class PhotoController extends Controller
         $inputs = \request()->validate([
             'title' => 'required',
             'content' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+//            'image' => 'mimes:jpeg,jpg,png',
+
         ]);
 
-        if (request('image')) {
-            $inputs['image'] = \request('image')->store('photos');
-        }else{
-            $inputs['image'] = $photo->image;
-        }
+//        $inputs = \request()->validate([
+//
+//            'files.*' => 'required|mimes:jpeg,png',
+//
+//        ]);
+
+//        if (request('image')) {
+//            $inputs['image'] = \request('image')->store('photos');
+//        }else{
+//            $inputs['image'] = $photo->image;
+//        }
 
         $photo->update($inputs);
         session()->flash('create', 'Data Updated Successfully');
@@ -103,7 +127,7 @@ class PhotoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Photo  $photo
+     * @param \App\Photo $photo
      * @return \Illuminate\Http\Response
      */
     public function destroy(Photo $photo)

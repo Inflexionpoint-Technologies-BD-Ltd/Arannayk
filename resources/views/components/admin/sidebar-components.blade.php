@@ -566,6 +566,31 @@
 
 {{-- -------------------------------------------------- Ecosystem ------------------------------------------------------- --}}
 
+{{--<!-- Heading -->--}}
+{{--<div class="sidebar-heading">--}}
+{{--    Current Projects--}}
+{{--</div>--}}
+
+{{--<!-- Nav Item - Pages Collapse Menu -->--}}
+{{--<li class="nav-item">--}}
+{{--    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEcosystem"--}}
+{{--       aria-expanded="true" aria-controls="collapseEcosystem">--}}
+{{--        <i class="fas fa-fw fa-cog"></i>--}}
+{{--        <span>Ecosystem Content</span>--}}
+{{--    </a>--}}
+{{--    <div id="collapseEcosystem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">--}}
+{{--        <div class="bg-white py-2 collapse-inner rounded">--}}
+{{--            <h6 class="collapse-header">Components:</h6>--}}
+{{--            <a class="collapse-item" href="{{ route('ecosystem.create') }}">Add Info</a>--}}
+{{--            <a class="collapse-item" href="{{ route('ecosystem.index') }}">View All info</a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</li>--}}
+
+{{-- -------------------------------------------------- Ecosystem ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
+
 <!-- Heading -->
 {{--<div class="sidebar-heading">--}}
 {{--    Current Projects--}}
@@ -573,21 +598,21 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEcosystem"
-       aria-expanded="true" aria-controls="collapseEcosystem">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#top"
+       aria-expanded="true" aria-controls="top">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Ecosystem Content</span>
+        <span>Top Nav options</span>
     </a>
-    <div id="collapseEcosystem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div id="top" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Components:</h6>
-            <a class="collapse-item" href="{{ route('ecosystem.create') }}">Add Info</a>
-            <a class="collapse-item" href="{{ route('ecosystem.index') }}">View All info</a>
+            <h6 class="collapse-header">Top Nav options</h6>
+            <a class="collapse-item" href="{{ route('top.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('top.index') }}">View All info</a>
         </div>
     </div>
 </li>
 
-{{-- -------------------------------------------------- Ecosystem ------------------------------------------------------- --}}
+{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
 
 {{-- -------------------------------------------------- Mission ------------------------------------------------------- --}}
 
@@ -663,31 +688,6 @@
 </li>
 
 {{-- -------------------------------------------------- Map ------------------------------------------------------- --}}
-
-{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
-
-<!-- Heading -->
-{{--<div class="sidebar-heading">--}}
-{{--    Current Projects--}}
-{{--</div>--}}
-
-<!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#top"
-       aria-expanded="true" aria-controls="top">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>Top Nav options</span>
-    </a>
-    <div id="top" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Top Nav options</h6>
-            <a class="collapse-item" href="{{ route('top.create') }}">Add Info</a>
-            <a class="collapse-item" href="{{ route('top.index') }}">View All info</a>
-        </div>
-    </div>
-</li>
-
-{{-- -------------------------------------------------- Top ------------------------------------------------------- --}}
 
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}
