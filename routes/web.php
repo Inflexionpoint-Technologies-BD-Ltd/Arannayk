@@ -12,12 +12,6 @@ Auth::routes(['register' => false]);
 // SSLCOMMERZ Start
 
 
-Route::get('gg', function (){
-    Photo::where('title', 'gg')->update([
-        'title' => 'Forest Management'
-    ]);;
-});
-
 Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
 Route::get('/payment-form', [SslCommerzPaymentController::class, 'exampleHostedCheckout'])->name('donation-form');;
 

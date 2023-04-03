@@ -286,7 +286,7 @@ class UserPanelController extends Controller
         $photos = Photo::orderBy('id', 'desc')->paginate(12);
         $titles = Title::paginate(5);
 
-        return view('user.photos', compact('photos','titles'));
+        return view('user.photos', compact('photos', 'titles'));
     }
 
     public function blogs()

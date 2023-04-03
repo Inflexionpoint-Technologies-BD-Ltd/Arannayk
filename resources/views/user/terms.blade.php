@@ -127,44 +127,142 @@
                                 <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
                                     <div class="clear"></div>
 
-                                    <h1>Refund Policy</h1>
-                                    <p>Arannayk Foundation is grateful for your donation and support of our organization. Donations made to
-                                       Arannayk Foundation are nonrefundable. However, we may refund if you have accidentally entered the
-                                      wrong amount.
-                                    </p>
-                                  <h1>Refund Terms and Conditions</h1>
-                                  <p>To request a refund of your donation made to Arannayk Foundation, please fill out our contact form and
-                                      request a refund within 30 days after the date of making the donation. Arannayk Foundation will not be
-                                      able to refund any donations further than the past 30 days in all situations.
-                                      We can only issue a refund to the same card or account from which the donation was made using the
-                                      payment methods currently available at our website.
-                                  </p>
-                                  <h1>Requesting a Refund</h1>
-                                  <p>If you wish to request for a refund, please fill out our contact form and provide:</p>
-                                  <ul>
-                                      <li>Your full name</li>
-                                      <li>The email address provided when making the donation</li>
-                                      <li>Your country of residence</li>
-                                      <li>Your phone number</li>
-                                      <li>Date on which the donation was made</li>
-                                      <li>The amount of the relevant donation</li>
-                                      <li>Payment method, and transaction reference number</li>
-                                      <li>All relevant circumstances justifying your request</li>
-                                  </ul>
-                                  <p>Upon receipt we will review your request and endeavor to respond to you within ten working days. If
-                                      the request is accepted, we will process the refund as soon as possible. Please note that it may take
-                                      7 to 10 working days until a refund reaches your account.
-                                  </p>
-                                  <h1>Privacy Policy</h1>
-                                  <p>Arannayk Foundation is committed to protecting both personal as well as business information you
-                                      share and/or store with us. This Privacy Policy applies to transactions and activities and data gathered
-                                      through our website and interaction you may have with its social media accounts. 
-                                      Arannayk Foundation does not collect personally identifiable information such as name, e-mail address,
-                                      contact or similar information unless you choose to provide it. If you voluntarily provide us with
-                                      personal information, for example by sending an e-mail or by filling out a form and submitting it through
-                                      our website, we may use that information only to respond to your message and to help us provide you
-                                      with the information or services that you request.
-                                  </p>
+
+                                    @if(request()->query('q') == 1)
+                                        <h1>Refund Terms and Conditions</h1>
+                                        <p>To request a refund of your donation made to Arannayk Foundation, please fill
+                                            out our contact form and
+                                            request a refund within 30 days after the date of making the donation.
+                                            Arannayk Foundation will not be
+                                            able to refund any donations further than the past 30 days in all
+                                            situations.
+                                            We can only issue a refund to the same card or account from which the
+                                            donation was made using the
+                                            payment methods currently available at our website.
+                                        </p>
+
+                                    @elseif(request()->query('q') == 2)
+
+                                        <h1>Privacy Policy</h1>
+                                        <p>Arannayk Foundation is committed to protecting both personal as well as
+                                            business
+                                            information you
+                                            share and/or store with us. This Privacy Policy applies to transactions and
+                                            activities and data gathered
+                                            through our website and interaction you may have with its social media
+                                            accounts. 
+                                            Arannayk Foundation does not collect personally identifiable information
+                                            such as
+                                            name, e-mail address,
+                                            contact or similar information unless you choose to provide it. If you
+                                            voluntarily provide us with
+                                            personal information, for example by sending an e-mail or by filling out a
+                                            form
+                                            and submitting it through
+                                            our website, we may use that information only to respond to your message and
+                                            to
+                                            help us provide you
+                                            with the information or services that you request.
+                                        </p>
+                                    @elseif(request()->query('q') == 3)
+
+                                        <h1>Refund Policy</h1>
+                                        <p>Arannayk Foundation is grateful for your donation and support of our
+                                            organization. Donations made to
+                                            Arannayk Foundation are nonrefundable. However, we may refund if you have
+                                            accidentally entered the
+                                            wrong amount.
+                                        </p>
+
+                                        <h1>Requesting a Refund</h1>
+                                        <p>If you wish to request for a refund, please fill out our contact form and
+                                            provide:</p>
+                                        <ul>
+                                            <li>Your full name</li>
+                                            <li>The email address provided when making the donation</li>
+                                            <li>Your country of residence</li>
+                                            <li>Your phone number</li>
+                                            <li>Date on which the donation was made</li>
+                                            <li>The amount of the relevant donation</li>
+                                            <li>Payment method, and transaction reference number</li>
+                                            <li>All relevant circumstances justifying your request</li>
+                                        </ul>
+                                        <p>Upon receipt we will review your request and endeavor to respond to you
+                                            within
+                                            ten working days. If
+                                            the request is accepted, we will process the refund as soon as possible.
+                                            Please
+                                            note that it may take
+                                            7 to 10 working days until a refund reaches your account.
+                                        </p>
+
+                                    @else
+                                        <h1>Refund Policy</h1>
+                                        <p>Arannayk Foundation is grateful for your donation and support of our
+                                            organization. Donations made to
+                                            Arannayk Foundation are nonrefundable. However, we may refund if you have
+                                            accidentally entered the
+                                            wrong amount.
+                                        </p>
+
+                                        <h1>Refund Terms and Conditions</h1>
+                                        <p>To request a refund of your donation made to Arannayk Foundation, please fill
+                                            out our contact form and
+                                            request a refund within 30 days after the date of making the donation.
+                                            Arannayk Foundation will not be
+                                            able to refund any donations further than the past 30 days in all
+                                            situations.
+                                            We can only issue a refund to the same card or account from which the
+                                            donation was made using the
+                                            payment methods currently available at our website.
+                                        </p>
+
+                                        <h1>Requesting a Refund</h1>
+                                        <p>If you wish to request for a refund, please fill out our contact form and
+                                            provide:</p>
+                                        <ul>
+                                            <li>Your full name</li>
+                                            <li>The email address provided when making the donation</li>
+                                            <li>Your country of residence</li>
+                                            <li>Your phone number</li>
+                                            <li>Date on which the donation was made</li>
+                                            <li>The amount of the relevant donation</li>
+                                            <li>Payment method, and transaction reference number</li>
+                                            <li>All relevant circumstances justifying your request</li>
+                                        </ul>
+                                        <p>Upon receipt we will review your request and endeavor to respond to you
+                                            within
+                                            ten working days. If
+                                            the request is accepted, we will process the refund as soon as possible.
+                                            Please
+                                            note that it may take
+                                            7 to 10 working days until a refund reaches your account.
+                                        </p>
+
+                                        <h1>Privacy Policy</h1>
+                                        <p>Arannayk Foundation is committed to protecting both personal as well as
+                                            business
+                                            information you
+                                            share and/or store with us. This Privacy Policy applies to transactions and
+                                            activities and data gathered
+                                            through our website and interaction you may have with its social media
+                                            accounts. 
+                                            Arannayk Foundation does not collect personally identifiable information
+                                            such as
+                                            name, e-mail address,
+                                            contact or similar information unless you choose to provide it. If you
+                                            voluntarily provide us with
+                                            personal information, for example by sending an e-mail or by filling out a
+                                            form
+                                            and submitting it through
+                                            our website, we may use that information only to respond to your message and
+                                            to
+                                            help us provide you
+                                            with the information or services that you request.
+                                        </p>
+
+                                    @endif
+
 
                                 </div>
                                 <div class="clear"></div>
