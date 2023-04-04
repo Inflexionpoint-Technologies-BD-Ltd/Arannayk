@@ -132,29 +132,29 @@
 
                                                     {{--  --------------------------------- iframe --------------------------------- --}}
 
-{{--                                                    <style>--}}
-{{--                                                        .iframe-container {--}}
-{{--                                                            position: relative;--}}
-{{--                                                            width: 100%;--}}
-{{--                                                            height: 0;--}}
-{{--                                                            padding-bottom: 56.25%; /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */--}}
-{{--                                                        }--}}
+                                                    <style>
+                                                        .iframe-container {
+                                                            position: relative;
+                                                            width: 100%;
+                                                            height: 0;
+                                                            padding-bottom: 56.25%; /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */
+                                                        }
 
-{{--                                                        .iframe-container iframe {--}}
-{{--                                                            position: absolute;--}}
-{{--                                                            top: 0;--}}
-{{--                                                            left: 0;--}}
-{{--                                                            width: 100%;--}}
-{{--                                                            height: 100%;--}}
-{{--                                                        }--}}
-{{--                                                    </style>--}}
+                                                        .iframe-container iframe {
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
+                                                    </style>
 
-{{--                                                    @foreach($medias as $media)--}}
-{{--                                                    <div class="iframe-container">--}}
-{{--                                                        <iframe src="{{ $media->title }}"></iframe>--}}
-{{--                                                    </div>--}}
-{{--                                                    <br><br>--}}
-{{--                                                    @endforeach--}}
+                                                    @foreach($medias as $media)
+                                                    <div class="iframe-container">
+                                                        <iframe src="{{ $media->title }}"></iframe>
+                                                    </div>
+                                                    <br><br>
+                                                    @endforeach
 
 
                                                     {{--  --------------------------------- iframe --------------------------------- --}}
