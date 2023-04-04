@@ -132,81 +132,81 @@
 
                                                     {{--  --------------------------------- iframe --------------------------------- --}}
 
-                                                    <style>
-                                                        .iframe-container {
-                                                            position: relative;
-                                                            width: 100%;
-                                                            height: 0;
-                                                            padding-bottom: 56.25%; /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */
-                                                        }
+{{--                                                    <style>--}}
+{{--                                                        .iframe-container {--}}
+{{--                                                            position: relative;--}}
+{{--                                                            width: 100%;--}}
+{{--                                                            height: 0;--}}
+{{--                                                            padding-bottom: 56.25%; /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */--}}
+{{--                                                        }--}}
 
-                                                        .iframe-container iframe {
-                                                            position: absolute;
-                                                            top: 0;
-                                                            left: 0;
-                                                            width: 100%;
-                                                            height: 100%;
-                                                        }
-                                                    </style>
+{{--                                                        .iframe-container iframe {--}}
+{{--                                                            position: absolute;--}}
+{{--                                                            top: 0;--}}
+{{--                                                            left: 0;--}}
+{{--                                                            width: 100%;--}}
+{{--                                                            height: 100%;--}}
+{{--                                                        }--}}
+{{--                                                    </style>--}}
 
-                                                    @foreach($medias as $media)
-                                                    <div class="iframe-container">
-                                                        <iframe src="{{ $media->title }}"></iframe>
-                                                    </div>
-                                                    <br><br>
-                                                    @endforeach
+{{--                                                    @foreach($medias as $media)--}}
+{{--                                                    <div class="iframe-container">--}}
+{{--                                                        <iframe src="{{ $media->title }}"></iframe>--}}
+{{--                                                    </div>--}}
+{{--                                                    <br><br>--}}
+{{--                                                    @endforeach--}}
 
 
                                                     {{--  --------------------------------- iframe --------------------------------- --}}
 
 
-                                                    @foreach($medias as $media)
-                                                        <div class="twelve columns" id="{{ $media->title }}">
-                                                            <div
-                                                                class="greennature-item greennature-blog-grid greennature-skin-box">
-                                                                <div class="greennature-ux greennature-blog-grid-ux">
-                                                                    <article id="post-852"
-                                                                             class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
-                                                                        <div class="greennature-standard-style">
-                                                                            <div class="greennature-blog-thumbnail">
-                                                                                <a> <img
-                                                                                        src="{{ asset('storage/'.$media->image) }}"
-                                                                                        class="activity-updates-image"
-                                                                                        alt="" width="400"
-                                                                                        height="300"/></a>
-                                                                            </div>
+{{--                                                    @foreach($medias as $media)--}}
+{{--                                                        <div class="twelve columns" id="{{ $media->title }}">--}}
+{{--                                                            <div--}}
+{{--                                                                class="greennature-item greennature-blog-grid greennature-skin-box">--}}
+{{--                                                                <div class="greennature-ux greennature-blog-grid-ux">--}}
+{{--                                                                    <article id="post-852"--}}
+{{--                                                                             class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">--}}
+{{--                                                                        <div class="greennature-standard-style">--}}
+{{--                                                                            <div class="greennature-blog-thumbnail">--}}
+{{--                                                                                <a> <img--}}
+{{--                                                                                        src="{{ asset('storage/'.$media->image) }}"--}}
+{{--                                                                                        class="activity-updates-image"--}}
+{{--                                                                                        alt="" width="400"--}}
+{{--                                                                                        height="300"/></a>--}}
+{{--                                                                            </div>--}}
 
-                                                                            <div class="greennature-blog-grid-content">
-                                                                                <header class="post-header">
-                                                                                    <h3 class="greennature-blog-title">
-                                                                                        <a>{{ $media->title }}</a></h3>
+{{--                                                                            <div class="greennature-blog-grid-content">--}}
+{{--                                                                                <header class="post-header">--}}
+{{--                                                                                    <h3 class="greennature-blog-title">--}}
+{{--                                                                                        <a>{{ $media->title }}</a></h3>--}}
 
-                                                                                    <div class="greennature-blog-info">
-                                                                                        <div
-                                                                                            class="blog-info blog-date greennature-skin-info">
-                                                                                            <i class="fa fa-tags"></i><a
-                                                                                                href="">{{ $media->tag }}</a>
-                                                                                        </div>
-                                                                                        <div class="clear"></div>
-                                                                                    </div>
-                                                                                    <div class="clear"></div>
-                                                                                </header>
-                                                                                <!-- entry-header -->
+{{--                                                                                    <div class="greennature-blog-info">--}}
+{{--                                                                                        <div--}}
+{{--                                                                                            class="blog-info blog-date greennature-skin-info">--}}
+{{--                                                                                            <i class="fa fa-tags"></i><a--}}
+{{--                                                                                                href="">{{ $media->tag }}</a>--}}
+{{--                                                                                        </div>--}}
+{{--                                                                                        <div class="clear"></div>--}}
+{{--                                                                                    </div>--}}
+{{--                                                                                    <div class="clear"></div>--}}
+{{--                                                                                </header>--}}
+{{--                                                                                <!-- entry-header -->--}}
 
-                                                                                <div class="greennature-blog-content"
-                                                                                     style="text-align: justify">
-                                                                                    <p>{!! $media->content !!}</p>
+{{--                                                                                <div class="greennature-blog-content"--}}
+{{--                                                                                     style="text-align: justify">--}}
+{{--                                                                                    <p>{!! $media->content !!}</p>--}}
 
-                                                                                    {{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </article>
-                                                                    <!-- #post -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
+{{--                                                                                    --}}{{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div>--}}
+{{--                                                                                </div>--}}
+{{--                                                                            </div>--}}
+{{--                                                                        </div>--}}
+{{--                                                                    </article>--}}
+{{--                                                                    <!-- #post -->--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    @endforeach--}}
 
                                                     <div class="clear"></div>
                                                     <div class="pagination-style">
