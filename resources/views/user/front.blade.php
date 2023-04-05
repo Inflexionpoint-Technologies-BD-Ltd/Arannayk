@@ -229,7 +229,7 @@
                                                      data-duration="437" data-delay="625" data-ease="easeOutQuint"
                                                      data-offset-x="0"
                                                      data-offset-y="139" data-origin="ml" data-position="normal">
-                                                    {{ $slider->text_content_2 }}
+                                                    {!! $slider->text_content_2 !!}
                                                 </div>
 
                                                 <!-- <div class="ms-layer  msp-cn-1-7" style=""
@@ -243,7 +243,7 @@
                                                      data-duration="350" data-ease="easeOutQuint" data-offset-x="0"
                                                      data-offset-y="52"
                                                      data-origin="ml" data-position="normal">
-                                                    {{ $slider->text_content_1 }}
+                                                    {!! $slider->text_content_1 !!}
                                                 </div>
                                             </div>
 

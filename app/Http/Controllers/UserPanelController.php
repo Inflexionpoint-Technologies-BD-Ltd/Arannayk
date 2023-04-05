@@ -68,12 +68,12 @@ class UserPanelController extends Controller
 
 
         if (!$search == null) {
-            $projects = Project::where('tag', $search)->paginate(5);
+            $projects = Project::orderBy('id', 'desc')->where('tag', $search)->paginate(5);
         } else {
             $projects = Project::paginate(5);
         }
 
-        $widgets = Project::skip(0)->take(3)->get();
+        $widgets = Project::orderBy('id', 'desc')->skip(0)->take(3)->get();
         $tags = Project::select('tag')->distinct()->get();
         return view('user.currentproject', compact('projects', 'widgets', 'tags'));
     }
@@ -131,8 +131,8 @@ class UserPanelController extends Controller
     {
 
 //        $projects = Project::paginate(5);
-        $projects = Project::where('location', 'like', '%' . $project . '%')->paginate(5);
-        $archives = Archive::where('location', 'like', '%' . $project . '%')->paginate(5);
+        $projects = Project::orderBy('id', 'desc')->where('location', 'like', '%' . $project . '%')->paginate(5);
+        $archives = Archive::orderBy('id', 'desc')->where('location', 'like', '%' . $project . '%')->paginate(5);
 
         $widgets = Project::where('location', 'like', '%' . $project . '%')->skip(0)->take(3)->get();
         $widgets_archives = Archive::where('location', 'like', '%' . $project . '%')->skip(0)->take(3)->get();
@@ -144,12 +144,12 @@ class UserPanelController extends Controller
     {
 
         if (!$search == null) {
-            $archives = Archive::where('tag', $search)->paginate(5);
+            $archives = Archive::orderBy('id', 'desc')->where('tag', $search)->paginate(5);
         } else {
             $archives = Archive::paginate(5);
         }
 
-        $widgets = Archive::skip(0)->take(3)->get();
+        $widgets = Archive::orderBy('id', 'desc')->skip(0)->take(3)->get();
         $tags = Archive::select('tag')->distinct()->get();
         return view('user.project-archives', compact('archives', 'widgets', 'tags'));
 
