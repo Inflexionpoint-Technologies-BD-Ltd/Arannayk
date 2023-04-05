@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="SSLCommerz">
     <title>Example - EasyCheckout (Popup) | SSLCommerz</title>
+    <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

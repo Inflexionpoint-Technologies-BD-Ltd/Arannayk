@@ -12,7 +12,9 @@
     <meta name="viewport" content="initial-scale=1.0"/>
 
     <title>Arannayk - Project Archives</title>
+    <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
+<link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
           type="text/css" media="all"/>

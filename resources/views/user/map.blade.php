@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0"/>
+    <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Arannayk Foundation">
