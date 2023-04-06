@@ -155,8 +155,8 @@
 
 
 
-                                                                <div id="carouselExampleIndicators1{{ $id }}"
-                                                                    class="carousel slide" data-ride="carousel">
+                                                                {{-- <div id="carouselExampleIndicators1{{ $id }}"
+                                                                    class="carousel slide" data-ride="carousel"> --}}
                                                                     {{--                                                        <ol class="carousel-indicators"> --}}
                                                                     {{--                                                            <li data-target="#carouselExampleIndicators1" --}}
                                                                     {{--                                                                data-slide-to="0" --}}
@@ -169,7 +169,7 @@
                                                                     {{--                                                                data-slide-to="3"></li> --}}
 
                                                                     {{--                                                        </ol> --}}
-                                                                    <div class="carousel-inner">
+                                                                    {{-- <div class="carousel-inner">
 
                                                                         <?php $id_2 = 0; ?>
                                                                         @foreach (\App\Photo::where('title', $title->title_first)->get() as $slider_data)
@@ -197,7 +197,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             @endif
-                                                                        @endforeach
+                                                                        @endforeach --}}
                                                                         {{--                                                            <div class="carousel-item"> --}}
                                                                         {{--                                                                <img class="d-block w-100" --}}
                                                                         {{--                                                                     src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" --}}
@@ -206,7 +206,7 @@
                                                                         {{--                                                                    <p>fsefsefsefsef</p> --}}
                                                                         {{--                                                                </div> --}}
                                                                         {{--                                                            </div> --}}
-                                                                    </div>
+                                                                    {{-- </div>
                                                                     <a class="carousel-control-prev"
                                                                         href="#carouselExampleIndicators1{{ $id }}"
                                                                         role="button" data-slide="prev">
@@ -221,7 +221,7 @@
                                                                             aria-hidden="true"></span>
                                                                         <span class="sr-only">Next</span>
                                                                     </a>
-                                                                </div>
+                                                                </div> --}}
 
                                                                 {{--  ------------------------------------------ Slider ------------------------------------------ --}}
 
@@ -229,7 +229,7 @@
 
                                                                 {{--  ------------------------------------------ Images ------------------------------------------ --}}
 
-                                                                @foreach (\App\Photo::where('title', $title->title_first)->get() as $photo)
+                                                                {{-- @foreach (\App\Photo::where('title', $title->title_first)->get() as $photo)
                                                                     <div class="three columns">
                                                                         <div
                                                                             class="greennature-item greennature-portfolio-item greennature-classic-portfolio">
@@ -256,7 +256,70 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                @endforeach
+                                                                @endforeach --}}
+
+
+                                                                <!-- Display images in cards with modal -->
+<div class="row">
+    @foreach (\App\Photo::where('title', $title->title_first)->get() as $photo)
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <a data-toggle="modal" data-target="#myModal-{{ $photo->id }}">
+                <img class="card-img-top" src="{{ asset('storage/' . $photo->image) }}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">{{ $photo->title }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    @endforeach
+</div>
+
+<!-- Modals for each image -->
+@foreach (\App\Photo::where('title', $title->title_first)->get() as $photo)
+<div class="modal fade" id="myModal-{{ $photo->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false" style="z-index: 9999 !important;">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ $photo->title }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carousel-{{ $photo->id }}" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach (\App\Photo::where('title', $title->title_first)->get() as $carousel_photo)
+                        <div class="carousel-item {{ $photo->id == $carousel_photo->id ? 'active' : '' }}">
+                            <img class="d-block w-100" src="{{ asset('storage/' . $carousel_photo->image) }}" alt="{{ $carousel_photo->title }}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ $carousel_photo->title }}</h5>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-{{ $photo->id }}" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-{{ $photo->id }}" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">{{ $photo->title }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach
 
                                                                 {{--  ------------------------------------------ Images ------------------------------------------ --}}
                                                                 <br><br>
