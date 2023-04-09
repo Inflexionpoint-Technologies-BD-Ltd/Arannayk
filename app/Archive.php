@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Archive extends Model
+{
+    protected $guarded = [];
+
+    public function sdg(){
+        return $this->hasOne(Svg::class);
+    }
+}
