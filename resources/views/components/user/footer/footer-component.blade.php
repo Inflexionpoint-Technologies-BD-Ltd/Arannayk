@@ -8,7 +8,7 @@
                     <div class="textwidget">
 
                         <p>
-                            <img src="{{ asset('img/logo_new.png') }}" style="width: 170px" alt="" />
+                            <img src="{{ asset('img/logo_new_footer.png') }}" style="width: 170px" alt="" />
                         </p>
 
                     </div>
