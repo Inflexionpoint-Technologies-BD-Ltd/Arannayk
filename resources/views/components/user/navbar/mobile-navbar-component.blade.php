@@ -3,7 +3,7 @@
     <!-------------------- Navbar logo ---------------------------------------->
     <div class="greennature-logo-inner">
         <a href="/">
-            <img src="{{ asset('img/logo_new_top.png') }}" style="height: 70px" alt="" />
+            <img src="{{ asset('img/logo_new.png') }}" style="height: 70px" alt="" />
         </a>
     </div>
     <!-------------------------------------------------------------  Navbar Logo --------->
