@@ -8,315 +8,324 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
 
     <title>Arannayk - Media Coverage</title>
-<link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
+    <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
 
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular%2Citalic%2C700%2C700italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular%2Citalic%2C700%2C700italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
+          type="text/css" media="all"/>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/masterslider/public/assets/css/masterslider.main.css') }}"
-        type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/master-custom.css') }}" type="text/css" media="all" />
+          type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/master-custom.css') }}" type="text/css" media="all"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body data-rsssl="1"
-    class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
-    <div class="body-wrapper float-menu" data-home="https://demo.goodlayers.com/greennature/">
+      class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
+<div class="body-wrapper float-menu" data-home="https://demo.goodlayers.com/greennature/">
 
-        <!-------------------------------Navigation Starts Here---------------------------------------------------------->
+    <!-------------------------------Navigation Starts Here---------------------------------------------------------->
 
-        <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
+    <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
 
-            <!-------------------------------------------------------------------------
-          ------------------------------------------------------------------------
-          Top navigation---------------------------------------------------------
-        ---------------------------------------------------------------------- -->
+        <!-------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      Top navigation---------------------------------------------------------
+    ---------------------------------------------------------------------- -->
 
-            <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>
+        <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>
 
-            <!---------------------------------------------------------------------------------
-          --------------------------------------------------------------------------------
-        ---------------------------------------------------- Top navigation------------------ -->
-
-
-            <div id="greennature-header-substitute"></div>
-
-            <div class="greennature-header-inner header-inner-header-style-5">
-
-                <div class="greennature-header-container container">
-                    <div class="greennature-header-inner-overlay"></div>
-
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------Mobile Navbar-----------------------------------------
-                  ------------------------------------------------------------------>
-
-                    <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>
+        <!---------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------
+    ---------------------------------------------------- Top navigation------------------ -->
 
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------------------------Mobile Navbar----------------------->
-                    <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>
+        <div id="greennature-header-substitute"></div>
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  ------------------- PC Navbar -----------------------------------
-                  ---------------------------------------------------------------->
+        <div class="greennature-header-inner header-inner-header-style-5">
+
+            <div class="greennature-header-container container">
+                <div class="greennature-header-inner-overlay"></div>
+
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------Mobile Navbar-----------------------------------------
+              ------------------------------------------------------------------>
+
+                <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>
 
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  ----------------------------------------------------------------
-                  --------------------------------------------PC Navbar-------------------->
-                    <div class="clear"></div>
-                </div>
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------------------------Mobile Navbar----------------------->
+                <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>
+
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              ------------------- PC Navbar -----------------------------------
+              ---------------------------------------------------------------->
+
+
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              ----------------------------------------------------------------
+              --------------------------------------------PC Navbar-------------------->
+                <div class="clear"></div>
             </div>
-        </header>
-        <!------------------------------------------ Navbar ends here--- -->
+        </div>
+    </header>
+    <!------------------------------------------ Navbar ends here--- -->
 
 
-        <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-            <div class="greennature-page-title-overlay"></div>
-            <div class="greennature-page-title-container container">
-                <span class="greennature-page-caption">Media Coverage</span>
-                <h1 class="section-heading-title"></h1>
+    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
+        <div class="greennature-page-title-overlay"></div>
+        <div class="greennature-page-title-container container">
+            <span class="greennature-page-caption">Media Coverage</span>
+            <h1 class="section-heading-title"></h1>
 
+        </div>
+    </div>
+
+    <section>
+        <div class="content-wrapper">
+            <div class="greennature-content">
+
+                <!-- Above Sidebar Section-->
+
+                <!-- Sidebar With Content Section-->
+                <div class="with-sidebar-wrapper">
+                    <div class="with-sidebar-container container">
+                        <div class="with-sidebar-left twelve columns">
+                            <div class="with-sidebar-content twelve columns">
+                                <section id="content-section-1">
+                                    <div class="section-container container">
+                                        <div class="blog-item-wrapper">
+                                            <div class="blog-item-holder">
+                                                <div class="greennature-isotope" data-type="blog"
+                                                     data-layout="fitRows">
+                                                    <div class="clear"></div>
+
+
+                                                    {{--  --------------------------------- iframe --------------------------------- --}}
+
+{{--                                                    <style>--}}
+{{--                                                        .iframe-container {--}}
+{{--                                                            position: relative;--}}
+{{--                                                            width: 100%;--}}
+{{--                                                            height: 0;--}}
+{{--                                                            padding-bottom: 56.25%;--}}
+{{--                                                            /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */--}}
+{{--                                                        }--}}
+
+{{--                                                        .iframe-container iframe {--}}
+{{--                                                            position: absolute;--}}
+{{--                                                            top: 0;--}}
+{{--                                                            left: 0;--}}
+{{--                                                            width: 100%;--}}
+{{--                                                            height: 100%;--}}
+{{--                                                        }--}}
+{{--                                                    </style>--}}
+{{--                                                    @foreach ($medias as $media)--}}
+{{--                                                        <div class="six columns">--}}
+{{--                                                            <div style="margin: 20px">--}}
+{{--                                                                <div class="iframe-container">--}}
+{{--                                                                    <iframe src="{{ $media->title }}"></iframe>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    @endforeach--}}
+
+
+
+
+                                                    {{-- --------------------------------- iframe --------------------------------- --}}
+
+
+                                                    @foreach ($medias as $media)
+                                                        <div class="six columns" id="{{ $media->title }}">
+                                                            <div
+                                                                class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                                <div
+                                                                    class="greennature-ux greennature-blog-grid-ux">
+                                                                    <article id="post-852"
+                                                                             class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                                        <div class="greennature-standard-style">
+                                                                            <div class="greennature-blog-thumbnail">
+                                                                                <a> <img
+                                                                                        src="{{ asset('storage/'.$media->image) }}"
+                                                                                        class="activity-updates-image"
+                                                                                        alt="" width="400"
+                                                                                        height="300"/></a>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="greennature-blog-grid-content">
+                                                                                <header class="post-header">
+                                                                                    <p class="greennature-blog-title">
+{{--                                                                                        <a>{{ $media->title }}</a>--}}
+                                                                                    </p>
+
+{{--                                                                                    <div--}}
+{{--                                                                                        class="greennature-blog-info">--}}
+{{--                                                                                        <div--}}
+{{--                                                                                            class="blog-info blog-date greennature-skin-info">--}}
+{{--                                                                                            <i class="fa fa-tags"></i><a--}}
+{{--                                                                                                href="">{{ $media->tag }}</a>--}}
+{{--                                                                                        </div>--}}
+{{--                                                                                        <div class="clear"></div>--}}
+{{--                                                                                    </div>--}}
+                                                                                    <div class="clear"></div>
+                                                                                </header>
+                                                                                <!-- entry-header -->
+
+                                                                                <div
+                                                                                    class="greennature-blog-content"
+                                                                                    style="text-align: justify">
+                                                                                    <p>{!! \Illuminate\Support\Str::words($media->content,70,'....')  !!}</p>
+
+                                                                                    <div class="clear"></div>
+                                                                                    <a href="{{ $media->title }}"
+                                                                                       class="excerpt-read-more">Click to visit</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                                                </div>
+                                                                <!-- #post -->
+                                                            </div>
+
+                                                        </div>
+
+                                                </div>
+                                                @endforeach
+
+                                                <div class="clear"></div>
+                                                <div class="pagination-style">
+                                                    {{ $medias->links() }}
+                                                </div>
+
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="clear"></div>
+                            </div>
+    </section>
+</div>
+
+<div class="clear"></div>
+</div>
+
+{{-- <div class="greennature-sidebar greennature-right-sidebar four columns">
+    <div class="greennature-item-start-content sidebar-right-item">
+
+        <div id="gdlr-recent-portfolio-widget-2"
+            class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+            <h3 class="greennature-widget-title">Recent Media Coverages</h3>
+            <div class="clear"></div>
+            <div class="greennature-recent-port-widget">
+
+                @foreach ($medias as $media)
+                    <div class="recent-post-widget">
+                        <div class="recent-post-widget-thumbnail">
+                            <a><img src="{{ asset('storage/' . $media->image) }}"
+                                    alt="" width="150" height="150" /></a>
+                        </div>
+                        <div class="recent-post-widget-content">
+                            <div class="recent-post-widget-title"><a
+                                    href="#{{ $media->title }}">{{ $media->title }}</a>
+                            </div>
+                            <div class="recent-post-widget-info">
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                @endforeach
+
+                <div class="clear"></div>
             </div>
         </div>
 
-        <section>
-            <div class="content-wrapper">
-                <div class="greennature-content">
+    </div>
+</div> --}}
+<div class="clear"></div>
+</div>
+</div>
 
-                    <!-- Above Sidebar Section-->
+<!-- Below Sidebar Section-->
 
-                    <!-- Sidebar With Content Section-->
-                    <div class="with-sidebar-wrapper">
-                        <div class="with-sidebar-container container">
-                            <div class="with-sidebar-left twelve columns">
-                                <div class="with-sidebar-content twelve columns">
-                                    <section id="content-section-1">
-                                        <div class="section-container container">
-                                            <div class="blog-item-wrapper">
-                                                <div class="blog-item-holder">
-                                                    <div class="greennature-isotope" data-type="blog"
-                                                        data-layout="fitRows">
-                                                        <div class="clear"></div>
+</div>
+<!-- greennature-content -->
+<div class="clear"></div>
+</div>
+</section>
 
 
-
-                                                        {{--  --------------------------------- iframe --------------------------------- --}}
-
-                                                        <style>
-                                                            .iframe-container {
-                                                                position: relative;
-                                                                width: 100%;
-                                                                height: 0;
-                                                                padding-bottom: 56.25%;
-                                                                /* This value is for a 16:9 aspect ratio. Change it to match your aspect ratio. */
-                                                            }
-
-                                                            .iframe-container iframe {
-                                                                position: absolute;
-                                                                top: 0;
-                                                                left: 0;
-                                                                width: 100%;
-                                                                height: 100%;
-                                                            }
-                                                        </style>
-                                                        @foreach ($medias as $media)
-                                                            <div class="six columns">
-                                                                <div style="margin: 20px">
-                                                                    <div class="iframe-container">
-                                                                        <iframe src="{{ $media->title }}"></iframe>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        @endforeach
-
-
-
-
-                                                        {{--  --------------------------------- iframe --------------------------------- --}}
-
-
-                                                        {{--                                                    @foreach ($medias as $media) --}}
-                                                        {{--                                                        <div class="twelve columns" id="{{ $media->title }}"> --}}
-                                                        {{--                                                            <div --}}
-                                                        {{--                                                                class="greennature-item greennature-blog-grid greennature-skin-box"> --}}
-                                                        {{--                                                                <div class="greennature-ux greennature-blog-grid-ux"> --}}
-                                                        {{--                                                                    <article id="post-852" --}}
-                                                        {{--                                                                             class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style"> --}}
-                                                        {{--                                                                        <div class="greennature-standard-style"> --}}
-                                                        {{--                                                                            <div class="greennature-blog-thumbnail"> --}}
-                                                        {{--                                                                                <a> <img --}}
-                                                        {{--                                                                                        src="{{ asset('storage/'.$media->image) }}" --}}
-                                                        {{--                                                                                        class="activity-updates-image" --}}
-                                                        {{--                                                                                        alt="" width="400" --}}
-                                                        {{--                                                                                        height="300"/></a> --}}
-                                                        {{--                                                                            </div> --}}
-
-                                                        {{--                                                                            <div class="greennature-blog-grid-content"> --}}
-                                                        {{--                                                                                <header class="post-header"> --}}
-                                                        {{--                                                                                    <h3 class="greennature-blog-title"> --}}
-                                                        {{--                                                                                        <a>{{ $media->title }}</a></h3> --}}
-
-                                                        {{--                                                                                    <div class="greennature-blog-info"> --}}
-                                                        {{--                                                                                        <div --}}
-                                                        {{--                                                                                            class="blog-info blog-date greennature-skin-info"> --}}
-                                                        {{--                                                                                            <i class="fa fa-tags"></i><a --}}
-                                                        {{--                                                                                                href="">{{ $media->tag }}</a> --}}
-                                                        {{--                                                                                        </div> --}}
-                                                        {{--                                                                                        <div class="clear"></div> --}}
-                                                        {{--                                                                                    </div> --}}
-                                                        {{--                                                                                    <div class="clear"></div> --}}
-                                                        {{--                                                                                </header> --}}
-                                                        {{--                                                                                <!-- entry-header --> --}}
-
-                                                        {{--                                                                                <div class="greennature-blog-content" --}}
-                                                        {{--                                                                                     style="text-align: justify"> --}}
-                                                        {{--                                                                                    <p>{!! $media->content !!}</p> --}}
-
-                                                        {{--                                                                                    --}}{{--                                                                                <div class="clear"></div><a href="" class="excerpt-read-more">Read More</a></div> --}}
-                                                        {{--                                                                                </div> --}}
-                                                        {{--                                                                            </div> --}}
-                                                        {{--                                                                        </div> --}}
-                                                        {{--                                                                    </article> --}}
-                                                        {{--                                                                    <!-- #post --> --}}
-                                                        {{--                                                                </div> --}}
-                                                        {{--                                                            </div> --}}
-                                                        {{--                                                        </div> --}}
-                                                        {{--                                                    @endforeach --}}
-
-                                                        <div class="clear"></div>
-                                                        <div class="pagination-style">
-                                                            {{ $medias->links() }}
-                                                        </div>
-
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <div class="clear"></div>
-                            </div>
-
-                            {{-- <div class="greennature-sidebar greennature-right-sidebar four columns">
-                                <div class="greennature-item-start-content sidebar-right-item">
-
-                                    <div id="gdlr-recent-portfolio-widget-2"
-                                        class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
-                                        <h3 class="greennature-widget-title">Recent Media Coverages</h3>
-                                        <div class="clear"></div>
-                                        <div class="greennature-recent-port-widget">
-
-                                            @foreach ($medias as $media)
-                                                <div class="recent-post-widget">
-                                                    <div class="recent-post-widget-thumbnail">
-                                                        <a><img src="{{ asset('storage/' . $media->image) }}"
-                                                                alt="" width="150" height="150" /></a>
-                                                    </div>
-                                                    <div class="recent-post-widget-content">
-                                                        <div class="recent-post-widget-title"><a
-                                                                href="#{{ $media->title }}">{{ $media->title }}</a>
-                                                        </div>
-                                                        <div class="recent-post-widget-info">
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            @endforeach
-
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> --}}
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-
-                    <!-- Below Sidebar Section-->
-
-                </div>
-                <!-- greennature-content -->
-                <div class="clear"></div>
-            </div>
-        </section>
-
-
-        <!-------------------------------------------------------------------------
-  ------------------------------------------------------------------------
-  Footer------------------------------------------------------------------
+<!-------------------------------------------------------------------------
+------------------------------------------------------------------------
+Footer------------------------------------------------------------------
 ---------------------------------------------------------------------- -->
 
-        <x-user.footer.footer-component></x-user.footer.footer-component>
+<x-user.footer.footer-component></x-user.footer.footer-component>
 
-        <!-------------------------------------------------------------------------
-        ------------------------------------------------------------------------
-        -----------------------------------------------------------------------
-      --------------------------------------------------Footer---------------- -->
+<!-------------------------------------------------------------------------
+------------------------------------------------------------------------
+-----------------------------------------------------------------------
+--------------------------------------------------Footer---------------- -->
 
-    </div>
-    <!-- body-wrapper -->
+</div>
+<!-- body-wrapper -->
 
-    <script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js') }}"></script>
-    <script>
-        var ms_grabbing_curosr =
+
+<script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js') }}"></script>
+<script>
+    var ms_grabbing_curosr =
             "plugins/masterslider/public/assets/css/common/grabbing.html",
-            ms_grab_curosr =
+        ms_grab_curosr =
             "plugins/masterslider/public/assets/css/common/grab.html";
-    </script>
-    <script type="text/javascript" src="{{ asset('plugins/superfish/js/superfish.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/hoverIntent.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/masterslider/public/assets/js/masterslider.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.transit.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/gdlr-portfolio/gdlr-portfolio-script.js') }}"></script>
+</script>
+<script type="text/javascript" src="{{ asset('plugins/superfish/js/superfish.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/hoverIntent.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/masterslider/public/assets/js/masterslider.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.transit.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/gdlr-portfolio/gdlr-portfolio-script.js') }}"></script>
 
 </body>
 

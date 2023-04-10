@@ -21,26 +21,26 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
-{{--                <div class="form-group">--}}
-{{--                    <label for="exampleFormControlFile1">Enter image</label>--}}
-{{--                    <input type="file" class="form-control-file @error('image') is-invalid @enderror"--}}
-{{--                           id="exampleFormControlFile1" name="image">--}}
-{{--                </div>--}}
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Enter image</label>
+                    <input type="file" class="form-control-file @error('image') is-invalid @enderror"
+                           id="exampleFormControlFile1" name="image">
+                </div>
 
-{{--                @error('image')--}}
-{{--                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>--}}
-{{--                @enderror--}}
+                @error('image')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
 
-{{--                <div class="form-group">--}}
-{{--                    <label for="exampleInputEmail1">Enter Content</label>--}}
-{{--                    <textarea name="content" id="" cols="30" rows="10"--}}
-{{--                              class="@error('content') is-invalid @enderror form-control"--}}
-{{--                              placeholder="Enter achievement content">{{ $media->content }}</textarea>--}}
-{{--                </div>--}}
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Content</label>
+                    <textarea name="content" id="" cols="30" rows="10"
+                              class="@error('content') is-invalid @enderror form-control"
+                              placeholder="Enter achievement content">{{ $media->content }}</textarea>
+                </div>
 
-{{--                @error('content')--}}
-{{--                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>--}}
-{{--                @enderror--}}
+                @error('content')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
 
 {{--                <div class="form-group">--}}
 {{--                    <label for="exampleInputEmail1">Enter Tag</label>--}}
