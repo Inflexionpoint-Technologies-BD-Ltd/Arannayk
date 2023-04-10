@@ -246,7 +246,7 @@ class UserPanelController extends Controller
 
     public function pressRelease()
     {
-        $pressReleases = Press::orderBy('priority', 'asc')->paginate(2);
+        $pressReleases = Press::orderBy('priority', 'desc')->paginate(3);
         return view('user.press-release', compact('pressReleases'));
     }
 
@@ -255,7 +255,7 @@ class UserPanelController extends Controller
     {
         $singlepressRelease = Press::findOrFail($id);
 
-        $pressReleases = Press::orderBy('priority', 'asc')->paginate(5);
+        $pressReleases = Press::orderBy('priority', 'desc')->paginate(5);
         return view('user.single-press-release', compact('pressReleases', 'singlepressRelease'));
     }
 
