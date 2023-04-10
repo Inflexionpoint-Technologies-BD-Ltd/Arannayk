@@ -117,7 +117,7 @@
             <div class="greennature-page-title-container container">
 
                 @if (request()->query('q') == 1)
-                    <span class="greennature-page-caption">Refund Terms and Conditions</span>
+                    <span class="greennature-page-caption">Terms and Conditions</span>
                 @elseif (request()->query('q') == 2)
                     <span class="greennature-page-caption">Privacy Policy</span>
                 @elseif (request()->query('q') == 3)
@@ -147,7 +147,7 @@
 
 
                                         @if (request()->query('q') == 1)
-                                            <h1>Refund Terms and Conditions</h1>
+                                            <h1>Terms and Conditions</h1>
                                             <p>To request a refund of your donation made to Arannayk Foundation, please
                                                 fill
                                                 out our contact form and
