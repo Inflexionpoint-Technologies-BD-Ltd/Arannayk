@@ -179,9 +179,8 @@
                                                                             <div class="greennature-blog-thumbnail">
                                                                                 <a> <img
                                                                                         src="{{ asset('storage/'.$media->image) }}"
-                                                                                        class="activity-updates-image"
-                                                                                        alt="" width="400"
-                                                                                        height="300"/></a>
+                                                                                        class="activity-updates-image img-responsive"
+                                                                                        alt=""/></a>
                                                                             </div>
 
                                                                             <div
