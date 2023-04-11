@@ -76,11 +76,11 @@
                             <a href="{{ route('publication') }}" style="color: #0c0c0c">Publications</a>
                         </div>
                         <div style="margin-bottom: 0.5rem">
-                            <a href="{{ route('terms') }}" style="color: #0c0c0c">Terms & Conditions</a>
+                            <a href="{{ route('terms', ['q' => 1]) }}" style="color: #0c0c0c">Terms & Conditions</a>
                         </div>
                         <div style="margin-bottom: 0.5rem">
-                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Refund Policy </a><br>
-                            <a href="{{ route('terms') }}" style="color: #0c0c0c"> Privacy Policy </a>
+                            <a href="{{ route('terms', ['q' => 3]) }}" style="color: #0c0c0c"> Refund Policy </a><br>
+                            <a href="{{ route('terms', ['q' => 2]) }}" style="color: #0c0c0c"> Privacy Policy </a>
 
                         </div>
 
