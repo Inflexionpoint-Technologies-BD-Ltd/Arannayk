@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0" />
-<link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
+    <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
 
     <title>Arannayk - Consultancy</title>
@@ -28,7 +28,7 @@
         href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
         type="text/css" media="all" />
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css"> --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
     <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all" />
     <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all" />
