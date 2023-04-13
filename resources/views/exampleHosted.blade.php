@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <label for="email">Email</label>
                         <input type="email" name="customer_email" class="form-control" id="email" placeholder=""
                             value="" required>
                         <div class="invalid-feedback">
