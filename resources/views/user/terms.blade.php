@@ -8,8 +8,8 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
     <link rel="icon" href="{{ asset('img/logo_new.png') }}" type="image/icon type">
 
 
@@ -24,328 +24,388 @@
     @endif
 
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular%2Citalic%2C700%2C700italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular%2Citalic%2C700%2C700italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;"
+          type="text/css" media="all"/>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
-        type="text/css" media="all" />
+          href="https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;"
+          type="text/css" media="all"/>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/superfish/css/superfish.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/dl-menu/component.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/elegant-font/style.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('plugins/flexslider/flexslider.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/style-responsive.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/style-custom.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ asset('plugins/masterslider/public/assets/css/masterslider.main.css') }}"
-        type="text/css" media="all" />
-    <link rel="stylesheet" href="{{ asset('css/master-custom.css') }}" type="text/css" media="all" />
+          type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('css/master-custom.css') }}" type="text/css" media="all"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body data-rsssl="1"
-    class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
-    <div class="body-wrapper float-menu" data-home="https://demo.goodlayers.com/greennature/">
+      class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
+<div class="body-wrapper float-menu" data-home="https://demo.goodlayers.com/greennature/">
 
-        <!-------------------------------Navigation Starts Here---------------------------------------------------------->
+    <!-------------------------------Navigation Starts Here---------------------------------------------------------->
 
-        <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
+    <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
 
-            <!-------------------------------------------------------------------------
-          ------------------------------------------------------------------------
-          Top navigation---------------------------------------------------------
-        ---------------------------------------------------------------------- -->
+        <!-------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      Top navigation---------------------------------------------------------
+    ---------------------------------------------------------------------- -->
 
-            <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>
+        <x-user.navbar.top-navigation-component></x-user.navbar.top-navigation-component>
 
-            <!---------------------------------------------------------------------------------
-          --------------------------------------------------------------------------------
-        ---------------------------------------------------- Top navigation------------------ -->
-
-
-            <div id="greennature-header-substitute"></div>
-
-            <div class="greennature-header-inner header-inner-header-style-5">
-
-                <div class="greennature-header-container container">
-                    <div class="greennature-header-inner-overlay"></div>
-
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------Mobile Navbar-----------------------------------------
-                  ------------------------------------------------------------------>
-
-                    <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>
+        <!---------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------
+    ---------------------------------------------------- Top navigation------------------ -->
 
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  -----------------------------Mobile Navbar----------------------->
-                    <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>
+        <div id="greennature-header-substitute"></div>
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  ------------------- PC Navbar -----------------------------------
-                  ---------------------------------------------------------------->
+        <div class="greennature-header-inner header-inner-header-style-5">
+
+            <div class="greennature-header-container container">
+                <div class="greennature-header-inner-overlay"></div>
+
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------Mobile Navbar-----------------------------------------
+              ------------------------------------------------------------------>
+
+                <x-user.navbar.mobile-navbar-component></x-user.navbar.mobile-navbar-component>
 
 
-                    <!-----------------------------------------------------------------
-                  -----------------------------------------------------------------
-                  ----------------------------------------------------------------
-                  --------------------------------------------PC Navbar-------------------->
-                    <div class="clear"></div>
-                </div>
-            </div>
-        </header>
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------------------------------------------------------------
+              -----------------------------Mobile Navbar----------------------->
+                <x-user.navbar.pc-navbar-component></x-user.navbar.pc-navbar-component>
 
-        <!------------------------------------------ Navbar ends here--- -->
-        <!-------------------------------Publications Heading ------------------------------------------------->
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              ------------------- PC Navbar -----------------------------------
+              ---------------------------------------------------------------->
 
-        <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
-            <div class="greennature-page-title-overlay"></div>
-            <div class="greennature-page-title-container container">
 
-                @if (request()->query('q') == 1)
-                    <span class="greennature-page-caption">Terms and Conditions</span>
-                @elseif (request()->query('q') == 2)
-                    <span class="greennature-page-caption">Privacy Policy</span>
-                @elseif (request()->query('q') == 3)
-                    <span class="greennature-page-caption">Refund Policy</span>
-                @else
-                    <span class="greennature-page-caption">Terms & Conditions , Refund Policy & Privacy Policy</span>
-                @endif
-                <h1 class="section-heading-title"></h1>
-
+                <!-----------------------------------------------------------------
+              -----------------------------------------------------------------
+              ----------------------------------------------------------------
+              --------------------------------------------PC Navbar-------------------->
+                <div class="clear"></div>
             </div>
         </div>
+    </header>
 
-        <!--------------------------------------------------------------Publications Heading ------->
+    <!------------------------------------------ Navbar ends here--- -->
+    <!-------------------------------Publications Heading ------------------------------------------------->
 
-        <!------------------------------Publication Books Section-------------------------------->
+    <div class="greennature-page-title-wrapper header-style-5-title-wrapper">
+        <div class="greennature-page-title-overlay"></div>
+        <div class="greennature-page-title-container container">
 
-        <div class="content-wrapper">
-            <div class="greennature-content">
+            @if (request()->query('q') == 1)
+                <span class="greennature-page-caption">Terms and Conditions</span>
+            @elseif (request()->query('q') == 2)
+                <span class="greennature-page-caption">Privacy Policy</span>
+            @elseif (request()->query('q') == 3)
+                <span class="greennature-page-caption">Refund Policy</span>
+            @else
+                <span class="greennature-page-caption">Terms & Conditions , Refund Policy & Privacy Policy</span>
+            @endif
+            <h1 class="section-heading-title"></h1>
 
-                <div class="with-sidebar-wrapper">
-                    <section id="content-section-1">
-                        <div class="section-container container">
-                            <div class="portfolio-item-wrapper type-classic-portfolio" style="margin-bottom: 20px;">
-                                <div class="portfolio-item-holder  greennature-portfolio-column-3">
-                                    <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
-                                        <div class="clear"></div>
+        </div>
+    </div>
 
+    <!--------------------------------------------------------------Publications Heading ------->
 
-                                        @if (request()->query('q') == 1)
-                                            <h1>Terms and Conditions</h1>
-                                            <p>To request a refund of your donation made to Arannayk Foundation, please
-                                                fill
-                                                out our contact form and
-                                                request a refund within 30 days after the date of making the donation.
-                                                Arannayk Foundation will not be
-                                                able to refund any donations further than the past 30 days in all
-                                                situations.
-                                                We can only issue a refund to the same card or account from which the
-                                                donation was made using the
-                                                payment methods currently available at our website.
-                                            </p>
-                                        @elseif(request()->query('q') == 2)
-                                            <h1>Privacy Policy</h1>
-                                            <p>Arannayk Foundation is committed to protecting both personal as well as
-                                                business
-                                                information you
-                                                share and/or store with us. This Privacy Policy applies to transactions
-                                                and
-                                                activities and data gathered
-                                                through our website and interaction you may have with its social media
-                                                accounts.
-                                                Arannayk Foundation does not collect personally identifiable information
-                                                such as
-                                                name, e-mail address,
-                                                contact or similar information unless you choose to provide it. If you
-                                                voluntarily provide us with
-                                                personal information, for example by sending an e-mail or by filling out
-                                                a
-                                                form
-                                                and submitting it through
-                                                our website, we may use that information only to respond to your message
-                                                and
-                                                to
-                                                help us provide you
-                                                with the information or services that you request.
-                                            </p>
-                                        @elseif(request()->query('q') == 3)
-                                            <h1>Refund Policy</h1>
-                                            <p>Arannayk Foundation is grateful for your donation and support of our
-                                                organization. Donations made to
-                                                Arannayk Foundation are nonrefundable. However, we may refund if you
-                                                have
-                                                accidentally entered the
-                                                wrong amount.
-                                            </p>
+    <!------------------------------Publication Books Section-------------------------------->
 
-                                            <h1>Requesting a Refund</h1>
-                                            <p>If you wish to request for a refund, please fill out our contact form and
-                                                provide:</p>
-                                            <ul>
-                                                <li>Your full name</li>
-                                                <li>The email address provided when making the donation</li>
-                                                <li>Your country of residence</li>
-                                                <li>Your phone number</li>
-                                                <li>Date on which the donation was made</li>
-                                                <li>The amount of the relevant donation</li>
-                                                <li>Payment method, and transaction reference number</li>
-                                                <li>All relevant circumstances justifying your request</li>
-                                            </ul>
-                                            <p>Upon receipt we will review your request and endeavor to respond to you
-                                                within
-                                                ten working days. If
-                                                the request is accepted, we will process the refund as soon as possible.
-                                                Please
-                                                note that it may take
-                                                7 to 10 working days until a refund reaches your account.
-                                            </p>
-                                        @else
-                                            <h1>Refund Policy</h1>
-                                            <p>Arannayk Foundation is grateful for your donation and support of our
-                                                organization. Donations made to
-                                                Arannayk Foundation are nonrefundable. However, we may refund if you
-                                                have
-                                                accidentally entered the
-                                                wrong amount.
-                                            </p>
+    <div class="content-wrapper">
+        <div class="greennature-content">
 
-                                            <h1>Refund Terms and Conditions</h1>
-                                            <p>To request a refund of your donation made to Arannayk Foundation, please
-                                                fill
-                                                out our contact form and
-                                                request a refund within 30 days after the date of making the donation.
-                                                Arannayk Foundation will not be
-                                                able to refund any donations further than the past 30 days in all
-                                                situations.
-                                                We can only issue a refund to the same card or account from which the
-                                                donation was made using the
-                                                payment methods currently available at our website.
-                                            </p>
-
-                                            <h1>Requesting a Refund</h1>
-                                            <p>If you wish to request for a refund, please fill out our contact form and
-                                                provide:</p>
-                                            <ul>
-                                                <li>Your full name</li>
-                                                <li>The email address provided when making the donation</li>
-                                                <li>Your country of residence</li>
-                                                <li>Your phone number</li>
-                                                <li>Date on which the donation was made</li>
-                                                <li>The amount of the relevant donation</li>
-                                                <li>Payment method, and transaction reference number</li>
-                                                <li>All relevant circumstances justifying your request</li>
-                                            </ul>
-                                            <p>Upon receipt we will review your request and endeavor to respond to you
-                                                within
-                                                ten working days. If
-                                                the request is accepted, we will process the refund as soon as possible.
-                                                Please
-                                                note that it may take
-                                                7 to 10 working days until a refund reaches your account.
-                                            </p>
-
-                                            <h1>Privacy Policy</h1>
-                                            <p>Arannayk Foundation is committed to protecting both personal as well as
-                                                business
-                                                information you
-                                                share and/or store with us. This Privacy Policy applies to transactions
-                                                and
-                                                activities and data gathered
-                                                through our website and interaction you may have with its social media
-                                                accounts.
-                                                Arannayk Foundation does not collect personally identifiable information
-                                                such as
-                                                name, e-mail address,
-                                                contact or similar information unless you choose to provide it. If you
-                                                voluntarily provide us with
-                                                personal information, for example by sending an e-mail or by filling out
-                                                a
-                                                form
-                                                and submitting it through
-                                                our website, we may use that information only to respond to your message
-                                                and
-                                                to
-                                                help us provide you
-                                                with the information or services that you request.
-                                            </p>
-                                        @endif
-
-
-                                    </div>
+            <div class="with-sidebar-wrapper">
+                <section id="content-section-1">
+                    <div class="section-container container">
+                        <div class="portfolio-item-wrapper type-classic-portfolio" style="margin-bottom: 20px;">
+                            <div class="portfolio-item-holder  greennature-portfolio-column-3">
+                                <div class="greennature-isotope" data-type="portfolio" data-layout="fitRows">
                                     <div class="clear"></div>
-                                    <div class="clear"></div>
-                                    <div class="pagination-style">
 
-                                    </div>
+
+                                    @if (request()->query('q') == 1)
+                                        <h1>Terms and Conditions</h1>
+                                        <p>Arannayk Foundation, also known as the Bangladesh Tropical Forest
+                                            Conservation Foundation, (referred
+                                            to as us or we) is registered as a not for profit company (no.
+                                            C-550(02)/2003). We operate the website
+                                            <a href="www.arannaykfoundation.org">www.arannaykfoundation.org</a> (the
+                                            website).
+                                            These are the Terms and Conditions which govern each use you make of the
+                                            donation payment services
+                                            provided through the Website.
+                                            These Terms and Conditions apply separately to each single donation that you
+                                            make. By confirming on
+                                            the Website that you wish to donate you agree to these terms and conditions
+                                            for that donation.
+                                        </p>
+
+                                        <br>
+                                        <h4>(1) The donation services</h4>
+                                        <p>We will use your donation in line with our stated charitable objectives. All
+                                            payments through the Website
+                                            are to be made by card or mobile financial transaction or internet banking
+                                            applications.
+
+
+                                            <br>
+                                            Once you confirm to us through the Website that you wish to proceed with
+                                            your donation your transaction
+                                            will be processed through our payment services provider. Therefore, by
+                                            confirming that you wish to
+                                            proceed with your donation, you authorize our payment service provider to
+                                            request funds from your credit,
+                                            debit card provider and mobile financial transaction and internet banking
+                                            service provider.</p>
+
+
+                                        <br>
+                                        <h4>(2) Unauthorized cards use</h4>
+                                        <p>If you become aware of fraudulent use of your card, or if it is lost or
+                                            stolen, you must notify your card
+                                            provider immediately.</p>
+
+                                        <br>
+                                        <h4>(3) Information from you</h4>
+                                        <p>Before we can process your donation, you must provide us with the necessary
+                                            information such as your
+                                            name, address, email address, and contact number. We will use this data to
+                                            process the donation, so it is
+                                            important that you make sure to provide us with the correct info.
+                                            <br><br>
+                                            When you submit your payment information, this data is sent securely to our
+                                            payment service provider.
+                                            Be sure to read their terms and conditions before donating so that you feel
+                                            comfortable with how they will
+                                            handle your personal data.
+                                            <br><br>
+                                            We will not disclose any of your personal details to any other third party
+                                            except those mentioned in our
+                                            Privacy Policy. By accepting these Donation Payment Terms &amp; Conditions,
+                                            you are also agreeing to how
+                                            we collect and protect your personal information in accordance with our
+                                            Privacy Policy.</p>
+
+                                        <br>
+                                        <h4>(4) Refund policy</h4>
+                                        <p>If you make an error in your donation please refer to our refund policy.
+                                        </p>
+
+                                        <br>
+                                        <h4>(5) General</h4>
+                                        <p>We reserve the right to amend these Donation Payment Terms and Conditions at any time.
+                                        </p>
+
+                                    @elseif(request()->query('q') == 2)
+                                        <h1>Privacy Policy</h1>
+                                        <p>Arannayk Foundation is committed to protecting both personal as well as
+                                            business
+                                            information you
+                                            share and/or store with us. This Privacy Policy applies to transactions
+                                            and
+                                            activities and data gathered
+                                            through our website and interaction you may have with its social media
+                                            accounts.
+                                            Arannayk Foundation does not collect personally identifiable information
+                                            such as
+                                            name, e-mail address,
+                                            contact or similar information unless you choose to provide it. If you
+                                            voluntarily provide us with
+                                            personal information, for example by sending an e-mail or by filling out
+                                            a
+                                            form
+                                            and submitting it through
+                                            our website, we may use that information only to respond to your message
+                                            and
+                                            to
+                                            help us provide you
+                                            with the information or services that you request.
+                                        </p>
+                                    @elseif(request()->query('q') == 3)
+                                        <h1>Refund Policy</h1>
+                                        <p>Arannayk Foundation is grateful for your donation and support of our
+                                            organization. Donations made to
+                                            Arannayk Foundation are nonrefundable. However, we may refund if you
+                                            have
+                                            accidentally entered the
+                                            wrong amount.
+                                        </p>
+
+                                        <h1>Requesting a Refund</h1>
+                                        <p>If you wish to request for a refund, please fill out our contact form and
+                                            provide:</p>
+                                        <ul>
+                                            <li>Your full name</li>
+                                            <li>The email address provided when making the donation</li>
+                                            <li>Your country of residence</li>
+                                            <li>Your phone number</li>
+                                            <li>Date on which the donation was made</li>
+                                            <li>The amount of the relevant donation</li>
+                                            <li>Payment method, and transaction reference number</li>
+                                            <li>All relevant circumstances justifying your request</li>
+                                        </ul>
+                                        <p>Upon receipt we will review your request and endeavor to respond to you
+                                            within
+                                            ten working days. If
+                                            the request is accepted, we will process the refund as soon as possible.
+                                            Please
+                                            note that it may take
+                                            7 to 10 working days until a refund reaches your account.
+                                        </p>
+                                    @else
+                                        <h1>Refund Policy</h1>
+                                        <p>Arannayk Foundation is grateful for your donation and support of our
+                                            organization. Donations made to
+                                            Arannayk Foundation are nonrefundable. However, we may refund if you
+                                            have
+                                            accidentally entered the
+                                            wrong amount.
+                                        </p>
+
+                                        <h1>Refund Terms and Conditions</h1>
+                                        <p>To request a refund of your donation made to Arannayk Foundation, please
+                                            fill
+                                            out our contact form and
+                                            request a refund within 30 days after the date of making the donation.
+                                            Arannayk Foundation will not be
+                                            able to refund any donations further than the past 30 days in all
+                                            situations.
+                                            We can only issue a refund to the same card or account from which the
+                                            donation was made using the
+                                            payment methods currently available at our website.
+                                        </p>
+
+                                        <h1>Requesting a Refund</h1>
+                                        <p>If you wish to request for a refund, please fill out our contact form and
+                                            provide:</p>
+                                        <ul>
+                                            <li>Your full name</li>
+                                            <li>The email address provided when making the donation</li>
+                                            <li>Your country of residence</li>
+                                            <li>Your phone number</li>
+                                            <li>Date on which the donation was made</li>
+                                            <li>The amount of the relevant donation</li>
+                                            <li>Payment method, and transaction reference number</li>
+                                            <li>All relevant circumstances justifying your request</li>
+                                        </ul>
+                                        <p>Upon receipt we will review your request and endeavor to respond to you
+                                            within
+                                            ten working days. If
+                                            the request is accepted, we will process the refund as soon as possible.
+                                            Please
+                                            note that it may take
+                                            7 to 10 working days until a refund reaches your account.
+                                        </p>
+
+                                        <h1>Privacy Policy</h1>
+                                        <p>Arannayk Foundation is committed to protecting both personal as well as
+                                            business
+                                            information you
+                                            share and/or store with us. This Privacy Policy applies to transactions
+                                            and
+                                            activities and data gathered
+                                            through our website and interaction you may have with its social media
+                                            accounts.
+                                            Arannayk Foundation does not collect personally identifiable information
+                                            such as
+                                            name, e-mail address,
+                                            contact or similar information unless you choose to provide it. If you
+                                            voluntarily provide us with
+                                            personal information, for example by sending an e-mail or by filling out
+                                            a
+                                            form
+                                            and submitting it through
+                                            our website, we may use that information only to respond to your message
+                                            and
+                                            to
+                                            help us provide you
+                                            with the information or services that you request.
+                                        </p>
+                                    @endif
+
 
                                 </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
+                                <div class="pagination-style">
+
+                                </div>
+
                             </div>
-                            <div class="clear"></div>
                         </div>
-                    </section>
-                </div>
-                <!-- Below Sidebar Section-->
-
+                        <div class="clear"></div>
+                    </div>
+                </section>
             </div>
-            <!-- greennature-content -->
-            <div class="clear"></div>
+            <!-- Below Sidebar Section-->
+
         </div>
-        <!-- content wrapper -->
-        <!---------------------------------------------------------Publication Books Section-------->
-
-        <!-------------------------------------------------------------------------
-       ------------------------------------------------------------------------
-       Footer------------------------------------------------------------------
-     ---------------------------------------------------------------------- -->
-
-        <x-user.footer.footer-component></x-user.footer.footer-component>
-
-        <!-------------------------------------------------------------------------
-        ------------------------------------------------------------------------
-        -----------------------------------------------------------------------
-      --------------------------------------------------Footer---------------- -->
-
+        <!-- greennature-content -->
+        <div class="clear"></div>
     </div>
-    <!-- body-wrapper -->
+    <!-- content wrapper -->
+    <!---------------------------------------------------------Publication Books Section-------->
 
-    <script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js') }}"></script>
-    <script>
-        var ms_grabbing_curosr =
+    <!-------------------------------------------------------------------------
+   ------------------------------------------------------------------------
+   Footer------------------------------------------------------------------
+ ---------------------------------------------------------------------- -->
+
+    <x-user.footer.footer-component></x-user.footer.footer-component>
+
+    <!-------------------------------------------------------------------------
+    ------------------------------------------------------------------------
+    -----------------------------------------------------------------------
+  --------------------------------------------------Footer---------------- -->
+
+</div>
+<!-- body-wrapper -->
+
+<script type="text/javascript" src="{{ asset('js/jquery/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery/jquery-migrate.min.js') }}"></script>
+<script>
+    var ms_grabbing_curosr =
             "plugins/masterslider/public/assets/css/common/grabbing.html",
-            ms_grab_curosr =
+        ms_grab_curosr =
             "plugins/masterslider/public/assets/css/common/grab.html";
-    </script>
-    <script type="text/javascript" src="{{ asset('plugins/superfish/js/superfish.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/hoverIntent.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/masterslider/public/assets/js/masterslider.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/jquery.transit.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/gdlr-portfolio/gdlr-portfolio-script.js') }}"></script>
+</script>
+<script type="text/javascript" src="{{ asset('plugins/superfish/js/superfish.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/hoverIntent.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/dl-menu/modernizr.custom.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/dl-menu/jquery.dlmenu.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.easing.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/jquery.fancybox.pack.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-media.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/flexslider/jquery.flexslider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.isotope.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/masterslider/public/assets/js/masterslider.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/jquery.transit.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/gdlr-portfolio/gdlr-portfolio-script.js') }}"></script>
 
 </body>
 
