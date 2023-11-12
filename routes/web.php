@@ -493,7 +493,7 @@ Route::middleware('auth')->group(function () {
 
 // --------------------------------- Log out ---------------------------------
 
-    Route::get('logout', "AdminController@logout")->name('logout');
+    Route::get('logout', "AdminController@logout")->name('_logout');
 
 // --------------------------------- Log out ---------------------------------
 });
