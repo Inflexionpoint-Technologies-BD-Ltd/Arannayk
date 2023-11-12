@@ -28,7 +28,7 @@
 
                         <i class="greennature-icon fa fa-phone"
                             style="vertical-align: middle; color: #fff; font-size: 16px"></i>
-                        +02-8711240
+                        +8801913440955
 
                         <span class="clear"></span><span class="greennature-space"
                             style="margin-top: 10px; display: block"></span>
