@@ -1,5 +1,3 @@
-
-
 <div class="top-navigation-wrapper" style="display: flex; align-items: center">
     <div class="top-navigation-container container">
         <div class="top-navigation-left">
@@ -24,27 +22,27 @@
             <div class="top-social-wrapper">
                 <div class="social-icon">
                     <a href="https://www.facebook.com/arannaykfoundation/" target="_blank">
-                        <i class="fa fa-facebook"></i></a>
+                        <i class="fa-brands fa-facebook"></i></a>
                 </div>
 
                 <div class="social-icon">
                     <a href="https://www.youtube.com/user/Arannayk/videos" target="_blank">
-                        <i class="fa fa-youtube-play"></i></a>
+                        <i class="fa-brands fa-youtube"></i></a>
                 </div>
 
                 <div class="social-icon">
                     <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247" target="_blank">
-                        <i class="fa fa-linkedin"></i></a>
+                        <i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
                 <div class="social-icon">
                     <a href="https://www.flickr.com/photos/137990726@N07/albums/" target="_blank">
-                        <i class="fa fa-flickr"></i></a>
+                        <i class="fa-brands fa-flickr"></i></a>
                 </div>
 
                 <div class="social-icon">
                     <a href="https://twitter.com/Arannayk" target="_blank">
-                        <i class="fa fa-twitter"></i></a>
+                        <i class="fa-brands fa-x-twitter"></i></a>
                 </div>
 
 

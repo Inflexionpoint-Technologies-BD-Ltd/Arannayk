@@ -39,7 +39,7 @@
                         <span class="clear"></span><span class="greennature-space"
                             style="margin-top: 10px; display: block"></span>
 
-                        <i class="greennature-icon fa fa-envelope-o"
+                        <i class="fa-solid fa-envelope"
                             style="vertical-align: middle; color: #fff; font-size: 16px"></i>
                         info@arannayk.org
 
@@ -120,39 +120,41 @@
             <div class="copyright-container container">
                 <div class="copyright-left">
                     <a href="https://www.facebook.com/arannaykfoundation/">
-                        <i class="greennature-icon fa fa-facebook"
+                        <i class="fa-brands fa-facebook"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
+                    margin-right: 8px
                   "></i></a>
 
-                    <a href="https://www.youtube.com/user/Arannayk/videos"><i
-                            class="greennature-icon fa fa-youtube-play"
+                    <a href="https://www.youtube.com/user/Arannayk/videos"><i class="fa-brands fa-youtube"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
+                    margin-right: 8px
                   "></i></a>
-                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i
-                            class="greennature-icon fa fa-linkedin"
+                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i class="fa-brands fa-linkedin"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
+                    margin-right: 8px
                   "></i></a>
-                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i
-                            class="greennature-icon fa fa-flickr"
+                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i class="fa-brands fa-flickr"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
+                    margin-right: 8px
                   "></i></a>
-                    <a href="https://twitter.com/Arannayk"><i class="greennature-icon fa fa-twitter"
+                    <a href="https://twitter.com/Arannayk"><i class="fa-brands fa-x-twitter"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
+                    margin-right: 8px
                   "></i></a>
 
 

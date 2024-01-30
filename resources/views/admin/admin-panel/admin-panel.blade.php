@@ -438,7 +438,7 @@
         });
     </script>
 
-    <script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5/tinymce.min.js">
+    <script src="https://cdn.tiny.cloud/1/gp58iue7sn0d5mhor4i62o7gx70guklh1a40xox5v0rnn81t/tinymce/5/tinymce.min.js">
     </script>
 
 

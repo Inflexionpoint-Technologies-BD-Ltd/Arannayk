@@ -214,13 +214,13 @@ class UserPanelController extends Controller
 
     public function career()
     {
-        $careers = Career::where('tag', 'career')->get();
+        $careers = Career::where('tag', 'career')->orderBy('id','desc')->get();
         return view('user.career', compact('careers'));
     }
 
     public function internship()
     {
-        $careers = Career::where('tag', 'internship')->get();
+        $careers = Career::where('tag', 'internship')->orderBy('id','desc')->get();
         return view('user.internship', compact('careers'));
     }
 
