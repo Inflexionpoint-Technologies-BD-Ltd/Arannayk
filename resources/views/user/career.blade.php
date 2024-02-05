@@ -168,6 +168,7 @@
 
 
                             </div>
+                            
                             <div class="greennature-sidebar greennature-right-sidebar four columns">
                                 <div class="greennature-item-start-content sidebar-right-item">
                                     <div id="text-7"
@@ -179,13 +180,13 @@
                                                 Dhaka, Dhaka Division, Bangladesh </p>
                                             <p><i class="greennature-icon fa fa-phone"
                                                     style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
-                                                +8801913440955 </p>
+                                                &nbsp; +8801913440955 </p>
                                             <p><i class="greennature-icon fa fa-envelope"
                                                     style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
-                                                info@arannayk.org</p>
-                                            <p><i class="greennature-icon fa fa-clock-o"
+                                                &nbsp; info@arannayk.org</p>
+                                            <p><i class="greennature-icon fa-solid fa-clock"
                                                     style="vertical-align: middle; color: #444444; font-size: 16px; "></i>
-                                                Sun-Thu 9:00-17:00</p>
+                                                &nbsp; Sun-Thu 9:00-17:00</p>
                                         </div>
                                     </div>
                                     <div id="text-8"
@@ -194,21 +195,21 @@
                                         <div class="clear"></div>
                                         <div class="textwidget">
                                             <a href="https://www.facebook.com/arannaykfoundation/">
-                                                <i class="greennature-icon fa fa-facebook"
-                                                    style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                                <i class="greennature-icon fa-brands fa-facebook"
+                                                    style="vertical-align: middle; color: #444444; font-size: 28px; margin-right: 3px"></i></a>
 
                                             <a href="https://www.youtube.com/user/Arannayk/videos"><i
-                                                    class="greennature-icon fa fa-youtube-play"
-                                                    style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                                    class="greennature-icon fa-brands fa-youtube"
+                                                    style="vertical-align: middle; color: #444444; font-size: 28px; margin-right: 3px"></i></a>
                                             <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i
-                                                    class="greennature-icon fa fa-linkedin"
-                                                    style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                                    class="greennature-icon fa-brands fa-linkedin"
+                                                    style="vertical-align: middle; color: #444444; font-size: 28px; margin-right: 3px"></i></a>
                                             <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i
-                                                    class="greennature-icon fa fa-flickr"
-                                                    style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                                    class="greennature-icon fa-brands fa-flickr"
+                                                    style="vertical-align: middle; color: #444444; font-size: 28px; margin-right: 3px"></i></a>
                                             <a href="https://twitter.com/Arannayk"><i
-                                                    class="greennature-icon fa fa-twitter"
-                                                    style="vertical-align: middle; color: #444444; font-size: 28px; "></i></a>
+                                                    class="greennature-icon fa-brands fa-x-twitter"
+                                                    style="vertical-align: middle; color: #444444; font-size: 28px; margin-right: 3px"></i></a>
 
                                         </div>
                                     </div>
