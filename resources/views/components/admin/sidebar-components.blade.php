@@ -680,7 +680,7 @@
     </a>
     <div id="collapseMap" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Timeline</h6>
+            <h6 class="collapse-header">Map</h6>
             <a class="collapse-item" href="{{ route('map.create') }}">Add Info</a>
             <a class="collapse-item" href="{{ route('map.index') }}">View All info</a>
         </div>
@@ -688,6 +688,26 @@
 </li>
 
 {{-- -------------------------------------------------- Map ------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------- Contact Us ------------------------------------------------------- --}}
+
+
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
+       aria-expanded="true" aria-controls="collapseContact">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Contact Us</span>
+    </a>
+    <div id="collapseContact" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Contact Us</h6>
+            <a class="collapse-item" href="{{ route('contact.create') }}">Add Info</a>
+            <a class="collapse-item" href="{{ route('contact.index') }}">View All info</a>
+        </div>
+    </div>
+</li>
+
+{{-- -------------------------------------------------- Contact Us ------------------------------------------------------- --}}
 
 
 {{-- ---------------------------------------------------------------------------- Home ---------------------------------------------------------------------------------------- --}}

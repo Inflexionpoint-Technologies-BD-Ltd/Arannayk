@@ -8,7 +8,7 @@
                     <div class="textwidget">
 
                         <p>
-                            <img src="{{ asset('img/logo_new_footer.png') }}" style="width: 170px" alt="" />
+                            <img src="{{ asset('img/logo_new_footer.png') }}" style="width: 170px" alt=""/>
                         </p>
 
                     </div>
@@ -20,44 +20,51 @@
                     <div class="clear"></div>
                     <div class="textwidget">
                         <span class="clear"></span><span class="greennature-space"
-                            style="margin-top: -6px; display: block"></span>
-                        Address: 572/K, 6th floor, Wasi Tower, ECB Chattar, Matikata, Dhaka
-                        Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh
+                                                         style="margin-top: -6px; display: block"></span>
+
+                        {{ \App\Contact::first()->address ?? "Address: 572/K, 6th floor, Wasi Tower, ECB Chattar, Matikata, Dhaka
+                        Cantonment, 1206 Dhaka, Dhaka Division, Bangladesh" }}
+
                         <span class="clear"></span><span class="greennature-space"
-                            style="margin-top: 10px; display: block"></span>
+                                                         style="margin-top: 10px; display: block"></span>
 
                         <i class="greennature-icon fa fa-phone"
-                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
-                        +8801913440955
+                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>
+
+                        {{ \App\Contact::first()->phone ?? "+8801913440955" }}
 
                         <span class="clear"></span><span class="greennature-space"
-                            style="margin-top: 10px; display: block"></span>
+                                                         style="margin-top: 10px; display: block"></span>
 
-                        <!-- <i class="greennature-icon fa fa-mobile"
-                                          style="vertical-align: middle; color: #fff; font-size: 20px; "></i> +1833-232-3443 -->
 
                         <span class="clear"></span><span class="greennature-space"
-                            style="margin-top: 10px; display: block"></span>
+                                                         style="margin-top: 10px; display: block"></span>
 
                         <i class="fa-solid fa-envelope"
-                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
-                        info@arannayk.org
+                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>
 
-                        <span class="clear"></span><span class="greennature-space"
-                            style="margin-top: 10px; display: block"></span>
+                        {{ \App\Contact::first()->email ?? "info@arannayk.org" }}
 
-                        <i class="greennature-icon fa fa-globe"
-                            style="vertical-align: middle; color: #fff; font-size: 16px"></i>
-                        http://arannayk.org/
-                    </div><br>
-                    <p><b>RJSC :</b> C-550(02)/2003</p>
+
+{{--                        <span class="clear"></span><span class="greennature-space"--}}
+{{--                                                         style="margin-top: 10px; display: block"></span>--}}
+
+
+{{--                        <i class="greennature-icon fa fa-globe"--}}
+{{--                           style="vertical-align: middle; color: #fff; font-size: 16px"></i>--}}
+
+{{--                        http://arannayk.org/--}}
+
+                    </div>
+                    <br>
+                    <p>{{ \App\Contact::first()->rjsc ?? "RJSC : C-550(02)/2003" }}</p>
 
                 </div>
             </div>
 
             <div class="footer-column three columns" id="footer-widget-4">
                 <div id="gdlr-recent-portfolio2-widget-6"
-                    class="widget widget_gdlr-recent-portfolio2-widget greennature-item greennature-widget">
+                     class="widget widget_gdlr-recent-portfolio2-widget greennature-item greennature-widget">
                     <h3 class="greennature-widget-title">Quick Links</h3>
                     <div class="clear"></div>
                     <div class="greennature-recent-port2-widget">
@@ -101,7 +108,7 @@
                             <h3 class="greennature-widget-title">Support Us</h3>
                         </div>
                         <a class="stunning-item-button greennature-button large" href="{{ route('donate') }}"
-                            style="background-color: #eb681c; color: #000">Donate Now</a><a
+                           style="background-color: #eb681c; color: #000">Donate Now</a><a
                             class="stunning-item-button greennature-button large" href="{{ route('career') }}"
                             style="color: #000">Get
                             Involved</a>
@@ -119,7 +126,7 @@
         <div class="copyright-wrapper">
             <div class="copyright-container container">
                 <div class="copyright-left">
-                    <a href="https://www.facebook.com/arannaykfoundation/">
+                    <a href="{{ \App\Contact::first()->fb_link ?? "https://www.facebook.com/arannaykfoundation/" }}">
                         <i class="fa-brands fa-facebook"
                             style="
                     vertical-align: middle;
@@ -128,28 +135,28 @@
                     margin-right: 8px
                   "></i></a>
 
-                    <a href="https://www.youtube.com/user/Arannayk/videos"><i class="fa-brands fa-youtube"
+                    <a href="{{ \App\Contact::first()->yt_link ?? "https://www.youtube.com/user/Arannayk/videos" }}"><i class="fa-brands fa-youtube"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                     margin-right: 8px
                   "></i></a>
-                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247"><i class="fa-brands fa-linkedin"
+                    <a href="{{ \App\Contact::first()->ln_link ?? "https://www.linkedin.com/in/arannayk-foundation-5405ab247" }}"><i class="fa-brands fa-linkedin"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                     margin-right: 8px
                   "></i></a>
-                    <a href="https://www.flickr.com/photos/137990726@N07/albums/"><i class="fa-brands fa-flickr"
+                    <a href="{{ \App\Contact::first()->flicker_link ?? "https://www.flickr.com/photos/137990726@N07/albums/" }}"><i class="fa-brands fa-flickr"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
                     font-size: 20px;
                     margin-right: 8px
                   "></i></a>
-                    <a href="https://twitter.com/Arannayk"><i class="fa-brands fa-x-twitter"
+                    <a href="{{ \App\Contact::first()->twitter_link ?? "https://twitter.com/Arannayk" }}"><i class="fa-brands fa-x-twitter"
                             style="
                     vertical-align: middle;
                     color: #bbbbbb;
