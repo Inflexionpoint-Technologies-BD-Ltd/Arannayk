@@ -21,27 +21,32 @@
         <div class="top-navigation-right">
             <div class="top-social-wrapper">
                 <div class="social-icon">
-                    <a href="https://www.facebook.com/arannaykfoundation/" target="_blank">
+                    <a href="{{ \App\Contact::first()->fb_link ?? 'https://www.facebook.com/arannaykfoundation/' }}"
+                        target="_blank">
                         <i class="fa-brands fa-facebook"></i></a>
                 </div>
 
                 <div class="social-icon">
-                    <a href="https://www.youtube.com/user/Arannayk/videos" target="_blank">
+                    <a href="{{ \App\Contact::first()->yt_link ?? 'https://www.youtube.com/user/Arannayk/videos' }}"
+                        target="_blank">
                         <i class="fa-brands fa-youtube"></i></a>
                 </div>
 
                 <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/arannayk-foundation-5405ab247" target="_blank">
+                    <a href="{{ \App\Contact::first()->ln_link ?? 'https://www.linkedin.com/in/arannayk-foundation-5405ab247' }}"
+                        target="_blank">
                         <i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
                 <div class="social-icon">
-                    <a href="https://www.flickr.com/photos/137990726@N07/albums/" target="_blank">
+                    <a href="{{ \App\Contact::first()->flicker_link ?? 'https://www.flickr.com/photos/137990726@N07/albums/' }}"
+                        target="_blank">
                         <i class="fa-brands fa-flickr"></i></a>
                 </div>
 
                 <div class="social-icon">
-                    <a href="https://twitter.com/Arannayk" target="_blank">
+                    <a href="{{ \App\Contact::first()->twitter_link ?? 'https://twitter.com/Arannayk' }}"
+                        target="_blank">
                         <i class="fa-brands fa-x-twitter"></i></a>
                 </div>
 
